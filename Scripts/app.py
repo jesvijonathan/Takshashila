@@ -21,6 +21,9 @@ from config import *
 app = Flask(__name__) 
 api = Api(app)
 
+
+############################## SMTP Client
+
 mail = Mail(app)  
 app.config["MAIL_SERVER"]='smtp.gmail.com'  
 app.config["MAIL_PORT"] = 465      
@@ -34,7 +37,9 @@ app.config.update(
 )
 mail = Mail(app)
 
-# connect to database
+
+############################## DB Connector / Loader
+
 db = connector.connect(
 host=database_host,
 user=database_user,
@@ -55,6 +60,9 @@ database_create = database.database_create(cursor, db)
 database_create.create_base()
 
 print("database loaded")
+
+
+############################## Sample Ref Code
 
 def generate_hash():
     encrpass = str(uuid.uuid4())
@@ -86,13 +94,35 @@ def data_url(var1="", var2=""):
 def page_not_found(e):
     return "Error Page", 404
  
-@app.route("/")
+@app.route("/home")
 def index(): 
     return "Landing Page" 
 
+
+############################## Starting Code
+
+
+@app.route("/")
+def home():
+    return render_template("in dex.html")
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
+@app.route('/login_oauth/', methods = ["POST"])
+def login_oauth():
+    data = request.form
+    return data
+
+@app.route('/login_auth/', methods = ["POST"])
+def login_auth():
+    data = request.form
+    return data    
+
  
 if __name__ == '__main__': 
-    context = ('local.crt', 'local.key')#certificate and key files
+    context = ('local.crt', 'local.key') #certificate and key files
     app.run(debug=True, ssl_context=context)
 
 
