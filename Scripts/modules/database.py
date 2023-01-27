@@ -6,7 +6,7 @@ class database_create:
 
     # Variable Initialisation
 
-    def __init__(self, cursorr, dbr):
+    def __init__(self):
         self.db = connector.connect(
         host=database_host,
         user=database_user,
@@ -51,13 +51,26 @@ class database_create:
 
     def user(self):
         sql =(
-            "CREATE TABLE IF NOT EXISTS uiser (" + 
-            "ID MEDIUMINT NOT NULL UNIQUE AUTO_INCREMENT," +
-            "Feedback TEXT," + 
-            "Email TEXT," + 
-            "Sent Date)"
+            "CREATE TABLE IF NOT EXISTS user (" + 
+            "id MEDIUMINT NOT NULL UNIQUE AUTO_INCREMENT," +
+            "email TEXT NOT NULL UNIQUE," + 
+            "password TEXT NOT NULL," +
+            "first_name VARCHAR(64)," +
+            "last_name VARCHAR(64)," + 
+            "phone INT(64) UNIQUE," +
+            "institute TEXT," +
+            "degree TINYTEXT," +
+            "branch TEXT," +
+            "graduate_year INT(32)," +
+            "type VARCHAR(64)," +
+            "date_join DATE," +
+            "qr_id MEDIUMINT UNIQUE," +
+            "qr_date DATE," +
+            "google_id TEXT UNIQUE)"
+            
+            
         )
-            # Registration_Temp : ID | First_Name | Last_Name | Gender | Country | State | Username | Email | Hash | Password | Auth_Type | Verification | Join_Date
+            # user : id | email | password | first_name | last_name | phone | institution | degree | branch | graduate_year | type | date_join | qr_id | qr_date | google_id
 
         self.cursor.execute(sql)
         self.db.commit()
@@ -80,141 +93,33 @@ class call:
         database=database_name,
         password=database_password)
         self.cursor = self.db.cursor(buffered=True,dictionary=True)
-
-
-    def get_db(self):
-        sql = (
-            "SHOW DATABASES"
-            )
-
-        self.cursor.execute(sql)
-
-        return self.cursor.fetchall()
-
-
-    def get_tbl(self,sel_db):
-        sql = (
-            "USE {0}".format(sel_db)
-            )
-
-        self.cursor.execute(sql)
-        self.db.commit()
-
-        sql_1 = (
-            "SHOW TABLES"
-            )
-
-        self.cursor.execute(sql_1)
-
-        return self.cursor.fetchall()
-
-
-    def get_table(self,name):
-        sql = (
-                "SELECT * FROM {0}".format(name)
-            )
-
-        self.cursor.execute(sql)
-
-        return self.cursor.fetchall()
-
-
-
-#insert cmd example
-    def add_user(self, user):
-        username = user['username']
-        first_name = user['first_name']
-        last_name = user['last_name']
-
-        sql = (
-            "INSERT INTO user_base (user_id, username, first_name, last_name, is_bot, date) VALUE(%s, %s, %s, %s, %s, CURRENT_TIMESTAMP()) ON DUPLICATE KEY UPDATE username=%s, first_name=%s, last_name=%s")
-        data = (
-            user['id'],
-            username, first_name, last_name,
-            user['is_bot'],
-
-            username, first_name, last_name,
-        )
-
-        self.cursor.execute(sql, data)
-        self.db.commit()
-
-
-#select cmd example
-    def get_user(self, user_id=None):
-        if user_id == None:
-            sql = (
-            "select * FROM user_base"
-            )
-
-            data = ()
-        else:
-            sql = (
-                "SELECT * FROM user_base WHERE user_id=%s"
-            )
-
-            data = (
-                user_id,
-            )
-
-        self.cursor.execute(sql, data)
-
-        return self.cursor.fetchall()
-
-
-#update cmd example
-    def add_link(self, chat, user, status="member", replace=0):
-        chat_id = chat['id']
-        user_id = user['id']
-
-        sql = (
-            "SELECT (1) FROM link_base WHERE chat_id=%s AND user_id=%s LIMIT 1"
-        )
-        data = (
-            chat_id,
-
-            user_id
-        )
-        # print(data)
-
-        self.cursor.execute(sql, data)
-
-        if self.cursor.fetchone():
-            if replace == 1:
-                sql1 = (
-                    "UPDATE link_base SET status=%s, last_active=CURRENT_TIMESTAMP() WHERE chat_id=%s AND user_id= %s LIMIT 1"
-                )
-                data1 = (
-                    status, chat_id, user_id
-                )
-            else:
-                sql1 = (
-                    "UPDATE link_base SET last_active=CURRENT_TIMESTAMP() WHERE chat_id=%s AND user_id= %s LIMIT 1"
-                )
-                data1 = (
-                    chat_id, user_id
-                )
-        else:
-            sql1 = (
-                "INSERT INTO link_base (chat_id, user_id, status, join_date, last_active) VALUE(%s, %s, %s, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP())"
-            )
-            data1 = (
-                chat_id, user_id, status
-            )
-
-        self.cursor.execute(sql1, data1)
-        self.db.commit()
-
+        print("sdf")
 
 ################### Actual Code Start Here
-def add_user(self, user):
-    sql = (
-            "INSERT INTO user " + 
-            "(email, password, first_name, last_name, phone, institute, department, type, date_join, qr, date_qr, google_id)" + 
-            "VALUE(%s, %s, %s, %s, %s, CURRENT_TIMESTAMP())" +
-            "ON DUPLICATE KEY UPDATE username=%s, first_name=%s, last_name=%s")
-    data = (  
-    )
 
-    self.cursor.execute(sql, data)
-    self.db.commit()
+    def add_user(self, data):
+        sql = (
+                "INSERT INTO user " + 
+                "(email, password, first_name, last_name, phone, institute, degree, branch, graduate_year, type, date_join, qr_id, qr_date, google_id)" + 
+                "VALUE(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, CURRENT_TIMESTAMP(), %s, CURRENT_TIMESTAMP(), %s)"
+                )
+        quer = (  
+            data["email"],
+            data["password"],
+            data["first_name"],
+            data["last_name"],
+            data["phone"],
+            data["institute"],
+            data["degree"],
+            data["branch"],
+            data["graduate_year"],
+            data["type"],
+            
+            data["qr_id"],
+
+            data["google_id"],
+        )
+        print(data)
+
+        self.cursor.execute(sql, quer)
+        self.db.commit()

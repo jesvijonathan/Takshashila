@@ -56,7 +56,7 @@ password=database_password,
 database=database_name )
 cursor = db.cursor(buffered=True)
 
-database_create = database.database_create(cursor, db)
+database_create = database.database_create()
 database_create.create_base()
 
 print("database loaded")
@@ -118,7 +118,36 @@ def login_oauth():
 @app.route('/login_auth/', methods = ["POST"])
 def login_auth():
     data = request.form
-    return data    
+    return data
+
+@app.route("/register")
+def register():
+    return render_template("register.html")   
+"""
+    data={'email' : 'jesi22j@gmail.comn',
+           'password' : "nig",
+           'first_name' : "akdsjhads",
+           'last_name' : "sdkjahskd",
+           'phone' : "011019282",
+           'institute':"cit",
+           'degree':"btech",
+           'branch' : "aids",
+           'graduate_year' : "2024",
+           'type' : "admin",
+           'qr_id' : "123333",
+           'google_id':"1139287"}
+           """
+
+@app.route("/register_auth", methods = ['POST'])
+def register_auth():
+    data = request.form
+
+    dbb = database.call()
+    dbb.add_user(data)
+    
+    print(data)
+    
+    return True   
 
  
 if __name__ == '__main__': 
