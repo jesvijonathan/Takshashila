@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint , request
 
 from models import EventRegistration
 
@@ -7,5 +7,11 @@ from models import EventRegistration
 eventRoute = Blueprint("eventRoute", __name__, url_prefix='/api')
 
 @eventRoute.route("/register", methods=['GET','POST'])
-def do_get():
-    return EventRegistration.getAllUsers()
+def eventregister():
+    if (request.method == 'POST'):
+        
+        data = EventRegistration(request.json["user_id"],request.json["event"],request.json["batch"])
+
+        return data
+
+
