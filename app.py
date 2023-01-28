@@ -1,11 +1,11 @@
+from utils.jwt import JWT
+from database import Database, db
+from blueprints.authBlp import authBlp
+from blueprints.eventBlp import eventBlp
 import os
 from dotenv import load_dotenv
 from flask import Flask
 from flask_smorest import Api
-
-from blueprints.authBlp import authBlp
-from database import Database, db
-from utils.jwt import JWT
 
 load_dotenv()
 
@@ -26,6 +26,7 @@ def create_tables():
 
 
 api.register_blueprint(authBlp)
+api.register_blueprint(eventBlp)
 
 if __name__ == '__main__':
     app.run(debug=True)
