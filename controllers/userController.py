@@ -1,20 +1,15 @@
 from flask import jsonify
-from sqlalchemy import or_
+from passlib.hash import pbkdf2_sha256
 
 from models import Users
 from database import db
 
 
 def createUser(data):
-    if Users.query.filter(
-        or_(
-            user.username == data["namename"],
-            user.email == data["email"],
-        )
-    ).first():
-        return "A user with that username or email already exists."
+    if (Users.findExistingUser(data["email"])):
+        return {"message": "User with that email already exists."}, 409
 
-    user = Users(data, data["password"])
+    user = Users(data, pbkdf2_sha256.hash(data["password"]))
     db.session.add(user)
     db.session.commit()
 

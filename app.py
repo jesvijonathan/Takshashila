@@ -1,18 +1,31 @@
+import os
+from dotenv import load_dotenv
 from flask import Flask
+from flask_smorest import Api
 
-from routes.userRoute import userRoute
-from database import Database,db
+from blueprints.authBlp import authBlp
+from database import Database, db
+from utils.jwt import JWT
+
+load_dotenv()
 
 app = Flask(__name__)
-app.secret_key='dvdf'
+app.secret_key = os.getenv('SECRET')
+app.config["API_TITLE"] = "TK2023 Rest API"
+app.config["API_VERSION"] = "v1"
+app.config["OPENAPI_VERSION"] = "3.0.3"
 
+api = Api(app)
 Database(app)
+JWT(app)
+
 
 @app.before_first_request
 def create_tables():
     db.create_all()
 
-app.register_blueprint(userRoute)
 
-if __name__=='__main__':
+api.register_blueprint(authBlp)
+
+if __name__ == '__main__':
     app.run(debug=True)

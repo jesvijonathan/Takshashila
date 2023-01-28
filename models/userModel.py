@@ -1,5 +1,7 @@
 import datetime
 import uuid
+from sqlalchemy import or_
+
 from database import db
 
 
@@ -41,3 +43,10 @@ class Users(db.Model):
 
     def getAllUsers():
         return Users.query.all()
+
+    def findExistingUser(email):
+        return Users.query.filter(
+            or_(
+                Users.email == email,
+            )
+        ).first()
