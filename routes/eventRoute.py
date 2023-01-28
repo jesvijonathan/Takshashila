@@ -1,5 +1,5 @@
 from flask import Blueprint , request
-
+from database import db
 from models import EventRegistration
 
 # from controllers.userController import createUser
@@ -10,8 +10,9 @@ eventRoute = Blueprint("eventRoute", __name__, url_prefix='/api')
 def eventregister():
     if (request.method == 'POST'):
         
-        data = EventRegistration(request.json["user_id"],request.json["event"],request.json["batch"])
-
-        return data
+        event = EventRegistration(request.json)
+        db.session.add(event)
+        db.session.commit()
+        return 'ss'
 
 

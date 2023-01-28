@@ -1,4 +1,5 @@
-import time
+import datetime
+import uuid
 from database import db
 
 
@@ -14,14 +15,14 @@ class Feedback(db.Model):
     updated_at = db.Column('updated_at', db.DateTime)
 
     def __init__(self, id, title, description, image, link, author):
-        self.id = id
+        self.id = str(uuid.uuid4())
         self.title = title
         self.description = description
         self.image = image
         self.link = link
         self.author = author
-        self.created_at = time.ctime()
-        self.updated_at = time.ctime()
+        self.created_at = datetime.datetime.utcnow
+        self.updated_at = datetime.datetime.utcnow
 
     def getAllFeedback():
         return Feedback.query.all()
