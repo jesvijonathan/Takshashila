@@ -40,4 +40,4 @@ class Users(db.Model):
         self.updated_at = updated_at
 
     def getAllUsers():
-        return Users.query.all()
+        return Users.query.all();
