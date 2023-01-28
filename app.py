@@ -11,7 +11,7 @@ Database(app)
 @app.before_first_request
 def create_tables():
     db.create_all()
-    
+
 app.register_blueprint(userRoute)
 
 if __name__=='__main__':
