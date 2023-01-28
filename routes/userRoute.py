@@ -1,6 +1,6 @@
 from flask import Blueprint
 
-from models.userModel import Users
+from models import Users
 
 from controllers.userController import createUser
 

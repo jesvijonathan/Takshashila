@@ -1,9 +1,10 @@
+import time
 from database import db
 
 
 class Users(db.Model):
     __tablename__ = 'users'
-    id = db.Column('user_id', db.Integer, primary_key=True)
+    id = db.Column('user_id', db.String(50), primary_key=True)
     email = db.Column('email', db.String(50))
     password = db.Column('password', db.String(50))
     phone_number = db.Column('phone_number', db.Integer)
@@ -21,7 +22,7 @@ class Users(db.Model):
     created_at = db.Column('created_at', db.DateTime)
     updated_at = db.Column('updated_at', db.DateTime)
 
-    def __init__(self, name, email, phone_number, first_name, last_name, institute, degree, branch, graduate_year, type, date_join, qr_id, qr_date, google_id, created_at, updated_at):
+    def __init__(self, name, email, phone_number, first_name, last_name, institute, degree, branch, graduate_year, type, date_join, qr_id, qr_date, google_id):
         self.name = name
         self.email = email
         self.phone_number = phone_number
@@ -36,8 +37,8 @@ class Users(db.Model):
         self.qr_id = qr_id
         self.qr_date = qr_date
         self.google_id = google_id
-        self.created_at = created_at
-        self.updated_at = updated_at
+        self.created_at = time.ctime()
+        self.updated_at = time.ctime()
 
     def getAllUsers():
         return Users.query.all()
