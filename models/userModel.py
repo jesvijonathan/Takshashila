@@ -1,4 +1,5 @@
-import time
+import datetime
+import uuid
 from database import db
 
 
@@ -6,7 +7,7 @@ class Users(db.Model):
     __tablename__ = 'users'
     id = db.Column('user_id', db.String(50), primary_key=True)
     email = db.Column('email', db.String(50))
-    password = db.Column('password', db.String(50))
+    password = db.Column('password', db.String(100))
     phone_number = db.Column('phone_number', db.Integer)
     first_name = db.Column('first_name', db.String(30))
     last_name = db.Column('last_name', db.String(30))
@@ -15,30 +16,28 @@ class Users(db.Model):
     branch = db.Column('branch', db.String(50))
     graduate_year = db.Column('graduate_year', db.Integer)
     type = db.Column('type', db.String(50))
-    date_join = db.Column('date_join', db.Date)
     qr_id = db.Column('qr_id', db.String(50))
-    qr_date = db.Column('qr_date', db.String(50))
     google_id = db.Column('google_id', db.String(50))
     created_at = db.Column('created_at', db.DateTime)
     updated_at = db.Column('updated_at', db.DateTime)
 
-    def __init__(self, name, email, phone_number, first_name, last_name, institute, degree, branch, graduate_year, type, date_join, qr_id, qr_date, google_id):
-        self.name = name
-        self.email = email
-        self.phone_number = phone_number
-        self.first_name = first_name
-        self.last_name = last_name
-        self.institute = institute
-        self.degree = degree
-        self.branch = branch
-        self.graduate_year = graduate_year
-        self.type = type
-        self.date_join = date_join
-        self.qr_id = qr_id
-        self.qr_date = qr_date
-        self.google_id = google_id
-        self.created_at = time.ctime()
-        self.updated_at = time.ctime()
+    def __init__(self, data, password):
+        self.id = str(uuid.uuid4())
+        self.name = data["name"]
+        self.email = data["email"]
+        self.password = password
+        self.phone_number = data["phone_number"]
+        self.first_name = data["first_name"]
+        self.last_name = data["last_name"]
+        self.institute = data["institute"]
+        self.degree = data["degree"]
+        self.branch = data["branch"]
+        self.graduate_year = data["graduate_year"]
+        self.type = data["type"]
+        self.qr_id = data["qr_id"]
+        self.google_id = data["google_id"]
+        self.created_at = datetime.datetime.now()
+        self.updated_at = datetime.datetime.now()
 
     def getAllUsers():
         return Users.query.all()
