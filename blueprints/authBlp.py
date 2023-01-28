@@ -7,7 +7,6 @@ from controllers.userController import createUser
 
 authBlp = Blueprint("AuthBlp", __name__, url_prefix='/api')
 
-
 @authBlp.route("/signup")
 class Signup(MethodView):
     def post(self):
