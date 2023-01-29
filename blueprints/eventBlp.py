@@ -7,7 +7,7 @@ from models import EventRegistration
 
 # from controllers.userController import createUser
 
-eventBlp = Blueprint("eventBlp", __name__, url_prefix='/api/event')
+eventBlp = Blueprint("eventBlp", __name__, url_prefix='/api/events')
 
 
 @eventBlp.route("/register")
