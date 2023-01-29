@@ -7,8 +7,8 @@ from utils.jwt import JWT
 from database import Database, db
 
 from blueprints.authBlp import authBlp
-from blueprints.eventBlp import eventBlp
 from blueprints.loginBlp import loginBlp
+from blueprints.eventBlp import eventBlp
 
 load_dotenv()
 
