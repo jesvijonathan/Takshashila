@@ -12,8 +12,8 @@ eventBlp = Blueprint("eventBlp", __name__, url_prefix='/api/event')
 
 @eventBlp.route("/register")
 class Event(MethodView):
-    def post():
-        event = EventRegistration(request.json)
+    def post(self):
+        event = EventRegistration(request.get_json())
         db.session.add(event)
         db.session.commit()
         return 'ss'
