@@ -21,3 +21,4 @@ class Events(db.Model):
 
     def getSingleEvent(event_id):
         return Events.query.filter(Events.event_id == event_id).first().toJSON()
+    
