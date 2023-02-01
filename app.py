@@ -1,13 +1,18 @@
+import os
+from dotenv import load_dotenv
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 import json
 import razorpay
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
 
+RP_KEY_ID = os.getenv('RAZOY_PAY_KEY_ID')
+RP_KEY_SECERT = os.getenv('RAZOY_PAY_KEY_SECERT')
 
-@app.route('/')
+
 def hello_world():
     return '<h1>TK-2023<h1>'
 
@@ -21,8 +26,7 @@ def hello_name(parameter):
 def payment_razor():
     if request.method == "POST":
         data = json.loads(request.data.decode('utf8').replace("'", '"'))
-        print(data)
-        client = razorpay.Client(auth=("rzp_test_pCtS1bVBcTs4hF", "F3RUI6Wye5uolFutMz8q7BDs"))
+        client = razorpay.Client(auth=(RP_KEY_ID, RP_KEY_SECERT))
         data = client.order.create({
             "amount": data['amount'] * 100,
             "currency": "INR",

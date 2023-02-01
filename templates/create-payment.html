@@ -15,7 +15,8 @@
           const amount = parseInt(document.getElementById("amount-data").innerText)
           const name = document.getElementById("product-data").innerText
           const product = {name , amount}
-          console.log(product)
+
+          // MAKE SURE TO CHANGE THE DOMAIN
           const data = await fetch("http://127.0.0.1:5000/create-payment" , {
             method : 'POST',
             mode : 'no-cors',    
@@ -26,8 +27,7 @@
             body : JSON.stringify(product)
           })
          const order_data = await data.json();
-          console.log(order_data)
-         let options = {
+         const options = {
            "key": "rzp_test_pCtS1bVBcTs4hF", 
            "amount": parseInt(order_data.amount_due), 
            "currency": "INR",
@@ -38,8 +38,14 @@
                console.log(response)
                alert("This step of Payment Succeeded");
            },
+           "prefill": {
+                // PRE-FILL WITH THE USER DATA
+               "name": "Rahul M. Navneeth",
+               "email": "rahul@gmail.com",
+               "contact": "9000090000"
+           },
         };
-        let razorpayObject = new window.Razorpay(options)
+        const razorpayObject = new window.Razorpay(options)
         razorpayObject.on('payment.failed', function (response){
                console.log(response);
                alert("This step of Payment Failed");
