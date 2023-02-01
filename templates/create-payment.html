@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CREATE PAYEMENT</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+		<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </head>
+  <body>
+      <script>
+        const payment = async () => {
+          const amount = parseInt(document.getElementById("amount-data").innerText)
+          const name = document.getElementById("product-data").innerText
+          const product = {name , amount}
+          console.log(product)
+          const data = await fetch("http://127.0.0.1:5000/create-payment" , {
+            method : 'POST',
+            mode : 'no-cors',    
+            cache : "no-cache",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body : JSON.stringify(product)
+          })
+         const order_data = await data.json();
+          console.log(order_data)
+         let options = {
+           "key": "rzp_test_pCtS1bVBcTs4hF", 
+           "amount": parseInt(order_data.amount_due), 
+           "currency": "INR",
+           "name": order_data.receipt,
+           "description": "Pay & Checkout",
+           "order_id": order_data.id,  
+           "handler": function (response){
+               console.log(response)
+               alert("This step of Payment Succeeded");
+           },
+        };
+        let razorpayObject = new window.Razorpay(options)
+        razorpayObject.on('payment.failed', function (response){
+               console.log(response);
+               alert("This step of Payment Failed");
+        });
+        razorpayObject.open();
+    }
+    </script>
+    <main>
+      <h1>CREATE PAYMENT - {{user.first_name}}</h1>  
+      <h3>Product : <span contenteditable="true" id="product-data">TK-TEST</span></h3>
+      <h3>Amount : <span contenteditable="true" id="amount-data">10000</span></h3>
+      <button onclick="payment()">PAY</button>
+    </main>
+	<!-- <script src="js/index.js"></script> -->
+  </body>
+</html>
