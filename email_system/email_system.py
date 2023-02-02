@@ -16,9 +16,9 @@ import random
 app = Flask(__name__) 
 api = Api(app)
 
-system_email = "jesvijonathan.aids2020@citchennai.net"
-system_ps = "happysunday"
-domain = "127.0.0.1"
+system_email = "your email (check less secure option, google it)"
+system_ps = "your password"
+domain = "127.0.0.1:5000" #local host
 
 mail = Mail(app)  
 app.config["MAIL_SERVER"]='smtp.gmail.com'  
