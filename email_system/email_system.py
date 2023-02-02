@@ -6,7 +6,7 @@ from flask_restful import Api
 app = Flask(__name__) 
 api = Api(app)
 
-# define
+# define variables
 system_email = "your email (check less secure option, google it)"
 system_ps = "your password"
 domain = "127.0.0.1:5000" #local host
