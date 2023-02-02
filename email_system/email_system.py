@@ -1,21 +1,12 @@
 
-from flask import Flask, jsonify, request, render_template, redirect, url_for, make_response
+from flask import Flask, render_template
 from flask_mail import *
-from flask_restful import Resource, Api
-import random
-
-import hashlib
-import uuid
-
-import json
-
-from mysql import connector
-
-import random
+from flask_restful import Api
 
 app = Flask(__name__) 
 api = Api(app)
 
+# define
 system_email = "your email (check less secure option, google it)"
 system_ps = "your password"
 domain = "127.0.0.1:5000" #local host
