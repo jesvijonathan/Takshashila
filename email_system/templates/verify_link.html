@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <title>Verification Link</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content=" " />
+    <meta name="keywords" content=" " />
+    <meta name="author" content="Cepher Records" />
+  </head>
+  <body
+    style="
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      width: 100%;
+      max-width: 700px;
+    "
+  >
+    <div
+      class="container_1"
+      style="
+        border: 0px solid black;
+        height: 50%;
+        padding: 20px;
+        padding-bottom: 0vw;
+      "
+    >
+      <div
+        class="container_0"
+        style="
+          font-size: 21px;
+          /* text-align: center; */
+          font-family: monospace;
+          font-style: inherit;
+          font-weight: 800;
+          color: black;
+        "
+      >
+        Email Verification | CIT Takshashila
+      </div>
+      <div
+        class="line1"
+        style="
+          /* text-align: center;*/
+          padding: 10px;
+          padding-left: 0px;
+          color: black;
+        "
+      >
+        _________________________
+      </div>
+      <br />
+      <br />
+      <div
+        class="container_2"
+        style="
+          font-size: 14px;
+          font-family: monospace;
+          font-style: inherit;
+          font-weight: 500;
+          color: black;
+        "
+      >
+        Hey {{ first_name }},<br />
+        Thank you for registering an account with
+        <a href="{{ domain }}" target="_blank" style="text-decoration: none"
+          >Takshashila</a
+        >. <br /><br />
+        Please confirm that you want to use this email address
+        <a
+          href="mailto:{{ email }}"
+          target="_blank"
+          style="text-decoration: none; color: black"
+          >(<i>{{ email }})</i></a
+        >, <br />as your account Email Adress.. Continue by clicking the
+        confirmation button below.
+      </div>
+      <br /><br /><br />
+      <br />
+      <div class="container_3">
+        <form
+          action="{{ domain }}/registration_auth_link/{{ hash }}"
+          class="form"
+          method="POST"
+          style="margin: 0px 0px 14px 0px"
+        >
+          <input
+            type="hidden"
+            id="remember-me"
+            name="email"
+            value="{{ email }}"
+          />
+          <input
+            type="hidden"
+            id="remember-me"
+            name="hash"
+            value="{{ hash }}"
+          />
+          <div style="/* text-align: center; */ height: 40px">
+            <a
+              class="button"
+              type="submit"
+              value="Confirm Email"
+              href="{{ domain }}/registration_auth_link/{{ hash }}"
+              target="_blank"
+              style="
+                color: white;
+                background-color: rgb(12, 12, 12);
+                padding: 14px 21px;
+                border: 2px solid rgb(151, 151, 151);
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                font-family: system-ui;
+                /* text-decoration: none; */
+              "
+            >
+              Confirm Email
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
