@@ -8,6 +8,8 @@ from database import Database, db
 
 from blueprints.authBlp import authBlp
 from blueprints.loginBlp import loginBlp
+from blueprints.feedBackBlp import feedBackBlp
+
 from blueprints.eventBlp import eventBlp
 
 load_dotenv()
@@ -31,6 +33,7 @@ def create_tables():
 api.register_blueprint(authBlp)
 api.register_blueprint(eventBlp)
 api.register_blueprint(loginBlp)
+api.register_blueprint(feedBackBlp)
 
 if __name__ == '__main__':
     app.run(debug=True)

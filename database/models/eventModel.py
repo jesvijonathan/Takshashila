@@ -19,5 +19,5 @@ class Events(db.Model):
         return Events.query.all()
 
     def getSingleEvent(event_id):
-        print(Events.query.filter(Events.event_id == event_id).first())
-        return 'OK'
+        return Events.query.filter(Events.event_id == event_id).first().toJSON()
+    
