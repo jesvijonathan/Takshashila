@@ -1,0 +1,27 @@
+<!DOCTYPE >
+<html>
+  Log In Page
+
+  <form action="" method="">
+    <input type="text" name="email" placeholder="Email" />
+    <input type="password" name="password" placeholder="Password" />
+
+    <input type="submit" value="Submit" />
+  </form>
+  <a href="">Forget Password</a>
+  <a href="/create_account">Create Account</a>
+  <a href="{{js}}">Login With Google</a>
+</html>
+
+<script>
+  function poptasticopener(url) {
+    var newWindow = window.open(
+      url,
+      "Takshashila Google Authentication",
+      "height=600,width=450"
+    );
+    if (window.focus) {
+      newWindow.focus();
+    }
+  }
+</script>
