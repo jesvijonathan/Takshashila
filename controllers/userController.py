@@ -51,13 +51,10 @@ def createUser_oauth(data):
     return user_db_data
 
 def update_user_details(data):
-    res = Users.query.filter_by(hash=data['hash']).first()
-    print(res)
+    user = Users.query.filter_by(hash=data['hash']).first() 
 
-    if not res:
-        return -1
-    
-    user = Users.query.filter_by(hash=data['hash']).first()
+    if not user:
+        return -1 
     
     # user = Users.update_data(data) 
     li = [  'phone_number',
@@ -67,7 +64,8 @@ def update_user_details(data):
             'degree',
             'branch',
             'graduate_year',
-            'hash']
+            'hash',
+            'stage_two']
      
     user.update(data)
     db.session.add(user)
@@ -81,5 +79,3 @@ def update_user_details(data):
     # user.degree = data.get("degree", None)
     # user.branch = data.get("branch", None)
     # user.graduate_year = data.get("graduate_year", None) 
-
-    db.session.commit() 

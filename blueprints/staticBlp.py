@@ -1,6 +1,6 @@
 from flask_smorest import Blueprint
 from flask.views import MethodView
-from flask import request, jsonify, render_template
+from flask import request, jsonify, render_template,redirect
 
 from database import db
 from database import EventRegistration
@@ -37,26 +37,27 @@ class EventRegistration(MethodView):
     
     def post(self):
         data = request.form
-        # spoof_proof_data = {
-        #     'phone_number':data.get('phone_number', 0),
-        #     'first_name':data.get('first_name', None),
-        #     'last_name':data.get('last_name', None),
-        #     'institute':data.get('institute', None),
-        #     'degree':data.get('degree', None),
-        #     'branch':data.get('branch', None),
-        #     'graduate_year':data.get('graduate_year', 0),
-        #     'hash':data.get('hash', None)
-        # }
-        # print(spoof_proof_data)        
-        
-        res = update_user_details(data)
+
+        spoof_proof_data={}
+        li = [  'phone_number',
+            'first_name',
+            'last_name',
+            'institute',
+            'degree',
+            'branch',
+            'graduate_year',
+            'hash']
+
+        for i in li:
+            if data[i]:
+                spoof_proof_data[i] = data[i]
+        spoof_proof_data['stage_two'] = 1
+        # print(spoof_proof_data)
+
+        res = update_user_details(spoof_proof_data)
         if res == -1:
-            return { 'description' : "user does not exists !"}
-
-        Users.query.filter_by(hash=data["hash"]).first()
-
-        return "kk"
-        
+            return { 'description' : "Please login & try again !"}  
+        return redirect("/")
 
 @staticBlp.route("/register")
 class FindEvent(MethodView):

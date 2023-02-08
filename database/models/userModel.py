@@ -18,7 +18,7 @@ class Users(db.Model):
     user_id = db.Column(db.String(50), primary_key=True)
     email = db.Column(db.String(50))
     password = db.Column(db.String(500), server_default=None)
-    phone_number = db.Column(db.Integer, server_default=None)
+    phone_number = db.Column(db.VARCHAR(16), server_default=None)
     first_name = db.Column(db.String(30), server_default='')
     last_name = db.Column(db.String(30), server_default='')
     stage_two = db.Column(db.Integer, server_default='0')
@@ -58,15 +58,29 @@ class Users(db.Model):
         self.created_at = datetime.datetime.now()
 
     def update(self, data):   
-        self.phone_number = data.get("phone_number", None)
-        self.first_name = data.get("first_name", None)
-        self.last_name = data.get("last_name", None)
-        self.stage_two = data.get("stage_two", '0')
-        self.institute = data.get("institute", None)
-        self.degree = data.get("degree", None)
-        self.branch = data.get("branch", None)
-        self.graduate_year = data.get("graduate_year", None)  
-
+        
+        if "name" in data:
+            self.name = data.get("name", None)
+        if "phone_number" in data:
+            self.phone_number = data.get("phone_number", None)
+        if "first_name" in data:
+            self.first_name = data.get("first_name", None) 
+        if "last_name" in data:
+            self.last_name = data.get("last_name", None) 
+        if "stage_two" in data:
+            self.stage_two = data.get("stage_two", '0') 
+        if "institute" in data:
+            self.institute = data.get("institute", None)    
+        if "degree" in data:
+            self.degree = data.get("degree", None) 
+        if "branch" in data:
+            self.branch = data.get("branch", None) 
+        if "graduate_year" in data:
+            self.graduate_year = data.get("graduate_year", None)     
+        if "stage_two" in data:
+            self.stage_two = data.get("stage_two", None)    
+        if "hash" in data:
+            self.hash = data.get("hash", None)  
     def getAllUsers():
         return Users.query.all()
 
