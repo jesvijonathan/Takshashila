@@ -1,0 +1,35 @@
+<!DOCTYPE >
+
+<html>
+  Create account
+  <form action="/create_account" method="post">
+    <input type="text" name="email" placeholder="email" id="email" />
+    <input
+      type="password"
+      name="password"
+      placeholder="password"
+      id="password"
+    />
+    <input type="password" name="re_password" placeholder="Re-type Password" />
+
+    <input type="submit" value="Submit" />
+  </form>
+</html>
+
+<script>
+  function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+</script>

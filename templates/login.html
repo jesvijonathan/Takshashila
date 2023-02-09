@@ -2,16 +2,152 @@
 <html>
   Log In Page
 
-  <form action="" method="">
-    <input type="text" name="email" placeholder="Email" />
-    <input type="password" name="password" placeholder="Password" />
+  <form action="/login" method="post">
+    <input
+      type="text"
+      name="email"
+      placeholder="Email"
+      autocomplete="em
+    "
+    />
+    <input
+      type="password"
+      name="password"
+      placeholder="Password"
+      autocomplete="current-password"
+    />
 
     <input type="submit" value="Submit" />
   </form>
   <a href="">Forget Password</a>
   <a href="/create_account">Create Account</a>
   <a href="{{js}}">Login With Google</a>
+
+  <div class="notify">
+    <div id="not-cont" class="notify-content">
+      <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
+      {{ msg }} Sign in to your account
+    </div>
+    <div>
+      <a class="notify-button" onclick="accept_cookie()">Dismiss</a>
+    </div>
+  </div>
 </html>
+
+<script type="text/javascript">
+  function accept_cookie() {
+    document.querySelector(".notify").style.padding = "0vw 0vw";
+
+    document.querySelector(".notify").style.opacity = "0";
+    document.querySelector(".notify").style.zIndex = "-1";
+  }
+  function deccept_cookie() {
+    document.querySelector(".notify").style.padding = "1.8vw 1vw";
+
+    document.querySelector(".notify").style.opacity = "1";
+    document.querySelector(".notify").style.zIndex = "1";
+  }
+</script>
+<script>
+  function notify(text, timeout) {
+    document.getElementById("not-cont").innerHTML = text;
+    // document.querySelector("#not-cont").style.color = "red";
+
+    deccept_cookie();
+
+    if (timeout != -1) {
+      setTimeout(function () {
+        accept_cookie();
+      }, timeout);
+    }
+  }
+</script>
+
+<script>
+  var error = "{{ error }}";
+  var li = ["Error !", "Invalid email !", "Wrong Credentials !", "Try again.."];
+
+  if (error) {
+    console.log("awe have something...");
+    notify(li[error], 3000);
+  }
+</script>
+
+<style>
+  .notify {
+    top: 92vh;
+    background: #ffffff;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0%;
+    font-family: Inder;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    gap: 4vw;
+    width: fit-content;
+    transition: 0.2s ease-in-out;
+    z-index: -1;
+    opacity: 0;
+    border: 1px solid rgb(0 0 0 / 30%);
+  }
+  .notify-content {
+    color: #000;
+    font-size: 1vw;
+    font-weight: 500;
+  }
+
+  .notify-button {
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-weight: 600;
+    min-width: 7vw;
+    font-size: 1vw;
+    cursor: pointer;
+  }
+  .notify-button:hover {
+    background: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  .underline {
+    position: relative;
+  }
+
+  .underline::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .underline:hover::before {
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+  .hno {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+  }
+  .hno:hover {
+    color: black;
+    font-weight: 500;
+  }
+</style>
 
 <script>
   function poptasticopener(url) {

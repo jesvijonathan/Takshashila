@@ -16,11 +16,12 @@ def generate_qr(data):
 
 def createUser(data):
     if (Users.findExistingUser(data["email"])):
-        return {"message": "User with that email already exists."}, 409
+        return 0
 
-    id = str(uuid.uuid4())  
+    id = str(uuid.uuid4())
     hashed_pass = pbkdf2_sha256.hash(data["password"])
-    data.update({'password': hashed_pass})
+    print(data)
+    data['password'] = hashed_pass
 
     generate_qr(id)
 
@@ -28,13 +29,13 @@ def createUser(data):
     db.session.add(user)
     db.session.commit()
 
-    print(Users.findExistingUser(data['email']))
-    return "Users.findExistingUser(data['email'])"
+    user_db_data = Users.findExistingUser(data["email"])
+    
+    return user_db_data
 
 
 def createUser_oauth(data):
-    if (Users.findExistingUser(data["email"])):
-        user_in_db = Users.findExistingUser(data["email"])
+    if user_in_db := (Users.findExistingUser(data["email"])): 
         return user_in_db
 
     id = str(uuid.uuid4())  
