@@ -147,11 +147,20 @@
     <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 
     <script src="/static/js/script.js" type="text/javascript"></script>
+  
+    <link rel="stylesheet" href="../static/font-awesome.min.css" />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      
   </header>
 
   <!-- No script tag -->
   <noscript>Your browser does not support JavaScript !</noscript>
-
+<body>
+  <section>
+    
   <div class="form_container">
 
     <div class="login_title">Sign In</div>
@@ -166,13 +175,19 @@
       autocomplete="em
     "
     />
+    <div class="password_container">
     <input
       type="password"
+      id="id_password"
       class="login_input"
       name="password"
       placeholder="Password"
       autocomplete="current-password"
-    />
+    >
+    
+    <i sty class="fa fa-eye ffar" id="togglePassword" ></i>
+    </input>
+  </div>
   </div>
     <input type="submit" 
     class="button_1 login_submit" value="Submit" />
@@ -187,15 +202,20 @@
     <div class="google_oauth_text"></div>
     <div class="">Log in with Google</div>
   </div>
-  <div class="notify">
-    <div id="not-cont" class="notify-content">
-      <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
-      {{ msg }} Sign in to your account
-    </div>
-    <div>
-      <a class="notify-button" onclick="accept_cookie()">Dismiss</a>
-    </div>
+ 
+  </section>
+ 
+
+</body>
+<div class="notify">
+  <div id="not-cont" class="notify-content">
+    <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
+    {{ msg }} Sign in to your account
   </div>
+  <div>
+    <a class="notify-button" onclick="accept_cookie()">Dismiss</a>
+  </div>
+</div>
 </html>
 
 <script>
