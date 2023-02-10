@@ -152,9 +152,15 @@
   <!-- No script tag -->
   <noscript>Your browser does not support JavaScript !</noscript>
 
-  <form action="/login" method="post">
+  <div class="form_container">
+
+    <div class="login_title">Sign In</div>
+  <form action="/login" style="gap: 1.2vw;
+  margin-bottom: 1vw;" method="post">
+    <div class="login_input_container">
     <input
       type="text"
+      class="login_input"
       name="email"
       placeholder="Email"
       autocomplete="em
@@ -162,17 +168,25 @@
     />
     <input
       type="password"
+      class="login_input"
       name="password"
       placeholder="Password"
       autocomplete="current-password"
     />
-
-    <input type="submit" value="Submit" />
+  </div>
+    <input type="submit" 
+    class="button_1 login_submit" value="Submit" />
   </form>
+<div class="login_redirect">
   <a href="">Forget Password</a>
   <a href="/create_account">Create Account</a>
-  <a href="{{js}}">Login With Google</a>
+</div>
 
+<span class="login_or"><div class="line"></div>or<div class="line"></div></span>
+  <div class="google_oauth_container">
+    <div class="google_oauth_text"></div>
+    <div class="">Log in with Google</div>
+  </div>
   <div class="notify">
     <div id="not-cont" class="notify-content">
       <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
@@ -185,5 +199,5 @@
 </html>
 
 <script>
-  login_error();
+  login_error("{{error}}");
 </script>
