@@ -1,0 +1,18 @@
+{
+  "livePreview.defaultPreviewPath": "c:\\Users\\jesvi\\Downloads\\Cepher-Records\\templates\\login\\verify_link.html",
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "askForPassword": false,
+      "driver": "MariaDB",
+      "name": "test",
+      "username": "root",
+      "database": "test"
+    }
+  ]
+}

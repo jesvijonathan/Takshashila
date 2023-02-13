@@ -1,2 +1,0 @@
-mysqld start
-pause
