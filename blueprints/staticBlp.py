@@ -30,7 +30,7 @@ class authlogin(MethodView):
     def get(self):
 
         if auth_pop == 1:
-            return render_template("login.html", js= ("javascript:poptasticopener('" + loginBlp.login_auth_url() + "');"))
+            return render_template("login.html", js= ("javascript:popstasticopener('" + loginBlp.login_auth_url() + "');"))
         return render_template("login.html", js=loginBlp.login_auth_url())
     
     def post(self):
