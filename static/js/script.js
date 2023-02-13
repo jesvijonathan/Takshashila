@@ -145,6 +145,8 @@ function load_details() {
   document.getElementById("first_name").value = first_name;
   var last_name = getCookie("last_name");
   document.getElementById("last_name").value = last_name;
+  var ph_number = getCookie("phone");
+  document.getElementById("ph_number").value = ph_number;
 }
 
 // Date loader //

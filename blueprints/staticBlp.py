@@ -4,7 +4,7 @@ from flask import request, jsonify, render_template,redirect, url_for,make_respo
 
 from database import db
 from database import EventRegistration
-from database import Events, Users
+from database import Events, Users, Verification
 
 from controllers.userController import createUser
 import os
@@ -13,7 +13,10 @@ from . import loginBlp
 
 from passlib.hash import pbkdf2_sha256
 
-from controllers.userController import update_user_details
+from controllers.userController import update_user_details ,update_user_details_veri
+
+
+from utils.email_system import send_verification_email, send_email
  
 # from controllers.userController import createUser
 
@@ -39,7 +42,7 @@ class authlogin(MethodView):
         user_password = None
         user_db_password = None
 
-        if not ( user_in_db := Users.findExistingUser(data["email"])): 
+        if (not ( user_in_db := Users.findExistingUser(data["email"]))) or user_in_db.verified == '0': 
             return render_template('login.html', error=1)
         
         else:
@@ -54,11 +57,13 @@ class authlogin(MethodView):
 
                     resp = make_response(redirect(redirect_url))
                         #resp = make_response(render_template("oauth_redirect_home.html", redirect=redirect_url))   
+                    
 
                     resp.set_cookie('oauth_redirect', redirect_url, secure=True, samesite='Lax') 
                     resp.set_cookie('logged_In', "true", secure=True, samesite='Lax') 
-                    resp.set_cookie('first_name', '', secure=True, samesite='Lax', expires=0) 
+                    resp.set_cookie('first_name', '', secure=True, samesite='Lax',expires=0) 
                     resp.set_cookie('last_name', '', secure=True, samesite='Lax', expires=0) 
+                    resp.set_cookie('phone', '', secure=True, samesite='Lax',expires=0) 
                     resp.set_cookie('email',data["email"], secure=True, samesite='Lax')
                     resp.set_cookie('hash', user_in_db.hash, secure=True, samesite='Lax')
                     return resp
@@ -68,54 +73,63 @@ class authlogin(MethodView):
                 return render_template('login.html', error=0)
             
 
-
-@staticBlp.route("/google")
-def google():
-     data = {"email":"jesvi22j@gmail.com"}
-     return render_template("message.html", title="Email Verification", 
-                message_1=("We have sent an email verification link to your email address : "), link_1=data["email"],
-                message_3="You can ", link_3="Login", message_3_1="after verification..",
-                message_10="If you don't see it, you may have to chek your spam folder")
-                
+ 
 @staticBlp.route("/create_account")
 class authlogin(MethodView):
     def get(self):
-        return render_template("create_account.html")
+        
+        return render_template("create_account.html",js=loginBlp.login_auth_url())
     
     def post(self):
         data = request.form.to_dict()
         if data["email"] and data["password"]:
-                if not (user_db_data :=  createUser(data)):
-                    return {"message": "Email already exists.."}, 409
+                if (not (uss := createUser(data))) and uss == 1:
+                    return {"message": "Email already exists.."}, 409 
 
                 
-                return render_template("message.html", title="Email Verification", 
-                message_1=("We have sent an email verification link to your email address : "), link_1=data["email"],
-                message_3="You can ", link_3="Login", message_3_1="after verification..",
-                message_10="If you don't see it, you may have to chek your spam folder")
-                
-                """
-                resp = None
-                redirect_url="http://127.0.0.1:5000/"
-
-                if not user_db_data.stage_two:
-                    redirect_url="http://127.0.0.1:5000/user_details"  
-
-                resp = make_response(redirect(redirect_url))
-                    #resp = make_response(render_template("oauth_redirect_home.html", redirect=redirect_url))   
-
-                resp.set_cookie('oauth_redirect', redirect_url, secure=True, samesite='Lax') 
-                resp.set_cookie('logged_In', "true", secure=True, samesite='Lax') 
-                resp.set_cookie('first_name', '', secure=True, samesite='Lax', expires=0) 
-                resp.set_cookie('last_name', '', secure=True, samesite='Lax', expires=0) 
-                resp.set_cookie('email',data["email"], secure=True, samesite='Lax')
-                resp.set_cookie('hash', user_db_data.hash, secure=True, samesite='Lax')
-
-                return resp"""
+                return send_verification_email(data) 
         else:
             return {'description':"stupid data"}
 
         return data
+    
+@staticBlp.route('/registration_auth_link/<Hash>')
+def registration_auth(Hash=""):
+    if Hash == "":
+        return "no hash provided !"
+    if not (data_veri := Verification.findExistingUserByHash(Hash)):
+        return "invalid"
+    data= {
+        'email': data_veri.email,
+        'verified':'1',
+    }
+    
+    # print(data.email, Users.query.filter_by(email=data.email).first() )
+    if not ( user_db_data:= update_user_details_veri(data=data)):
+        return "invalid 2"
+    
+    Verification.query.filter_by(alt_hash=Hash).delete()
+    db.session.commit()
+    
+    resp = None
+    redirect_url="http://127.0.0.1:5000/"
+
+    if not user_db_data.stage_two:
+        redirect_url="http://127.0.0.1:5000/user_details"  
+
+    resp = make_response(redirect(redirect_url))
+        #resp = make_response(render_template("oauth_redirect_home.html", redirect=redirect_url))   
+     
+    resp.set_cookie('oauth_redirect', redirect_url, secure=True, samesite='Lax') 
+    resp.set_cookie('logged_In', "true", secure=True, samesite='Lax') 
+    resp.set_cookie('first_name', user_db_data.first_name, secure=True, samesite='Lax') 
+    resp.set_cookie('last_name', user_db_data.last_name, secure=True, samesite='Lax') 
+    resp.set_cookie('phone', user_db_data.phone_number, secure=True, samesite='Lax') 
+    resp.set_cookie('email',data["email"], secure=True, samesite='Lax')
+    resp.set_cookie('hash', user_db_data.hash, secure=True, samesite='Lax')
+
+
+    return resp
 
 @staticBlp.route("/user_details")
 class EventRegistration(MethodView):

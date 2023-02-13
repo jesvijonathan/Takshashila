@@ -189,6 +189,143 @@
           method="post"
         >
           <div class="login_input_container">
+            <div class="login_name_container">
+              <input
+                type="text"
+                class="login_input"
+                style="margin-bottom: 0.5vw"
+                id="first_name"
+                name="first_name"
+                placeholder="First Name"
+                autocomplete="given-name"
+                autofocus
+                required
+              />
+              <input
+                type="text"
+                class="login_input"
+                id="last_name"
+                name="last_name"
+                placeholder="Last Name"
+                autocomplete="family-name"
+              />
+            </div>
+            <div>
+              <div class="login_phone" style="margin-bottom: 1vw">
+                <input
+                  type="tel"
+                  id="ph_number"
+                  class="login_input"
+                  name="phone_number"
+                  placeholder="Phone Number"
+                  autocomplete="tel-national"
+                  maxlength="10"
+                  minlength="10"
+                  required
+                />
+
+                <span class="login_phone_prefix">+91</span>
+              </div>
+              <input
+                type="email"
+                class="login_input"
+                name="email"
+                placeholder="Email"
+                autocomplete="email"
+                required
+                title="Enter your email address"
+              />
+            </div>
+
+            <div>
+              <div class="password_container" style="margin-bottom: 0.5vw">
+                <input
+                  type="password"
+                  id="password"
+                  class="login_input"
+                  name="password"
+                  placeholder="Password"
+                  minlength="6"
+                  autocomplete="new-password"
+                  autocorrect="off"
+                  autocapitalize="none"
+                  required
+                  title="Enter your password"
+                />
+              </div>
+              <div class="password_container">
+                <input
+                  type="password"
+                  id="repassword"
+                  class="login_input"
+                  name="retype-password"
+                  placeholder="Re-type Password"
+                  minlength="6"
+                  autocomplete="new-password"
+                  autocorrect="off"
+                  autocapitalize="none"
+                  required
+                  title="Enter your password"
+                />
+              </div>
+            </div>
+          </div>
+          <input
+            id="submit"
+            type="submit"
+            class="button_1 login_submit"
+            value="Create Account"
+            onclick="validatePassword()"
+          />
+        </form>
+        <div class="login_redirect">
+          <div class="login_signup">
+            Already have an account ?
+            <a href="/login" class="login_text"> Sign In</a>
+          </div>
+        </div>
+
+        <span class="login_or"
+          ><div class="line"></div>
+          or
+          <div class="line"></div
+        ></span>
+        <a
+          class="google_oauth_container"
+          href="{{js}}"
+          style="text-decoration: none; color: inherit"
+        >
+          <div class="google_oauth_text"></div>
+          <div class="">Log in with Google</div>
+        </a>
+      </div>
+    </section>
+  </body>
+  <div class="notify">
+    <div id="not-cont" class="notify-content">
+      <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
+      {{ msg }} Sign in to your account
+    </div>
+    <div>
+      <a class="notify-button" onclick="accept_cookie()">Dismiss</a>
+    </div>
+  </div>
+</html>
+
+<script>
+  login_error("{{error}}");
+</script>
+
+<!-- 
+  <div class="form_container">
+        <div class="login_title">Create Account</div>
+        <form
+          onsubmit="return validatePassword();"
+          action="/create_account"
+          style="gap: 1.2vw; margin-bottom: 1vw"
+          method="post"
+        >
+          <div class="login_input_container">
             <input
               type="email"
               class="login_input"
@@ -259,19 +396,4 @@
           <div class="">Log in with Google</div>
         </a>
       </div>
-    </section>
-  </body>
-  <div class="notify">
-    <div id="not-cont" class="notify-content">
-      <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
-      {{ msg }} Sign in to your account
-    </div>
-    <div>
-      <a class="notify-button" onclick="accept_cookie()">Dismiss</a>
-    </div>
-  </div>
-</html>
-
-<script>
-  login_error("{{error}}");
-</script>
+ -->
