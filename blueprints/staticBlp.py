@@ -24,9 +24,6 @@ staticBlp = Blueprint("staticBlp", __name__, url_prefix='/')
 
 auth_pop = int(os.getenv('AUTH_POPUP'))
 
-@staticBlp.route("/nig")
-def nig():
-    return render_template("oauth_redirect_home.html", redirect="/login",mini="0")
 
 @staticBlp.route("/login")
 class authlogin(MethodView):
@@ -83,8 +80,10 @@ class authlogin(MethodView):
     def post(self):
         data = request.form.to_dict()
         if data["email"] and data["password"]:
-                if (not (uss := createUser(data))) and uss == 1:
-                    return {"message": "Email already exists.."}, 409 
+                if (not (uss := createUser(data))):
+                    print(Users.findExistingUser(data["email"]).verified)
+                    if Users.findExistingUser(data["email"]).verified == '1':
+                        return {"message": "Email already exists.."}, 409 
 
                 
                 return send_verification_email(data) 
@@ -108,7 +107,7 @@ def registration_auth(Hash=""):
     if not ( user_db_data:= update_user_details_veri(data=data)):
         return "invalid 2"
     
-    Verification.query.filter_by(alt_hash=Hash).delete()
+    Verification.query.filter_by(email=user_db_data.email).delete() 
     db.session.commit()
     
     resp = None
@@ -119,12 +118,13 @@ def registration_auth(Hash=""):
 
     resp = make_response(redirect(redirect_url))
         #resp = make_response(render_template("oauth_redirect_home.html", redirect=redirect_url))   
-     
+    print(user_db_data)
     resp.set_cookie('oauth_redirect', redirect_url, secure=True, samesite='Lax') 
     resp.set_cookie('logged_In', "true", secure=True, samesite='Lax') 
     resp.set_cookie('first_name', user_db_data.first_name, secure=True, samesite='Lax') 
-    resp.set_cookie('last_name', user_db_data.last_name, secure=True, samesite='Lax') 
-    resp.set_cookie('phone', user_db_data.phone_number, secure=True, samesite='Lax') 
+    resp.set_cookie('last_name', str(user_db_data.last_name), secure=True, samesite='Lax') 
+    resp.set_cookie('phone', user_db_data.phone_number, secure=True, samesite='Lax')  
+    resp.set_cookie('user_details', '1', secure=True, samesite='Lax') 
     resp.set_cookie('email',data["email"], secure=True, samesite='Lax')
     resp.set_cookie('hash', user_db_data.hash, secure=True, samesite='Lax')
 
@@ -134,7 +134,7 @@ def registration_auth(Hash=""):
 @staticBlp.route("/user_details")
 class EventRegistration(MethodView):
     def get(self): 
-        return render_template("user_details.html")
+        return(render_template("user_details.html"))
     
     
     def post(self):
@@ -158,7 +158,11 @@ class EventRegistration(MethodView):
         res = update_user_details(spoof_proof_data)
         if res == -1:
             return { 'description' : "Please login & try again !"}  
-        return redirect("/")
+        
+
+        resp = make_response(redirect("/")) 
+        resp.set_cookie('user_details', '1', secure=True, samesite='Lax') 
+        return resp
 
 @staticBlp.route("/register")
 class FindEvent(MethodView):

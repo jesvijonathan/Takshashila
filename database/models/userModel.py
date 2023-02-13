@@ -36,7 +36,7 @@ class Users(db.Model):
         self.email = data.get("email")
         self.password = password
         self.phone_number = data.get("phone_number", None)
-        self.verified = data.get("verified", None) 
+        self.verified = data.get("verified", '0') 
         self.first_name = data.get("first_name", None)
         self.last_name = data.get("last_name", None)
         self.stage_two = data.get("stage_two", '0')

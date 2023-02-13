@@ -138,6 +138,7 @@ function getCookie(cname) {
 function load_hash() {
   var hash = getCookie("hash");
   document.getElementById("hash").value = hash;
+  return hash;
 }
 function load_details() {
   load_hash();
@@ -174,4 +175,28 @@ function load_date(set_default = false) {
       'select[name="graduate_year"] option[value=""]'
     ).disabled = true;
   } */
+}
+
+// sign_in check
+function sign_in_check(n) {
+  h = getCookie("hash");
+  console.log(h);
+  if (h) {
+    // window.location.replace("/");
+    switch (n) {
+      case 0: {
+        window.location.replace("/");
+        break;
+      }
+      case 1: {
+        var user_details = getCookie("user_details");
+        if (user_details) {
+          window.location.replace("/");
+        }
+        window.location.replace("/login");
+        break;
+      }
+    }
+  } else {
+  }
 }

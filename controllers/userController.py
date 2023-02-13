@@ -17,6 +17,7 @@ def generate_qr(data):
 
 def createUser(data, verification=0):
     if (Users.findExistingUser(data["email"])):
+        
         return 0
 
     id = str(uuid.uuid4())
@@ -32,8 +33,7 @@ def createUser(data, verification=0):
 
 
     
-    user_db_data = Users.findExistingUser(data["email"]) 
-    print("asdghakjsgdajkdgaskjdag", user_db_data)
+    user_db_data = Users.findExistingUser(data["email"])  
     return user_db_data
 
 

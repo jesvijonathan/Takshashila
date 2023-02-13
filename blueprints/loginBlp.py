@@ -70,9 +70,10 @@ def callback():
 
     resp = None
     redirect_url="http://127.0.0.1:5000/"
-
+    
     if not user_db_data.stage_two:
         redirect_url="http://127.0.0.1:5000/user_details"  
+        f =1
 
     if auth_pop == 1:
         resp = make_response(render_template("oauth_redirect_home.html", redirect=redirect_url, mini=auth_pop))
@@ -83,6 +84,7 @@ def callback():
     
     resp.set_cookie('oauth_redirect', redirect_url, secure=True, samesite='Lax') 
     resp.set_cookie('logged_In', "true", secure=True, samesite='Lax') 
+    if f ==1:resp.set_cookie('user_details', '', secure=True, samesite='Lax') 
     resp.set_cookie('first_name', id_info.get("given_name", ""), secure=True, samesite='Lax') 
     resp.set_cookie('last_name', id_info.get("family_name", ""), secure=True, samesite='Lax') 
     resp.set_cookie('email', id_info["email"], secure=True, samesite='Lax')
