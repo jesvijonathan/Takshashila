@@ -177,7 +177,7 @@ function load_date(set_default = false) {
   } */
 }
 
-// sign_in check
+// Sign In check //
 function sign_in_check(n) {
   h = getCookie("hash");
   console.log(h);
@@ -199,4 +199,26 @@ function sign_in_check(n) {
     }
   } else {
   }
+}
+
+// Profile edit function //
+function profile_edit(input_) {
+  var element = document.getElementById(input_);
+  element.disabled = false;
+  element.readOnly = false;
+  element.focus();
+  var child_element = element.nextElementSibling.firstElementChild;
+  child_element.classList.remove("fa-edit");
+  child_element.classList.add("fa-save");
+}
+function profile_onblur(element, default_value) {
+  element.disabled = true;
+  element.readOnly = true;
+  if (!element.value) {
+    element.value = default_value;
+  }
+
+  var child_element = element.nextElementSibling.firstElementChild;
+  child_element.classList.remove("fa-save");
+  child_element.classList.add("fa-edit");
 }
