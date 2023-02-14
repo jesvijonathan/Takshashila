@@ -45,6 +45,9 @@ email(app)
 def create_tables():
     db.create_all()
 
+
+
+
 @app.route("/")
 # @cache.cached(timeout=2)
 def index():

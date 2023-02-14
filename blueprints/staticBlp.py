@@ -2,6 +2,8 @@ from flask_smorest import Blueprint
 from flask.views import MethodView
 from flask import request, jsonify, render_template,redirect, url_for,make_response
 
+import json
+
 from database import db
 from database import EventRegistration
 from database import Events, Users, Verification
@@ -24,6 +26,49 @@ staticBlp = Blueprint("staticBlp", __name__, url_prefix='/')
 
 auth_pop = int(os.getenv('AUTH_POPUP'))
 
+@staticBlp.route("/profile/<hash>")
+# @cache.cached(timeout=2)
+def profile(hash=""):
+    if hash == "":
+        return "error"
+    raw_data = Users.findExistingUserByHash(hash=hash).__dict__.items()
+    data = {}
+
+    for j, k in raw_data:
+        data[j] = str(k) 
+    print(data)
+
+    return render_template("profile.html", 
+                           first_name= data.get("first_name", None), 
+                           last_name= data.get("last_name", None), 
+                           email= data.get("email"),
+                           phone_number= data.get("phone_number", None),
+                           institution=data.get("institute", None),
+                           degree= data.get("degree", None),
+                           branch= data.get("branch", None),
+                           graduate_year=data.get("graduate_year", None),
+                           acc_type=data.get("type", 'student'),
+                           qr_id=data.get("qr_id", None),   
+                           user_qr=data.get("user_qr", None),
+                           updated_at=data.get("created_at",None),
+                           )
+
+
+"""
+multi layer sql object data
+
+
+raw_data = Users.findExistingUserByHash(hash=hash)
+    tmp = []
+ 
+    tmp.append(raw_data.__dict__.items()) 
+    data = {}
+    for i in tmp:
+        for j, k in i:
+            data[j] = str(k) 
+
+    return jsonify(data)
+"""
 
 @staticBlp.route("/login")
 class authlogin(MethodView):
@@ -89,7 +134,6 @@ class authlogin(MethodView):
                 return send_verification_email(data) 
         else:
             return {'description':"stupid data"}
-
         return data
     
 @staticBlp.route('/registration_auth_link/<Hash>')
