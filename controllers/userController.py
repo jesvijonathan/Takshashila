@@ -6,6 +6,7 @@ import os
 
 from database import Users, db
 
+from controllers.verificationController import create_verification
 
 def generate_qr(data):
     #data = id
@@ -14,14 +15,15 @@ def generate_qr(data):
     userQr.save(f"./static/users/{data}/{data}.png")
 
 
-def createUser(data):
+def createUser(data, verification=0):
     if (Users.findExistingUser(data["email"])):
+        
         return 0
 
     id = str(uuid.uuid4())
-    hashed_pass = pbkdf2_sha256.hash(data["password"])
-    print(data)
+    hashed_pass = pbkdf2_sha256.hash(data["password"]) 
     data['password'] = hashed_pass
+    data['verified'] = verification
 
     generate_qr(id)
 
@@ -29,8 +31,9 @@ def createUser(data):
     db.session.add(user)
     db.session.commit()
 
-    user_db_data = Users.findExistingUser(data["email"])
+
     
+    user_db_data = Users.findExistingUser(data["email"])  
     return user_db_data
 
 
@@ -39,6 +42,9 @@ def createUser_oauth(data):
         return user_in_db
 
     id = str(uuid.uuid4())  
+
+    
+    data['verified'] = 1
     
     generate_qr(id)
 
@@ -71,6 +77,20 @@ def update_user_details(data):
     user.update(data)
     db.session.add(user)
     db.session.commit()  
+
+def update_user_details_veri(data):
+    user = Users.query.filter_by(email=data['email']).first() 
+
+    if not user:
+        return -1  
+     
+    user.update(data)
+    db.session.add(user)
+    db.session.commit()  
+    
+    user_db_data = Users.findExistingUser(data["email"])
+    
+    return user_db_data
  
     # user.phone_number = data.get("phone_number", None)
     # user.first_name = data.get("first_name", None)

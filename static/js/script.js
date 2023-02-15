@@ -138,6 +138,7 @@ function getCookie(cname) {
 function load_hash() {
   var hash = getCookie("hash");
   document.getElementById("hash").value = hash;
+  return hash;
 }
 function load_details() {
   load_hash();
@@ -145,6 +146,8 @@ function load_details() {
   document.getElementById("first_name").value = first_name;
   var last_name = getCookie("last_name");
   document.getElementById("last_name").value = last_name;
+  var ph_number = getCookie("phone");
+  document.getElementById("ph_number").value = ph_number;
 }
 
 // Date loader //
@@ -172,4 +175,50 @@ function load_date(set_default = false) {
       'select[name="graduate_year"] option[value=""]'
     ).disabled = true;
   } */
+}
+
+// Sign In check //
+function sign_in_check(n) {
+  h = getCookie("hash");
+  console.log(h);
+  if (h) {
+    // window.location.replace("/");
+    switch (n) {
+      case 0: {
+        window.location.replace("/");
+        break;
+      }
+      case 1: {
+        var user_details = getCookie("user_details");
+        if (user_details) {
+          window.location.replace("/");
+        }
+        window.location.replace("/login");
+        break;
+      }
+    }
+  } else {
+  }
+}
+
+// Profile edit function //
+function profile_edit(input_) {
+  var element = document.getElementById(input_);
+  element.disabled = false;
+  element.readOnly = false;
+  element.focus();
+  var child_element = element.nextElementSibling.firstElementChild;
+  child_element.classList.remove("fa-edit");
+  child_element.classList.add("fa-save");
+}
+function profile_onblur(element, default_value) {
+  element.disabled = true;
+  element.readOnly = true;
+  if (!element.value) {
+    element.value = default_value;
+  }
+
+  var child_element = element.nextElementSibling.firstElementChild;
+  child_element.classList.remove("fa-save");
+  child_element.classList.add("fa-edit");
 }

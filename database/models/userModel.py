@@ -1,17 +1,10 @@
 import datetime
 import os
 
-import hashlib
-import uuid
 
 from database.database import db
+from utils.email_system import generate_hash
 
-
-def generate_hash():
-    encrpass = str(uuid.uuid4())
-    encrpass = hashlib.sha256(encrpass.encode())
-    Hash = encrpass.hexdigest()
-    return Hash
 
 class Users(db.Model):
     __tablename__ = 'users'
@@ -19,6 +12,7 @@ class Users(db.Model):
     email = db.Column(db.String(50))
     password = db.Column(db.String(500), server_default=None)
     phone_number = db.Column(db.VARCHAR(16), server_default=None)
+    verified = db.Column(db.VARCHAR(16), server_default='0')
     first_name = db.Column(db.String(30), server_default='')
     last_name = db.Column(db.String(30), server_default='')
     stage_two = db.Column(db.Integer, server_default='0')
@@ -42,6 +36,7 @@ class Users(db.Model):
         self.email = data.get("email")
         self.password = password
         self.phone_number = data.get("phone_number", None)
+        self.verified = data.get("verified", '0') 
         self.first_name = data.get("first_name", None)
         self.last_name = data.get("last_name", None)
         self.stage_two = data.get("stage_two", '0')
@@ -67,6 +62,8 @@ class Users(db.Model):
             self.first_name = data.get("first_name", None) 
         if "last_name" in data:
             self.last_name = data.get("last_name", None) 
+        if "verified" in data: 
+            self.verified = data.get("verified", '0') 
         if "stage_two" in data:
             self.stage_two = data.get("stage_two", '0') 
         if "institute" in data:

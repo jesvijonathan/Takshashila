@@ -1,5 +1,7 @@
 from flask_jwt_extended import JWTManager
 from flask import jsonify
+import hashlib
+import uuid
 
 jwt = JWTManager()
 
@@ -62,3 +64,10 @@ class JWT():
             ),
             401,
         )
+
+
+def generate_hash():
+    encrpass = str(uuid.uuid4())
+    encrpass = hashlib.sha512(encrpass.encode())
+    Hash = encrpass.hexdigest()
+    return Hash

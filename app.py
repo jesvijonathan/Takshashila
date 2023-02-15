@@ -15,27 +15,22 @@ from blueprints.staticBlp import staticBlp
 
 from blueprints.eventBlp import eventBlp
 
+from utils.email_system import email
+from controllers.verificationController import *
+
 load_dotenv()
+
 
 app = Flask(__name__)
 app.secret_key = os.getenv('SECRET')
 app.config["API_TITLE"] = "TK2023 Rest API"
 app.config["API_VERSION"] = "v1"
 app.config["OPENAPI_VERSION"] = "3.0.3"
+ 
 
 
 
-system_email = "your email (check less secure option, google it)"
-system_ps = "your password"
-domain = "127.0.0.1:5000" #local host
 
-mail = Mail(app)  
-app.config["MAIL_SERVER"]='smtp.gmail.com'  
-app.config["MAIL_PORT"] = 465      
-app.config["MAIL_USERNAME"] = os.getenv('SECRET')
-app.config['MAIL_PASSWORD'] = system_ps
-app.config['MAIL_USE_SSL'] = True  
-mail = Mail(app)
 
 # cache = Cache(config={'CACHE_TYPE': 'simple'})
 # cache = Cache(app)
@@ -43,11 +38,15 @@ mail = Mail(app)
 api = Api(app)
 Database(app)
 JWT(app)
+email(app)
 
 
 @app.before_first_request
 def create_tables():
     db.create_all()
+
+
+
 
 @app.route("/")
 # @cache.cached(timeout=2)
@@ -70,4 +69,5 @@ api.register_blueprint(loginBlp)
 api.register_blueprint(feedBackBlp)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True, threaded=False)
+    
