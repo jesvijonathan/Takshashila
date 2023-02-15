@@ -435,7 +435,7 @@ select {
 
 .edit_icon_container {
   position: absolute;
-  right: 3vw;
+  right: 2.8vw;
   /* padding: 1vw; */
   height: 2vw;
   width: 2vw;
@@ -443,21 +443,17 @@ select {
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
-  color: #000000;
+  color: #2e2e2e;
 }
 
 .edit_icon {
-  font-size: 1vw !important;
+  font-size: 0.8vw !important;
   height: 0.8vw;
-  transition: 0.3s ease-in-out;
 }
 
 .edit_icon_container:hover .edit_icon {
   color: #000000;
   font-weight: 600;
-}
-
-.overview_desc_input {
 }
 
 .overview_input_ata {

@@ -70,7 +70,7 @@ def callback():
 
     resp = None
     redirect_url="http://127.0.0.1:5000/"
-    
+    f =0
     if not user_db_data.stage_two:
         redirect_url="http://127.0.0.1:5000/user_details"  
         f =1
