@@ -23,8 +23,8 @@ from utils.email_system import send_verification_email, send_email
 # from controllers.userController import createUser
 
 staticBlp = Blueprint("staticBlp", __name__, url_prefix='/')
-
-auth_pop = int(os.getenv('AUTH_POPUP'))
+# int(os.getenv('AUTH_POPUP'))
+auth_pop = 0
 
 @staticBlp.route("/profile/<hash>")
 # @cache.cached(timeout=2)

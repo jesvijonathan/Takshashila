@@ -20,6 +20,9 @@ from controllers.verificationController import *
 
 load_dotenv()
 
+project_folder = os.path.expanduser('~/my-project-dir')  # adjust as appropriate
+load_dotenv(os.path.join(project_folder, '.env'))
+
 
 app = Flask(__name__)
 app.secret_key = os.getenv('SECRET')
@@ -27,9 +30,10 @@ app.config["API_TITLE"] = "TK2023 Rest API"
 app.config["API_VERSION"] = "v1"
 app.config["OPENAPI_VERSION"] = "3.0.3"
  
-
-
-
+try:
+    os.mkdir(f"./static/users/qr")
+except:
+    print("user/qr already exists")
 
 
 # cache = Cache(config={'CACHE_TYPE': 'simple'})
