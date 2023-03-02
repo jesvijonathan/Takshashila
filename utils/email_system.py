@@ -9,9 +9,12 @@ from controllers.verificationController import *
 
  
 
-domain = os.getenv('SERVER_URL') 
-system_email = os.getenv('SYSTEM_EMAIL')
-system_email_password  = os.getenv('SYSTEM_EMAIL_PASSWORD')
+# domain = os.getenv('SERVER_URL') 
+domain = "takshashila.pythonanywhere.com"
+# system_email = os.getenv('SYSTEM_EMAIL')
+# system_email_password  = os.getenv('SYSTEM_EMAIL_PASSWORD')
+system_email = "support-takshashila@citchennai.net"
+system_email_password = "tk2023@cit"
 
 mail = None
 

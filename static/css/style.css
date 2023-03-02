@@ -212,7 +212,7 @@ form {
 .google_oauth_text {
   width: 1.8vw;
   height: 1.8vw;
-  background: url(/static/image/google_logo.png);
+  background: url("/image/google_logo.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

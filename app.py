@@ -20,16 +20,21 @@ from controllers.verificationController import *
 
 load_dotenv()
 
+project_folder = os.path.expanduser('~/my-project-dir')  # adjust as appropriate
+load_dotenv(os.path.join(project_folder, '.env'))
 
-app = Flask(__name__)
+
+app = Flask(__name__, static_url_path='/')
 app.secret_key = os.getenv('SECRET')
 app.config["API_TITLE"] = "TK2023 Rest API"
 app.config["API_VERSION"] = "v1"
 app.config["OPENAPI_VERSION"] = "3.0.3"
+
  
-
-
-
+try:
+    os.mkdir(f"./users/qr")
+except:
+    print("user qr already exists")
 
 
 # cache = Cache(config={'CACHE_TYPE': 'simple'})
@@ -52,6 +57,16 @@ def create_tables():
 # @cache.cached(timeout=2)
 def index():
     return render_template("index.html")
+
+@app.route("/events")
+# @cache.cached(timeout=2)
+def events():
+    return render_template("events.html")
+
+@app.route("/events#/<text>")
+# @cache.cached(timeout=2)
+def nig():
+    return render_template("events.html")
 
 
 @app.errorhandler(404)

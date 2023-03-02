@@ -23,8 +23,9 @@ from utils.email_system import send_verification_email, send_email
 # from controllers.userController import createUser
 
 staticBlp = Blueprint("staticBlp", __name__, url_prefix='/')
-
-auth_pop = int(os.getenv('AUTH_POPUP'))
+# int(os.getenv('AUTH_POPUP'))
+auth_pop = 0
+domain="http://takshashila.pythonanywhere.com"
 
 @staticBlp.route("/profile/<hash>")
 # @cache.cached(timeout=2)
@@ -74,8 +75,8 @@ raw_data = Users.findExistingUserByHash(hash=hash)
 class authlogin(MethodView):
     def get(self):
 
-        if auth_pop == 1:
-            return render_template("login.html", js= ("javascript:popstasticopener('" + loginBlp.login_auth_url() + "');"))
+        # if auth_pop == 1:
+        #     return render_template("login.html", js= ("javascript:popstasticopener('" + loginBlp.login_auth_url() + "');"))
         return render_template("login.html", js=loginBlp.login_auth_url())
     
     def post(self):
@@ -92,10 +93,10 @@ class authlogin(MethodView):
                 
                 if (user_in_db.password) and (pbkdf2_sha256.verify(user_password, user_in_db.password)):
                     resp = None
-                    redirect_url="http://127.0.0.1:5000/"
+                    redirect_url=domain
 
                     if not user_in_db.stage_two:
-                        redirect_url="http://127.0.0.1:5000/user_details"  
+                        redirect_url=domain+"user_details"  
 
                     resp = make_response(redirect(redirect_url))
                         #resp = make_response(render_template("oauth_redirect_home.html", redirect=redirect_url))   
@@ -155,10 +156,10 @@ def registration_auth(Hash=""):
     db.session.commit()
     
     resp = None
-    redirect_url="http://127.0.0.1:5000/"
+    redirect_url=domain
 
     if not user_db_data.stage_two:
-        redirect_url="http://127.0.0.1:5000/user_details"  
+        redirect_url=domain+"user_details"  
 
     resp = make_response(redirect(redirect_url))
         #resp = make_response(render_template("oauth_redirect_home.html", redirect=redirect_url))   
