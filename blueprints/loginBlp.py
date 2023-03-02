@@ -14,7 +14,13 @@ import google.auth.transport.requests
 
 from controllers.userController import createUser_oauth
 
+import flask
+import google.oauth2.credentials
+import google_auth_oauthlib.flow
+import googleapiclient.discovery
+
 loginBlp = Blueprint("loginBlp", __name__, url_prefix='/auth')
+SCOPES = ['email', 'profile']
 
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 auth_pop = 0
@@ -47,9 +53,14 @@ def login():
 
 @loginBlp.route("/callback")
 def callback():
-    # flow.fetch_token(authorization_response=request.url)
-    # if not session["state"] == request.args["state"]:
-    #     abort(500)
+    state = flask.session['state']
+    flow = google_auth_oauthlib.flow.Flow.from_client_secrets_file(
+        client_secrets_file, scopes=SCOPES, state=state)
+    flow.redirect_uri = flask.url_for('oauth2callback', _external=True)
+
+    # Use the authorization server's response to fetch the OAuth 2.0 tokens.
+    authorization_response = flask.request.url
+    flow.fetch_token(authorization_response=authorization_response)
 
     credentials = flow.credentials
     request_session = requests.session()

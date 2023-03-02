@@ -1,9 +1,12 @@
 import os
+
 from dotenv import load_dotenv
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, redirect, url_for, session
 from flask_smorest import Api
 from flask_caching import Cache
 from flask_mail import Mail
+from flask_dance.contrib.google import make_google_blueprint, google
+
 
 from utils.jwt import JWT
 from database import Database, db
@@ -73,6 +76,26 @@ def events():
 # @cache.cached(timeout=2)
 def nig():
     return render_template("events.html")
+ 
+
+blueprint = make_google_blueprint(
+    client_id="562058780483-q59qv7347cgqujgebrsf15n6b0u8uhmq.apps.googleusercontent.com",
+    client_secret="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",
+    redirect_url="http://127.0.0.1:5000",
+    scope=["profile", "email"],
+)
+
+app.register_blueprint(blueprint, url_prefix="/login")
+
+@app.route("/google_login")
+def index():
+    if not google.authorized:
+        return redirect(url_for("google.login"))
+    resp = google.get("/oauth2/v2/userinfo")
+    assert resp.ok, resp.text
+    email = resp.json()["email"]
+    return f"Logged in as {email}"
+
 
 
 @app.errorhandler(404)
