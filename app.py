@@ -81,7 +81,14 @@ def nig():
 blueprint = make_google_blueprint(
     client_id="562058780483-q59qv7347cgqujgebrsf15n6b0u8uhmq.apps.googleusercontent.com",
     client_secret="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",
-    redirect_url="http://127.0.0.1:5000",
+    redirect_url= [
+      "http://127.0.0.1:5000",
+      "http://127.0.0.1:5000/auth/callback",
+      "http://127.0.0.1:5000/auth/oauth_redirect",
+      "https://takshashila.pythonanywhere.com",
+      "https://takshashila.pythonanywhere.com/auth/callback",
+      "https://takshashila.pythonanywhere.com/auth/oauth_redirect"
+    ],
     scope=["profile", "email"],
 )
 
