@@ -25,6 +25,8 @@ load_dotenv(os.path.join(project_folder, '.env'))
 
 
 app = Flask(__name__, static_url_path='/')
+app.app_context().push() 
+
 app.secret_key = os.getenv('SECRET')
 app.config["API_TITLE"] = "TK2023 Rest API"
 app.config["API_VERSION"] = "v1"
@@ -33,7 +35,8 @@ app.config["OPENAPI_VERSION"] = "3.0.3"
 app.config['SQLALCHEMY_POOL_RECYCLE'] = 280
 app.config['SQLALCHEMY_POOL_TIMEOUT'] = 10
 app.config['SQLALCHEMY_POOL_PRE_PING'] = True
- 
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
 try:
     os.mkdir(f"./users")
 except:

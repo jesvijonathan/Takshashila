@@ -47,7 +47,7 @@ class Users(db.Model):
         self.type = data.get("type", 'student') 
         self.qr_id = data.get("qr_id", None)
         self.user_qr = data.get(
-            "user_qr", (domain +"+users/"+ str(id)+".png"))
+            "user_qr", (domain +"users/"+ str(id)+".png"))
         self.hash = generate_hash()
         self.google_id = data.get("google_id", None)
         self.created_at = datetime.datetime.now()
