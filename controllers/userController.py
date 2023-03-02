@@ -8,10 +8,12 @@ from database import Users, db
 
 from controllers.verificationController import create_verification
 
+server_path = "/home/takshashila/Takshashila-2023-Backend/"
+
 def generate_qr(data):
     #data = id
     userQr = qrcode.make(data)    
-    userQr.save(f"./users/qr/{data}.png")
+    userQr.save(server_path + "users/" + data+  ".png")
 
 
 def createUser(data, verification=0):

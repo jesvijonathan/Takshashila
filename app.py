@@ -32,7 +32,7 @@ app.config["OPENAPI_VERSION"] = "3.0.3"
 
  
 try:
-    os.mkdir(f"./users/qr")
+    os.mkdir(f"./users")
 except:
     print("user qr already exists")
 
