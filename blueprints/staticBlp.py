@@ -25,7 +25,7 @@ from utils.email_system import send_verification_email, send_email
 staticBlp = Blueprint("staticBlp", __name__, url_prefix='/')
 # int(os.getenv('AUTH_POPUP'))
 auth_pop = 0
-domain="http://takshashila.pythonanywhere.com"
+domain="http://takshashila.pythonanywhere.com/"
 
 @staticBlp.route("/profile/<hash>")
 # @cache.cached(timeout=2)
