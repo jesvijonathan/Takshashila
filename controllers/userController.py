@@ -13,7 +13,7 @@ server_path = "/home/takshashila/Takshashila-2023-Backend/"
 def generate_qr(data):
     #data = id
     userQr = qrcode.make(data)    
-    userQr.save(server_path + "users/" + data+  ".png")
+    userQr.save(server_path + "static/users/" + data+  ".png")
 
 
 def createUser(data, verification=0):
