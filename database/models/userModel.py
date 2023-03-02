@@ -47,7 +47,7 @@ class Users(db.Model):
         self.type = data.get("type", 'student') 
         self.qr_id = data.get("qr_id", None)
         self.user_qr = data.get(
-            "user_qr", f"{os.getenv('SERVER_URL')}/static/users/qr/{id}.png")
+            "user_qr", f"{os.getenv('SERVER_URL')}/users/qr/{id}.png")
         self.hash = generate_hash()
         self.google_id = data.get("google_id", None)
         self.created_at = datetime.datetime.now()
@@ -78,6 +78,8 @@ class Users(db.Model):
             self.stage_two = data.get("stage_two", None)    
         if "hash" in data:
             self.hash = data.get("hash", None)  
+
+            
     def getAllUsers():
         return Users.query.all()
 

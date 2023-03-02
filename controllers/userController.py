@@ -11,7 +11,7 @@ from controllers.verificationController import create_verification
 def generate_qr(data):
     #data = id
     userQr = qrcode.make(data)    
-    userQr.save(f"./static/users/qr/{data}.png")
+    userQr.save(f"./users/qr/{data}.png")
 
 
 def createUser(data, verification=0):
