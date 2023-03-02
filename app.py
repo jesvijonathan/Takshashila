@@ -34,7 +34,7 @@ app.config["OPENAPI_VERSION"] = "3.0.3"
 try:
     os.mkdir(f"./users/qr")
 except:
-    print("user/qr already exists")
+    print("user qr already exists")
 
 
 # cache = Cache(config={'CACHE_TYPE': 'simple'})
