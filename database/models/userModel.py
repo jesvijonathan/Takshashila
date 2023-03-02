@@ -4,7 +4,7 @@ import os
 
 from database.database import db
 from utils.email_system import generate_hash
-
+domain = "https://takshashila.pythonanywhere.com"
 
 class Users(db.Model):
     __tablename__ = 'users'
@@ -47,7 +47,7 @@ class Users(db.Model):
         self.type = data.get("type", 'student') 
         self.qr_id = data.get("qr_id", None)
         self.user_qr = data.get(
-            "user_qr", f"{os.getenv('SERVER_URL')}/users/qr/{id}.png")
+            "user_qr", (domain +"+/users/qr/"+ str(id)+".png"))
         self.hash = generate_hash()
         self.google_id = data.get("google_id", None)
         self.created_at = datetime.datetime.now()

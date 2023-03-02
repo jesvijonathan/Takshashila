@@ -19,7 +19,8 @@ loginBlp = Blueprint("loginBlp", __name__, url_prefix='/auth')
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 auth_pop = 0
 domain = "http://takshashila.pythonanywhere.com"
-server_url =os.getenv('SERVER_URL')
+# server_url =os.getenv('SERVER_URL')
+server_url = "http://takshashila.pythonanywhere.com"
 
 GOOGLE_CLIENT_ID = "562058780483-q59qv7347cgqujgebrsf15n6b0u8uhmq.apps.googleusercontent.com"
 client_secrets_file = os.path.join(
