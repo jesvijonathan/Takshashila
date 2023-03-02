@@ -30,6 +30,9 @@ app.config["API_TITLE"] = "TK2023 Rest API"
 app.config["API_VERSION"] = "v1"
 app.config["OPENAPI_VERSION"] = "3.0.3"
 
+app.config['SQLALCHEMY_POOL_RECYCLE'] = 280
+app.config['SQLALCHEMY_POOL_TIMEOUT'] = 10
+app.config['SQLALCHEMY_POOL_PRE_PING'] = True
  
 try:
     os.mkdir(f"./users")
