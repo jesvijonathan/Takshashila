@@ -38,7 +38,7 @@ app.config['SQLALCHEMY_POOL_PRE_PING'] = True
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 try:
-    os.mkdir(f"./users")
+    os.mkdir("/home/takshashila/Takshashila-2023-Backend/static/users")
 except:
     print("user qr already exists")
 
