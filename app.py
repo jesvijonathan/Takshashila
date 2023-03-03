@@ -162,7 +162,7 @@ def page_not_found(e):
 def edit():
     with open('/home/takshashila/Takshashila-2023-Backend/static/pevents.json', 'r') as f:
         data = json.load(f)
-    return render_template('edit.html', data=json.dumps(data, indent=4, separators=(". ", " = ")))
+    return render_template('edit.html', data=json.dumps(data, indent=4))
 
 
 @app.route('/update', methods=['POST'])

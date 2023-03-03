@@ -7,7 +7,7 @@ app = Flask(__name__, static_url_path='/')
 def index():
     with open('./static/pevents.json', 'r') as f:
         data = json.load(f)
-    return render_template('edit.html', data=json.dumps(data, indent=4, separators=(". ", " = ")))
+    return render_template('edit.html', data=json.dumps(data, indent=4))
 
 @app.route('/update', methods=['POST'])
 def update():
