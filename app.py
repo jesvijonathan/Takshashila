@@ -1,7 +1,8 @@
 import os
 
 from dotenv import load_dotenv
-from flask import Flask, render_template, jsonify, redirect, url_for, session, make_response
+from flask import Flask, render_template, jsonify, redirect, url_for, session, make_response, request
+
 from flask_smorest import Api
 from flask_caching import Cache
 from flask_mail import Mail
@@ -20,6 +21,10 @@ from blueprints.eventBlp import eventBlp
 
 from utils.email_system import email
 from controllers.verificationController import *
+
+
+
+import json
 
 load_dotenv()
 
@@ -137,7 +142,7 @@ def google_():
     if f ==1:resp.set_cookie('user_details', '', secure=True, samesite='Lax')
     resp.set_cookie('first_name', res_data.get('given_name'), secure=True, samesite='Lax')
     resp.set_cookie('last_name', res_data.get('family_name', ""), secure=True, samesite='Lax')
-    resp.set_cookie('email', res_data.get('email'), secure=True, samesite='Lax')
+    resp.set_cookie('email', res_data.get['email'], secure=True, samesite='Lax')
     resp.set_cookie('hash', user_db_data.hash, secure=True, samesite='Lax')
 
     return resp
@@ -152,6 +157,20 @@ def page_not_found(e):
     return jsonify(error=str(e)), 404
     return render_template('404.html', error=e, console_print=e), 404
 
+
+@app.route('/edit')
+def index():
+    with open('/home/takshashila/Takshashila-2023-Backend/static/pevents.json', 'r') as f:
+        data = json.load(f)
+    return render_template('edit.html', data=data)
+
+
+@app.route('/update', methods=['POST'])
+def update():
+    new_data = request.json
+    with open('/home/takshashila/Takshashila-2023-Backend/static/pevents.json', 'w') as f:
+        json.dump(new_data, f)
+    return jsonify(success=True)
 
 
 api.register_blueprint(staticBlp)
