@@ -144,7 +144,7 @@ def google_():
     if f ==1:resp.set_cookie('user_details', '', secure=True, samesite='Lax')
     resp.set_cookie('first_name', res_data.get('given_name'), secure=True, samesite='Lax')
     resp.set_cookie('last_name', res_data.get('family_name', ""), secure=True, samesite='Lax')
-    resp.set_cookie('email', res_data.get['email'], secure=True, samesite='Lax')
+    resp.set_cookie('email', res_data['email'], secure=True, samesite='Lax')
     resp.set_cookie('hash', user_db_data.hash, secure=True, samesite='Lax')
 
     return resp
