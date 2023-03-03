@@ -21,6 +21,7 @@ from blueprints.eventBlp import eventBlp
 
 from utils.email_system import email
 from controllers.verificationController import *
+from sqlalchemy.orm import Session
 
 
 
@@ -47,8 +48,9 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 @app.teardown_request
 def session_clear(exception=None):
-    if exception and db.is_active:
-        db.rollback()
+    db.session.close()
+    db.session.remove()
+    
 
 try:
     os.mkdir("/home/takshashila/Takshashila-2023-Backend/static/users")
@@ -162,7 +164,7 @@ def page_not_found(e):
 def edit():
     with open('/home/takshashila/Takshashila-2023-Backend/static/pevents.json', 'r') as f:
         data = json.load(f)
-    return render_template('edit.html', data=json.dumps(data, indent=4))
+    return render_template('edit.html', data=json.dumps(data, indent=4, ))
 
 
 @app.route('/update', methods=['POST'])
