@@ -1,16 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>View and Edit JSON</title>
+    <title>Events Json | Takshashila</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./butter.js"></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <h1>View and Edit JSON</h1>
+  <body style="cursor: unset !important">
+    <div class="json_view_cont">
+      <div class="json_title">
+        Events Json Editor
+        <div class="json_edited" id="json_edited"></div>
+      </div>
+      <textarea class="json_view" id="json_view">{{ data }}</textarea>
+    </div>
+    <div class="save_but_con">
+      <button
+        class="hov_dis"
+        type="button"
+        id="save_but"
+        style="min-width: 9vw"
+        disabled
+      >
+        Save
+      </button>
+    </div>
+    <!-- <h1>Events Json</h1>
     <pre>{{ data }}</pre>
     <h2>Edit JSON</h2>
     <textarea id="new-data" rows="10" cols="80">{{ data|tojson }}</textarea>
     <br />
-    <button onclick="saveData()">Save</button>
+    <button onclick="saveData()">Save</button> -->
 
+    <!-- <script type="text/javascript">
+  $(document).ready(function () {
+    var data;
+    
+
+    fetch("./pevents.json") // Call the fetch function passing the url of the API as a parameter
+      .then((res) => res.json())
+      .then(function (res) {
+        data = res;
+        set_json(res);
+        // Your code for handling the data you get from the API
+
+        for (i = 0; i < data.length; i++) {
+          jata = data[i];
+          inner_details = "";
+        }
+      })
+      .catch(function () {
+        // This is where you run code if the server returns any errors
+      });
+  });
+
+    </script> -->
+
+    <script>
+      const def_data = document.getElementById("json_view").value;
+
+      document.getElementById("json_view").onkeyup = function (e) {
+        if (def_data == document.getElementById("json_view").value) {
+          document.getElementById("json_edited").innerHTML = "";
+          document.getElementById("save_but").disabled = true;
+          document.getElementById("save_but").classList.remove("save_but");
+        } else {
+          document.getElementById("json_edited").innerHTML = "*Edited";
+          document.getElementById("save_but").disabled = false;
+          document.getElementById("save_but").classList.add("save_but");
+        }
+      };
+    </script>
     <script>
       function saveData() {
         var newData = JSON.parse(document.getElementById("new-data").value);
