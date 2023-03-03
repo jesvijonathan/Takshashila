@@ -33,6 +33,7 @@
         id="save_but"
         style="min-width: 9vw"
         disabled
+        onclick="saveData()"
       >
         Save
       </button>
@@ -85,7 +86,7 @@
     </script>
     <script>
       function saveData() {
-        var newData = JSON.parse(document.getElementById("new-data").value);
+        var newData = JSON.parse(document.getElementById("json_view").value);
         fetch("/update", {
           method: "POST",
           headers: {

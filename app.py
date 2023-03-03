@@ -158,7 +158,7 @@ def page_not_found(e):
     return render_template('404.html', error=e, console_print=e), 404
 
 
-@app.route('/edit')
+@app.route('/edit_events')
 def edit():
     with open('/home/takshashila/Takshashila-2023-Backend/static/pevents.json', 'r') as f:
         data = json.load(f)
