@@ -2441,3 +2441,14 @@ button:hover {
   opacity: 1;
   margin-left: 7%;
 }
+
+.open_sson {
+  position: absolute;
+  font-family: "Jura";
+  font-size: 2vw;
+  color: white;
+  left: 50%;
+  top: 77%;
+  width: fit-content;
+  transform: translate(-50%, -77%);
+}
