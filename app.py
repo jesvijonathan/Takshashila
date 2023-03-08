@@ -76,6 +76,11 @@ def create_tables():
 
 @app.route("/")
 # @cache.cached(timeout=2)
+def soon():
+    return render_template("soon.html")
+
+@app.route("/home")
+# @cache.cached(timeout=2)
 def index():
     return render_template("index.html")
 
