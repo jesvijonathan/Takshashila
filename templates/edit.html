@@ -27,14 +27,11 @@
       <textarea class="json_view" id="json_view">{{ data }}</textarea>
     </div>
     <div class="save_but_con">
-      <button
-        type="button"
-        id="down_but"
-        style="min-width: 9vw"
-        onclick="down_json()"
-      >
-        Download
-      </button>
+      <a href="./events.json" download="./events.json">
+        <button type="button" id="down_but" style="min-width: 9vw">
+          Download
+        </button>
+      </a>
 
       <button
         class="hov_dis"
@@ -78,19 +75,19 @@
     </script> -->
 
     <script>
-      function down_json() {
-        var data = document.getElementById("json_view").value;
+      // function down_json() {
+      //   var data = document.getElementById("json_view").value;
 
-        var excelBlob = new Blob(
-          [data],
-          { type: "text/plain;charset=utf-8" },
-          "events.json"
-        );
-        // var link = window.URL.createObjectURL(excelBlob);
-        // // window.location = link;
-        // saveAs(excelBlob, "events.json");
-        window.open("./events.json", "_blank");
-      }
+      //   var excelBlob = new Blob(
+      //     [data],
+      //     { type: "text/plain;charset=utf-8" },
+      //     "events.json"
+      //   );
+      //   // var link = window.URL.createObjectURL(excelBlob);
+      //   // // window.location = link;
+      //   // saveAs(excelBlob, "events.json");
+      //   window.open("./events.json", "_blank");
+      // }
 
       const def_data = document.getElementById("json_view").value;
 
