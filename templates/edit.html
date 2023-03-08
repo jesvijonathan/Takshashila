@@ -16,7 +16,7 @@
     ></script>
 
     <script src="./butter.js"></script>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body style="cursor: unset !important">
     <div class="json_view_cont">
@@ -28,10 +28,18 @@
     </div>
     <div class="save_but_con">
       <button
+        type="button"
+        id="down_but"
+        style="min-width: 9vw"
+        onclick="down_json()"
+      >
+        Download
+      </button>
+
+      <button
         class="hov_dis"
         type="button"
         id="save_but"
-        style="min-width: 9vw"
         disabled
         onclick="saveData()"
       >
@@ -50,7 +58,7 @@
     var data;
     
 
-    fetch("./pevents.json") // Call the fetch function passing the url of the API as a parameter
+    fetch("./events.json") // Call the fetch function passing the url of the API as a parameter
       .then((res) => res.json())
       .then(function (res) {
         data = res;
@@ -70,6 +78,20 @@
     </script> -->
 
     <script>
+      function down_json() {
+        var data = document.getElementById("json_view").value;
+
+        var excelBlob = new Blob(
+          [data],
+          { type: "text/plain;charset=utf-8" },
+          "events.json"
+        );
+        // var link = window.URL.createObjectURL(excelBlob);
+        // // window.location = link;
+        // saveAs(excelBlob, "events.json");
+        window.open("./events.json", "_blank");
+      }
+
       const def_data = document.getElementById("json_view").value;
 
       document.getElementById("json_view").onkeyup = function (e) {
@@ -108,3 +130,95 @@
     </script>
   </body>
 </html>
+
+<style>
+  .json_view_cont {
+    width: 56%;
+    height: 72%;
+    background: rgb(0, 0, 0);
+    color: white;
+    cursor: initial;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+  }
+
+  .json_view {
+    width: -webkit-fill-available;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    color: white;
+    left: 50%;
+    top: 50%;
+    border: 2px solid transparent;
+  }
+  .json_view:focus {
+    border: 2px solid rgb(255, 255, 255);
+  }
+  .json_title {
+    background: white;
+    color: black;
+    text-align: center;
+    font-family: "oo";
+    padding: 0.4vw;
+    text-decoration: none;
+    user-select: none;
+    font-size: 1vw;
+    gap: 0.3vw;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    /* word-spacing: 0.3vw; */
+    /* flex-direction: column;*/
+  }
+
+  .json_edited {
+    color: rgb(0, 210, 0);
+  }
+
+  .save_but_con {
+    display: flex;
+    width: fit-content;
+    height: 9vw;
+    left: 50%;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vw;
+    padding-bottom: 1vw;
+    align-content: center;
+    transform: translate(-50%, 0);
+    gap: 2vw;
+  }
+
+  .hov_dis {
+    opacity: 0;
+    min-width: 0vw;
+    width: 0;
+  }
+  .hov_dis.hov_dis:hover {
+    background: none;
+    color: white;
+    cursor: not-allowed;
+  }
+
+  .save_but {
+    border-color: white;
+    text-decoration: underline;
+    transition: 0.5s ease;
+    cursor: pointer !important;
+    opacity: 1;
+    width: fit-content;
+    min-width: 9vw;
+  }
+
+  .save_but:hover {
+    background-color: white !important;
+    color: black !important;
+    transition: 0.2s ease;
+  }
+</style>

@@ -13,9 +13,9 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script defer src="./js/cursor.js"></script>
+    <script defer src="./cursor.js"></script>
     <script src="./butter.js"></script>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body class="eve_body">
@@ -673,7 +673,7 @@
   $(document).ready(function () {
     var data;
 
-    fetch("./pevents.json") // Call the fetch function passing the url of the API as a parameter
+    fetch("./events.json") // Call the fetch function passing the url of the API as a parameter
       .then((res) => res.json())
       .then(function (res) {
         data = res;
