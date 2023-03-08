@@ -27,7 +27,7 @@
       <textarea class="json_view" id="json_view">{{ data }}</textarea>
     </div>
     <div class="save_but_con">
-      <a href="./events.json" download="./events.json">
+      <a href="./events.json" download="events.json">
         <button type="button" id="down_but" style="min-width: 9vw">
           Download
         </button>
@@ -115,7 +115,7 @@
         })
           .then((response) => {
             if (response.ok) {
-              alert("Data saved successfully!");
+              alert("Data saved successfully !");
             } else {
               alert("Error saving data.");
             }
