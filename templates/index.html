@@ -13,6 +13,10 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
+    <meta name="thumbnail" content="favicon.png" />
+
     <script src="./butter.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
@@ -29,6 +33,23 @@
       class="main_logo link_cur"
       data-text="Flame Of Takshashila"
       style="z-index: 100"
+      data-value="false"
+      onclick="if (this.dataset.value == 'true') {
+        this.dataset.value = false;
+        document.getElementById('myVideo').style.display = 'none' ;
+        document.getElementById('image4').style.display = 'block';
+        document.getElementById('image3').style.display = 'block';
+        document.getElementById('image9').style.display = 'block';
+        document.getElementById('pro_sec').style.background = '#131313';
+
+      } else {
+        this.dataset.value = true;
+        document.getElementById('myVideo').style.display = 'block' ;
+        document.getElementById('image4').style.display = 'none';
+        document.getElementById('image3').style.display = 'none';
+        document.getElementById('image9').style.display = 'none';
+        document.getElementById('pro_sec').style.background = 'transparent';
+      }"
     >
       <svg
         width="90"
@@ -128,8 +149,11 @@
     >
   </header>
   <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="./pexels-tima-miroshnichenko-7985887.mp4" type="video/mp4" />
+    </video>
     <div class="main" id="butter">
-      <section>
+      <section id="s0">
         <div class="bg_design" id="image1"></div>
 
         <div class="bg_design bg_2" id="image2"></div>
@@ -198,6 +222,7 @@
                     height="2377.44"
                     transform="rotate(40 1165.19 -1490)"
                     fill="url(#pattern0)"
+                    id="image9"
                   />
                   <rect
                     id="image3"
@@ -469,8 +494,8 @@
         </div>
       </section>
 
-      <section style="height: max-content">
-        <div
+      <section id="pro_sec" style="height: max-content; background: #101010de">
+        <!-- <div 
           class="gallery_cont link_cur jos"
           data-text="Gallery"
           href=""
@@ -490,6 +515,15 @@
               <img src="./ab6761610000e5eb56aacdd934b67725c3dcab7f.jpg" />
             </div>
           </div>
+        </div> -->
+
+        <div
+          class="gallery_text solo_text jos"
+          data-callback="fly_in"
+          data-once="true"
+          style="margin-top: 5vw; margin-bottom: 3vw; padding-top: 4vw"
+        >
+          Pro Shows
         </div>
         <div class="pro_sec">
           <div class="pro_ppl_cont">
@@ -703,7 +737,14 @@
       </section>
 
       <section class="event_section">
-        <div class="event_cont">
+        <div
+          class="gallery_text solo_text jos"
+          data-callback="fly_in"
+          data-once="true"
+        >
+          EVENTS
+        </div>
+        <!-- <div class="event_cont">
           <div
             class="to_title eve jos"
             data-callback="fly_in"
@@ -732,7 +773,7 @@
             Second in Tamil Nadu. Our college has made dreams of thousands of
             students come true<br /><br />
           </div>
-        </div>
+        </div> -->
 
         <div class="event_don">
           <div class="cont jos" data-callback="fade_opaci" data-once="false">
@@ -806,13 +847,80 @@
         </div>
       </section>
 
+      <section style="height: fit-content">
+        <div
+          class="gallery_text solo_text jos"
+          data-callback="fly_in"
+          data-once="true"
+        >
+          Sponsors
+        </div>
+        <div class="spon_cont">
+          <div class="spon_clip">
+            <div class="spn_min">
+              <img
+                class="sponsor_card link_cur"
+                data-text="Sponsor Redirect"
+                src="./sponsors/Group 297.png"
+              />
+              <img
+                class="sponsor_card link_cur"
+                data-text="Sponsor Redirect"
+                src="./sponsors/Group 298.png"
+              />
+              <img
+                class="sponsor_card link_cur"
+                data-text="Sponsor Redirect"
+                src="./sponsors/Group 299.png"
+              />
+              <img
+                class="sponsor_card link_cur"
+                data-text="Sponsor Redirect"
+                src="./sponsors/Group 300.png"
+              />
+              <img
+                class="sponsor_card link_cur"
+                data-text="Sponsor Redirect"
+                src="./sponsors/Group 301.png"
+              />
+            </div>
+
+            <div class="spn_min">
+              <img
+                class="sponsor_card link_cur"
+                data-text="Sponsor Redirect"
+                src="./sponsors/Group 297.png"
+              />
+              <img
+                class="sponsor_card link_cur"
+                data-text="Sponsor Redirect"
+                src="./sponsors/Group 298.png"
+              />
+              <img
+                class="sponsor_card link_cur"
+                data-text="Sponsor Redirect"
+                src="./sponsors/Group 299.png"
+              />
+              <img
+                class="sponsor_card link_cur"
+                data-text="Sponsor Redirect"
+                src="./sponsors/Group 300.png"
+              />
+              <img
+                class="sponsor_card link_cur"
+                data-text="Sponsor Redirect"
+                src="./sponsors/Group 301.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section s2" id="Locon">
         <div
-          class="topic-head ano aos-init aos-animate"
+          class="gallery_text solo_text jos"
+          data-callback="fly_in"
+          data-once="true"
           id="Loconn"
-          style="padding-top: 10vh"
-          data-aos="zoom-in"
-          data-aos-duration="400"
         >
           Location
         </div>
@@ -832,13 +940,13 @@
             data-aos-duration="600"
             style="display: block"
           >
-            <!-- <div>
+            <div>
               <div class="loca">
                 <iframe
                   class="locam"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0006663305403!2d80.04093371482203!3d12.971808890855769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f4d07355bab5%3A0xbb6063169c4ed4d9!2sChennai%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1651592789112!5m2!1sen!2sin"
                   allowfullscreen=""
-                ></iframe> 
+                ></iframe>
 
                 <div class="locamm">
                   <h3>Chennai Institute Of Technology</h3>
@@ -850,7 +958,7 @@
                   </div>
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
 
           <div class="locac fade" style="display: none">
@@ -863,22 +971,38 @@
                   <div class="locmi coon">
                     <ul>
                       <li>
-                        <a href="tel:+919849770286" target="_blank"
+                        <a
+                          class="link_cur loca_a"
+                          data-text="Conatct"
+                          href="tel:+919849770286"
+                          target="_blank"
                           >Ponduru Dinuroop (President | +919849770286)</a
                         >
                       </li>
                       <li>
-                        <a href="tel:+919150612359" target="_blank"
+                        <a
+                          class="link_cur loca_a"
+                          data-text="Conatct"
+                          href="tel:+919150612359"
+                          target="_blank"
                           >Yuva Daranee (Vice President | +919150612359)</a
                         >
                       </li>
                       <li>
-                        <a href="tel:+919003633318" target="_blank"
+                        <a
+                          class="link_cur loca_a"
+                          data-text="Conatct"
+                          href="tel:+919003633318"
+                          target="_blank"
                           >Kamal Roshan (Event Co-ordinator | +919003633318)</a
                         >
                       </li>
                       <li>
-                        <a href="tel:+919384485985" target="_blank"
+                        <a
+                          class="link_cur loca_a"
+                          data-text="Conatct"
+                          href="tel:+919384485985"
+                          target="_blank"
                           >Dhanya Babu (Secretary | +919384485985)</a
                         >
                       </li>
@@ -886,6 +1010,8 @@
                 <br>-->
                       <li>
                         <a
+                          class="link_cur loca_a"
+                          data-text="Conatct"
                           href="https://jesvi.pythonanywhere.com/"
                           target="_blank"
                           >Jesvi Jonathan (<b>Developer 🤖</b>)</a
@@ -896,6 +1022,27 @@
                 <li><a href="tel:+918344477761" target="_blank">Preetiya (Incharge Faculty)</a></li> -->
                       <!-- <li><a href="tel:+918056986115" target="_blank">Dina Padmanaban (Incharge Faculty)</a></li>   -->
                     </ul>
+                  </div>
+                </div>
+                <div class="locamm">
+                  <h3>Useful Links :</h3>
+                  <div class="locmi coon">
+                    <a class="link_cur loca_a" data-text="useful link"
+                      >Feedback</a
+                    >
+                    <a class="link_cur loca_a" data-text="useful link"
+                      >Events</a
+                    >
+                    <a class="link_cur loca_a" data-text="useful link"
+                      >Account</a
+                    >
+                    <a class="link_cur loca_a" data-text="useful link">Merch</a>
+                    <a class="link_cur loca_a" data-text="useful link"
+                      >Events</a
+                    >
+                    <a class="link_cur loca_a" data-text="useful link"
+                      >Account</a
+                    >
                   </div>
                 </div>
               </div>
@@ -1186,8 +1333,48 @@
         </div>
       </footer>
     </div>
+    <div class="notify">
+      <div id="not-cont" class="notify-content">
+        <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
+        {{ msg }} Sign in to your account
+      </div>
+      <div class="notify-button" onclick="accept_cookie()">Dismiss</div>
+    </div>
   </body>
 </html>
+
+<script>
+  // Notify flyer function //
+
+  function accept_cookie() {
+    document.querySelector(".notify").style.padding = "0vw 0vw";
+
+    document.querySelector(".notify").style.opacity = "0";
+    document.querySelector(".notify").style.zIndex = "-1";
+  }
+  function deccept_cookie() {
+    document.querySelector(".notify").style.padding = "1.8vw 1vw";
+
+    document.querySelector(".notify").style.opacity = "1";
+    document.querySelector(".notify").style.zIndex = "1";
+  }
+
+  function notify(text, timeout) {
+    document.getElementById("not-cont").innerHTML = text;
+    // document.querySelector("#not-cont").style.color = "red";
+
+    deccept_cookie();
+
+    if (timeout != -1) {
+      setTimeout(function () {
+        accept_cookie();
+      }, timeout);
+    }
+  }
+
+  onload = notify("Click on the flame of Takshashila", 5000);
+</script>
+
 <script>
   butter.init({
     wrapperId: "butter",
@@ -1314,6 +1501,31 @@
   const observer = new IntersectionObserver(callbackRouter);
   const boxes = document.querySelectorAll(".jos");
   boxes.forEach(observer.observe.bind(observer));
+
+  var sec = document.getElementById("s0");
+  var myvid = document.getElementById("myVideo");
+
+  window.onscroll = function () {
+    myFunction();
+  };
+
+  // Get the navbar
+
+  // Get the offset position of the navbar
+  var sticky = myvid.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= 200) {
+      myvid.classList.add("blur");
+    } else {
+      myvid.classList.remove("blur");
+    }
+  }
+
+  alert(
+    "Website under construction.. \nKeep the link confidential. Do not share or kang my work without my permission."
+  );
 </script>
 
 <!-- 

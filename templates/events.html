@@ -574,7 +574,7 @@
     window.history.pushState(
       "",
       "",
-      "/events".replace(/ /g, "_").toLowerCase()
+      "/events.html".replace(/ /g, "_").toLowerCase()
     );
 
     document.getElementById("eve_list_cont").style.display = "flex";
@@ -754,7 +754,7 @@
     window.history.pushState(
       "page2",
       "Title",
-      ("/events#/" + json_data[e].name).replace(/ /g, "_").toLowerCase()
+      ("/events.html#/" + json_data[e].name).replace(/ /g, "_").toLowerCase()
     );
 
     document.getElementById("eve_title_con").childNodes[3].innerHTML =

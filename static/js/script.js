@@ -180,7 +180,8 @@ function load_date(set_default = false) {
 // Sign In check //
 function sign_in_check(n) {
   h = getCookie("hash");
-  console.log(h);
+  var session_ = getCookie("session");
+  console.log(h && session_);
   if (h) {
     // window.location.replace("/");
     switch (n) {
@@ -193,11 +194,21 @@ function sign_in_check(n) {
         if (user_details) {
           window.location.replace("/");
         }
+
         window.location.replace("/login");
         break;
       }
     }
   } else {
+    switch (n) {
+      case 0: {
+        window.location.replace("/login");
+        break;
+      }
+      case 1: {
+        break;
+      }
+    }
   }
 }
 
@@ -221,4 +232,18 @@ function profile_onblur(element, default_value) {
   var child_element = element.nextElementSibling.firstElementChild;
   child_element.classList.remove("fa-save");
   child_element.classList.add("fa-edit");
+}
+
+// Single page login register system //
+
+function single_page_login(n) {
+  if (n == 1) {
+    document.getElementById("regi").style.transform =
+      "translate(-50%, 100%) scale(0)";
+    window.history.pushState("page2", "Title", "/login");
+  } else {
+    document.getElementById("regi").style.transform =
+      "translate(-50%, -52%) scale(1)";
+    window.history.pushState("page2", "Title", "/login#/signup");
+  }
 }
