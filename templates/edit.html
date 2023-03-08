@@ -116,6 +116,7 @@
           .then((response) => {
             if (response.ok) {
               alert("Data saved successfully !");
+              window.location.reload();
             } else {
               alert("Error saving data.");
             }
