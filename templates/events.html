@@ -154,8 +154,8 @@
         <div class="eve_detail_1">
           <div class="eve_detail_1_1">
             <img
-              style="height: 20vw"
-              src="/photo-1501386761578-eac5c94b800a.jpeg"
+              style="height: 20vw; width: 100%"
+              src="./photo-1501386761578-eac5c94b800a.jpeg"
               id="eve_img"
             />
 
@@ -222,65 +222,31 @@
 
         <div class="eve_detail_2">
           <div class="eve_detail_2_1" id="eve_title_con">
-            <div class="eve_detail_2_1_1">Plush</div>
-            <div class="eve_edtail_2_1_tag">Dance It All The Way</div>
+            <div class="eve_detail_2_1_1"></div>
+            <div class="eve_edtail_2_1_tag"></div>
           </div>
           <div class="eve_detail_2_2" id="eve_detail_2_2">
             <div class="eve_detail_2_2_1">Description</div>
-            <div class="eve_detail_2_2_tag">
-              Dream World Film Festival (DWFF) is an annual 2-day event
-              conducted by VIT Film Society. It acts as an interactive platform
-              for aspiring filmmakers and cinema aficionados to exhibit their
-              skills while gaining a plethora of knowledge. Exhilarating events
-              on topics ranging from film-making technicalities to cinema trivia
-              are also incorporated. DWFF 2023 will feature a line up of
-              industry experts to bestow their knowledge and share their
-              experiences in the various aspects of film making.
-            </div>
+            <div class="eve_detail_2_2_tag"></div>
           </div>
           <div class="eve_detail_2_2">
             <div class="eve_detail_2_2_1">Rules</div>
-            <div class="eve_detail_2_2_tag" id="eve_detail_rules">
-              <div class="eve_rules">
-                It's a single-player game. Only one player is allowed to play at
-                a time.
-              </div>
-              <div class="eve_rules">
-                Hand gestures are used to control the game.
-              </div>
-              <div class="eve_rules">
-                Each player has one chance(life) with a trial gameplay.
-              </div>
-              <div class="eve_rules">
-                Before the game begins, the demo will be shown.
-              </div>
-              <div class="eve_rules">
-                Participants playing order is chosen by lottery system.
-              </div>
-              <div class="eve_rules">
-                The primary criteria for choosing the winner is the distance
-                travelled & coins collected, incase of a tie.
-              </div>
-            </div>
+            <div class="eve_detail_2_2_tag" id="eve_detail_rules"></div>
           </div>
           <div class="eve_detail_2_3">
             <div class="eve_detail_horiz">
               <div class="eve_sec">
                 <div class="eve_detail_2_2_1">Prize</div>
-                <div class="eve_sec_con" id="prize">
-                  <div class="">First Prize : ₹2000</div>
-                  <div class="">Second Prize : ₹1000</div>
-                  <div class="">Third Prize : ₹500</div>
-                </div>
+                <div class="eve_sec_con" id="prize"></div>
               </div>
               <div class="eve_lin"></div>
 
               <div class="eve_sec">
                 <div class="eve_detail_2_2_1">Details</div>
                 <div class="eve_sec_con" id="eve_details">
-                  <div class="">Type : Technical Event</div>
-                  <div class="">Date : 22 March 2023</div>
-                  <div class="">Time : 10:00 am</div>
+                  <div class=""></div>
+                  <div class=""></div>
+                  <div class=""></div>
                 </div>
               </div>
               <div class="eve_lin"></div>
@@ -288,9 +254,9 @@
               <div class="eve_sec">
                 <div class="eve_detail_2_2_1">Contact</div>
                 <div class="eve_sec_con" id="eve_contact">
-                  <div class="">Co-ordinator : Panapan</div>
-                  <div class="">Phone : 701049394</div>
-                  <div class="">Email: sksksk@gmail.com</div>
+                  <div class=""></div>
+                  <div class=""></div>
+                  <div class=""></div>
                 </div>
               </div>
             </div>
@@ -670,7 +636,7 @@
   function set_json(data) {
     json_data = data;
   }
-  $(document).ready(function () {
+  $(document).ready(function load_json() {
     var data;
 
     fetch("./events.json") // Call the fetch function passing the url of the API as a parameter
@@ -680,7 +646,8 @@
         set_json(res);
         // Your code for handling the data you get from the API
 
-        for (i = 0; i < data.length; i++) {
+        for (let i = 0; i < data.length; i++) {
+          console.log("here");
           jata = data[i];
           inner_details = "";
 
@@ -700,9 +667,7 @@
             jata.type +
             "</div>";
           inner_details +=
-            '<div class="eve_line"></div><div>' +
-            jata.batch.date +
-            "</div></div>";
+            '<div class="eve_line"></div><div>' + jata.date + "</div></div>";
           inner_details += '<div class="eve_button">View</div></div>';
 
           html_list.innerHTML +=
@@ -719,8 +684,11 @@
         }
         load_done = true;
       })
-      .catch(function () {
-        // This is where you run code if the server returns any errors
+      .catch(function (e) {
+        // notify("Something Went Wrong :(", 5000);
+        // alert("Something went wrong :(\nProceed to reload website...\n\n" + e);
+        // window.location.pathname = "/events";
+        // window.location.reload();
       });
   });
 
@@ -732,7 +700,7 @@
     document.getElementById("eve_path").style.display = "flex";
     document.getElementById("filter").style.display = "none";
 
-    document.getElementById("eve_img").src = "./" + json_data[e].image;
+    document.getElementById("eve_img").src = "" + json_data[e].image;
 
     //inner div for tag_con from json_data[e].tags
     document.getElementById("tag_con").innerHTML = "";
@@ -751,12 +719,6 @@
     document.getElementById("eve_title_con").childNodes[1].innerHTML =
       json_data[e].name;
 
-    window.history.pushState(
-      "page2",
-      "Title",
-      ("/events#/" + json_data[e].name).replace(/ /g, "_").toLowerCase()
-    );
-
     document.getElementById("eve_title_con").childNodes[3].innerHTML =
       json_data[e].tag_line;
     document.getElementById("eve_detail_2_2").childNodes[3].innerHTML =
@@ -766,10 +728,18 @@
 
     document.getElementById("eve_detail_rules").innerHTML = "";
 
-    for (i = 0; i < json_data[e].rules.length; i++) {
+    // for (let i = 0; i < json_data[e].rules.length; i++) {
+    //   alert(json_data[e].rules.length + " " + i + " " + json_data[e].rules[i]);
+
+    //   document.getElementById("eve_detail_rules").innerHTML +=
+    //     '<div class="eve_rules">' + json_data[e].rules[i] + "</div>";
+    // }
+
+    json_data[e].rules.forEach((element) => {
+      // alert(uu.length + " " + i + " " + uu[i]);
       document.getElementById("eve_detail_rules").innerHTML +=
-        '<div class="eve_rules">' + json_data[e].rules[i] + "</div>";
-    }
+        '<div class="eve_rules">' + element + "</div>";
+    });
 
     document.getElementById("prize").innerHTML =
       '<div class="">First Prize : ' + json_data[e].prize.first + "</div>";
@@ -803,6 +773,17 @@
       "'>" +
       json_data[e].incharge[0].phone +
       "</a>";
+
+    window.history.pushState(
+      "page2",
+      "Title",
+      ("/events#/" + json_data[e].name).replace(/ /g, "_").toLowerCase()
+    );
+
+    // notify("Something Went Wrong :(", 5000);
+    // alert("Something went wrong :(\nProceed to reload website...\n\n" + e);
+    // window.location.pathname = "/events";
+    // window.location.reload();
   }
 
   // ///////////////////////////
@@ -828,20 +809,20 @@
     // accept_cookie;
 
     var ch = e.parentElement.children;
-    for (i = 0; i < ch.length; i++) {
+    for (let i = 0; i < ch.length; i++) {
       ch[i].classList.remove("eve_active");
     }
 
     e.classList.add("eve_active");
 
-    for (i = 0; i < eve_cards.length; i++) {
+    for (let i = 0; i < eve_cards.length; i++) {
       eve_cards[i].style.display = vis;
     }
 
-    for (i = 0; i < types.length; i++) {
+    for (let i = 0; i < types.length; i++) {
       var eve_cards = document.getElementsByClassName(types[i]);
       if (e.dataset.type == types[i]) {
-        for (j = 0; j < eve_cards.length; j++) {
+        for (let j = 0; j < eve_cards.length; j++) {
           eve_cards[j].style.display = "block";
         }
       }

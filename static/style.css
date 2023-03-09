@@ -517,7 +517,7 @@ header {
   font-style: normal;
   font-weight: 700;
   font-size: 1vw;
-  line-height: 46px;
+  line-height: 2.4vw;
   letter-spacing: 0.12em;
   letter-spacing: 0.17vw;
 }
@@ -1817,7 +1817,7 @@ button:hover {
   width: 27vw;
   background-color: #373737;
   transition: 0.2s ease;
-  border-radius: 7px;
+  border-radius: 0.5vw;
   overflow: hidden;
   font-family: "oo";
   border: 0.11vw solid rgba(120, 120, 120, 0.7);
@@ -1838,7 +1838,7 @@ button:hover {
 }
 
 .eve_card:hover .eve_button {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 0.2vw solid rgba(255, 255, 255, 0.7);
   border-radius: 0px;
 }
 
@@ -2193,7 +2193,9 @@ button:hover {
   flex-direction: column;
   justify-content: center;
 }
-
+.eve_edtail_2_1_tag {
+  font-size: 0.8vw;
+}
 .eve_sec_con {
   display: flex;
   flex-direction: column;
@@ -2201,6 +2203,7 @@ button:hover {
   align-content: center;
   align-items: flex-start;
   gap: 0.2vw;
+  font-size: 0.8vw;
   justify-content: center;
 }
 
@@ -2451,4 +2454,38 @@ button:hover {
   top: 77%;
   width: fit-content;
   transform: translate(-50%, -77%);
+}
+
+@media only screen and (max-width: 600px) {
+  .svg_container svg {
+    height: 12.3vw;
+    width: 80vw;
+  }
+  .main_title_text {
+    font-size: 2.77vw;
+  }
+  .line {
+    width: 13vw;
+    height: 0.2vw;
+  }
+  .open_sson {
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+  }
+  .bg_design {
+    width: 100%;
+    height: 100%;
+    background-origin: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .bg_2 {
+    border-radius: 39%;
+    left: 56%;
+    top: 80%;
+    /* border-radius: 32%; */
+    display: none;
+  }
 }
