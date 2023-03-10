@@ -62,7 +62,7 @@
         document.getElementById('image3').style.display = 'block';
         document.getElementById('image9').style.display = 'block';
         document.getElementById('pro_sec').style.background = '#131313';      
-        notify('Acrylic Theme Activated !', 3000);
+        notify('Acrylic Theme Deactivated !', 3000);
 
       } else {
         this.dataset.value = true;
@@ -71,7 +71,7 @@
         document.getElementById('image3').style.display = 'none';
         document.getElementById('image9').style.display = 'none';
         document.getElementById('pro_sec').style.background = 'transparent';
-        notify('Acrylic Theme Deactivated !', 3000);
+        notify('Acrylic Theme Activated !', 3000);
       }"
     >
       <svg
@@ -141,17 +141,17 @@
       </svg>
     </div>
     <div class="main_navigation" id="navbar">
-      <a href="#home" data-text="About Us" class="navigation_links link_cur"
+      <a href="#about" data-text="About Us" class="navigation_links link_cur"
         >About</a
       >
-      <a href="#about" data-text="Events List" class="navigation_links link_cur"
+      <a href="#events" data-text="Events List" class="navigation_links link_cur"
         >Events</a
       >
-      <a href="#evvents" data-text="Pro-Shows" class="navigation_links link_cur"
+      <a href="#pro_sec" data-text="Pro-Shows" class="navigation_links link_cur"
         >Pro Shows</a
       >
       <a
-        href="#workshops"
+        href="#workshop"
         data-text="Workshops"
         class="navigation_links link_cur"
         >Workshops</a
@@ -162,6 +162,7 @@
         class="navigation_links link_cur"
         id="media_no"
         >Contact</a
+        onclick="plusSlides(1)"
       >
     </div>
     <a
@@ -404,7 +405,7 @@
         </div>
       </section>
 
-      <section class="s1" id="s1">
+      <section class="s1" id="about">
         <div>
           <div
             class="img_sc skewElem jos"
@@ -766,7 +767,7 @@
         </div>
       </section>
 
-      <section class="event_section">
+      <section class="event_section" id="events">
         <div
           class="gallery_text solo_text jos"
           data-callback="fly_in"
@@ -855,7 +856,7 @@
             </div>
           </div>
 
-          <div class="cont jos" data-callback="fade_opaci" data-once="false">
+          <div class="cont jos" data-callback="fade_opaci" data-once="false" id="workshop">
             <div class="sitem">
               <img class="simg" src="./jacek-dylag-523063-unsplash 2.png" />
               <div class="sdetcon">
@@ -969,6 +970,7 @@
             data-aos="zoom-out-down"
             data-aos-duration="600"
             style="display: block"
+            id="location"
           >
             <div>
               <div class="loca">
@@ -991,7 +993,7 @@
             </div>
           </div>
 
-          <div class="locac fade" style="display: none">
+          <div class="locac fade" style="display: none" id="contact">
             <div>
               <div class="loca">
                 <!--  -->
@@ -1398,15 +1400,18 @@
             >
           </div>
         </div>
-      </footer>
-    </div>
-    <div class="notify">
-      <div id="not-cont" class="notify-content">
-        <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
-        {{ msg }} Sign in to your account
+      </footer>    
+      
+      <div class="notify">
+        <div id="not-cont" class="notify-content">
+          <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
+          {{ msg }} Sign in to your account
+        </div>
+        <div class="notify-button" onclick="accept_cookie()">Dismiss</div>
       </div>
-      <div class="notify-button" onclick="accept_cookie()">Dismiss</div>
+      
     </div>
+
   </body>
 </html>
 
