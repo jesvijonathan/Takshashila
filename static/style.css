@@ -905,10 +905,9 @@ header {
 
 .solo_text {
   margin-top: 6vw;
-  margin-bottom: 6vw;
+  margin-bottom: 4vw;
 
   display: flex;
-  position: sticky;
   z-index: 1;
   mix-blend-mode: difference;
   align-items: center;
@@ -2405,11 +2404,11 @@ button:hover {
 }
 
 .solo_text {
+  /* position: sticky; */
   padding-bottom: 1vw;
   margin-top: 6vw;
-  margin-bottom: 6vw;
+  margin-bottom: 8vw;
   display: block;
-  position: sticky;
   z-index: 1;
   /* mix-blend-mode: difference; */
   /* align-items: center; */
@@ -2827,7 +2826,7 @@ button:hover {
     flex-direction: row;
     justify-content: center;
     font-size: 1.4vw;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     letter-spacing: 0.08vw;
     gap: 2vw;
     word-spacing: 0.1vw;
@@ -2852,8 +2851,8 @@ button:hover {
   }
   .locam {
     width: 63vw;
-    height: 50vw;
-    height: 100vw;
+    height: 63vw;
+    /* height: 100vw; */
     max-width: unset;
     max-height: unset;
   }
