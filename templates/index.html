@@ -37,6 +37,7 @@
       document.getElementById('image3').style.display = 'block';
       document.getElementById('image9').style.display = 'block';
       document.getElementById('pro_sec').style.background = '#131313';
+      notify('Acrylic Theme Activated !', 3000);
 
     } else {
       this.dataset.value = true;
@@ -44,7 +45,7 @@
       document.getElementById('image4').style.display = 'none';
       document.getElementById('image3').style.display = 'none';
       document.getElementById('image9').style.display = 'none';
-      document.getElementById('pro_sec').style.background = 'transparent';
+      document.getElementById('pro_sec').style.background = 'transparent';notify('Acrylic Theme Deactivated !',3000)
     }"
     />
     <div class="noise-container"></div>
@@ -170,9 +171,15 @@
     >
   </header>
   <body>
-    <video autoplay muted loop id="myVideo">
+    <!-- <video autoplay muted loop id="myVideo">
       <source src="./pexels-tima-miroshnichenko-7985887.mp4" type="video/mp4" />
-    </video>
+    </video> -->
+    <img
+      id="myVideo"
+      src="./pexels-tima-miroshnichenko-7985887.png"
+      type="image/png"
+    />
+
     <div class="main" id="butter">
       <section id="s0">
         <div class="bg_design" id="image1">
