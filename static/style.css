@@ -2862,6 +2862,8 @@ button:hover {
   .loca {
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 8vw;
   }
   .locac {
     padding: 9vw 4vw 10vw 4vw;
@@ -2869,6 +2871,11 @@ button:hover {
   .dotstyle {
     width: 66vw;
     bottom: 4vw;
+  }
+  .locam_nope {
+    display: block !important;
+    margin-bottom: 2vw;
+    margin-left: 3vw;
   }
   .dotstyle ul {
     display: flex;
