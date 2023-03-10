@@ -12,6 +12,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 
   /* background: rgb(34, 193, 195);
   background: linear-gradient(
@@ -190,7 +191,7 @@ header {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
   text-align: center;
-  letter-spacing: 0.5vw;
+  letter-spacing: 0.4vw;
   font-weight: 100;
   font-size: 0.77vw;
 }
@@ -205,7 +206,7 @@ header {
 }
 
 .line {
-  width: 6vw;
+  width: 9vw;
   height: 0.1vw;
   background: rgba(255, 255, 255, 0.2);
 }
@@ -2183,7 +2184,7 @@ button:hover {
 }
 
 .eve_detail_horiz {
-  /* width: 95%; */
+  width: 95%;
   height: 6vw;
   display: flex;
   flex-direction: row;
@@ -2462,6 +2463,15 @@ button:hover {
 }
 .cit_logo {
   display: none;
+}
+
+.nigus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nigus:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2962,5 +2972,76 @@ button:hover {
   #proo {
     margin-top: 10vw !important;
     margin-bottom: 3vw !important;
+  }
+  .eve_func {
+    display: none;
+  }
+  #eve_list_cont {
+    display: flex;
+    flex-direction: column;
+    padding: 56vw 0vw 28vw 0vw;
+  }
+  .eve_card {
+    height: 80vw;
+    width: 90%;
+  }
+  .eve_list_cont {
+    gap: 7vw;
+  }
+  .eve_title {
+    font-size: 7vw;
+  }
+  .eve_tag {
+    font-size: 2.2vw;
+    padding: 1.6vw;
+    width: fit-content;
+  }
+  .eve_ma {
+    top: -56vw;
+  }
+  .eve_bar {
+    font-size: 2.2vw;
+    margin: 0vw 5vw;
+    top: -46vw;
+  }
+  .eve_button {
+    font-size: 2.2vw;
+  }
+  .eve_button {
+    padding: 2vw 3vw;
+    border-radius: 4px;
+    font-size: 2.2vw;
+    border-bottom: 0.3vw solid transparent;
+  }
+  .eve_desc {
+    font-size: 2.2vw;
+  }
+  .eve_desc div {
+    margin: 5vw;
+  }
+  .eve_min {
+    gap: 1.4vw;
+  }
+  .eve_line {
+    height: 3vw;
+    width: 0.1vw;
+  }
+
+  .eve_card:hover .eve_img {
+    filter: contrast(0.8) brightness(0.7) grayscale(0) blur(5px);
+    transform: scale(1.1);
+  }
+
+  .eve_card:hover .eve_ma {
+    top: -67vw;
+  }
+  .eve_card:hover .eve_desc {
+    opacity: 1;
+    top: -60vw;
+  }
+
+  .eve_card:hover .eve_button {
+    border-bottom: 0.2vw solid rgba(255, 255, 255, 0.7);
+    border-radius: 0px;
   }
 }

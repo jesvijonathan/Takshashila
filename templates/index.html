@@ -144,7 +144,10 @@
       <a href="#about" data-text="About Us" class="navigation_links link_cur"
         >About</a
       >
-      <a href="#events" data-text="Events List" class="navigation_links link_cur"
+      <a
+        href="#events"
+        data-text="Events List"
+        class="navigation_links link_cur"
         >Events</a
       >
       <a href="#pro_sec" data-text="Pro-Shows" class="navigation_links link_cur"
@@ -161,8 +164,8 @@
         data-text="Contact Us"
         class="navigation_links link_cur"
         id="media_no"
+        onclick="    plusSlides(1)"
         >Contact</a
-        onclick="plusSlides(1)"
       >
     </div>
     <a
@@ -340,7 +343,7 @@
           </div>
           <div class="main_desc">
             <div class="line"></div>
-            <div class="main_title_text">The Great Indian Cinema</div>
+            <div class="main_title_text">A Cinematic Voyage</div>
 
             <div class="line"></div>
           </div>
@@ -551,7 +554,8 @@
         <div
           class="gallery_text solo_text jos"
           data-callback="fly_in"
-          data-once="true"id="proo"
+          data-once="true"
+          id="proo"
           style="margin-top: 6vw; margin-bottom: 0vw; padding-top: 4vw"
         >
           Pro Shows
@@ -856,7 +860,12 @@
             </div>
           </div>
 
-          <div class="cont jos" data-callback="fade_opaci" data-once="false" id="workshop">
+          <div
+            class="cont jos"
+            data-callback="fade_opaci"
+            data-once="false"
+            id="workshop"
+          >
             <div class="sitem">
               <img class="simg" src="./jacek-dylag-523063-unsplash 2.png" />
               <div class="sdetcon">
@@ -979,10 +988,9 @@
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0006663305403!2d80.04093371482203!3d12.971808890855769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f4d07355bab5%3A0xbb6063169c4ed4d9!2sChennai%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1651592789112!5m2!1sen!2sin"
                   allowfullscreen=""
                 ></iframe>
-<div class="locam_nope" style="display: none;">
-  Chennai Institute of technology
-      
-                  </div>
+                <div class="locam_nope" style="display: none">
+                  Chennai Institute of technology
+                </div>
                 <div class="locamm">
                   <h3>Chennai Institute Of Technology</h3>
                   <div class="locmi">
@@ -1403,21 +1411,17 @@
             >
           </div>
         </div>
-      </footer>    
-      
-
-      
+      </footer>
     </div>
-
   </body>
   <script>
-     butter.init({
-    wrapperId: "butter",
-    wrapperDamper: 0.1,
-    cancelOnTouch: false,
-  });
+    butter.init({
+      wrapperId: "butter",
+      wrapperDamper: 0.1,
+      cancelOnTouch: false,
+    });
 
-  document.querySelector("#butter").style.position = "initial";
+    document.querySelector("#butter").style.position = "initial";
   </script>
   <div class="notify">
     <div id="not-cont" class="notify-content">
@@ -1459,12 +1463,7 @@
   onload = notify("Click on the flame of Takshashila", 5000);
 </script>
 
-<script>
-
-
-
-
-</script>
+<script></script>
 
 <script>
   // document.body.style.display = "none";
@@ -1477,21 +1476,15 @@
     // var ask1 = alert(
     //   "Website Under construction & is not supported for mobile devices.\nUse a Desktop/Laptop to view the site.."
     // );
-  //   butter.init({
-  //   wrapperId: "butter",
-  //   wrapperDamper: 0.07,
-  //   cancelOnTouch: true,
-  // });
-
-  // document.querySelector("#butter").style.position = "initial";
-
-
+    //   butter.init({
+    //   wrapperId: "butter",
+    //   wrapperDamper: 0.07,
+    //   cancelOnTouch: true,
+    // });
+    // document.querySelector("#butter").style.position = "initial";
   } else {
     document.body.style.cursor = "none";
     document.getElementById("cursor").style.display = "block";
-
- 
-
 
     // document.body.style.display = "block";
   }
@@ -1635,7 +1628,9 @@
   // alert(
   //   "Website under construction.. \nKeep the link confidential. Do not share or kang my work without my permission."
   // );
+
+  function invplus() {
+    plusSlides(1);
+  }
   onload = notify("Website under construction..", 10000);
 </script>
- 
- 

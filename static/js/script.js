@@ -1,20 +1,21 @@
 // Notify flyer function //
-
+let notify_va = document.querySelector(".notify");
+let not_con = document.getElementById("not-cont");
 function accept_cookie() {
-  document.querySelector(".notify").style.padding = "0vw 0vw";
+  notify_va.style.padding = "0vw 0vw";
 
-  document.querySelector(".notify").style.opacity = "0";
-  document.querySelector(".notify").style.zIndex = "-1";
+  notify_va.style.opacity = "0";
+  notify_va.style.zIndex = "-1";
 }
 function deccept_cookie() {
-  document.querySelector(".notify").style.padding = "1.8vw 1vw";
+  notify_va.style.padding = "1.8vw 1vw";
 
-  document.querySelector(".notify").style.opacity = "1";
-  document.querySelector(".notify").style.zIndex = "1";
+  notify_va.style.opacity = "1";
+  notify_va.style.zIndex = "1";
 }
 
 function notify(text, timeout) {
-  document.getElementById("not-cont").innerHTML = text;
+  not_con.innerHTML = text;
   // document.querySelector("#not-cont").style.color = "red";
 
   deccept_cookie();
@@ -237,13 +238,12 @@ function profile_onblur(element, default_value) {
 // Single page login register system //
 
 function single_page_login(n) {
+  let regi = document.getElementById("regi");
   if (n == 1) {
-    document.getElementById("regi").style.transform =
-      "translate(-50%, 100%) scale(0)";
+    regi.style.transform = "translate(-50%, 100%) scale(0)";
     window.history.pushState("page2", "Title", "/login");
   } else {
-    document.getElementById("regi").style.transform =
-      "translate(-50%, -52%) scale(1)";
+    regi.style.transform = "translate(-50%, -52%) scale(1)";
     window.history.pushState("page2", "Title", "/login#/signup");
   }
 }

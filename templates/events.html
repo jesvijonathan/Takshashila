@@ -235,7 +235,7 @@
           </div>
           <div class="eve_detail_2_3">
             <div class="eve_detail_horiz">
-              <div class="eve_sec">
+              <div class="eve_sec" id="hori">
                 <div class="eve_detail_2_2_1">Prize</div>
                 <div class="eve_sec_con" id="prize"></div>
               </div>
@@ -266,12 +266,12 @@
       </div>
 
       <footer>
-        <div class="footer">
+        <div class="footer" id="fff">
           <div class="foot_1">
             <div class="foot_1_1">
               <div class="title_font">Takshashila</div>
               <div class="line line_2"></div>
-              <div>
+              <div class="fot_loc">
                 <a
                   class="foot_desc_title link_cur"
                   data-text="Our Institution"
@@ -289,6 +289,42 @@
                   Kundrathur, Chennai, Tamil Nadu, PIN : 600069
                 </a>
               </div>
+            </div>
+            <div
+              class="socials jos foot_soc"
+              data-once="true"
+              data-callback="splash_pop"
+            >
+              <a
+                href=""
+                target="_blank"
+                class="fa fa-instagram link_cur"
+                data-text="Instagram"
+              ></a>
+              <a
+                href=""
+                target="_blank"
+                class="fa fa-facebook link_cur"
+                data-text="Facebook"
+              ></a>
+              <a
+                href=""
+                target="_blank"
+                class="fa fa-linkedin link_cur"
+                data-text="Linked In"
+              ></a>
+              <a
+                href=""
+                target="_blank"
+                class="fa fa-envelope-o link_cur"
+                data-text="Email"
+              ></a>
+              <a
+                href=""
+                target="_blank"
+                class="fa fa-phone link_cur"
+                data-text="Phone"
+              ></a>
             </div>
             <div class="foot_1_2">
               <div class="foot_1_2_1">
@@ -483,13 +519,14 @@
               <div class="line_4"></div>
 
               <div class="foot_2_1_1">Copyright ©2023</div>
+              <div class="line_4" id="line_4" style="display: none"></div>
             </div>
             <a
               href="https://jesvi.pythonanywhere.com"
               target="_blank"
               data-text="🔥😎🔥"
               class="foot_2_2 link_cur"
-              >Made With 🤟 By Jesvi Jonathan</a
+              >Made With ❤️ By Jesvi Jonathan</a
             >
           </div>
         </div>
@@ -536,6 +573,40 @@
 </script>
 
 <script>
+  // Init variables //
+
+  let eve_list_cont = document.getElementById("eve_list_cont");
+  let eve_detail_cont = document.getElementById("eve_detail_cont");
+  let eve_path = document.getElementById("eve_path");
+  let filter = document.getElementById("filter");
+  let baclk_w = document.getElementById("baclk_w");
+
+  let eve_img = document.getElementById("eve_img");
+
+  let tag_con = document.getElementById("tag_con");
+
+  let link_con_insta = document.getElementById("link_con_insta");
+  let link_con_download = document.getElementById("link_con_download");
+  let eve_reg_link = document.getElementById("eve_reg_link");
+
+  let eve_title_con = document.getElementById("eve_title_con");
+
+  let eve_detail_2_2 = document.getElementById("eve_detail_2_2");
+  let eve_detail_rules = document.getElementById("eve_detail_rules");
+  let prize = document.getElementById("prize");
+
+  let eve_details = document.getElementById("eve_details");
+
+  let eve_contact = document.getElementById("eve_contact");
+
+  let hori = document.getElementById("hori");
+
+  var eve_card = document.getElementById("eve_card");
+
+  var navbar = document.getElementById("navbar");
+</script>
+
+<script>
   function close_event(e) {
     window.history.pushState(
       "",
@@ -543,13 +614,13 @@
       "/events".replace(/ /g, "_").toLowerCase()
     );
 
-    document.getElementById("eve_list_cont").style.display = "flex";
-    document.getElementById("eve_detail_cont").style.display = "none";
+    eve_list_cont.style.display = "flex";
+    eve_detail_cont.style.display = "none";
 
-    document.getElementById("eve_path").style.display = "none";
-    document.getElementById("filter").style.display = "flex";
+    eve_path.style.display = "none";
+    filter.style.display = "flex";
 
-    document.getElementById("baclk_w").style.display = "none";
+    baclk_w.style.display = "none";
   }
 
   // notify("Loading...");
@@ -614,22 +685,22 @@
 </script>
 
 <script>
-  document.body.style.display = "none";
+  // document.body.style.display = "none";
   // console.log(navigator.userAgent);
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
     )
   ) {
-    var ask1 = alert(
-      "Website Under construction & is not supported for mobile devices.\nUse a Desktop/Laptop to view the site.."
-    );
+    // var ask1 = alert(
+    //   "Website Under construction & is not supported for mobile devices.\nUse a Desktop/Laptop to view the site.."
+    // );
   } else {
     document.body.style.display = "block";
   }
 
   var jata = null;
-  var html_list = document.getElementById("eve_list_cont");
+  var html_list = eve_list_cont;
   var inner_details = "";
   var json_data;
 
@@ -693,40 +764,37 @@
   });
 
   function open_event(e) {
-    document.getElementById("baclk_w").style.display = "flex";
-    document.getElementById("eve_list_cont").style.display = "none";
-    document.getElementById("eve_detail_cont").style.display = "flex";
+    baclk_w.style.display = "flex";
+    eve_list_cont.style.display = "none";
+    eve_detail_cont.style.display = "flex";
 
-    document.getElementById("eve_path").style.display = "flex";
-    document.getElementById("filter").style.display = "none";
+    eve_path.style.display = "flex";
+    filter.style.display = "none";
 
-    document.getElementById("eve_img").src = "" + json_data[e].image;
+    eve_img.src = "" + json_data[e].image;
 
     //inner div for tag_con from json_data[e].tags
-    document.getElementById("tag_con").innerHTML = "";
+    tag_con.innerHTML = "";
     for (i = 0; i < json_data[e].tags.length; i++) {
-      document.getElementById("tag_con").innerHTML +=
+      tag_con.innerHTML +=
         '<div class="eve_detai_1_2_tag">' + json_data[0].tags[i] + "</div>";
     }
 
-    document.getElementById("link_con_insta").href = json_data[e].instagram;
+    link_con_insta.href = json_data[e].instagram;
     // document.getElementById("link_con_youtube").href = json_data[e].youtube;
     // document.getElementById("link_con_share").href = "";
 
-    document.getElementById("link_con_download").href = "";
-    document.getElementById("eve_reg_link").href = json_data[e].register;
+    link_con_download.href = "";
+    eve_reg_link.href = json_data[e].register;
 
-    document.getElementById("eve_title_con").childNodes[1].innerHTML =
-      json_data[e].name;
+    eve_title_con.childNodes[1].innerHTML = json_data[e].name;
 
-    document.getElementById("eve_title_con").childNodes[3].innerHTML =
-      json_data[e].tag_line;
-    document.getElementById("eve_detail_2_2").childNodes[3].innerHTML =
-      json_data[e].description;
+    eve_title_con.childNodes[3].innerHTML = json_data[e].tag_line;
+    eve_detail_2_2.childNodes[3].innerHTML = json_data[e].description;
 
     //<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=My Event&details=Event description text&dates=20220305T103000/20220305T184500&location=New York City">Add to Google Calendar</a>
 
-    document.getElementById("eve_detail_rules").innerHTML = "";
+    eve_detail_rules.innerHTML = "";
 
     // for (let i = 0; i < json_data[e].rules.length; i++) {
     //   alert(json_data[e].rules.length + " " + i + " " + json_data[e].rules[i]);
@@ -737,49 +805,61 @@
 
     json_data[e].rules.forEach((element) => {
       // alert(uu.length + " " + i + " " + uu[i]);
-      document.getElementById("eve_detail_rules").innerHTML +=
+      eve_detail_rules.innerHTML +=
         '<div class="eve_rules">' + element + "</div>";
     });
 
-    document.getElementById("prize").innerHTML =
+    prize.innerHTML =
       '<div class="">First Prize : ' + json_data[e].prize.first + "</div>";
-    document.getElementById("prize").innerHTML +=
+    prize.innerHTML +=
       '<div class="">Second Prize : ' + json_data[e].prize.second + "</div>";
-    document.getElementById("prize").innerHTML +=
+    prize.innerHTML +=
       '<div class="">Third Prize : ' + json_data[e].prize.third + "</div>";
 
-    document.getElementById("eve_details").childNodes[1].innerHTML =
-      "Type : " + json_data[e].type;
-    document.getElementById("eve_details").childNodes[3].innerHTML =
-      "Date : " + json_data[e].date;
-    document.getElementById("eve_details").childNodes[5].innerHTML =
+    eve_details.childNodes[1].innerHTML = "Type : " + json_data[e].type;
+    eve_details.childNodes[3].innerHTML = "Date : " + json_data[e].date;
+    eve_details.childNodes[5].innerHTML =
       "Time : " + json_data[e].batch[0].time;
 
-    document.getElementById("eve_contact").childNodes[1].innerHTML =
+    eve_contact.childNodes[1].innerHTML =
       "Co-ordinator : <a href='mailto:" +
       json_data[e].incharge[0].email +
       "'>" +
       json_data[e].incharge[0].name +
       "</a>";
-    document.getElementById("eve_contact").childNodes[3].innerHTML =
+    eve_contact.childNodes[3].innerHTML =
       "Email : <a href='mailto:" +
       json_data[e].incharge[0].email +
       "'>" +
       json_data[e].incharge[0].email +
       "</a>";
-    document.getElementById("eve_contact").childNodes[5].innerHTML =
+    eve_contact.childNodes[5].innerHTML =
       "Phone : <a href='tel:" +
       json_data[e].incharge[0].phone +
       "'>" +
       json_data[e].incharge[0].phone +
       "</a>";
 
-    window.history.pushState(
-      "page2",
-      "Title",
-      ("/events#/" + json_data[e].name).replace(/ /g, "_").toLowerCase()
-    );
+    let xpath = ("/events#/" + json_data[e].name)
+      .replace(/ /g, "_")
+      .toLowerCase();
+    window.history.pushState("page2", "Title", xpath);
 
+    if (json_data[e].type == "Pro Shows") {
+      console.log(json_data[e].type, "Pro Shows");
+      hori.style.display = "none";
+    } else {
+      hori.style.display = "flex";
+    }
+
+    eve_path.childNodes[1].innerHTML =
+      "/ <a class='nigus' href='./events#/" +
+      json_data[e].type +
+      "'>" +
+      json_data[e].type +
+      "</a>";
+    eve_path.childNodes[3].innerHTML =
+      "/ <a class='nigus' href='./" + xpath + "'>" + json_data[e].name + "</a>";
     // notify("Something Went Wrong :(", 5000);
     // alert("Something went wrong :(\nProceed to reload website...\n\n" + e);
     // window.location.pathname = "/events";
@@ -795,8 +875,6 @@
   var vis = null;
 
   function toggle_but(e) {
-    var eve_cards = document.getElementsByClassName("eve_card");
-
     if (e.dataset.type == "eve_card") {
       // notify("All Events", 1000);
       vis = "block";
@@ -836,7 +914,6 @@
   };
 
   // Get the navbar
-  var navbar = document.getElementById("navbar");
 
   // Get the offset position of the navbar
   var sticky = navbar.offsetTop;

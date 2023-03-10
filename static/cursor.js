@@ -1,90 +1,89 @@
-onload = function cursor () {
-
+onload = function () {
+  document.body.style.cursor = "none";
+  let e = !1;
   try {
-    const image1 = document.querySelector("#image1");
-    const image2 = document.querySelector("#image2");
-    const image3 = document.querySelector("#image0_4_41");
-    const image4 = document.querySelector("#image4");
-    const image5 = document.querySelector("#image5");
-  } catch (e) {
-    console.log("Error: " + e);
+    let t = document.querySelector("#image1"),
+      r = document.querySelector("#image2"),
+      n = document.querySelector("#image0_4_41"),
+      s = document.querySelector("#image4"),
+      l = document.querySelector("#image5");
+    t && r && n && s && l && (e = !0);
+  } catch (a) {
+    e = !1;
   }
-
-  const cursor = document.querySelector("#cursor");
-  const cursor_border = document.querySelector("#cursor_border");
-  const cursor_circle = document.querySelector("#cursor_circle");
-
-  document.addEventListener("mousemove", (event) => {
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
-
-    cursor.style.transform = `translate3d(${mouseX - 20}px, ${
-      mouseY - 20
-    }px, 0)`;
-    cursor.style.transform = `translate3d(${mouseX - 20}px, ${
-      mouseY - 20
-    }px, 0)`;
-
-    let y = mouseY / window.innerHeight;
-
-    $(".link_cur").hover(
-      function () {
-        // cursor_border.classList.add("cursor_border_hover");
-        if (y <= 0.5) {
-          cursor_circle.style.transform = "scale(7) translate(10px, 10px)";
-        } else {
-          cursor_circle.style.transform = "scale(7) translate(10px, -10px)";
-        }
-        cursor_circle.innerHTML = $(this).data("text");
-
-        // The mouse has entered the element
-      },
-      function () {
-        // cursor_border.classList.remove("cursor_border_hover");
-        cursor_circle.style.transform = "scale(1)";
-        cursor_circle.innerHTML = "";
-
-        // The mouse has left the element
-      }
-    );
-
-    document.addEventListener("mousedown", function () {
-      cursor_circle.classList.add("cursor_circle_click");
-      cursor_border.style.background = "white";
-      // document.body.style.background = "white";
-
-      // document.body.style.mixBlendMode = " difference";
-
-      // setTimeout(function () {
-      //   cursor_circle.style.transform = `scale(1)`;
-      // }, 100);
+  let c = document.querySelector("#cursor"),
+    o = document.querySelector("#cursor_border"),
+    i = document.querySelector("#cursor_circle");
+  e
+    ? document.addEventListener("mousemove", (e) => {
+        let t = e.clientX,
+          r = e.clientY;
+        (c.style.transform = `translate3d(${t - 20}px, ${r - 20}px, 0)`),
+          (c.style.transform = `translate3d(${t - 20}px, ${r - 20}px, 0)`);
+        let n = t / window.innerWidth,
+          s = r / window.innerHeight;
+        (image1.style.transform = `scale(1) translate(${-80 * n}px, ${
+          20 * s
+        }px)`),
+          (image2.style.transform = `scale(1.5) rotate(${
+            -14 * n
+          }deg) translate(${70 * n}px, ${180 * s}px)`),
+          (image3.style.y = `${20 * s}`),
+          (image4.style.y = `${-50 * n}`),
+          (image5.style.transform = `translate(${-7 * n}px, ${-7 * s}px)`),
+          $(".link_cur").hover(
+            function () {
+              s <= 0.5
+                ? (i.style.transform = "scale(7) translate(10px, 10px)")
+                : (i.style.transform = "scale(7) translate(10px, -10px)"),
+                (i.innerHTML = $(this).data("text"));
+            },
+            function () {
+              (i.style.transform = "scale(1)"), (i.innerHTML = "");
+            }
+          ),
+          document.addEventListener("mousedown", function () {
+            i.classList.add("cursor_circle_click"),
+              (o.style.background = "white");
+          }),
+          document.addEventListener("mouseup", function () {
+            i.classList.remove("cursor_circle_click"),
+              (o.style.background = "transparent");
+          });
+      })
+    : document.addEventListener("mousemove", (e) => {
+        let t = e.clientX,
+          r = e.clientY;
+        (c.style.transform = `translate3d(${t - 20}px, ${r - 20}px, 0)`),
+          (c.style.transform = `translate3d(${t - 20}px, ${r - 20}px, 0)`);
+        let n = r / window.innerHeight;
+        $(".link_cur").hover(
+          function () {
+            n <= 0.5
+              ? (i.style.transform = "scale(7) translate(10px, 10px)")
+              : (i.style.transform = "scale(7) translate(10px, -10px)"),
+              (i.innerHTML = $(this).data("text"));
+          },
+          function () {
+            (i.style.transform = "scale(1)"), (i.innerHTML = "");
+          }
+        ),
+          document.addEventListener("mousedown", function () {
+            i.classList.add("cursor_circle_click"),
+              (o.style.background = "white");
+          }),
+          document.addEventListener("mouseup", function () {
+            i.classList.remove("cursor_circle_click"),
+              (o.style.background = "transparent");
+          });
+      }),
+    document.addEventListener("mouseout", (e) => {
+      let t = e.clientX,
+        r = e.clientY;
+      (r <= 0 || t <= 0 || t >= window.innerWidth || r >= window.innerHeight) &&
+        (c.style.display = "none");
+    }),
+    document.addEventListener("mouseenter", () => {
+      c.style.display = "block";
     });
-
-    document.addEventListener("mouseup", function () {
-      cursor_circle.classList.remove("cursor_circle_click");
-      cursor_border.style.background = "transparent";
-
-      // document.body.style.mixBlendMode = " unset";
-      // document.body.style.background = "#282828 ";
-    });
-  });
-
-  document.addEventListener("mouseout", () => {
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
-
-    if (
-      mouseY <= 0 ||
-      mouseX <= 0 ||
-      mouseX >= window.innerWidth ||
-      mouseY >= window.innerHeight
-    ) {
-      cursor.style.display = "none";
-    }
-  });
-  document.addEventListener("mouseenter", () => {
-    {
-      cursor.style.display = "block";
-    }
-  });
 };
