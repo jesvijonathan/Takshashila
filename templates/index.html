@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
     <meta name="thumbnail" content="favicon.png" />
 
-    <script src="./butter.js"></script>
+    <script id="scri_but" src="./butter.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./cursor.js"></script>
   </head>
@@ -1410,6 +1410,15 @@
     </div>
 
   </body>
+  <script>
+     butter.init({
+    wrapperId: "butter",
+    wrapperDamper: 0.1,
+    cancelOnTouch: true,
+  });
+
+  document.querySelector("#butter").style.position = "initial";
+  </script>
   <div class="notify">
     <div id="not-cont" class="notify-content">
       <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
@@ -1481,13 +1490,7 @@
     document.body.style.cursor = "none";
     document.getElementById("cursor").style.display = "block";
 
-    butter.init({
-    wrapperId: "butter",
-    wrapperDamper: 0.1,
-    cancelOnTouch: false,
-  });
-
-  document.querySelector("#butter").style.position = "initial";
+ 
 
 
     // document.body.style.display = "block";
