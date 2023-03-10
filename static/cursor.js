@@ -1,5 +1,14 @@
-onload = function () {
-  document.body.style.cursor = "none";
+onload = function cursor () {
+
+  try {
+    const image1 = document.querySelector("#image1");
+    const image2 = document.querySelector("#image2");
+    const image3 = document.querySelector("#image0_4_41");
+    const image4 = document.querySelector("#image4");
+    const image5 = document.querySelector("#image5");
+  } catch (e) {
+    console.log("Error: " + e);
+  }
 
   const cursor = document.querySelector("#cursor");
   const cursor_border = document.querySelector("#cursor_border");
