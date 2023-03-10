@@ -1029,6 +1029,14 @@ mark {
   /* margin: 24vw; */
   flex-wrap: wrap;
   align-content: center;
+
+  width: fit-content;
+  height: fit-content;
+  left: unset;
+  position: relative;
+  transform: translate(0%, 0%);
+  align-items: center;
+  justify-content: center;
 }
 
 .pro_sec {
