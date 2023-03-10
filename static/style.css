@@ -890,9 +890,7 @@ header {
   /* animation: text_bigger 3s steps(4) infinite; */
   align-items: center;
   justify-content: center;
-  mix-blend-mode: plus-lighter;
-  backdrop-filter: blur(20px);
-  position: relative;
+  position: relative !important;
 }
 
 @keyframes text_bigger {
@@ -2433,7 +2431,6 @@ button:hover {
   margin-left: -10%;
 }
 .gallery_text {
-  position: sticky !important;
   height: 3vw;
   /* display: flex; */
   /* position: sticky; */
@@ -2618,6 +2615,9 @@ button:hover {
     font-size: 7vw;
     height: 9vw;
     padding-top: 8vw !important;
+    position: sticky !important;
+    mix-blend-mode: plus-lighter;
+    backdrop-filter: blur(20px);
   }
   .pro_day {
     font-size: 5vw;
