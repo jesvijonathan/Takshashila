@@ -1399,23 +1399,24 @@
               target="_blank"
               data-text="🔥😎🔥"
               class="foot_2_2 link_cur"
-              >Made With 🤟 By Jesvi Jonathan</a
+              >Made With ❤️ By Jesvi Jonathan</a
             >
           </div>
         </div>
       </footer>    
       
-      <div class="notify">
-        <div id="not-cont" class="notify-content">
-          <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
-          {{ msg }} Sign in to your account
-        </div>
-        <div class="notify-button" onclick="accept_cookie()">Dismiss</div>
-      </div>
+
       
     </div>
 
   </body>
+  <div class="notify">
+    <div id="not-cont" class="notify-content">
+      <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
+      {{ msg }} Sign in to your account
+    </div>
+    <div class="notify-button" onclick="accept_cookie()">Dismiss</div>
+  </div>
 </html>
 
 <script>
@@ -1453,13 +1454,6 @@
 
 
 
-   butter.init({
-    wrapperId: "butter",
-    wrapperDamper: 0.1,
-    cancelOnTouch: false,
-  });
-
-  document.querySelector("#butter").style.position = "initial";
 
 </script>
 
@@ -1474,9 +1468,27 @@
     // var ask1 = alert(
     //   "Website Under construction & is not supported for mobile devices.\nUse a Desktop/Laptop to view the site.."
     // );
+    butter.init({
+    wrapperId: "butter",
+    wrapperDamper: 0.07,
+    cancelOnTouch: true,
+  });
+
+  document.querySelector("#butter").style.position = "initial";
+
+
   } else {
     document.body.style.cursor = "none";
     document.getElementById("cursor").style.display = "block";
+
+    butter.init({
+    wrapperId: "butter",
+    wrapperDamper: 0.1,
+    cancelOnTouch: false,
+  });
+
+  document.querySelector("#butter").style.position = "initial";
+
 
     // document.body.style.display = "block";
   }
@@ -1620,13 +1632,7 @@
   // alert(
   //   "Website under construction.. \nKeep the link confidential. Do not share or kang my work without my permission."
   // );
-  onload = notify("Website under construction..", 5000);
+  onload = notify("Website under construction..", 10000);
 </script>
-
-<script></script>
-<!-- 
-events desc
-contact us
-sponsors
-punch line
- -->
+ 
+ 
