@@ -61,7 +61,8 @@
         document.getElementById('image4').style.display = 'block';
         document.getElementById('image3').style.display = 'block';
         document.getElementById('image9').style.display = 'block';
-        document.getElementById('pro_sec').style.background = '#131313';
+        document.getElementById('pro_sec').style.background = '#131313';      
+        notify('Acrylic Theme Activated !', 3000);
 
       } else {
         this.dataset.value = true;
@@ -70,6 +71,7 @@
         document.getElementById('image3').style.display = 'none';
         document.getElementById('image9').style.display = 'none';
         document.getElementById('pro_sec').style.background = 'transparent';
+        notify('Acrylic Theme Deactivated !', 3000);
       }"
     >
       <svg
