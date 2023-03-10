@@ -27,7 +27,26 @@
         <div class="cursor_circle" id="cursor_circle"></div>
       </div>
     </div>
-    <img src="./CIT Logo_blue_butterfly.webp" class="cit_logo" />
+    <img
+      src="./CIT Logo_blue_butterfly.webp"
+      class="cit_logo"
+      onclick="if (this.dataset.value == 'true') {
+      this.dataset.value = false;
+      document.getElementById('myVideo').style.display = 'none' ;
+      document.getElementById('image4').style.display = 'block';
+      document.getElementById('image3').style.display = 'block';
+      document.getElementById('image9').style.display = 'block';
+      document.getElementById('pro_sec').style.background = '#131313';
+
+    } else {
+      this.dataset.value = true;
+      document.getElementById('myVideo').style.display = 'block' ;
+      document.getElementById('image4').style.display = 'none';
+      document.getElementById('image3').style.display = 'none';
+      document.getElementById('image9').style.display = 'none';
+      document.getElementById('pro_sec').style.background = 'transparent';
+    }"
+    />
     <div class="noise-container"></div>
 
     <div
