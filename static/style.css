@@ -2957,6 +2957,10 @@ button:hover {
     /* position: sticky; */
     padding-bottom: 1vw;
     margin-top: 6vw;
-    margin-bottom: 8vw;
+    margin-bottom: 12vw;
+  }
+  #proo {
+    margin-top: 10vw !important;
+    margin-bottom: 3vw !important;
   }
 }
