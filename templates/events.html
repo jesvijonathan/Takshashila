@@ -13,7 +13,6 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script defer src="./cursor.js"></script>
     <script src="./butter.js"></script>
     <link rel="stylesheet" href="./style.css" />
 
@@ -171,8 +170,9 @@
       </div>
 
       <div class="eve_detail_cont" id="eve_detail_cont">
-        <div class="eve_mobile_reg">Register</div>
-        <div class="eve_detail_1_3_cont">
+        <div class="eve_mobile_reg mob">Register</div>
+
+        <div class="eve_detail_1_3_cont mob">
           <a
             class="eve_detail_1_3_link link_cur"
             data-text="Latest Posts"
@@ -201,10 +201,10 @@
           </a>
         </div>
 
-        <div class="eve_detail_1_1">
+        <div class="eve_detail_1">
           <div class="eve_detail_1">
             <img
-              style="height: 20vw; width: 100%"
+              style="height: 20vw; width: 78%"
               src="./photo-1501386761578-eac5c94b800a.jpeg"
               id="eve_img"
             />
@@ -220,7 +220,6 @@
               </div>
             </div>
             <div class="eve_detail_1_3">
-              <div class="eve_detai_1_2_title">Links :</div>
               <div class="eve_detail_1_3_cont">
                 <a
                   class="eve_detail_1_3_link link_cur"
@@ -230,14 +229,7 @@
                 >
                   Instagram Post
                 </a>
-                <a
-                  class="eve_detail_1_3_link link_cur"
-                  data-text="Youtube Videos"
-                  id="link_con_youtube"
-                  target="_blank"
-                >
-                  Youtube
-                </a>
+
                 <a
                   class="eve_detail_1_3_link link_cur"
                   data-text="Shareable Link"
@@ -626,13 +618,40 @@
 </script>
 
 <script>
+  // document.body.style.display = "none";
+
   var mobile = false;
+  console.log(navigator.userAgent);
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
     )
   ) {
     mobile = true;
+    // var ask1 = alert(
+    //   "Website Under construction & is not supported for mobile devices.\nUse a Desktop/Laptop to view the site.."
+    // );
+    //   butter.init({
+    //   wrapperId: "butter",
+    //   wrapperDamper: 0.07,
+    //   cancelOnTouch: true,
+    // });
+    // document.querySelector("#butter").style.position = "initial";
+  } else {
+    var head = document.getElementsByTagName("head")[0];
+    var js = document.createElement("script");
+
+    js.type = "text/javascript";
+
+    if (screen.width > 500) {
+      js.src = "./cursor.js";
+    }
+    head.appendChild(js);
+
+    document.body.style.cursor = "none";
+    document.getElementById("cursor").style.display = "block";
+
+    // document.body.style.display = "block";
   }
 </script>
 

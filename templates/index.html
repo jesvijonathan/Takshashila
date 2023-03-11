@@ -17,17 +17,21 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
     <meta name="thumbnail" content="favicon.png" />
     <link rel="stylesheet" href="./style.css" />
-    <script defer src="./cursor.js"></script>
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDPMEBQGBQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RDPMEBQGBQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-RDPMEBQGBQ');
-</script>
+      gtag("config", "G-RDPMEBQGBQ");
+    </script>
   </head>
   <header>
     <div class="cursor" id="cursor">
@@ -1500,12 +1504,24 @@
     // });
     // document.querySelector("#butter").style.position = "initial";
   } else {
+    var head = document.getElementsByTagName("head")[0];
+    var js = document.createElement("script");
+
+    js.type = "text/javascript";
+
+    if (screen.width > 500) {
+      js.src = "./cursor.js";
+    }
+    head.appendChild(js);
+
     document.body.style.cursor = "none";
     document.getElementById("cursor").style.display = "block";
 
     // document.body.style.display = "block";
   }
 </script>
+
+<!-- <script defer src="./cursor.js"></script> -->
 
 <!-- 
 <script>

@@ -388,7 +388,9 @@
     ],
     "prize": { "first": "1500", "second": "1000", "third": "0" },
     "date": "2023-03-31",
-    "batch": [{ "time": "11:00 AM", "venue": "Ground" }],
+    "batch": [
+      { "time": "11:00 AM", "venue": "Chennai Institute Of Technology" }
+    ],
     "incharge": [
       {
         "name": "Sathiya Ramanan V",
@@ -420,7 +422,9 @@
     ],
     "prize": { "first": "1500", "second": "1000", "third": "NIL" },
     "date": "2023-03-31",
-    "batch": [{ "time": "11:00 AM", "venue": "Ground" }],
+    "batch": [
+      { "time": "11:00 AM", "venue": "Chennai Institute Of Technology" }
+    ],
     "incharge": [
       {
         "name": "Sathiya Ramanan V",
@@ -452,7 +456,77 @@
     ],
     "prize": { "first": "1500", "second": "1000", "third": "NIL" },
     "date": "2023-03-31",
-    "batch": [{ "time": "11:00 AM", "venue": "Ground" }],
+    "batch": [
+      { "time": "11:00 AM", "venue": "Chennai Institute Of Technology" }
+    ],
+    "incharge": [
+      {
+        "name": "Sathiya Ramanan V",
+        "email": "sathiyaramananv.mech2019@citchennai.net",
+        "phone": "9500206795"
+      },
+      {
+        "name": "Gayathrie",
+        "email": "gayathriem.aids2021@citchennai.net",
+        "phone": "9150472413"
+      }
+    ],
+    "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
+    "youtube": "https://www.youtube.com/@CITTakshashila",
+    "register": "https://www.google.com/"
+  },
+  {
+    "name": "Frame Spot",
+    "type": "Non-Technical",
+    "tags": ["Cinema Lover", "Iconic Frames"],
+    "image": "https://lh3.googleusercontent.com/y3wnFeyI725ouvemoCA_n3r7JN3aB4ooLZ1R6CLNuwXCBfjD9lFoGMkASrmaZTcirSKY8cvV_LXMCBtRT897MlDLJwshAzpdn40Fm3Y_IdXjty6yvGpWzXqv2qWbzQ_jQhDCPCne1V9XmGS-5j7hc44Eyzc4pFaisCNqLzfYzBKjywT5JMiELSYz0jTFBdn1JlKpqu08uqnXRu9gl-GyZoBOXDOCynDOCJjM8zbP6EgNZW2SA6TVYsjg-yd1VoMY4RooOTT-fGUQy73lY4BcaXnbWOWEIbBsUwZVkX0qbbdN6QxS47Lc6YiJqBUCOvwxJCBPHzGToKKn3fVcATgihUnaCEKg9yt5kSSSzV7IglfwF8ByeoKVgRr-FXQrj-MHzG7Cx776UUifZH3P_b0Cn_rgKnzSr3g8ei1zFq0jLvU3nRngeDuYlsXKAotFQNMOeOUsoVdo0TYTP752V5iJEOcP3Fl9JBAQ2Tlw088W2MDfdWM3KoZFd_T-YuAJkeEwDy-weUF-qo9vqVKwwlMgKfRyNCbCd1EM8X1VCtsIX6vX_lVZ3W9HsbWTMV2Fak74V34dJc9iI6zXUWmHqtYOf0EwoJsSfUWpJ-A1ha7zeHHoCZ0yrIthYeullrhcCT_go3gtD5FaTkqA_f_fdbyF36ft-zOqtHVcg2OyUIHvb0mlqka0TWAU7pvruhtr8bOpoH-U1ZZlmt_cP4JLPBMmYig5_il-u_Esrw5yP-RU4e0XZiGLAf0vXl5YPIg0iMDWSoDuTzDpvWbCSGdHXwMcmFryZnRfu1bkYUZcvO2RuXEQjvufIFofVhpJJU60U5Gtcap9UCa5c9qr4QGKfgYC74QsEuR2v-eizZthtjeGA3iC-OHIE-DqUCQdiZ-bkcXm8bVu1NamljylPNBXauMj5WWmHuWjmaDx6b_nJgjWZDT1ct7w=w974-h972-no?authuser=0",
+    "fee": "150",
+    "team_size": "Event_Team_Size",
+    "description": "Analyze the given frames and arrive at the bigger picture. Discover the hidden message in each picture, make the connections, and learn what the final frame whispers to you.",
+    "tag_line": "Event_Tag_Line",
+    "rules": [
+      " It's a single-player game. Only one player is allowed to play ata time.",
+      "2"
+    ],
+    "prize": { "first": "1500", "second": "1000", "third": "NIL" },
+    "date": "2023-03-31",
+    "batch": [
+      { "time": "11:00 AM", "venue": "Chennai Institute Of Technology" }
+    ],
+    "incharge": [
+      {
+        "name": "Sathiya Ramanan V",
+        "email": "sathiyaramananv.mech2019@citchennai.net",
+        "phone": "9500206795"
+      },
+      {
+        "name": "Gayathrie",
+        "email": "gayathriem.aids2021@citchennai.net",
+        "phone": "9150472413"
+      }
+    ],
+    "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
+    "youtube": "https://www.youtube.com/@CITTakshashila",
+    "register": "https://www.google.com/"
+  },
+  {
+    "name": "Situtation Acting",
+    "type": "Non-Technical",
+    "tags": ["Cinema", "Kamal Haasan"],
+    "image": "https://lh3.googleusercontent.com/y3wnFeyI725ouvemoCA_n3r7JN3aB4ooLZ1R6CLNuwXCBfjD9lFoGMkASrmaZTcirSKY8cvV_LXMCBtRT897MlDLJwshAzpdn40Fm3Y_IdXjty6yvGpWzXqv2qWbzQ_jQhDCPCne1V9XmGS-5j7hc44Eyzc4pFaisCNqLzfYzBKjywT5JMiELSYz0jTFBdn1JlKpqu08uqnXRu9gl-GyZoBOXDOCynDOCJjM8zbP6EgNZW2SA6TVYsjg-yd1VoMY4RooOTT-fGUQy73lY4BcaXnbWOWEIbBsUwZVkX0qbbdN6QxS47Lc6YiJqBUCOvwxJCBPHzGToKKn3fVcATgihUnaCEKg9yt5kSSSzV7IglfwF8ByeoKVgRr-FXQrj-MHzG7Cx776UUifZH3P_b0Cn_rgKnzSr3g8ei1zFq0jLvU3nRngeDuYlsXKAotFQNMOeOUsoVdo0TYTP752V5iJEOcP3Fl9JBAQ2Tlw088W2MDfdWM3KoZFd_T-YuAJkeEwDy-weUF-qo9vqVKwwlMgKfRyNCbCd1EM8X1VCtsIX6vX_lVZ3W9HsbWTMV2Fak74V34dJc9iI6zXUWmHqtYOf0EwoJsSfUWpJ-A1ha7zeHHoCZ0yrIthYeullrhcCT_go3gtD5FaTkqA_f_fdbyF36ft-zOqtHVcg2OyUIHvb0mlqka0TWAU7pvruhtr8bOpoH-U1ZZlmt_cP4JLPBMmYig5_il-u_Esrw5yP-RU4e0XZiGLAf0vXl5YPIg0iMDWSoDuTzDpvWbCSGdHXwMcmFryZnRfu1bkYUZcvO2RuXEQjvufIFofVhpJJU60U5Gtcap9UCa5c9qr4QGKfgYC74QsEuR2v-eizZthtjeGA3iC-OHIE-DqUCQdiZ-bkcXm8bVu1NamljylPNBXauMj5WWmHuWjmaDx6b_nJgjWZDT1ct7w=w974-h972-no?authuser=0",
+    "fee": "150",
+    "team_size": "Event_Team_Size",
+    "description": "Analyze the given frames and arrive at the bigger picture. Discover the hidden message in each picture, make the connections, and learn what the final frame whispers to you.",
+    "tag_line": "Event_Tag_Line",
+    "rules": [
+      " It's a single-player game. Only one player is allowed to play ata time.",
+      "2"
+    ],
+    "prize": { "first": "1500", "second": "1000", "third": "NIL" },
+    "date": "2023-03-31",
+    "batch": [
+      { "time": "11:00 AM", "venue": "Chennai Institute Of Technology" }
+    ],
     "incharge": [
       {
         "name": "Sathiya Ramanan V",
