@@ -17,16 +17,20 @@
     <script src="./butter.js"></script>
     <link rel="stylesheet" href="./style.css" />
 
-
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDPMEBQGBQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RDPMEBQGBQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-RDPMEBQGBQ');
-</script>
+      gtag("config", "G-RDPMEBQGBQ");
+    </script>
   </head>
 
   <body class="eve_body" id="bodyy">
@@ -167,8 +171,38 @@
       </div>
 
       <div class="eve_detail_cont" id="eve_detail_cont">
-        <div class="eve_detail_1">
-          <div class="eve_detail_1_1">
+        <div class="eve_mobile_reg">Register</div>
+        <div class="eve_detail_1_3_cont">
+          <a
+            class="eve_detail_1_3_link link_cur"
+            data-text="Latest Posts"
+            id="link_con_insta"
+            target="_blank"
+          >
+            Instagram Post
+          </a>
+
+          <a
+            class="eve_detail_1_3_link link_cur"
+            data-text="Shareable Link"
+            id="link_con_share"
+            onclick="copyToClipboard(); notify('Link Copied To Clipboard !',5000)"
+            target="_blank"
+          >
+            Share Link
+          </a>
+          <a
+            class="eve_detail_1_3_link link_cur"
+            data-text="Download Brochure"
+            id="link_con_download"
+            target="_blank"
+          >
+            Download
+          </a>
+        </div>
+
+        <div class="eve_detail_1_1">
+          <div class="eve_detail_1">
             <img
               style="height: 20vw; width: 100%"
               src="./photo-1501386761578-eac5c94b800a.jpeg"

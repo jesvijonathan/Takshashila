@@ -3104,6 +3104,7 @@ button:hover {
   .eve_detail_2_2_1 {
     font-family: "oo";
     font-size: 3vw;
+    padding-bottom: 2vw;
   }
   .eve_detail_2_2_tag {
     font-family: "jura";
@@ -3188,7 +3189,7 @@ button:hover {
     margin-bottom: 1vw;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 6.1vw;
+    margin-top: 10vw;
     flex-wrap: wrap;
     row-gap: 1.6vw;
     position: relative;
@@ -3215,6 +3216,34 @@ button:hover {
     margin-top: 3vw;
     align-content: center;
     align-items: flex-start;
+  }
+
+  .eve_detail_1 {
+  }
+  .eve_detail_mobile_con {
+    display: flex;
+  }
+  .eve_mobile_reg {
+    background: white;
+    color: black;
+    width: 80%;
+    text-align: center;
+    padding: 3vw 0vw;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  .eve_mobile_reg:hover {
+    background: #000;
+    color: white;
+  }
+  .eve_detail_1_1 {
+    display: none;
+  }
+  #link_con_insta {
+    margin-left: 0vw;
+  }
+  .eve_detail_1_3_link {
+    width: unset;
   }
 }
 
