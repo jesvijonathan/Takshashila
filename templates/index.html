@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="htmll">
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link
@@ -16,8 +16,6 @@
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
     <meta name="thumbnail" content="favicon.png" />
-
-    <script id="scri_but" src="./butter.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./cursor.js"></script>
   </head>
@@ -1405,7 +1403,10 @@
             <a
               href="https://jesvi.pythonanywhere.com"
               target="_blank"
-              data-text="🔥😎🔥"
+              id="easter"
+              onmouseenter="document.getElementById('htmll').style.mixBlendMode='difference';"
+              onmouseleave="document.getElementById('htmll').style.mixBlendMode='unset';"
+              data-text="Appreciate Your Curiosity"
               class="foot_2_2 link_cur"
               >Made With ❤️ By Jesvi Jonathan</a
             >
@@ -1414,15 +1415,7 @@
       </footer>
     </div>
   </body>
-  <script>
-    butter.init({
-      wrapperId: "butter",
-      wrapperDamper: 0.1,
-      cancelOnTouch: false,
-    });
 
-    document.querySelector("#butter").style.position = "initial";
-  </script>
   <div class="notify">
     <div id="not-cont" class="notify-content">
       <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
@@ -1431,6 +1424,20 @@
     <div class="notify-button" onclick="accept_cookie()">Dismiss</div>
   </div>
 </html>
+
+<script>
+  function butter_start() {
+    butter.init({
+      wrapperId: "butter",
+      wrapperDamper: 0.1,
+      cancelOnTouch: false,
+    });
+
+    document.querySelector("#butter").style.position = "initial";
+  }
+</script>
+
+<script id="scri_but" src="./butter.js" onload="butter_start()"></script>
 
 <script>
   // Notify flyer function //

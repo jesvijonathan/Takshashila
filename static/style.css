@@ -142,7 +142,7 @@ header {
   transition: 0.2s ease-in-out;
 }
 .main_logo:hover svg path {
-  fill: grey;
+  /* fill: grey; */
 }
 
 .svg_container_design {
@@ -2584,9 +2584,6 @@ button:hover {
   .img_sc {
     display: none;
   }
-  section {
-    /* height: fit-content; */
-  }
   .desc {
     font-weight: 100;
     /* margin-top: 3%; */
@@ -2651,7 +2648,7 @@ button:hover {
     position: absolute;
     top: 3vw;
     left: 5vw;
-    width: fit-content;
+    width: auto;
     display: block;
   }
   .to_title {
@@ -2781,7 +2778,7 @@ button:hover {
     width: 40vw;
   }
   footer {
-    height: 42vw;
+    height: 56vw;
   }
   #fff {
     height: 100%;
@@ -2960,7 +2957,7 @@ button:hover {
     font-size: 3vw;
   }
   #navbar {
-    z-index: 0;
+    /* z-index: 0; */
     transition: 0.3s ease-in-out;
   }
   .solo_text {
@@ -2974,12 +2971,18 @@ button:hover {
     margin-bottom: 3vw !important;
   }
   .eve_func {
-    display: none;
+    /* display: none; */
+    margin: 7vw 5vw 4.2vw 4vw;
+  }
+
+  .eve_func .title {
+    font-size: 6.8vw;
+    margin: 6vw 0;
   }
   #eve_list_cont {
     display: flex;
     flex-direction: column;
-    padding: 56vw 0vw 28vw 0vw;
+    padding: 7vw 0vw 28vw 0vw;
   }
   .eve_card {
     height: 80vw;
@@ -3044,4 +3047,183 @@ button:hover {
     border-bottom: 0.2vw solid rgba(255, 255, 255, 0.7);
     border-radius: 0px;
   }
+  .filter {
+    display: none !important;
+  }
+  .eve_head {
+    display: none;
+  }
+
+  .filt_icon {
+    font-size: 6vw;
+    color: white;
+    margin: 2vw;
+  }
+  .sticky {
+    margin: 7vw 0vw 4.2vw 0vw !important;
+    background: #bbbbbb17;
+    backdrop-filter: blur(15px);
+  }
+  .title_back_con {
+    font-size: 5vw;
+  }
+
+  .eve_detail_cont {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 3vw;
+    margin: 10vw 5vw;
+    margin-bottom: 10vw;
+    height: 44vw;
+    background: rgb(60, 60, 60);
+    color: white;
+    font-family: "oo";
+    font-family: "jura";
+    align-items: center;
+    flex-wrap: nowrap;
+    height: fit-content;
+    padding: 10vw 5vw;
+  }
+  .eve_detail_2 {
+    width: 100%;
+    gap: 10vw;
+  }
+  .eve_detail_2_1_1 {
+    font-size: 6vw;
+  }
+  .eve_edtail_2_1_tag {
+    font-size: 2.4vw;
+  }
+  #eve_title_con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .eve_detail_2_2_1 {
+    font-family: "oo";
+    font-size: 3vw;
+  }
+  .eve_detail_2_2_tag {
+    font-family: "jura";
+    font-size: 2.8vw;
+    width: 100%;
+    height: unset;
+  }
+  .eve_rules {
+    margin-bottom: 0.4vw;
+    font-size: 2.7vw;
+    font-family: "jura";
+  }
+  .eve_sec_con {
+    gap: 0.2vw;
+    font-size: 2.8vw;
+  }
+  .eve_detail_horiz {
+    height: unset;
+    flex-direction: column;
+    width: 100%;
+    gap: 10vw;
+  }
+
+  #eve_detail_2_2 {
+    margin: 6vw 0vw 0vw 0vw;
+    /* background: grey; */
+  }
+  .eve_detail_2_2 {
+    /* background: grey; */
+  }
+  .eve_sec {
+    /* background-color: grey; */
+  }
+  .eve_lin {
+    display: none;
+  }
+  .eve_detail_1 {
+    width: 100%;
+  }
+  #eve_img {
+    height: auto !important;
+    width: 100% !important;
+  }
+  .eve_detail_1_1 {
+    width: 100%;
+    padding: 2vw 2vw 10vw 2vw;
+    gap: 3vw;
+  }
+  .eve_detai_1_2_title {
+    width: fit-content;
+    font-size: 3vw;
+  }
+  .eve_detai_1_2_tag {
+    background-color: rgb(96 96 96 / 40%);
+    border-radius: 40px;
+    font-size: 2.1vw;
+    font-family: "oo";
+    padding: 1.4vw 2vw;
+  }
+  .eve_detai_1_2_tag_cont {
+    gap: 3vw;
+  }
+  .eve_detail_1_2 {
+    gap: 2vw;
+  }
+  .eve_detail_1_3_link {
+    padding: 0.5vw 0vw;
+    width: 20vw;
+    padding: 1.5vw 3vw;
+    background-color: #1a1a1a6c;
+    text-align: center;
+    font-size: 2.7vw;
+    border-radius: 2px;
+    font-family: "jura";
+  }
+
+  .eve_detail_1_3_cont {
+    /* height: 2vw; */
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    margin-bottom: 1vw;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 6.1vw;
+    flex-wrap: wrap;
+    row-gap: 1.6vw;
+    position: relative;
+    top: -11vw;
+  }
+  .eve_detail_reg {
+    font-size: 5.2vw;
+    padding: 2vw 0vw;
+    width: 100%;
+  }
+  .eve_detail_1_4 {
+    width: 88%;
+  }
+  #link_con_insta {
+    margin-left: 12vw;
+  }
+  .eve_detail_1_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    /* margin: 2vw; */
+    height: 13vw;
+    margin-top: 3vw;
+    align-content: center;
+    align-items: flex-start;
+  }
+}
+
+#easter:hover {
+  /* background-color: #ffffff;
+  color: black; */
+  text-decoration: underline;
+}
+
+.eve_img {
+  opacity: 0;
 }

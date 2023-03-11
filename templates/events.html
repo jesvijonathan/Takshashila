@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="htmll">
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
 
-  <body class="eve_body">
+  <body class="eve_body" id="bodyy">
     <div class="cursor" id="cursor">
       <div class="cursor_border" id="cursor_border">
         <div class="cursor_circle" id="cursor_circle"></div>
@@ -55,6 +55,11 @@
         </div>
       </div>
       <div class="search"></div>
+      <div
+        class="filt_icon fa fa-navicon"
+        id="filt_icon"
+        onclick="notify('Just assume you are being redirected !', 3000)"
+      ></div>
       <div class="title_back_con" onclick="close_event(this)" id="baclk_w">
         <span class="fa fa-arrow-left"></span>
         <div>Back</div>
@@ -524,7 +529,10 @@
             <a
               href="https://jesvi.pythonanywhere.com"
               target="_blank"
-              data-text="🔥😎🔥"
+              id="easter"
+              onmouseenter="document.getElementById('htmll').style.mixBlendMode='difference';"
+              onmouseleave="document.getElementById('htmll').style.mixBlendMode='unset';"
+              data-text="The Developer"
               class="foot_2_2 link_cur"
               >Made With ❤️ By Jesvi Jonathan</a
             >
@@ -573,6 +581,17 @@
 </script>
 
 <script>
+  var mobile = false;
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    mobile = true;
+  }
+</script>
+
+<script>
   // Init variables //
 
   let eve_list_cont = document.getElementById("eve_list_cont");
@@ -604,6 +623,7 @@
   var eve_card = document.getElementById("eve_card");
 
   var navbar = document.getElementById("navbar");
+  let filt_icon = document.getElementById("filt_icon");
 </script>
 
 <script>
@@ -621,6 +641,9 @@
     filter.style.display = "flex";
 
     baclk_w.style.display = "none";
+    if (mobile) {
+      filt_icon.style.display = "block";
+    }
   }
 
   // notify("Loading...");
@@ -852,14 +875,24 @@
       hori.style.display = "flex";
     }
 
-    eve_path.childNodes[1].innerHTML =
-      "/ <a class='nigus' href='./events#/" +
-      json_data[e].type +
-      "'>" +
-      json_data[e].type +
-      "</a>";
-    eve_path.childNodes[3].innerHTML =
-      "/ <a class='nigus' href='./" + xpath + "'>" + json_data[e].name + "</a>";
+    if (mobile) {
+      eve_path.style.display = "none";
+      filt_icon.style.display = "none";
+    } else {
+      eve_path.childNodes[1].innerHTML =
+        "/ <a class='nigus' href='./events#/" +
+        json_data[e].type +
+        "'>" +
+        json_data[e].type +
+        "</a>";
+      eve_path.childNodes[3].innerHTML =
+        "/ <a class='nigus' href='./" +
+        xpath +
+        "'>" +
+        json_data[e].name +
+        "</a>";
+    }
+
     // notify("Something Went Wrong :(", 5000);
     // alert("Something went wrong :(\nProceed to reload website...\n\n" + e);
     // window.location.pathname = "/events";
