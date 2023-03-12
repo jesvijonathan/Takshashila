@@ -33,6 +33,8 @@
   </head>
 
   <body class="eve_body" id="bodyy">
+        <!-- <video autoplay muted loop id="myVideo"><source src="./pexels-tima-miroshnichenko-7985887.mp4" type="video/mp4" /></video> -->
+    <img id="myVideo" src="./pexels-tima-miroshnichenko-7985887.webp" type="image/webp" />
     <div class="cursor" id="cursor">
       <div class="cursor_border" id="cursor_border">
         <div class="cursor_circle" id="cursor_circle"></div>
@@ -40,29 +42,29 @@
     </div>
     <div class="noise-container"></div>
     <header class="eve_head">
-      <div
+      <a
         class="ev_title title_font link_cur"
         data-text="Return To Main Page"
-        onclick="close_event(this);"
+        href="/home"
       >
         Takshashila
-      </div>
+    </a>
 
       <div class="mav_bar_cont">
-        <div class="nav_bar_links link_cur" data-text="About Us">About</div>
-        <div class="nav_bar_links link_cur" data-text="Events List">Events</div>
-        <div class="nav_bar_links link_cur" data-text="Pro-Shows">
+        <div class="nav_bar_links link_cur"  hre="/home#about"data-text="About Us">About</div>
+        <div class="nav_bar_links link_cur" hre="/home#events"data-text="Events List">Events</div>
+        <div class="nav_bar_links link_cur"hre="/home#pro_sec" data-text="Pro-Shows">
           Pro Shows
         </div>
-        <div class="nav_bar_links link_cur" data-text="Workshops">
+        <div class="nav_bar_links link_cur"hre="/home#workshop" data-text="Workshops">
           Workshops
         </div>
-        <div class="nav_bar_links link_cur" data-text="Contact Us">Contact</div>
+        <div class="nav_bar_links link_cur" hre="/home#contact"data-text="Contact Us">Contact</div>
       </div>
     </header>
     <div class="eve_func" id="navbar">
       <div class="eve_path_con_par">
-        <div class="title">Events</div>
+        <div class="title link_cur" data-text="Change Graphics" onclick=graphic()>Events</div>
         <div class="eve_path_con" id="eve_path">
           <a class="link_cur" data-text="Event Type">/ Technical</a>
           <a class="link_cur" data-text="Event Name">/ Plush</a>
@@ -420,7 +422,7 @@
               </div>
               <div class="line_3"></div>
               <div class="foot_1_2_1">
-                <div class="foot_1_2_1_title">Events</div>
+                <div class="foot_1_2_1_title" >Events</div> 
                 <div class="foot_1_2_1_list">
                   <a
                     class="foot_1_2_1_list_item link_cur"
@@ -795,7 +797,6 @@
         // Your code for handling the data you get from the API
 
         for (let i = 0; i < data.length; i++) {
-          console.log("here");
           jata = data[i];
           inner_details = "";
 
@@ -819,9 +820,9 @@
           inner_details += '<div class="eve_button">View</div></div>';
 
           html_list.innerHTML +=
-            '<div class="eve_card ' +
+            '<div class="eve_card  ' +
             jata.type +
-            '" onclick="open_event(' +
+            '"  onclick="open_event(' +
             i +
             ');">' +
             inner_details +
@@ -1014,3 +1015,39 @@
     }
   }
 </script>
+<script>
+  var graphic_high = 0,
+    sec = document.getElementById("s0"),
+    myvid = document.getElementById("myVideo");
+
+    function graphic() {
+  1 == graphic_high
+    ? ((graphic_high = 0),
+      document.getElementById("eve_detail_cont").style.background = "#3c3c3c",
+      (myvid.style.display = "none"),
+      document.getElementById("navbar").style.background = "transparent",
+      myvid.classList.remove("blur"), 
+  
+  notify("Acrylic Theme Deactivated !", 3e3),
+      ripple.classList.remove("rypol"),
+      
+      (pro_sec.style.background = "#131313"),
+      (image4.style.display = "block"),
+      (image3.style.display = "block"),
+      (image9.style.display = "block"))
+    : ((graphic_high = 1),
+      document.getElementById("eve_detail_cont").style.background = "#48484838  ",
+      myvid.classList.add("blur"),
+      navbar.classList.add("sticky_blur"),
+      (myvid.style.display = "block"),
+      document.getElementById("navbar").add("sticky_blur"),
+      
+      notify("Acrylic Theme Activated !", 3e3),
+      ripple.classList.add("rypol"),
+      (pro_sec.style.background = "transparent"),
+      (image4.style.display = "none"),
+      (image3.style.display = "none"),
+      (image9.style.display = "none"));
+}
+</script>
+

@@ -224,6 +224,7 @@ function graphic() {
       ripple.classList.add("rypol"),
       notify("Acrylic Theme Activated !", 3e3));
 }
+
 (onload = function () {
   showSlides(slideIndex);
 }),

@@ -972,7 +972,7 @@ mark {
 .eve_active,
 .pro_ppl_txt_b:hover {
   background-color: #fff;
-  color: #000;
+  color: #000 !important;
 }
 @keyframes movee {
   0% {
@@ -1610,6 +1610,10 @@ button:hover {
   padding: 0 4vw;
   border-bottom: 0.1vw solid transparent;
   background: #1a1a1a;
+}
+.sticky_blur {
+  backdrop-filter: blur(50px);
+  background-color: transparent;
 }
 .sticky + .content {
   padding-top: 60px;
@@ -2824,7 +2828,7 @@ select {
     border: 1px solid;
     padding: 0 7vw !important;
   }
-  #navbar {
+  #navbar_eve {
     transition: 0.3s ease-in-out;
   }
   .solo_text {
