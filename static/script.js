@@ -209,6 +209,13 @@ function sign_in_check(n) {
   }
 }
 
+function get_acc() {
+  if ((t = getCookie("hash"))) {
+    top_link.innerHTML = "Account";
+    top_link.href = "/profile/" + t;
+    // top_link.innerHTML = getCookie("first_name");
+  }
+}
 
 // Profile edit function //
 function profile_edit(input_) {
@@ -408,5 +415,3 @@ function graphic() {
   //   ripple.style.animationPlayState = "running";
   // }
 }
-
-

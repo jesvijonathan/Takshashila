@@ -17,7 +17,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
     <meta name="thumbnail" content="favicon.png" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" id="script"></script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -1444,7 +1443,6 @@
     let entry = entries[0];
     let target = entry.target;
 
-    console.log();
     if (entry.intersectionRatio > 0) {
       if (target.dataset.callback) {
         window[target.dataset.callback](target, true);
@@ -1490,17 +1488,17 @@
       notify("Click on the logo to adjust graphic quality", 3000);
     }, 12000);
   }
-  onload = init_not();
 </script>
 
 <script>
   let top_link = document.getElementById("top_link");
-  function get_acc() {
-    if ((t = getCookie("hash"))) {
-      top_link.innerHTML = "Account";
-      top_link.href = "/profile/" + t;
-      // top_link.innerHTML = getCookie("first_name");
-    }
-  }
-  onload = get_acc();
 </script>
+
+<script>
+  function init_load() {
+    get_acc();
+    init_not();
+  }
+</script>
+
+<script src="./script.js" id="script" onload="init_load()"></script>
