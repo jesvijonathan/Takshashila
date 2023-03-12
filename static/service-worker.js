@@ -1,24 +1,18 @@
-// Cached core static resources
-self.addEventListener("install", (e) => {
-  e.waitUntil(
-    caches.open("static").then((cache) => {
-      return cache.addAll([
-        "./style.css",
-        "./script.js",
-        "./cursor.js",
-        "./manifest.json",
-
-        "./",
-      ]);
-    })
+self.addEventListener("install", (t) => {
+  t.waitUntil(
+    caches
+      .open("static")
+      .then((t) =>
+        t.addAll([
+          "./style.css",
+          "./script.js",
+          "./cursor.js",
+          "./manifest.json",
+          "./",
+        ])
+      )
   );
-});
-
-// Fatch resources
-self.addEventListener("fetch", (e) => {
-  e.respondWith(
-    caches.match(e.request).then((response) => {
-      return response || fetch(e.request);
-    })
-  );
-});
+}),
+  self.addEventListener("fetch", (t) => {
+    t.respondWith(caches.match(t.request).then((e) => e || fetch(t.request)));
+  });
