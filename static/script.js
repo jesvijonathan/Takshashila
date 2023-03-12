@@ -208,13 +208,13 @@ function sign_in_check(n) {
     }
   }
 }
-  function get_acc() {
+function get_acc() {
   if ((t = getCookie("hash"))) {
     top_link.innerHTML = "Account";
     top_link.href = "/profile/" + t;
     // top_link.innerHTML = getCookie("first_name");
   }
-};
+}
 
 // Profile edit function //
 function profile_edit(input_) {
@@ -372,7 +372,6 @@ function splash_pop(target, state) {
   }
 }
 
-
 // Graphics //
 onload = function () {
   let image4 = document.getElementById("image4");
@@ -415,7 +414,6 @@ function graphic() {
   //   ripple.style.animationPlayState = "running";
   // }
 }
-
 
 function init_not() {
   notify("Website under construction..", 10000);
