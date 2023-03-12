@@ -208,6 +208,13 @@ function sign_in_check(n) {
     }
   }
 }
+  function get_acc() {
+  if ((t = getCookie("hash"))) {
+    top_link.innerHTML = "Account";
+    top_link.href = "/profile/" + t;
+    // top_link.innerHTML = getCookie("first_name");
+  }
+};
 
 // Profile edit function //
 function profile_edit(input_) {
@@ -364,25 +371,7 @@ function splash_pop(target, state) {
     target.classList.add("splash_slide");
   }
 }
-function callbackRouter(entries, observer) {
-  let entry = entries[0];
-  let target = entry.target;
 
-  console.log();
-  if (entry.intersectionRatio > 0) {
-    if (target.dataset.callback) {
-      window[target.dataset.callback](target, true);
-      if (target.dataset.once == "true") {
-        target.classList.remove("jos");
-        observer.unobserve(target);
-      }
-    }
-  } else {
-    if (target.dataset.callback) {
-      window[target.dataset.callback](target, false);
-    }
-  }
-}
 
 // Graphics //
 onload = function () {
@@ -425,4 +414,13 @@ function graphic() {
   //   // ripple.classList.add("ripple");
   //   ripple.style.animationPlayState = "running";
   // }
+}
+
+
+function init_not() {
+  notify("Website under construction..", 10000);
+
+  setTimeout(function () {
+    notify("Click on the logo to adjust graphic quality", 3000);
+  }, 12000);
 }

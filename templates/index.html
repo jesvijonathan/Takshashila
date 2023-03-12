@@ -1440,6 +1440,25 @@
 </script>
 
 <script>
+  function callbackRouter(entries, observer) {
+    let entry = entries[0];
+    let target = entry.target;
+
+    console.log();
+    if (entry.intersectionRatio > 0) {
+      if (target.dataset.callback) {
+        window[target.dataset.callback](target, true);
+        if (target.dataset.once == "true") {
+          target.classList.remove("jos");
+          observer.unobserve(target);
+        }
+      }
+    } else {
+      if (target.dataset.callback) {
+        window[target.dataset.callback](target, false);
+      }
+    }
+  }
   const observer = new IntersectionObserver(callbackRouter);
   const boxes = document.querySelectorAll(".jos");
   boxes.forEach(observer.observe.bind(observer));
@@ -1465,18 +1484,10 @@
   let notify_va = document.getElementById("notify");
   let not_con = document.getElementById("not-cont");
 
-  notify("Website under construction..", 10000);
-
-  setTimeout(function () {
-    notify("Click on the logo to adjust graphic quality", 3000);
-  }, 12000);
+  onload = init_not();
 </script>
 
 <script>
-  if ((t = getCookie("hash"))) {
-    let top_link = document.getElementById("top_link");
-    top_link.innerHTML = "Account";
-    top_link.href = "/profile/" + t;
-    // top_link.innerHTML = getCookie("first_name");
-  }
+  let top_link = document.getElementById("top_link");
+  onload = get_acc();
 </script>
