@@ -2776,6 +2776,10 @@ select {
   transition: 0.2s ease-in-out;
   font-size: 1vw;
 }
+.login_phone_prefix_2 {
+  left: 3vw;
+  top: unset;
+}
 #ph_number {
   transition: 0.2s ease-in-out;
 }
@@ -3760,3 +3764,44 @@ select {
 .eve_img {
   opacity: 0;
 }
+/* @keyframes ripple {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  80% {
+    opacity: 0;
+    height: 100vw;
+    width: 100vw;
+  }
+  81% {
+    height: 0vw;
+    width: 0vw;
+    display: none;
+    animation-play-state: paused !important;
+  }
+} */
+.ripple {
+  height: 0vw;
+  width: 0vw;
+  position: absolute;
+  background-color: rgba(255, 255, 255);
+  border-radius: 100%;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.rypol {
+  opacity: 0;
+  height: 100vw;
+  width: 100vw;
+}
+
+/* .main_title_container .ripple {
+  display: block;
+} */

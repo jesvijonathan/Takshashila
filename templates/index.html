@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
     <meta name="thumbnail" content="favicon.png" />
     <link rel="stylesheet" href="./style.css" />
-
+    <script src="./script.js"></script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -42,23 +42,7 @@
     <img
       src="./CIT Logo_blue_butterfly.webp"
       class="cit_logo"
-      onclick="if (this.dataset.value == 'true') {
-      this.dataset.value = false;
-      document.getElementById('myVideo').style.display = 'none' ;
-      document.getElementById('image4').style.display = 'block';
-      document.getElementById('image3').style.display = 'block';
-      document.getElementById('image9').style.display = 'block';
-      document.getElementById('pro_sec').style.background = '#131313';
-      notify('Acrylic Theme Activated !', 3000);
-
-    } else {
-      this.dataset.value = true;
-      document.getElementById('myVideo').style.display = 'block' ;
-      document.getElementById('image4').style.display = 'none';
-      document.getElementById('image3').style.display = 'none';
-      document.getElementById('image9').style.display = 'none';
-      document.getElementById('pro_sec').style.background = 'transparent';notify('Acrylic Theme Deactivated !',3000)
-    }"
+      onclick="graphic(this)"
     />
     <div class="noise-container"></div>
 
@@ -66,25 +50,7 @@
       class="main_logo link_cur"
       data-text="Flame Of Takshashila"
       style="z-index: 100"
-      data-value="false"
-      onclick="if (this.dataset.value == 'true') {
-        this.dataset.value = false;
-        document.getElementById('myVideo').style.display = 'none' ;
-        document.getElementById('image4').style.display = 'block';
-        document.getElementById('image3').style.display = 'block';
-        document.getElementById('image9').style.display = 'block';
-        document.getElementById('pro_sec').style.background = '#131313';      
-        notify('Acrylic Theme Deactivated !', 3000);
-
-      } else {
-        this.dataset.value = true;
-        document.getElementById('myVideo').style.display = 'block' ;
-        document.getElementById('image4').style.display = 'none';
-        document.getElementById('image3').style.display = 'none';
-        document.getElementById('image9').style.display = 'none';
-        document.getElementById('pro_sec').style.background = 'transparent';
-        notify('Acrylic Theme Activated !', 3000);
-      }"
+      onclick="graphic(this)"
     >
       <svg
         width="90"
@@ -182,6 +148,7 @@
     </div>
     <a
       href="/login"
+      id="top_link"
       target="_blank"
       class="main_signin link_cur"
       data-text="Login  Register"
@@ -205,7 +172,13 @@
         </div>
 
         <div class="main_title_container">
-          <div class="svg_container" id="image5">
+          <div class="ripple" id="ripple"></div>
+          <div
+            class="svg_container link_cur"
+            onclick="graphic(this)"
+            data-text="Graphic Quality"
+            id="image5"
+          >
             <svg
               width="697"
               height="157"
@@ -1046,7 +1019,7 @@
                           data-text="Conatct"
                           href="tel:+919849770286"
                           target="_blank"
-                          >Ponduru Dinuroop (President | +919849770286)</a
+                          >Deez (President | +910000000000)</a
                         >
                       </li>
                       <li>
@@ -1055,7 +1028,7 @@
                           data-text="Conatct"
                           href="tel:+919150612359"
                           target="_blank"
-                          >Yuva Daranee (Vice President | +919150612359)</a
+                          >Deez (Vice President | +910000000000)</a
                         >
                       </li>
                       <li>
@@ -1064,7 +1037,7 @@
                           data-text="Conatct"
                           href="tel:+919003633318"
                           target="_blank"
-                          >Kamal Roshan (Event Co-ordinator | +919003633318)</a
+                          >Deez (Event Co-ordinator | +910000000000)</a
                         >
                       </li>
                       <li>
@@ -1073,7 +1046,7 @@
                           data-text="Conatct"
                           href="tel:+919384485985"
                           target="_blank"
-                          >Dhanya Babu (Secretary | +919384485985)</a
+                          >Deez (Secretary | +910000000000)</a
                         >
                       </li>
                       <!-- dhanya 9384485985 | yuva 9150612359
@@ -1128,45 +1101,6 @@
               </li>
             </ul>
           </div>
-
-          <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-              showSlides((slideIndex += n));
-            }
-
-            function currentSlide(n) {
-              showSlides((slideIndex = n));
-            }
-
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("locac");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {
-                slideIndex = 1;
-              }
-              if (n < 1) {
-                slideIndex = slides.length;
-              }
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" current", "");
-              }
-              slides[slideIndex - 1].style.display = "block";
-              dots[slideIndex - 1].className += " current";
-
-              if (n == 1) {
-                document.getElementById("Loconn").innerHTML = "Location";
-              } else {
-                document.getElementById("Loconn").innerHTML = "Contact";
-              }
-            }
-          </script>
         </div>
         <br />
         <br />
@@ -1495,11 +1429,10 @@
       }, timeout);
     }
   }
-
-  onload = notify("Click on the flame of Takshashila", 5000);
+  onload = setTimeout(function () {
+    notify("Click on the logo to increase graphic quality", 3000);
+  }, 2000);
 </script>
-
-<script></script>
 
 <script>
   // document.body.style.display = "none";
@@ -1527,18 +1460,17 @@
     if (screen.width > 500) {
       js.src = "./cursor.js";
     }
+
     head.appendChild(js);
 
     document.getElementById("cursor").style.display = "block";
+
     onload = function () {
       document.body.style.cursor = "none";
     };
-
     // document.body.style.display = "block";
   }
 </script>
-
-<!-- <script defer src="./cursor.js"></script> -->
 
 <!-- 
 <script>
@@ -1561,126 +1493,24 @@
 </script> -->
 
 <script>
-  function fly_in(target, state) {
-    if (state) {
-      target.classList.add("fly_in");
-    } else {
-      target.classList.remove("fly_in");
-    }
-  }
-
-  function lin() {
-    let op = $(".card_l");
-    let oop = $(".day_l");
-
-    oop.addClass("l_in");
-    op.addClass("l_in");
-    return;
-  }
-
-  function l_in(target, state) {
-    lin();
-  }
-
-  function r_in(target, state) {
-    let op = $(".card_r");
-    let oop = $(".day_r");
-
-    if (state) {
-      oop.addClass("l_in");
-      op.addClass("l_in");
-    }
-    // else {
-    //   $(".card_l").removeClass("l_in");
-    // }
-    lin();
-  }
-
-  function opa_rev(target, state) {
-    if (state) {
-      target.classList.add("fade_rot");
-    } else {
-      target.classList.remove("fade_rot");
-    }
-  }
-
-  function fade_opaci(target, state) {
-    if (state) {
-      target.classList.add("opaci");
-    } else {
-      target.classList.remove("opaci");
-    }
-  }
-
-  function splash_pop(target, state) {
-    if (state) {
-      target.classList.add("splash_slide");
-    }
-  }
-  function callbackRouter(entries, observer) {
-    let entry = entries[0];
-    let target = entry.target;
-
-    console.log();
-    if (entry.intersectionRatio > 0) {
-      if (target.dataset.callback) {
-        window[target.dataset.callback](target, true);
-        if (target.dataset.once == "true") {
-          target.classList.remove("jos");
-          observer.unobserve(target);
-        }
-      }
-    } else {
-      if (target.dataset.callback) {
-        window[target.dataset.callback](target, false);
-      }
-    }
-  }
-
   const observer = new IntersectionObserver(callbackRouter);
   const boxes = document.querySelectorAll(".jos");
   boxes.forEach(observer.observe.bind(observer));
-
+</script>
+<script>
   var sec = document.getElementById("s0");
   var myvid = document.getElementById("myVideo");
+
+  var sticky = myvid.offsetTop;
+  var prevScrollpos = window.pageYOffset;
 
   window.onscroll = function () {
     let poy = window.pageYOffset;
     myFunction(poy);
     nav_hide(poy);
   };
+</script>
 
-  // Get the navbar
-
-  // Get the offset position of the navbar
-  var sticky = myvid.offsetTop;
-
-  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-  function myFunction(poy) {
-    if (poy >= 200) {
-      myvid.classList.add("blur");
-    } else {
-      myvid.classList.remove("blur");
-    }
-  }
-
-  var prevScrollpos = window.pageYOffset;
-  function nav_hide(poy) {
-    let currentScrollPos = poy;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "89%";
-    } else {
-      document.getElementById("navbar").style.top = "100%";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-
-  // alert(
-  //   "Website under construction.. \nKeep the link confidential. Do not share or kang my work without my permission."
-  // );
-
-  function invplus() {
-    plusSlides(1);
-  }
+<script>
   onload = notify("Website under construction..", 10000);
 </script>

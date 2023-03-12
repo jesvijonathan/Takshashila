@@ -1,17 +1,16 @@
 // Notify flyer function //
-let notify_va = document.querySelector(".notify");
-let not_con = document.getElementById("not-cont");
+var notify_va = document.querySelector(".notify");
+var not_con = document.getElementById("not-cont");
 function accept_cookie() {
   notify_va.style.padding = "0vw 0vw";
-
   notify_va.style.opacity = "0";
   notify_va.style.zIndex = "-1";
 }
 function deccept_cookie() {
-  notify_va.style.padding = "1.8vw 1vw";
+  notify_va.style.zIndex = "3";
 
+  notify_va.style.padding = "1.8vw 1vw";
   notify_va.style.opacity = "1";
-  notify_va.style.zIndex = "1";
 }
 
 function notify(text, timeout) {
@@ -246,4 +245,178 @@ function single_page_login(n) {
     regi.style.transform = "translate(-50%, -52%) scale(1)";
     window.history.pushState("page2", "Title", "/login#/signup");
   }
+}
+
+// Stacked courousel button function //
+
+var slideIndex = 1;
+onload = function () {
+  showSlides(slideIndex);
+};
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("locac");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" current", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " current";
+
+  if (n == 1) {
+    document.getElementById("Loconn").innerHTML = "Location";
+  } else {
+    document.getElementById("Loconn").innerHTML = "Contact";
+  }
+}
+
+// Naviagtion Hider //
+function myFunction(poy) {
+  if (poy >= 200) {
+    myvid.classList.add("blur");
+  } else {
+    myvid.classList.remove("blur");
+  }
+}
+function nav_hide(poy) {
+  let currentScrollPos = poy;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "89%";
+  } else {
+    document.getElementById("navbar").style.top = "100%";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+// Animation functions //
+function fly_in(target, state) {
+  if (state) {
+    target.classList.add("fly_in");
+  } else {
+    target.classList.remove("fly_in");
+  }
+}
+
+function lin() {
+  let op = $(".card_l");
+  let oop = $(".day_l");
+
+  oop.addClass("l_in");
+  op.addClass("l_in");
+  return;
+}
+
+function l_in(target, state) {
+  lin();
+}
+
+function r_in(target, state) {
+  let op = $(".card_r");
+  let oop = $(".day_r");
+
+  if (state) {
+    oop.addClass("l_in");
+    op.addClass("l_in");
+  }
+  // else {
+  //   $(".card_l").removeClass("l_in");
+  // }
+  lin();
+}
+
+function opa_rev(target, state) {
+  if (state) {
+    target.classList.add("fade_rot");
+  } else {
+    target.classList.remove("fade_rot");
+  }
+}
+
+function fade_opaci(target, state) {
+  if (state) {
+    target.classList.add("opaci");
+  } else {
+    target.classList.remove("opaci");
+  }
+}
+
+function splash_pop(target, state) {
+  if (state) {
+    target.classList.add("splash_slide");
+  }
+}
+function callbackRouter(entries, observer) {
+  let entry = entries[0];
+  let target = entry.target;
+
+  console.log();
+  if (entry.intersectionRatio > 0) {
+    if (target.dataset.callback) {
+      window[target.dataset.callback](target, true);
+      if (target.dataset.once == "true") {
+        target.classList.remove("jos");
+        observer.unobserve(target);
+      }
+    }
+  } else {
+    if (target.dataset.callback) {
+      window[target.dataset.callback](target, false);
+    }
+  }
+}
+
+// Graphics //
+var graphic_high = 0;
+function graphic(e) {
+  let image4 = document.getElementById("image4");
+  let image3 = document.getElementById("image3");
+  let image9 = document.getElementById("image9");
+  let pro_sec = document.getElementById("pro_sec");
+  let ripple = document.getElementById("ripple");
+  if (graphic_high == 1) {
+    graphic_high = 0;
+    myvid.style.display = "none";
+    image4.style.display = "block";
+    image3.style.display = "block";
+    image9.style.display = "block";
+    pro_sec.style.background = "#131313";
+    ripple.classList.remove("rypol");
+    notify("Acrylic Theme Deactivated !", 3000);
+  } else {
+    graphic_high = 1;
+    myvid.style.display = "block";
+    image4.style.display = "none";
+    image3.style.display = "none";
+    image9.style.display = "none";
+    pro_sec.style.background = "transparent";
+    ripple.classList.add("rypol");
+    notify("Acrylic Theme Activated !", 3000);
+  }
+
+  // ripple.classList.add("rypol");
+  // ripple.style.animationPlayState = "running";
+
+  // if (ripple_var) {
+  //   // ripple.style.display = "block";
+  //   // ripple.classList.add("ripple");
+  //   ripple.style.animationPlayState = "running";
+  // }
 }
