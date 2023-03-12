@@ -41,7 +41,7 @@ section {
 header {
   position: absolute;
   width: 100%;
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 /* section:nth-child(3) {
@@ -123,25 +123,27 @@ header {
   width: fit-content;
   margin-left: 4vw;
   top: 2vw;
+  z-index: 0;
   transition: 0.2s ease-in-out;
 }
 
 .main_logo svg {
-  fill: transparent;
+  fill: rgba(255, 255, 255, 0.8);
   stroke: none;
   height: 5vw;
   width: 5vw;
   transition: 1s ease-in;
 }
 .main_logo:hover svg {
-  stroke: white;
+  stroke: rgb(141, 141, 141);
 }
 
 .main_logo svg path {
   transition: 0.2s ease-in-out;
 }
 .main_logo:hover svg path {
-  /* fill: grey; */
+  fill: grey;
+  stroke: white;
 }
 
 .svg_container_design {
