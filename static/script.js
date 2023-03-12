@@ -415,3 +415,25 @@ function graphic() {
   //   ripple.style.animationPlayState = "running";
   // }
 }
+
+
+//
+
+function callbackRouter(entries, observer) {
+  let entry = entries[0];
+  let target = entry.target;
+
+  if (entry.intersectionRatio > 0) {
+    if (target.dataset.callback) {
+      window[target.dataset.callback](target, true);
+      if (target.dataset.once == "true") {
+        target.classList.remove("jos");
+        observer.unobserve(target);
+      }
+    }
+  } else {
+    if (target.dataset.callback) {
+      window[target.dataset.callback](target, false);
+    }
+  }
+}
