@@ -1483,11 +1483,24 @@
 <script>
   let notify_va = document.getElementById("notify");
   let not_con = document.getElementById("not-cont");
+  function init_not() {
+    notify("Website under construction..", 10000);
 
+    setTimeout(function () {
+      notify("Click on the logo to adjust graphic quality", 3000);
+    }, 12000);
+  }
   onload = init_not();
 </script>
 
 <script>
   let top_link = document.getElementById("top_link");
+  function get_acc() {
+    if ((t = getCookie("hash"))) {
+      top_link.innerHTML = "Account";
+      top_link.href = "/profile/" + t;
+      // top_link.innerHTML = getCookie("first_name");
+    }
+  }
   onload = get_acc();
 </script>
