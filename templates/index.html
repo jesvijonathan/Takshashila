@@ -1454,12 +1454,6 @@
 
   var sticky = myvid.offsetTop;
   var prevScrollpos = window.pageYOffset;
-
-  window.onscroll = function () {
-    let poy = window.pageYOffset;
-    myFunction(poy);
-    nav_hide(poy);
-  };
 </script>
 
 <script>
@@ -1483,6 +1477,11 @@
     get_acc();
     init_not();
     observ();
+    window.onscroll = function () {
+      let poy = window.pageYOffset;
+      myFunction(poy);
+      nav_hide(poy);
+    };
   }
 </script>
 

@@ -302,9 +302,9 @@ function myFunction(poy) {
   }
 }
 function nav_hide(poy) {
-  if (!graphic_high) {
-    return;
-  }
+  // if (!graphic_high) {
+  //   return;
+  // }
 
   let currentScrollPos = poy;
   if (prevScrollpos > currentScrollPos) {
@@ -373,6 +373,27 @@ function splash_pop(target, state) {
   }
 }
 
+// observer //
+
+function callbackRouter(entries, observer) {
+  let entry = entries[0];
+  let target = entry.target;
+
+  if (entry.intersectionRatio > 0) {
+    if (target.dataset.callback) {
+      window[target.dataset.callback](target, true);
+      if (target.dataset.once == "true") {
+        target.classList.remove("jos");
+        observer.unobserve(target);
+      }
+    }
+  } else {
+    if (target.dataset.callback) {
+      window[target.dataset.callback](target, false);
+    }
+  }
+}
+
 // Graphics //
 onload = function () {
   let image4 = document.getElementById("image4");
@@ -414,26 +435,4 @@ function graphic() {
   //   // ripple.classList.add("ripple");
   //   ripple.style.animationPlayState = "running";
   // }
-}
-
-
-//
-
-function callbackRouter(entries, observer) {
-  let entry = entries[0];
-  let target = entry.target;
-
-  if (entry.intersectionRatio > 0) {
-    if (target.dataset.callback) {
-      window[target.dataset.callback](target, true);
-      if (target.dataset.once == "true") {
-        target.classList.remove("jos");
-        observer.unobserve(target);
-      }
-    }
-  } else {
-    if (target.dataset.callback) {
-      window[target.dataset.callback](target, false);
-    }
-  }
 }
