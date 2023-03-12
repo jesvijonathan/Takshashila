@@ -250,8 +250,8 @@ header {
   position: absolute;
   left: 93%;
   top: 91%;
-  animation-delay: 0.3s;
   animation: fade_down 0.7s ease-in forwards;
+  animation-delay: 4.1s;
 }
 
 @keyframes fade_down {
@@ -302,6 +302,38 @@ header {
   align-items: center;
   gap: 4vw;
   margin: 4vw;
+  opacity: 0;
+  margin-top: 3%;
+  position: relative;
+  animation: slide_down 0.7s ease-in forwards;
+  animation-delay: 4.2s;
+}
+@keyframes slide_down {
+  0% {
+    opacity: 0;
+    margin-left: -10%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0%;
+  }
+}
+
+.op_reveal {
+  opacity: 0;
+  animation: slide_down_2 0.7s ease-in forwards;
+  animation-delay: 4.2s;
+}
+
+@keyframes slide_down_2 {
+  0% {
+    opacity: 0;
+    margin-top: -5%;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0%;
+  }
 }
 
 .navigation_links {
@@ -1212,6 +1244,7 @@ mark {
 
 .splash_slide {
   animation: splash_slide 1s ease forwards;
+  animation-delay: 4s;
 }
 
 @keyframes splash_slide {
@@ -3021,7 +3054,7 @@ select {
     margin: 4vw;
     width: -webkit-fill-available;
     gap: 5vw;
-    margin: 1vw 10vw;
+    margin: 1vw 10vw !important;
     border-radius: 7px;
     padding: 5vw;
     background: #00000024;
