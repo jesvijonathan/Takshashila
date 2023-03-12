@@ -41,7 +41,7 @@ section {
 header {
   position: absolute;
   width: 100%;
-  /* z-index: 3; */
+  z-index: 10;
 }
 
 /* section:nth-child(3) {
@@ -53,31 +53,27 @@ header {
 @font-face {
   font-family: "oo";
   src: url("./Montserrat-Medium.woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "prak";
   src: url("./prakrta_.woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "jura";
   src: url("./Jura-VariableFont_wght.woff2");
+  font-display: swap;
 }
-@font-face {
+/* @font-face {
   font-family: "Jeju Hallasan";
   font-style: normal;
   font-weight: 400;
-  src: url(//fonts.gstatic.com/ea/jejuhallasan/v3/JejuHallasan-Regular.eot);
-  src: url(//fonts.gstatic.com/ea/jejuhallasan/v3/JejuHallasan-Regular.eot?#iefix)
-      format("embedded-opentype"),
-    url(//fonts.gstatic.com/ea/jejuhallasan/v3/JejuHallasan-Regular.woff2)
-      format("woff2"),
-    url(//fonts.gstatic.com/ea/jejuhallasan/v3/JejuHallasan-Regular.woff)
-      format("woff"),
-    url(//fonts.gstatic.com/ea/jejuhallasan/v3/JejuHallasan-Regular.ttf)
-      format("truetype");
-}
+  src: url(//fonts.gstatic.com/ea/jejuhallasan/v3/JejuHallasan-Regular.woff2);
+  font-display: swap;
+} */
 #image3 {
   transition: ease;
 }
@@ -230,7 +226,7 @@ header {
 }
 
 .socials .fa {
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1.4vw;
   opacity: 0.8;
 }
@@ -302,38 +298,8 @@ header {
   align-items: center;
   gap: 4vw;
   margin: 4vw;
-  opacity: 0;
-  margin-top: 3%;
+  width: 100%;
   position: relative;
-  animation: slide_down 0.7s ease-in forwards;
-  animation-delay: 4.2s;
-}
-@keyframes slide_down {
-  0% {
-    opacity: 0;
-    margin-left: -10%;
-  }
-  100% {
-    opacity: 1;
-    margin-left: 0%;
-  }
-}
-
-.op_reveal {
-  opacity: 0;
-  animation: slide_down_2 0.7s ease-in forwards;
-  animation-delay: 4.2s;
-}
-
-@keyframes slide_down_2 {
-  0% {
-    opacity: 0;
-    margin-top: -5%;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 0%;
-  }
 }
 
 .navigation_links {
@@ -344,6 +310,17 @@ header {
   font-weight: 100;
   z-index: 2;
   text-decoration: none;
+  opacity: 0;
+  animation: popp 0.5s ease-in forwards;
+  animation-delay: 4.2s;
+}
+@keyframes popp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .main_signin {

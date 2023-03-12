@@ -6,7 +6,7 @@ function accept_cookie() {
   notify_va.style.zIndex = "-1";
 }
 function deccept_cookie() {
-  notify_va.style.zIndex = "3";
+  notify_va.style.zIndex = "100";
   notify_va.style.padding = "1.8vw 1vw";
   notify_va.style.opacity = "1";
 }
@@ -76,9 +76,13 @@ function password_eye() {
     var input = document.getElementById("password_input");
     var element = document.getElementById("passwordEye");
 
-    input.addEventListener("input", function () {
-      element.style.display = "block";
-    });
+    input.addEventListener(
+      "input",
+      function () {
+        element.style.display = "block";
+      },
+      { passive: true }
+    );
 
     input.onblur = function () {
       if (this.value == "") {
@@ -436,3 +440,16 @@ function graphic() {
   //   ripple.style.animationPlayState = "running";
   // }
 }
+
+// if ("serviceWorker" in navigator) {
+//   navigator.serviceWorker
+//     .register("service-worker.js")
+//     .then((registration) => {
+//       console.log("SW Registered!");
+//     })
+//     .catch((error) => {
+//       console.log("SW Registration Failed");
+//     });
+// } else {
+//   console.log("Not supported");
+// }

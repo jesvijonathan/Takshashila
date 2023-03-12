@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html id="htmll">
   <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+      user-scalable="no”"
     />
     <script
       src="./js/jquery.min.js"
@@ -12,10 +12,24 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <title>CIT - Takshashila 2023</title>
+    <meta
+      name="description"
+      content="Takshashila, an event organized In regards to cultural event conducted in Chennai Institute Of Technology."
+    />
+    <meta name="author" content="Chennai Institute Of Technology" />
+    <meta
+      name="keywords"
+      content="TAKSHASHILA, CULTURAL, CIT, CHENNAI, SYMPOSIUM, EVENT, COLLEGE, COMPETITION, INSTITUTE, TECHNOLOGY, DESIGN"
+    />
+    <meta name="revised" content="Takshashila, 7/2/2023" />
+
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
     <meta name="thumbnail" content="favicon.png" />
     <link rel="stylesheet" href="./style.css" />
+
+    <link rel="manifest" href="manifest.json" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -55,7 +69,7 @@
       id="logo_load"
       viewBox="0 0 1000 1000"
       fill="none"
-      style="scale: 0.4; fill: transparent; opacity: 0"
+      style="scale: 0.3; fill: transparent; opacity: 0"
       class="main_logo_1"
     >
       <path
@@ -73,14 +87,15 @@
       }
     </style>
   </div>
-  <header>
-    <div class="cursor" id="cursor">
-      <div class="cursor_border" id="cursor_border">
-        <div class="cursor_circle" id="cursor_circle"></div>
-      </div>
+  <div class="cursor" id="cursor">
+    <div class="cursor_border" id="cursor_border">
+      <div class="cursor_circle" id="cursor_circle"></div>
     </div>
+  </div>
+  <header>
     <img
       src="./CIT Logo_blue_butterfly.webp"
+      loading="lazy"
       class="cit_logo op_reveal"
       onclick="graphic()"
     />
@@ -145,22 +160,32 @@
       </svg>
     </div>
     <div class="main_navigation" id="navbar">
-      <a href="#about" data-text="About Us" class="navigation_links link_cur"
+      <a
+        href="#about"
+        data-text="About Us"
+        class="navigation_links link_cur"
+        style="animation-delay: 4.5s"
         >About</a
       >
       <a
         href="#events"
         data-text="Events List"
         class="navigation_links link_cur"
+        style="animation-delay: 4.7s"
         >Events</a
       >
-      <a href="#pro_sec" data-text="Pro-Shows" class="navigation_links link_cur"
+      <a
+        href="#pro_sec"
+        data-text="Pro-Shows"
+        class="navigation_links link_cur"
+        style="animation-delay: 4.9s"
         >Pro Shows</a
       >
       <a
         href="#workshop"
         data-text="Workshops"
         class="navigation_links link_cur"
+        style="animation-delay: 5.1s"
         >Workshops</a
       >
       <a
@@ -168,6 +193,7 @@
         data-text="Contact Us"
         class="navigation_links link_cur"
         id="media_no"
+        style="animation-delay: 5.3s"
         onclick="    plusSlides(1)"
         >Contact</a
       >
@@ -189,6 +215,7 @@
       id="myVideo"
       src="./pexels-tima-miroshnichenko-7985887.webp"
       type="image/webp"
+      loading="lazy"
     />
 
     <div class="main" id="butter">
@@ -582,7 +609,7 @@
                 Pro Show | Day 1
               </div>
               <div class="pro_ppl_card card_l">
-                <div class="pro_ppl_img" id="pp1"></div>
+                <div class="pro_ppl_img" id="pp1" loading="lazy"></div>
                 <div class="pro_ppl_txt link_cur" data-text="Julian Jordan">
                   Project 91
                 </div>
@@ -614,7 +641,7 @@
                 Pro Show | Day 2
               </div>
               <div class="pro_ppl_card card_l">
-                <div class="pro_ppl_img" id="pp2"></div>
+                <div class="pro_ppl_img" id="pp2" loading="lazy"></div>
                 <div class="pro_ppl_txt link_cur" data-text="Skrillex">
                   Dhee
                 </div>
@@ -646,7 +673,7 @@
                 Pro Show | Day 3
               </div>
               <div class="pro_ppl_card card_l">
-                <div class="pro_ppl_img" id="pp3"></div>
+                <div class="pro_ppl_img" id="pp3" loading="lazy"></div>
                 <div class="pro_ppl_txt link_cur" data-text="Seth Hills">
                   Thaikudam Bridge
                 </div>
@@ -678,7 +705,7 @@
                 Pro Event | Day 1
               </div>
               <div class="pro_ppl_card card_r">
-                <div class="pro_ppl_img" id="pp4"></div>
+                <div class="pro_ppl_img" id="pp4" loading="lazy"></div>
                 <div class="pro_ppl_txt link_cur" data-text="Seth Hills">
                   Plush
                 </div>
@@ -711,7 +738,7 @@
                 Pro Event | Day 2
               </div>
               <div class="pro_ppl_card card_r">
-                <div class="pro_ppl_img" id="pp5"></div>
+                <div class="pro_ppl_img" id="pp5" loading="lazy"></div>
                 <div class="pro_ppl_txt link_cur" data-text="Seth Hills">
                   Choreo Night
                 </div>
@@ -828,6 +855,7 @@
                 class="simg eve_iim"
                 id="eve_2"
                 src="./photo_2023-02-27_20-31-53.webp"
+                loading="lazy"
               />
               <div class="sdetcon">
                 <div class="stit to_title">Technical Events</div>
@@ -854,6 +882,7 @@
                 id="eve_1"
                 style="margin: 0"
                 src="./non-tech.webp"
+                loading="lazy"
               />
 
               <!-- <img
@@ -891,6 +920,7 @@
                 class="simg eve_iim"
                 id="eve_2"
                 src="./Lumii_20230311_093101724.webp"
+                loading="lazy"
               />
               <div class="sdetcon">
                 <div class="stit to_title">Workshop</div>
@@ -928,26 +958,31 @@
                 class="sponsor_card link_cur"
                 data-text="Sponsor Redirect"
                 src="./sponsors/Group 297.webp"
+                loading="lazy"
               />
               <img
                 class="sponsor_card link_cur"
                 data-text="Sponsor Redirect"
                 src="./sponsors/Group 298.webp"
+                loading="lazy"
               />
               <img
                 class="sponsor_card link_cur"
                 data-text="Sponsor Redirect"
                 src="./sponsors/Group 299.webp"
+                loading="lazy"
               />
               <img
                 class="sponsor_card link_cur"
                 data-text="Sponsor Redirect"
                 src="./sponsors/Group 300.webp"
+                loading="lazy"
               />
               <img
                 class="sponsor_card link_cur"
                 data-text="Sponsor Redirect"
                 src="./sponsors/Group 301.webp"
+                loading="lazy"
               />
             </div>
 
@@ -956,26 +991,31 @@
                 class="sponsor_card link_cur"
                 data-text="Sponsor Redirect"
                 src="./sponsors/Group 297.webp"
+                loading="lazy"
               />
               <img
                 class="sponsor_card link_cur"
                 data-text="Sponsor Redirect"
                 src="./sponsors/Group 298.webp"
+                loading="lazy"
               />
               <img
                 class="sponsor_card link_cur"
                 data-text="Sponsor Redirect"
                 src="./sponsors/Group 299.webp"
+                loading="lazy"
               />
               <img
                 class="sponsor_card link_cur"
                 data-text="Sponsor Redirect"
                 src="./sponsors/Group 300.webp"
+                loading="lazy"
               />
               <img
                 class="sponsor_card link_cur"
                 data-text="Sponsor Redirect"
                 src="./sponsors/Group 301.webp"
+                loading="lazy"
               />
             </div>
           </div>
@@ -1562,4 +1602,15 @@
       document.getElementById("curtain").style.display = "none";
     }, 1000);
   }, 4000);
+
+  if ("serviceWorker" in navigator) {
+    // register service worker
+    navigator.serviceWorker.register("service-worker.js");
+  }
 </script>
+
+<link
+  defer
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
