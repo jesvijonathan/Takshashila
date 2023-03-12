@@ -107,9 +107,9 @@ app.register_blueprint(blueprint, url_prefix="/login")
 from controllers.userController import createUser_oauth
 
 auth_pop = 0
-domain = "http://www.cittakshashila.in/"
+domain = "https://www.cittakshashila.in/"
 # server_url =os.getenv('SERVER_URL')
-server_url = "http://www.cittakshashila.in/"
+server_url = "https://www.cittakshashila.in/"
 
 @app.route("/google_login")
 def google_():

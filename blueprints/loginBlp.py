@@ -24,9 +24,9 @@ SCOPES = ['email', 'profile']
 
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 auth_pop = 0
-domain = "http://www.cittakshashila.in/"
+domain = "https://www.cittakshashila.in/"
 # server_url =os.getenv('SERVER_URL')
-server_url = "http://www.cittakshashila.in/"
+server_url = "https://www.cittakshashila.in/"
 
 GOOGLE_CLIENT_ID = "562058780483-q59qv7347cgqujgebrsf15n6b0u8uhmq.apps.googleusercontent.com"
 client_secrets_file = os.path.join(
