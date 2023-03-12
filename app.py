@@ -98,7 +98,7 @@ def nig():
 blueprint = make_google_blueprint(
     client_id="562058780483-q59qv7347cgqujgebrsf15n6b0u8uhmq.apps.googleusercontent.com",
     client_secret="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",
-    redirect_url="https://takshashila.pythonanywhere.com/google_login",
+    redirect_url="https://www.cittakshashila.in/google_login",
     scope = 'openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile'
 )
 
@@ -107,9 +107,9 @@ app.register_blueprint(blueprint, url_prefix="/login")
 from controllers.userController import createUser_oauth
 
 auth_pop = 0
-domain = "http://takshashila.pythonanywhere.com/"
+domain = "http://www.cittakshashila.in/"
 # server_url =os.getenv('SERVER_URL')
-server_url = "http://takshashila.pythonanywhere.com/"
+server_url = "http://www.cittakshashila.in/"
 
 @app.route("/google_login")
 def google_():

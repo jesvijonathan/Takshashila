@@ -10,7 +10,7 @@ from controllers.verificationController import *
  
 
 # domain = os.getenv('SERVER_URL') 
-domain = "takshashila.pythonanywhere.com"
+domain = "www.cittakshashila.in"
 # system_email = os.getenv('SYSTEM_EMAIL')
 # system_email_password  = os.getenv('SYSTEM_EMAIL_PASSWORD')
 system_email = "support-takshashila@citchennai.net"

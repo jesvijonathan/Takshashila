@@ -34,8 +34,8 @@ onload = function () {
           $(".link_cur").hover(
             function () {
               s <= 0.5
-                ? (i.style.transform = "scale(7) translate(10px, 10px)")
-                : (i.style.transform = "scale(7) translate(10px, -10px)"),
+                ? (i.style.transform = "scale(7) translate(0.6vw, 0.6vw)")
+                : (i.style.transform = "scale(7) translate(0.6vw, -0.6vw)"),
                 (i.innerHTML = $(this).data("text"));
             },
             function () {
@@ -60,8 +60,8 @@ onload = function () {
         $(".link_cur").hover(
           function () {
             n <= 0.5
-              ? (i.style.transform = "scale(7) translate(10px, 10px)")
-              : (i.style.transform = "scale(7) translate(10px, -10px)"),
+              ? (i.style.transform = "scale(7) translate(0.6vw, 0.6vw)")
+              : (i.style.transform = "scale(7) translate(0.6vw, -0.6vw)"),
               (i.innerHTML = $(this).data("text"));
           },
           function () {

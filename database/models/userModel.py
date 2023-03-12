@@ -4,7 +4,7 @@ import os
 
 from database.database import db
 from utils.email_system import generate_hash
-domain = "https://takshashila.pythonanywhere.com/"
+domain = "https://www.cittakshashila.in/"
 
 class Users(db.Model):
     __tablename__ = 'users'
