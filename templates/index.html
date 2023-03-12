@@ -1398,7 +1398,7 @@
     document.querySelector("#butter").style.position = "initial";
   }
 </script>
-<script id="scri_but" src="./butter.js" onload="butter_start()"></script>
+<script async id="scri_but" src="./butter.js" onload="butter_start()"></script>
 
 <script>
   // document.body.style.display = "none";
@@ -1438,7 +1438,7 @@
   }
 </script>
 
-<script>
+<script defer>
   function callbackRouter(entries, observer) {
     let entry = entries[0];
     let target = entry.target;
