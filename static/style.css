@@ -2771,15 +2771,12 @@ select {
 .login_phone_prefix {
   position: absolute;
   left: 3vw;
-  top: 17.9vw;
+  top: 18vw;
   opacity: 0;
   transition: 0.2s ease-in-out;
   font-size: 1vw;
 }
-.login_phone_prefix_2 {
-  left: 3vw;
-  top: unset;
-}
+
 #ph_number {
   transition: 0.2s ease-in-out;
 }
@@ -3787,7 +3784,7 @@ select {
   position: absolute;
   background-color: rgba(255, 255, 255);
   border-radius: 100%;
-  opacity: 1;
+  opacity: 0.8;
   top: 50%;
   left: 50%;
   display: block;
@@ -3805,3 +3802,7 @@ select {
 /* .main_title_container .ripple {
   display: block;
 } */
+.login_phone_prefix_2 {
+  left: 3vw;
+  top: unset !important;
+}

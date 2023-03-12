@@ -1,6 +1,5 @@
 // Notify flyer function //
-var notify_va = document.querySelector(".notify");
-var not_con = document.getElementById("not-cont");
+
 function accept_cookie() {
   notify_va.style.padding = "0vw 0vw";
   notify_va.style.opacity = "0";
@@ -8,11 +7,9 @@ function accept_cookie() {
 }
 function deccept_cookie() {
   notify_va.style.zIndex = "3";
-
   notify_va.style.padding = "1.8vw 1vw";
   notify_va.style.opacity = "1";
 }
-
 function notify(text, timeout) {
   not_con.innerHTML = text;
   // document.querySelector("#not-cont").style.color = "red";
@@ -297,6 +294,10 @@ function myFunction(poy) {
   }
 }
 function nav_hide(poy) {
+  if (!graphic_high) {
+    return;
+  }
+
   let currentScrollPos = poy;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "89%";
@@ -384,13 +385,14 @@ function callbackRouter(entries, observer) {
 }
 
 // Graphics //
-var graphic_high = 0;
-function graphic(e) {
+onload = function () {
   let image4 = document.getElementById("image4");
   let image3 = document.getElementById("image3");
   let image9 = document.getElementById("image9");
   let pro_sec = document.getElementById("pro_sec");
   let ripple = document.getElementById("ripple");
+};
+function graphic() {
   if (graphic_high == 1) {
     graphic_high = 0;
     myvid.style.display = "none";
@@ -398,7 +400,9 @@ function graphic(e) {
     image3.style.display = "block";
     image9.style.display = "block";
     pro_sec.style.background = "#131313";
+
     ripple.classList.remove("rypol");
+
     notify("Acrylic Theme Deactivated !", 3000);
   } else {
     graphic_high = 1;
@@ -407,7 +411,9 @@ function graphic(e) {
     image3.style.display = "none";
     image9.style.display = "none";
     pro_sec.style.background = "transparent";
+
     ripple.classList.add("rypol");
+
     notify("Acrylic Theme Activated !", 3000);
   }
 

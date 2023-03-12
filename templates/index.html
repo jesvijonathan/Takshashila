@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
     <meta name="thumbnail" content="favicon.png" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
+    <script src="./script.js" id="script"></script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -42,7 +42,7 @@
     <img
       src="./CIT Logo_blue_butterfly.webp"
       class="cit_logo"
-      onclick="graphic(this)"
+      onclick="graphic()"
     />
     <div class="noise-container"></div>
 
@@ -50,7 +50,7 @@
       class="main_logo link_cur"
       data-text="Flame Of Takshashila"
       style="z-index: 100"
-      onclick="graphic(this)"
+      onclick="graphic()"
     >
       <svg
         width="90"
@@ -175,7 +175,7 @@
           <div class="ripple" id="ripple"></div>
           <div
             class="svg_container link_cur"
-            onclick="graphic(this)"
+            onclick="graphic()"
             data-text="Graphic Quality"
             id="image5"
           >
@@ -1379,7 +1379,7 @@
     </div>
   </body>
 
-  <div class="notify">
+  <div class="notify" id="notify">
     <div id="not-cont" class="notify-content">
       <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
       {{ msg }} Sign in to your account
@@ -1399,44 +1399,11 @@
     document.querySelector("#butter").style.position = "initial";
   }
 </script>
-
 <script id="scri_but" src="./butter.js" onload="butter_start()"></script>
 
 <script>
-  // Notify flyer function //
-
-  function accept_cookie() {
-    document.querySelector(".notify").style.padding = "0vw 0vw";
-
-    document.querySelector(".notify").style.opacity = "0";
-    document.querySelector(".notify").style.zIndex = "-1";
-  }
-  function deccept_cookie() {
-    document.querySelector(".notify").style.zIndex = "3";
-    document.querySelector(".notify").style.padding = "1.8vw 1vw";
-    document.querySelector(".notify").style.opacity = "1";
-  }
-
-  function notify(text, timeout) {
-    document.getElementById("not-cont").innerHTML = text;
-    // document.querySelector("#not-cont").style.color = "red";
-
-    deccept_cookie();
-
-    if (timeout != -1) {
-      setTimeout(function () {
-        accept_cookie();
-      }, timeout);
-    }
-  }
-  onload = setTimeout(function () {
-    notify("Click on the logo to increase graphic quality", 3000);
-  }, 2000);
-</script>
-
-<script>
   // document.body.style.display = "none";
-  console.log(navigator.userAgent);
+  // console.log(navigator.userAgent);
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
@@ -1472,32 +1439,15 @@
   }
 </script>
 
-<!-- 
-<script>
-  const elementsToExpand = document.querySelectorAll(".to_title");
-
-  let expansionObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      console.log(entry.intersectionRatio);
-      if (entry.intersectionRatio > 0) {
-        entry.target.classList.add("expand");
-      } else {
-        entry.target.classList.remove("expand");
-      }
-    });
-  });
-
-  elementsToExpand.forEach((element) => {
-    expansionObserver.observe(element);
-  });
-</script> -->
-
 <script>
   const observer = new IntersectionObserver(callbackRouter);
   const boxes = document.querySelectorAll(".jos");
   boxes.forEach(observer.observe.bind(observer));
 </script>
+
 <script>
+  var graphic_high = 0;
+
   var sec = document.getElementById("s0");
   var myvid = document.getElementById("myVideo");
 
@@ -1512,5 +1462,21 @@
 </script>
 
 <script>
-  onload = notify("Website under construction..", 10000);
+  let notify_va = document.getElementById("notify");
+  let not_con = document.getElementById("not-cont");
+
+  notify("Website under construction..", 10000);
+
+  setTimeout(function () {
+    notify("Click on the logo to adjust graphic quality", 3000);
+  }, 12000);
+</script>
+
+<script>
+  if ((t = getCookie("hash"))) {
+    let top_link = document.getElementById("top_link");
+    top_link.innerHTML = "Account";
+    top_link.href = "/profile/" + t;
+    // top_link.innerHTML = getCookie("first_name");
+  }
 </script>
