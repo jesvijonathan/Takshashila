@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="htmll">
+<html id="htmll" lang="en">
   <head>
     <meta name=viewport content="width=device-width,initial-scale=1" user-scalable=no”>
     <script src=./js/jquery.min.js crossorigin=anonymous referrerpolicy=no-referrer></script>
@@ -12,8 +12,26 @@
     <link rel=icon type=image/x-icon href=/favicon.png>
     <link rel=apple-touch-icon sizes=180x180 href=favicon.png>
     <meta name=thumbnail content=favicon.png>
+    <meta charset="UTF-8" />
     <link rel=stylesheet href=./style.css>
     <link rel=manifest href=manifest.json>
+
+
+    <meta property="og:title" content="CIT - Takshashila 2023" />
+    <meta property="og:description" content="Takshashila, an event organized In regards to cultural event conducted in Chennai Institute Of Technology." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.cittakshashila.in/image/og_image.png" />
+    <meta property="og:url" content="https://www.cittakshashila.in/" />
+
+    <meta name="twitter:site" content="@cittakshashila" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="robots" content="all" />
+
+    <noscript>
+      This website requires JavaScript to function properly. Please enable JavaScript in your browser.
+  </noscript>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RDPMEBQGBQ"></script>
     <script>
       function gtag() {
@@ -173,12 +191,24 @@
             <div class=line></div>
           </div>
         </div>
+
+        <!-- 
+                          <div class=foot_1_2_1_title>Socials</div>
+                <div class=foot_1_2_1_list>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Instagram href="https://www.instagram.com/cittakshashila/" target=_blank> Instagram </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Facebook href="https://www.facebook.com/people/CIT-Takshashila/100064056814271/" target=_blank> Facebook </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text="Linked In" href="https://www.linkedin.com/in/cittakshashila" target=_blank> Linked In </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Email href="mailto:takshashila@citchennai.net" target=_blank> Email </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Phone href="tel:" target=_blank> Phone </a>
+                </div>
+              </div>
+         -->
         <div class="socials jos" data-once=true data-callback=splash_pop>
-          <a href="" target=_blank class="fa fa-instagram link_cur" data-text=Instagram></a>
-          <a href="" target=_blank class="fa fa-facebook link_cur" data-text=Facebook></a>
-          <a href="" target=_blank class="fa fa-linkedin link_cur" data-text="Linked In"></a>
-          <a href="" target=_blank class="fa fa-envelope-o link_cur" data-text=Email></a>
-          <a href="" target=_blank class="fa fa-phone link_cur" data-text=Phone></a>
+          <a href="https://www.instagram.com/cittakshashila/" target=_blank class="fa fa-instagram link_cur" data-text=Instagram></a>
+          <a href="https://www.facebook.com/people/CIT-Takshashila/100064056814271/" target=_blank class="fa fa-facebook link_cur" data-text=Facebook></a>
+          <a href="https://www.linkedin.com/in/cittakshashila" target=_blank class="fa fa-linkedin link_cur" data-text="Linked In"></a>
+          <a href="mailto:takshashila@citchennai.net" target=_blank class="fa fa-envelope-o link_cur" data-text=Email></a>
+          <a href="tel:" target=_blank class="fa fa-phone link_cur" data-text=Phone></a>
         </div>
         <div class="arrow_container link_cur" data-text="Scroll Down">
           <svg width=30 height=232 viewBox="0 0 30 232" fill=none xmlns=http://www.w3.org/2000/svg>
@@ -416,12 +446,12 @@
                 <div class=locamm>
                   <h3>Useful Links :</h3>
                   <div class="locmi coon">
-                    <a class="link_cur loca_a" data-text="useful link">Feedback</a>
-                    <a class="link_cur loca_a" data-text="useful link">Events</a>
-                    <a class="link_cur loca_a" data-text="useful link">Account</a>
-                    <a class="link_cur loca_a" data-text="useful link">Merch</a>
-                    <a class="link_cur loca_a" data-text="useful link">Events</a>
-                    <a class="link_cur loca_a" data-text="useful link">Account</a>
+                    <a class="link_cur loca_a" data-text="useful link" href="mailto:takshashila@citchennai.net" target="_blank">Feedback</a>
+                    <a class="link_cur loca_a" data-text="useful link" href="/events">Events</a>
+                    <a class="link_cur loca_a" data-text="useful link" href="/profile">Account</a> 
+                    <a class="link_cur loca_a" data-text="useful link" 
+                    href="/credits" target="_blank">Events</a>
+                    <a class="link_cur loca_a" data-text="useful link" href="/profile" target="_blank">Link QR</a>
                   </div>
                 </div>
               </div>
@@ -430,10 +460,10 @@
           <div class="dotstyle dotstyle-scaleup ddo">
             <ul>
               <li class="dot current">
-                <a href=javascript:currentSlide(1)>1 | Location</a>
+                <a href=javascript:currentSlide(1) class="link_cur" data-text="1 | Location">1 | Location</a>
               </li>
               <li class=dot>
-                <a href=javascript:currentSlide(2)>2 | Contact</a>
+                <a href=javascript:currentSlide(2) class="link_cur" data-text="2 | Contact">2 | Contact</a>
               </li>
             </ul>
           </div>
@@ -442,67 +472,61 @@
         <br>
         <br>
       </section>
-      <section class=last_sec>See you in 28 Days</section>
+      <section class=last_sec>See you in 18 Days..</section>
       <footer>
         <div class=footer id=fff>
           <div class=foot_1>
             <div class=foot_1_1>
-              <div class=title_font>Takshashila</div>
+              <a class=title_font href="/">Takshashila</a>
               <div class="line line_2"></div>
               <div class=fot_loc>
-                <a class="foot_desc_title link_cur" data-text="Our Institution" href="" target=_blank> Chennai Institute Of Technology </a>
-                <a class="foot_desc link_cur" data-text=Location href="" target=_blank> Kundrathur, Chennai, Tamil Nadu, PIN : 600069 </a>
+                <a class="foot_desc_title link_cur" data-text="Our Institution" href="https://www.citchennai.edu.in/" target=_blank> Chennai Institute Of Technology </a>
+                <a class="foot_desc link_cur" data-text=Location href="https://goo.gl/maps/ZqzfRRfRvjpUHnAy5" target=_blank> Kundrathur, Chennai, Tamil Nadu, PIN : 600069 </a>
               </div>
             </div>
-            <div class="socials jos foot_soc" data-once=true data-callback=splash_pop>
-              <a href="" target=_blank class="fa fa-instagram link_cur" data-text=Instagram></a>
-              <a href="" target=_blank class="fa fa-facebook link_cur" data-text=Facebook></a>
-              <a href="" target=_blank class="fa fa-linkedin link_cur" data-text="Linked In"></a>
-              <a href="" target=_blank class="fa fa-envelope-o link_cur" data-text=Email></a>
-              <a href="" target=_blank class="fa fa-phone link_cur" data-text=Phone></a>
-            </div>
+
             <div class=foot_1_2>
               <div class=foot_1_2_1>
                 <div class=foot_1_2_1_title>Socials</div>
                 <div class=foot_1_2_1_list>
-                  <a class="foot_1_2_1_list_item link_cur" data-text=Instagram href="" target=_blank> Instagram </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text=Facebook href="" target=_blank> Facebook </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text="Linked In" href="" target=_blank> Linked In </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text=Email href="" target=_blank> Email </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text=Phone href="" target=_blank> Phone </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Instagram href="https://www.instagram.com/cittakshashila/" target=_blank> Instagram </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Facebook href="https://www.facebook.com/people/CIT-Takshashila/100064056814271/" target=_blank> Facebook </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text="Linked In" href="https://www.linkedin.com/in/cittakshashila" target=_blank> Linked In </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Email href="mailto:takshashila@citchennai.net" target=_blank> Email </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Phone href="tel:" target=_blank> Phone </a>
                 </div>
               </div>
               <div class=line_3></div>
               <div class=foot_1_2_1>
                 <div class=foot_1_2_1_title>Events</div>
                 <div class=foot_1_2_1_list>
-                  <a class="foot_1_2_1_list_item link_cur" data-text="Technical Events" href="" target=_blank> Technical </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text="Non-Technical Events" href="" target=_blank> Non Technical </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text=Workshops href="" target=_blank> Workshops </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text=Pro-shows href="" target=_blank> Pro-Shows </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text="Other Events" href="" target=_blank> Others </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text="Technical Events" href="/events#/" target=_blank> Technical </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text="Non-Technical Events" href="/events#/" target=_blank> Non Technical </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Workshops href="/events#/" target=_blank> Workshops </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Pro-shows href="/events#/" target=_blank> Pro-Shows </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text="Other Events" href="/events" target=_blank> Others </a>
                 </div>
               </div>
               <div class=line_3></div>
               <div class=foot_1_2_1>
                 <div class=foot_1_2_1_title>Website</div>
                 <div class=foot_1_2_1_list>
-                  <a class="foot_1_2_1_list_item link_cur" data-text="Terms & Conditions" href="" target=_blank> Terms & Policy </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text="Our Services" href="" target=_blank> Service </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text="Your Account" href="" target=_blank> Account </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text="Official Website" href="" target=_blank> College Site </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text=Developer href="" target=_blank> Developer </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text="Terms & Conditions" href="./cookie_policy.md" target=_blank> Terms & Policy </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text="Our Services" href="/events" target=_blank> Service </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text="Your Account" href="/profile" target=_blank> Account </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text="Official Website" href="https://www.citchennai.edu.in/" target=_blank> College Site </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Developer href="www.instagram/_jesvi_" target=_blank> Developer </a>
                 </div>
               </div>
               <div class=line_3></div>
               <div class=foot_1_2_1>
                 <div class=foot_1_2_1_title>Support</div>
                 <div class=foot_1_2_1_list>
-                  <a data-text="Our Team" class="foot_1_2_1_list_item link_cur">Takshashila Team</a>
-                  <a data-text="Report Errors" class="foot_1_2_1_list_item link_cur">Report</a>
-                  <a data-text=:) class="foot_1_2_1_list_item link_cur">Developer</a>
-                  <a data-text="Contact Us" class="foot_1_2_1_list_item link_cur">Contact Us</a>
-                  <a data-text=Credits class="foot_1_2_1_list_item link_cur">Credits</a>
+                  <a data-text="Our Team" class="foot_1_2_1_list_item link_cur" href="/credits" target="_blank">Takshashila Team</a>
+                  <a data-text="Report Errors" class="foot_1_2_1_list_item link_cur" href="mailto:takshashila@citchennai.net" target="_blank">Report</a>
+                  <a data-text=:) class="foot_1_2_1_list_item link_cur" href="jesvi.pythonanywhere.com">Developer</a>
+                  <a data-text="Contact Us" class="foot_1_2_1_list_item link_cur" href="mailto:takshashila@citchennai.net" target="_blank">Contact Us</a>
+                  <a data-text=Credits class="foot_1_2_1_list_item link_cur" href="/credits" target="_blank">Credits</a>
                 </div>
               </div>
             </div>
@@ -512,14 +536,14 @@
         <div class="footer f_end">
           <div class=foot_2>
             <div class=foot_2_1>
-              <div class=foot_2_1_1>Takshashila.in</div>
+              <div class="foot_2_1_1 link_cur" data-text="Move To" href="/">CitTakshashila.in</div>
               <div class=line_4></div>
-              <div class="foot_2_1_1 no_mob">All Rights Reserved</div>
+              <div class="foot_2_1_1 no_mob link_cur" data-text="Go To" href="/">All Rights Reserved</div>
               <div class="line_4 no_mob"></div>
-              <div class=foot_2_1_1>Copyright ©2023</div>
+              <div class="foot_2_1_1 link_cur" data-text="View Terms & Policy" href="/cookie_policy.md">Copyright ©2023</div>
               <div class=line_4 id=line_4 style=display:none></div>
             </div>
-            <a href=https://jesvi.pythonanywhere.com target=_blank id=easter onmouseenter='document.getElementById("htmll").style.mixBlendMode="difference"' onmouseleave='document.getElementById("htmll").style.mixBlendMode="unset"' data-text="Appreciate Your Curiosity" class="foot_2_2 link_cur">Made With 💛 By Jesvi Jonathan</a>
+            <a href=https://jesvi.pythonanywhere.com target=_blank id=easter onmouseenter='document.getElementById("htmll").style.mixBlendMode="difference"' onmouseleave='document.getElementById("htmll").style.mixBlendMode="unset"' data-text="( ͡⚆ ͜ʖ ͡⚆)╭∩╮" class="foot_2_2 link_cur">Made With 💛 By Jesvi Jonathan</a>
           </div>
         </div>
       </footer>

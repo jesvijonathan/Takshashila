@@ -91,6 +91,7 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.2s linear;
+  overflow-x: clip;
 }
 .bg_2 {
   transform: rotate(1deg);
@@ -608,7 +609,7 @@ header {
   font-size: 3vw;
 }
 .img_sc {
-  background-image: url("./Group\ 11.webp");
+  background-image: url("./Group\ 11.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 50vw;
@@ -619,6 +620,10 @@ header {
   opacity: 0;
   transform: rotate(50deg) scale(0.6);
   transition: 0.9s;
+  filter: grayscale(1);
+}
+.img_sc:hover {
+  filter: grayscale(0);
 }
 .desc_but,
 button {
@@ -2421,6 +2426,7 @@ select {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: clip;
   }
   .bg_2 {
     border-radius: 39%;

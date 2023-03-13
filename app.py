@@ -89,6 +89,10 @@ def index():
 def events():
     return render_template("events.html")
 
+@app.route("/credits")
+def credits():
+    return render_template("credits.html")
+
 @app.route("/events#/<text>")
 # @cache.cached(timeout=2)
 def nig():
@@ -161,7 +165,7 @@ def google_():
 @app.errorhandler(404)
 # @cache.cached(timeout=2)
 def page_not_found(e):
-    return jsonify(error=str(e)), 404
+    # return jsonify(error=str(e)), 404
     return render_template('404.html', error=e, console_print=e), 404
 
 
