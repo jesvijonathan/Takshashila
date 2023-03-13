@@ -13,6 +13,16 @@
       referrerpolicy="no-referrer"
     ></script>
 
+
+    <meta property="og:title" content="CIT - Takshashila 2023" />
+    <meta property="og:description" content="Takshashila, an event organized In regards to cultural event conducted in Chennai Institute Of Technology." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.cittakshashila.in/image/og_image.png" />
+    <meta property="og:url" content="https://www.cittakshashila.in/" />
+    <meta property="og:site_name" content="CIT - Takshashila 2023">
+    <meta name="twitter:image:alt" content="Takshashila 2023">
+
+
     <script src="./butter.js"></script>
     <link rel="stylesheet" href="./style.css" />
 
@@ -76,7 +86,7 @@
         id="filt_icon"
         onclick="notify('Just assume you are being redirected !', 3000)"
       ></div>
-      <div class="title_back_con" onclick="close_event(this)" id="baclk_w">
+      <div class="title_back_con" onclick="history.back(); console.log('niggaaaa')" id="baclk_w">
         <span class="fa fa-arrow-left"></span>
         <div>Back</div>
       </div>
@@ -763,6 +773,13 @@
   document.querySelector("#butter").style.position = "initial";
 </script>
 
+
+<script type='text/javascript'>
+ function change_meta() {
+  document.head.querySelector('meta[property="og:title"]').content = "_title";
+    }
+  </script>
+
 <script>
   // document.body.style.display = "none";
   // console.log(navigator.userAgent);
@@ -866,7 +883,7 @@
     eve_reg_link.href = json_data[e].register;
 
     eve_title_con.childNodes[1].innerHTML = json_data[e].name;
-
+    document.title = json_data[e].name + " | Takshashila 2023";
     eve_title_con.childNodes[3].innerHTML = json_data[e].tag_line;
     eve_detail_2_2.childNodes[3].innerHTML = json_data[e].description;
 
@@ -922,6 +939,8 @@
       .replace(/ /g, "_")
       .toLowerCase();
     window.history.pushState("page2", "Title", xpath);
+    
+    change_meta()
 
     if (json_data[e].type == "Pro Shows") {
       console.log(json_data[e].type, "Pro Shows");
