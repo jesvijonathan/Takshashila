@@ -1648,6 +1648,7 @@ button:hover {
 .eve_detail_1_2 {
   height: fit-content;
   display: flex;
+  opacity: 0;
 }
 .eve_detail_1_1 {
   width: 20vw;
