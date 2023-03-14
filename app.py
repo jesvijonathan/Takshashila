@@ -59,7 +59,7 @@ except:
 
 
 
-with open('/home/takshashila/Takshashila-2023-Backend/static/events.json') as json_file:
+with open('./static/events.json') as json_file:
     eve_data = json.load(json_file) 
 # cache = Cache(config={'CACHE_TYPE': 'simple'})
 # cache = Cache(app)

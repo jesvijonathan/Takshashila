@@ -480,7 +480,7 @@
         <br>
         <br>
       </section>
-      <section class=last_sec>See you in 18 Days..</section>
+      <section class=last_sec>See you in 16 Days..</section>
       <footer>
         <div class=footer id=fff>
           <div class=foot_1>
@@ -575,19 +575,12 @@
     not_con = document.getElementById("not-cont"),
     top_link = document.getElementById("top_link");
 </script>
+
 <script>
-  function butter_start() {
-    butter.init({
-        wrapperId: "butter",
-        wrapperDamper: 0.1,
-        cancelOnTouch: !0
-      }),
-      (document.querySelector("#butter").style.position = "initial");
+  var mobile = 0;
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    mobile = 1;
   }
-</script>
-<script async id="scri_but" src="./butter.js" onload="butter_start()"></script>
-<script>
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
   else {
     var e = document.getElementsByTagName("head")[0],
       t = document.createElement("script");
@@ -608,11 +601,25 @@
   }
 </script>
 <script>
+  function butter_start() {
+    if(mobile == 1) return;
+    butter.init({
+        wrapperId: "butter",
+        wrapperDamper: 0.1,
+        cancelOnTouch: !0
+      }),
+      (document.querySelector("#butter").style.position = "initial");
+  }
+</script>
+<script async id="scri_but" src="./butter.js" onload="butter_start()"></script>
+
+<script>
   function init_not() {
-    notify("Website under construction..", 1e4),
+    notify("Website under construction..", 12000),
       setTimeout(function() {
-        notify("Click on the logo to adjust graphic quality", 3e3);
-      }, 12e3);
+        graphic(1);
+        notify("Click on the logo to adjust graphic quality", 5000);
+      }, 7000);
   }
 </script>
 <script></script>
