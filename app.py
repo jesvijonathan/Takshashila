@@ -90,18 +90,17 @@ def index():
 
 
 
-@app.route("/events/<event>")
-# @cache.cached(timeout=2)
-def events(event=None):  
-    if event:   
-        try:
-            for eve in eve_data:  
-                even = eve['name'].lower().replace(" ", "_")
-                if even == event:
-                    return render_template("og_redirect.html", title=eve['name'],description=eve['description'], image=eve['image'], url=domain+"events#/"+even, url_=domain+"events/"+even)
-        except:pass
-        return redirect("/events")
-    return redirect("/events")
+@app.route('/events/<event>')
+def A(event=None):
+	E='/events';D='name';C=event
+	if C:
+		try:
+			for A in eve_data:
+				B=A[D].lower().replace(' ','_')
+				if B==C:return render_template('og_redirect.html',title=A[D],description=A['description'],image=A['image'],url=domain+'events#/'+B,url_2=domain+'events/'+B)
+		except:pass
+		return redirect(E)
+	return redirect(E)
 
 @app.route("/credits")
 def credits():
