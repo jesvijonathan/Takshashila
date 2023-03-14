@@ -734,8 +734,16 @@
     }
   }
 
+  var global_event="";
   function copyToClipboard() {
-    text = window.location.href;
+    // text = window.location.href;
+
+    var pathArray = window.location.href.split( '/' );
+    var protocol = pathArray[0];
+    var host = pathArray[2];
+    var url = protocol + '//' + host + "/events/"+global_event;
+
+    text = url;
 
     if (window.clipboardData && window.clipboardData.setData) {
       // Internet Explorer-specific code path to prevent textarea being shown while dialog is visible.
@@ -773,12 +781,6 @@
   document.querySelector("#butter").style.position = "initial";
 </script>
 
-
-<script type='text/javascript'>
- function change_meta() {
-  // document.head.querySelector('meta[property="og:title"]').content = "_title";
-    }
-  </script>
 
 <script>
   // document.body.style.display = "none";
@@ -883,6 +885,7 @@
     eve_reg_link.href = json_data[e].register;
 
     eve_title_con.childNodes[1].innerHTML = json_data[e].name;
+   
     document.title = json_data[e].name + " | Takshashila 2023";
     eve_title_con.childNodes[3].innerHTML = json_data[e].tag_line;
     eve_detail_2_2.childNodes[3].innerHTML = json_data[e].description;
@@ -935,13 +938,16 @@
       json_data[e].incharge[0].phone +
       "</a>";
 
-    let xpath = ("/events#/" + json_data[e].name)
-      .replace(/ /g, "_")
-      .toLowerCase();
-    window.history.pushState("page2", "Title", xpath);
-    
-    change_meta()
 
+    let sname =(json_data[e].name)
+      .replace(/ /g, "_")
+      .toLowerCase()
+    let xpath = ("/events#/" + sname);
+    
+    window.history.pushState("page2", "Title", xpath);
+
+    global_event = sname;
+     
     if (json_data[e].type == "Pro Shows") {
       console.log(json_data[e].type, "Pro Shows");
       hori.style.display = "none";

@@ -58,6 +58,9 @@ except:
     print("user qr already exists")
 
 
+
+with open('/home/takshashila/Takshashila-2023-Backend/static/events.json') as json_file:
+    eve_data = json.load(json_file) 
 # cache = Cache(config={'CACHE_TYPE': 'simple'})
 # cache = Cache(app)
 
@@ -84,16 +87,27 @@ def soon():
 def index():
     return render_template("index.html")
 
-@app.route("/events")
+
+
+
+@app.route("/events/<event>")
 # @cache.cached(timeout=2)
-def events():
-    return render_template("events.html")
+def events(event=None):  
+    if event:   
+        try:
+            for eve in eve_data:  
+                even = eve['name'].lower().replace(" ", "_")
+                if even == event:
+                    return render_template("og_redirect.html", title=eve['name'],description=eve['description'], image=eve['image'], url=domain+"events#/"+even  )
+        except:pass
+        return redirect("/events")
+    return redirect("/events")
 
 @app.route("/credits")
 def credits():
     return render_template("credits.html")
 
-@app.route("/events#/<text>")
+@app.route("/events")
 # @cache.cached(timeout=2)
 def nig():
     return render_template("events.html")
