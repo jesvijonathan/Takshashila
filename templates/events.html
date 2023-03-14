@@ -125,18 +125,18 @@
 <div class="open_mob_fil" id="open_mob_fil">
   <div class="eve_options" id="eve_options">
     <div class="eop eop_active" 
-    value="true" onclick="toggle(this, '.eop', 'eop_active')" 
+    value="true" onclick="toggle(this, '.eop', 'eop_active');notify('Displaying all events !', 5000);" 
     data-type="all">All Events</div>
     <div class="eop " 
-    value="false" onclick="toggle(this, '.eop', 'eop_active')" data-type="Technical">Technical Events</div>
+    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Technical | Filter Applied !',5000)" data-type="Technical">Technical Events</div>
     <div class="eop" 
-    value="false" onclick="toggle(this, '.eop', 'eop_active')" data-type="Non-Technical">Non-Technical Events</div>
+    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Non-Technical | Filter Applied !',5000)" data-type="Non-Technical">Non-Technical Events</div>
     <div class="eop" 
-    value="false" onclick="toggle(this, '.eop', 'eop_active')" data-type="Workshop">Workshops</div>
+    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Workshops | Filter Applied !',5000)" data-type="Workshop">Workshops</div>
     <div class="eop" 
-    value="false" onclick="toggle(this, '.eop', 'eop_active')"  data-type="Pro Shows">Pro Shows</div>
+    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Pro Shows | Filter Applied !',5000);" data-type="Pro Shows">Pro Shows</div>
     <a class="eop eop_r" href="/home"
-    value="false" onclick="toggle(this, '.eop', 'eop_active')"  data-type="return">Return to Home Page</a>
+    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Returning to home page !',5000);" data-type="return">Return to Home Page</a>
   </div>
 </div>
   <body class="eve_body" id="bodyy">
@@ -191,7 +191,7 @@
       <div class="filter" id="filter">
         <button
           class="fil_bub link_cur eve_active "
-          value="true" onclick="toggle(this, '.fil_bub', 'eve_active')" 
+          value="true" onclick="toggle(this, '.fil_bub', 'eve_active');notify('Displaying all events !', 5000)" 
     data-type="all"
           data-text="All Events"
         >
@@ -199,7 +199,7 @@
         </button>
         <button
           class="fil_bub link_cur "
-          value="false" onclick="toggle(this, '.fil_bub','eve_active')" data-type="Technical"
+          value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Technical | Filter Applied !',5000)" data-type="Technical"
           data-text="Technical Events"
         >
           Technical
@@ -207,21 +207,21 @@
 
         <button
           class="fil_bub link_cur "
-          value="false" onclick="toggle(this, '.fil_bub','eve_active')" data-type="Non-Technical"
+          value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Non-Technical | Filter Applied !',5000)" data-type="Non-Technical"
           data-text="Non-Technical Events"
         >
           Non-Technical
         </button>
         <button
           class="fil_bub link_cur "
-          value="false" onclick="toggle(this, '.fil_bub','eve_active')" data-type="Workshop"
+          value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Workshops | Filter Applied !',5000)" data-type="Workshop"
           data-text="Workshops"
         >
           Workshops
         </button>
         <button
           class="fil_bub link_cur "
-          value="false" onclick="toggle(this, '.fil_bub','eve_active')"  data-type="Pro Shows"
+          value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Pro Shows | Filter Applied !',5000);"  data-type="Pro Shows"
           data-text="Pro Shows"
         >
           Pro Shows
@@ -414,7 +414,7 @@
         <div class=footer id=fff>
           <div class=foot_1>
             <div class=foot_1_1>
-              <a class=title_font href="/">Takshashila</a>
+              <a class=title_font href="/home" onclick="notify('Returning to home page !',5000);">Takshashila</a>
               <div class="line line_2"></div>
               <div class=fot_loc>
                 <a class="foot_desc_title link_cur" data-text="Our Institution" href="https://www.citchennai.edu.in/" target=_blank> Chennai Institute Of Technology </a>
@@ -724,8 +724,11 @@
           inner_details = "";
 
           jata = data[i];
+          eve_img.src = "./Group 304.png";
+          
+          inner_details += '<img class="eve_img" src="./Group 304.png"/>';
 
-          inner_details += '<img class="eve_img" src="' + jata.image + '"/>';
+          // inner_details += '<img class="eve_img" src="' + jata.image + '"/>';
           inner_details +=
             ' <div class="eve_ma"><div class="eve_title">' +
             jata.name +
@@ -771,7 +774,9 @@
     eve_path.style.display = "flex";
     filter.style.display = "none";
 
-    eve_img.src = "" + json_data[e].image;
+    
+    eve_img.src = "./Group 304.png";
+    // eve_img.src = "" + json_data[e].image;
 
     //inner div for tag_con from json_data[e].tags
     tag_con.innerHTML = "";
@@ -1000,5 +1005,6 @@ eve_card = document.querySelectorAll(".eve_card");
 
 
 <script>
+  // document.referrer
   onload=graphic(1)
 </script>
