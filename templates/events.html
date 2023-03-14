@@ -5,13 +5,7 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    /> 
 
     <title>Events | Takshashila 2023</title>
     <meta name=description content="Takshashila, an event organized In regards to annual cultural event conducted in Chennai Institute Of Technology.">
@@ -39,7 +33,7 @@
     <meta name="twitter:site" content="@cittakshashila" />
     <meta name="twitter:image:alt" content="Takshashila 2023">
 
-
+    <script src=./js/jquery.min.js crossorigin=anonymous referrerpolicy=no-referrer></script>
     <script src="./butter.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <link rel=manifest href=manifest.json>
@@ -128,6 +122,23 @@
 </style>
 </div>
 
+<div class="open_mob_fil" id="open_mob_fil">
+  <div class="eve_options" id="eve_options">
+    <div class="eop eop_active" 
+    value="true" onclick="toggle_but_mobile(this)" 
+    data-type="eve_card">All</div>
+    <div class="eop " 
+    value="false" onclick="toggle_but_mobile(this)" data-type="Technical">Technical Events</div>
+    <div class="eop" 
+    value="false" onclick="toggle_but_mobile(this)" data-type="Non-Technical">Non-Technical Events</div>
+    <div class="eop" 
+    value="false" onclick="toggle_but_mobile(this)" data-type="Workshop">Workshops</div>
+    <div class="eop" 
+    value="false" onclick="toggle_but_mobile(this)"  data-type="Pro Shows">Pro Shows</div>
+    <a class="eop eop_r" href="/home"
+    value="false" onclick="toggle_but_mobile(this)"  data-type="return">Return to Home Page</a>
+  </div>
+</div>
   <body class="eve_body" id="bodyy">
         <!-- <video autoplay muted loop id="myVideo"><source src="./pexels-tima-miroshnichenko-7985887.mp4" type="video/mp4" /></video> -->
     <img id="myVideo" src="./pexels-tima-miroshnichenko-7985887.webp" type="image/webp" />
@@ -170,7 +181,8 @@
       <div
         class="filt_icon fa fa-navicon"
         id="filt_icon"
-        onclick="notify('Just assume you are being redirected !', 3000)"
+        data-filt_menu="0"
+        onclick="open_mob_fil(this)"
       ></div>
       <div class="title_back_con" onclick="history.back();" id="baclk_w">
         <span class="fa fa-arrow-left"></span>
@@ -276,6 +288,7 @@
             data-text="Latest Posts"
             id="link_con_insta"
             target="_blank"
+            href="instagram.com/_jesvi_"
           >
             Instagram Post
           </a>
@@ -293,7 +306,7 @@
             class="eve_detail_1_3_link link_cur"
             data-text="Download Brochure"
             id="link_con_download"
-            target="_blank"
+            onclick="notify('Brochure not available !')"
           >
             Download
           </a>
@@ -324,6 +337,7 @@
                   data-text="Latest Posts"
                   id="link_con_insta"
                   target="_blank"
+                  href="instagram.com/_jesvi_"
                 >
                   Instagram Post
                 </a>
@@ -341,7 +355,8 @@
                   class="eve_detail_1_3_link link_cur"
                   data-text="Download Brochure"
                   id="link_con_download"
-                  target="_blank"
+                  onclick="notify('Brochure not available !')"
+
                 >
                   Download
                 </a>
@@ -890,7 +905,8 @@
       // notify("All Events", 1000);
       vis = "block";
       all.classList.add("eve_active");
-    } else {
+    }
+    else {
       // notify("Filtered " + e.dataset.type + " events", 1000);
       vis = "None";
     }
@@ -904,15 +920,16 @@
 
     e.classList.add("eve_active");
 
-    for (let i = 0; i < eve_cards.length; i++) {
-      eve_cards[i].style.display = vis;
+    var eve_card = document.getElementById("eve_card");
+    for (let i = 0; i < eve_card.length; i++) {
+      eve_card[i].style.display = vis;
     }
 
     for (let i = 0; i < types.length; i++) {
-      var eve_cards = document.getElementsByClassName(types[i]);
+      var eve_card = document.getElementsByClassName(types[i]);
       if (e.dataset.type == types[i]) {
-        for (let j = 0; j < eve_cards.length; j++) {
-          eve_cards[j].style.display = "block";
+        for (let j = 0; j < eve_card.length; j++) {
+          eve_card[j].style.display = "block";
         }
       }
     }
@@ -975,10 +992,55 @@
 </script>
 
 <script>
+  document.getElementById("curtain").style.display = "none";
   setTimeout(function() {
     "complete" !== document.readyState ? (document.getElementById("curtain").style.opacity = "1") : (document.getElementById("curtain").style.opacity = "0"),
       setTimeout(function() {
         document.getElementById("curtain").style.display = "none";
       }, 1e3);
   }, 4e3), "serviceWorker" in navigator && navigator.serviceWorker.register("service-worker.js");
+</script>
+
+<script>
+  function open_mob_fil(e){
+    if(e.dataset.filt_menu == "0"){
+      e.dataset.filt_menu =1;
+      document.getElementById("open_mob_fil").style.display="flex";
+    }
+    else{
+      e.dataset.filt_menu = 0;
+document.getElementById("open_mob_fil").style.display="none";
+    }
+  }
+
+  var mob_card = document.getElementById("eve_options");
+  function toggle_but_mobile(e) {
+    if (e.dataset.type == "eve_card") {
+      // notify("All Events", 1000);
+      vis = "block";
+      all.classList.add("eve_active");
+    } else {
+      // notify("Filtered " + e.dataset.type + " events", 1000);
+      vis = "None";
+    }
+    filt_icon.dataset.filt_menu = 0;
+    document.getElementById("open_mob_fil").style.display="none";
+
+    // accept_cookie;
+ 
+    mob_card.childNodes.forEach((element) => { 
+      console.log(Array.from(element).style.display);
+    });
+
+    e.classList.add("eop_active");
+ 
+    for (let i = 0; i < types.length; i++) {
+      var eve_card = document.getElementsByClassName(types[i]);
+      if (e.dataset.type == types[i]) {
+        for (let j = 0; j < eve_card.length; j++) {
+          eve_card[j].style.display = "block";
+        }
+      }
+    }
+  }
 </script>

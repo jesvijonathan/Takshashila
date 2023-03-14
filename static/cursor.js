@@ -42,22 +42,14 @@ onload = function () {
               (o.style.transform = "scale(1)"), (o.innerHTML = "");
             }
           ),
-          document.addEventListener(
-            "mousedown",
-            function () {
-              o.classList.add("cursor_circle_click"),
-                (c.style.background = "white");
-            },
-            { passive: !0 }
-          ),
-          document.addEventListener(
-            "mouseup",
-            function () {
-              o.classList.remove("cursor_circle_click"),
-                (c.style.background = "transparent");
-            },
-            { passive: !0 }
-          );
+          document.addEventListener("mousedown", function () {
+            o.classList.add("cursor_circle_click"),
+              (c.style.background = "white");
+          }),
+          document.addEventListener("mouseup", function () {
+            o.classList.remove("cursor_circle_click"),
+              (c.style.background = "transparent");
+          });
       })
     : document.addEventListener("mousemove", (e) => {
         let t = e.clientX,
@@ -85,19 +77,12 @@ onload = function () {
               (c.style.background = "transparent");
           });
       }),
-    document.addEventListener(
-      "mouseout",
-      (e) => {
-        let t = e.clientX,
-          s = e.clientY;
-        (s <= 0 ||
-          t <= 0 ||
-          t >= window.innerWidth ||
-          s >= window.innerHeight) &&
-          (i.style.display = "none");
-      },
-      { passive: !0 }
-    ),
+    document.addEventListener("mouseout", (e) => {
+      let t = e.clientX,
+        s = e.clientY;
+      (s <= 0 || t <= 0 || t >= window.innerWidth || s >= window.innerHeight) &&
+        (i.style.display = "none");
+    }),
     document.addEventListener("mouseenter", () => {
       i.style.display = "block";
     });

@@ -3116,3 +3116,54 @@ select {
   left: 3vw;
   top: unset !important;
 }
+
+.open_mob_fil {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 100;
+  background-color: #00000057;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+.eop {
+  display: flex;
+  flex-direction: row;
+  /* background: white; */
+  /* color: black; */
+  /* border-radius: 4px; */
+  padding: 2vw 4vw;
+  color: #ffffff;
+  background-color: None !important;
+}
+.eop_active {
+  border-left: 2px solid white;
+  background-color: white;
+  color: black;
+  width: 80%;
+  text-align: center;
+}
+.eve_options {
+  font-size: 5vw;
+  gap: 3vw;
+  font-family: "oo";
+  color: white;
+  gap: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: flex-start;
+}
+.eop_r {
+  /* margin-top: 2vw; */
+}
