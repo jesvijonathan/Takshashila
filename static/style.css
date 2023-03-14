@@ -3093,9 +3093,6 @@ select {
     border-bottom: 0.2vw solid #ffffff2e;
   }
 }
-.eve_img {
-  opacity: 0;
-}
 .ripple {
   height: 0;
   width: 0;
