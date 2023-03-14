@@ -973,6 +973,10 @@ document.getElementById("curtain").style.display = "none";</script>
 
     filt_icon.dataset.filt_menu = 0;
     document.getElementById("open_mob_fil").style.display="none";
+    
+    document.getElementById("filt_icon").classList.remove("fa-close");
+      document.getElementById("filt_icon").classList.add("fa-navicon");
+      
 eve_card = document.querySelectorAll(".eve_card");
 
     for (let i = 0; i < eve_card.length; i++) {
