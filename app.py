@@ -98,7 +98,7 @@ def events(event=None):
             for eve in eve_data:  
                 even = eve['name'].lower().replace(" ", "_")
                 if even == event:
-                    return render_template("og_redirect.html", title=eve['name'],description=eve['description'], image=eve['image'], url=domain+"events#/"+even  )
+                    return render_template("og_redirect.html", title=eve['name'],description=eve['description'], image=eve['image'], url=domain+"events#/"+even, url_=domain+"events/"+even)
         except:pass
         return redirect("/events")
     return redirect("/events")
