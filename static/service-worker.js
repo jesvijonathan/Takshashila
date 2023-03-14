@@ -4,11 +4,11 @@ self.addEventListener("install", (t) => {
       .open("static")
       .then((t) =>
         t.addAll([
+          "./manifest.json",
           "./style.css",
           "./script.js",
-          "./cursor.js",
-          "./manifest.json",
           "./",
+          "./cursor.js",
         ])
       )
   );
