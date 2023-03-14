@@ -976,7 +976,7 @@ document.getElementById("curtain").style.display = "none";</script>
     
     document.getElementById("filt_icon").classList.remove("fa-close");
       document.getElementById("filt_icon").classList.add("fa-navicon");
-      
+
 eve_card = document.querySelectorAll(".eve_card");
 
     for (let i = 0; i < eve_card.length; i++) {
@@ -992,6 +992,7 @@ eve_card = document.querySelectorAll(".eve_card");
           }
       }
   }
+  notify("Filter Applied !", 3e3);
 
 }
 
