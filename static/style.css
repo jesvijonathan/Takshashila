@@ -2386,15 +2386,12 @@ select {
 }
 
 .open_mob_fil {
-
   display: none;
-
 }
 
 .eve_options {
   display: none;
 }
-
 
 @media only screen and (max-width: 600px) {
   .desc,
@@ -2492,7 +2489,7 @@ select {
     border-radius: 7px;
     padding: 5vw;
     background: #00000024;
-    transition: 0.1s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
   .block {
     display: none;
