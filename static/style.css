@@ -2827,7 +2827,7 @@ select {
   .pro_ppl_card:hover .pro_ppl_txt_b,
   .pro_ppl_txt_b {
     border-radius: 4px;
-    top: -41vw;
+    top: -39vw;
     font-size: 4vw;
     padding: 2vw;
   }
