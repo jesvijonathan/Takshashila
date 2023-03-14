@@ -125,18 +125,18 @@
 <div class="open_mob_fil" id="open_mob_fil">
   <div class="eve_options" id="eve_options">
     <div class="eop eop_active" 
-    value="true" onclick="toggle_but_mobile(this)" 
-    data-type="eve_card">All</div>
+    value="true" onclick="toggle(this, '.eop', 'eop_active')" 
+    data-type="all">All Events</div>
     <div class="eop " 
-    value="false" onclick="toggle_but_mobile(this)" data-type="Technical">Technical Events</div>
+    value="false" onclick="toggle(this, '.eop', 'eop_active')" data-type="Technical">Technical Events</div>
     <div class="eop" 
-    value="false" onclick="toggle_but_mobile(this)" data-type="Non-Technical">Non-Technical Events</div>
+    value="false" onclick="toggle(this, '.eop', 'eop_active')" data-type="Non-Technical">Non-Technical Events</div>
     <div class="eop" 
-    value="false" onclick="toggle_but_mobile(this)" data-type="Workshop">Workshops</div>
+    value="false" onclick="toggle(this, '.eop', 'eop_active')" data-type="Workshop">Workshops</div>
     <div class="eop" 
-    value="false" onclick="toggle_but_mobile(this)"  data-type="Pro Shows">Pro Shows</div>
+    value="false" onclick="toggle(this, '.eop', 'eop_active')"  data-type="Pro Shows">Pro Shows</div>
     <a class="eop eop_r" href="/home"
-    value="false" onclick="toggle_but_mobile(this)"  data-type="return">Return to Home Page</a>
+    value="false" onclick="toggle(this, '.eop', 'eop_active')"  data-type="return">Return to Home Page</a>
   </div>
 </div>
   <body class="eve_body" id="bodyy">
@@ -190,48 +190,38 @@
       </div>
       <div class="filter" id="filter">
         <button
-          class="fil_bub eve_active link_cur"
-          onclick="toggle_but(this);"
-          value="true"
-          id="all"
-          data-type="eve_card"
+          class="fil_bub link_cur eve_active "
+          value="true" onclick="toggle(this, '.fil_bub', 'eve_active')" 
+    data-type="all"
           data-text="All Events"
         >
           All
         </button>
         <button
-          class="fil_bub link_cur"
-          onclick="toggle_but(this);"
-          data-type="Technical"
-          value="false"
+          class="fil_bub link_cur "
+          value="false" onclick="toggle(this, '.fil_bub','eve_active')" data-type="Technical"
           data-text="Technical Events"
         >
           Technical
         </button>
 
         <button
-          class="fil_bub link_cur"
-          onclick="toggle_but(this);"
-          data-type="Non-Technical"
-          value="false"
+          class="fil_bub link_cur "
+          value="false" onclick="toggle(this, '.fil_bub','eve_active')" data-type="Non-Technical"
           data-text="Non-Technical Events"
         >
           Non-Technical
         </button>
         <button
-          class="fil_bub link_cur"
-          onclick="toggle_but(this);"
-          data-type="Workshop"
-          value="false"
+          class="fil_bub link_cur "
+          value="false" onclick="toggle(this, '.fil_bub','eve_active')" data-type="Workshop"
           data-text="Workshops"
         >
           Workshops
         </button>
         <button
-          class="fil_bub link_cur"
-          onclick="toggle_but(this);"
-          data-type="Pro Shows"
-          value="false"
+          class="fil_bub link_cur "
+          value="false" onclick="toggle(this, '.fil_bub','eve_active')"  data-type="Pro Shows"
           data-text="Pro Shows"
         >
           Pro Shows
@@ -692,7 +682,7 @@
     cancelOnTouch: false,
   });
 
-  document.querySelector("#butter").style.position = "initial";
+  document.querySelector("#butter").style.position = "relative";
 </script>
 
 
@@ -753,9 +743,8 @@
           inner_details += '<div class="eve_button">View</div></div>';
 
           html_list.innerHTML +=
-            '<div class="eve_card  ' +
-            jata.type +
-            '"  onclick="open_event(' +
+            '<div class="eve_card" data-type="' + 
+            jata.type + '"  onclick="open_event(' +
             i +
             ');">' +
             inner_details +
@@ -894,47 +883,7 @@
 
   // ///////////////////////////
 </script>
-
-<script>
-  var types = ["Technical", "Non-Technical", "Workshop", "Pro Shows"];
-
-  var vis = null;
-
-  function toggle_but(e) {
-    if (e.dataset.type == "eve_card") {
-      // notify("All Events", 1000);
-      vis = "block";
-      all.classList.add("eve_active");
-    }
-    else {
-      // notify("Filtered " + e.dataset.type + " events", 1000);
-      vis = "None";
-    }
-
-    // accept_cookie;
-
-    var ch = e.parentElement.children;
-    for (let i = 0; i < ch.length; i++) {
-      ch[i].classList.remove("eve_active");
-    }
-
-    e.classList.add("eve_active");
-
-    var eve_card = document.getElementById("eve_card");
-    for (let i = 0; i < eve_card.length; i++) {
-      eve_card[i].style.display = vis;
-    }
-
-    for (let i = 0; i < types.length; i++) {
-      var eve_card = document.getElementsByClassName(types[i]);
-      if (e.dataset.type == types[i]) {
-        for (let j = 0; j < eve_card.length; j++) {
-          eve_card[j].style.display = "block";
-        }
-      }
-    }
-  }
-</script>
+ 
 
 <script>
   window.onscroll = function () {
@@ -965,82 +914,86 @@
     ? ((graphic_high = 0),
       document.getElementById("eve_detail_cont").style.background = "#3c3c3c",
       (myvid.style.display = "none"),
-      document.getElementById("navbar").style.background = "transparent",
+      document.getElementById("navbar").style.background = "transparent !important",
+      
       myvid.classList.remove("blur"), 
   
-  notify("Acrylic Theme Deactivated !", 3e3),
-      ripple.classList.remove("rypol"),
-      
-      (pro_sec.style.background = "#131313"),
-      (image4.style.display = "block"),
-      (image3.style.display = "block"),
-      (image9.style.display = "block"))
+  notify("Acrylic Theme Deactivated !", 3e3))
     : ((graphic_high = 1),
-      document.getElementById("eve_detail_cont").style.background = "#48484838  ",
+      document.getElementById("eve_detail_cont").style.background = "#48484838",
       myvid.classList.add("blur"),
       navbar.classList.add("sticky_blur"),
       (myvid.style.display = "block"),
-      document.getElementById("navbar").add("sticky_blur"),
+      document.getElementById("navbar").classList.add("sticky_blur"),
       
-      notify("Acrylic Theme Activated !", 3e3),
-      ripple.classList.add("rypol"),
-      (pro_sec.style.background = "transparent"),
-      (image4.style.display = "none"),
-      (image3.style.display = "none"),
-      (image9.style.display = "none"));
+      notify("Acrylic Theme Activated !", 3e3));
 }
 </script>
 
 <script>
-  document.getElementById("curtain").style.display = "none";
+onload = function () {
   setTimeout(function() {
+    
     "complete" !== document.readyState ? (document.getElementById("curtain").style.opacity = "1") : (document.getElementById("curtain").style.opacity = "0"),
       setTimeout(function() {
         document.getElementById("curtain").style.display = "none";
       }, 1e3);
   }, 4e3), "serviceWorker" in navigator && navigator.serviceWorker.register("service-worker.js");
-</script>
+};
+
+
+document.getElementById("curtain").style.display = "none";</script>
 
 <script>
+
   function open_mob_fil(e){
     if(e.dataset.filt_menu == "0"){
       e.dataset.filt_menu =1;
       document.getElementById("open_mob_fil").style.display="flex";
+      document.getElementById("filt_icon").classList.remove("fa-navicon");
+      document.getElementById("filt_icon").classList.add("fa-close");
+      navbar.classList.add("sticky_blur");
     }
     else{
       e.dataset.filt_menu = 0;
-document.getElementById("open_mob_fil").style.display="none";
+      document.getElementById("open_mob_fil").style.display="none";
+      document.getElementById("filt_icon").classList.remove("fa-close");
+      document.getElementById("filt_icon").classList.add("fa-navicon");
     }
   }
 
   var mob_card = document.getElementById("eve_options");
-  function toggle_but_mobile(e) {
-    if (e.dataset.type == "eve_card") {
-      // notify("All Events", 1000);
-      vis = "block";
-      all.classList.add("eve_active");
-    } else {
-      // notify("Filtered " + e.dataset.type + " events", 1000);
-      vis = "None";
-    }
+  var types = ["Technical", "Non-Technical", "Workshop", "Pro Shows"];
+
+  function toggle(e, ty, act) {
+
+    document.querySelectorAll(ty).forEach((element) => {
+      element.classList.remove(act);});
+    e.classList.add(act);
+
     filt_icon.dataset.filt_menu = 0;
     document.getElementById("open_mob_fil").style.display="none";
+eve_card = document.querySelectorAll(".eve_card");
 
-    // accept_cookie;
- 
-    mob_card.childNodes.forEach((element) => { 
-      console.log(Array.from(element).style.display);
-    });
-
-    e.classList.add("eop_active");
- 
-    for (let i = 0; i < types.length; i++) {
-      var eve_card = document.getElementsByClassName(types[i]);
-      if (e.dataset.type == types[i]) {
-        for (let j = 0; j < eve_card.length; j++) {
-          eve_card[j].style.display = "block";
-        }
+    for (let i = 0; i < eve_card.length; i++) {
+      
+      if(e.dataset.type == "all"){
+        eve_card[i].style.display = "block";
       }
-    }
+      else{
+        if (eve_card[i].dataset.type == e.dataset.type) {
+          eve_card[i].style.display = "block";
+          } else {
+            eve_card[i].style.display = "none";
+          }
+      }
   }
+
+}
+
+</script>
+
+
+<script>
+  onload=graphic(1)
 </script>
