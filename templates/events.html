@@ -935,17 +935,7 @@
 }
 </script>
 
-<script>
-onload = function () {
-  setTimeout(function() {
-    
-    "complete" !== document.readyState ? (document.getElementById("curtain").style.opacity = "1") : (document.getElementById("curtain").style.opacity = "0"),
-      setTimeout(function() {
-        document.getElementById("curtain").style.display = "none";
-      }, 1e3);
-  }, 4e3), "serviceWorker" in navigator && navigator.serviceWorker.register("service-worker.js");
-};
-</script>
+
 
 <script>
 
@@ -1004,5 +994,15 @@ eve_card = document.querySelectorAll(".eve_card");
 
 <script>
   // document.referrer
+</script>
+<script>
+  setTimeout(function() {
+    "complete" !== document.readyState ? (document.getElementById("curtain").style.opacity = "1") : (document.getElementById("curtain").style.opacity = "0"),
+      setTimeout(function() {
+        document.getElementById("curtain").style.display = "none";
+      }, 1e3);
+  }, 4e3), "serviceWorker" in navigator && navigator.serviceWorker.register("service-worker.js");
+
   onload=graphic(1)
 </script>
+ 

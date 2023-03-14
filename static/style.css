@@ -7,6 +7,7 @@ html {
 }
 html {
   overflow-x: hidden;
+  overflow-x: clip;
 }
 .bg_2,
 .bg_design,
@@ -970,7 +971,7 @@ mark {
   position: relative;
   text-align: center;
   transition: 0.2s ease-in-out;
-  top: -11vw;
+  top: -10.5vw;
   font-size: 0.8vw;
   width: fit-content;
   padding: 0.5vw;
@@ -1529,6 +1530,7 @@ button:hover {
   width: 100%;
   filter: contrast(0.85) brightness(0.9) grayscale(0.2) blur(0px);
   height: -webkit-fill-available;
+  user-select: none;
 }
 .eve_title {
   color: #fff;
@@ -1609,6 +1611,7 @@ button:hover {
   display: flex;
   opacity: 0;
   transition: 0.2s ease-out;
+  user-select: none;
 }
 .eve_desc div {
   margin: 3vw;
