@@ -2386,41 +2386,11 @@ select {
 }
 
 .open_mob_fil {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  margin: 0;
-  top: 0;
-  left: 0;
+
   display: none;
-  z-index: 100;
-  background-color: #00000057;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(10px);
+
 }
-.eop {
-  display: flex;
-  flex-direction: row;
-  /* background: white; */
-  /* color: black; */
-  /* border-radius: 4px; */
-  padding: 2vw 4vw;
-  transition: 0.7s ease-in-out;
-  color: #ffffff;
-  background-color: None !important;
-}
-.eop_active {
-  width: 80%;
-  border-left: 0.7vw solid white;
-  /* text-align: center; */
-  /* background-color: #fff;
-  color: #000 !important; */
-  /* text-decoration: underline; */
-}
+
 .eve_options {
   display: none;
 }
