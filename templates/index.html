@@ -76,7 +76,7 @@
         z-index: 1000;
         height: 41vw !important;
         width: 32vw !important;
-        animation: 4s forwards svg_design;
+        animation: svg_design 4s infinite;
       }
 
       @keyframes svg_design {
@@ -98,14 +98,20 @@
           transform: scale(1.1);
         }
 
-        90% {
+        85% {
           stroke-opacity: 0;
         }
 
-        100% {
+        94% {
           display: block;
           fill: rgb(255, 255, 255);
           opacity: 1;
+          transform: scale(1);
+        }
+        100% {
+          display: block;
+          stroke-dasharray: 580;
+          opacity: 0;
           transform: scale(1);
         }
       }
@@ -218,7 +224,7 @@
           <a href="mailto:takshashila@citchennai.net" target=_blank class="fa fa-envelope-o link_cur" data-text=Email></a>
           <a href="tel:" target=_blank class="fa fa-phone link_cur" data-text=Phone></a>
         </div>
-        <div class="arrow_container link_cur" data-text="Scroll Down" onclick="window.scrollBy(0, 300);">
+        <div class="arrow_container link_cur" data-text="Scroll Down" onclick="window.scrollBy(0, 360);">
           <svg width=30 height=232 viewBox="0 0 30 232" fill=none xmlns=http://www.w3.org/2000/svg>
             <line x1=27.5 x2=27.5 y2=230 stroke=white stroke-width=3 />
             <line x1=28.3895 y1=230.139 x2=1.31006 y2=197.786 stroke=white stroke-width=3 />
@@ -255,45 +261,6 @@
         <div class=pro_sec>
           <div class=pro_ppl_cont>
             <div class=pro_div>
-              <div class="pro_day day_l jos" data-callback=l_in data-once=true> Pro Show | Day 1 </div>
-              <div class="pro_ppl_card card_l">
-                <div class=pro_ppl_img id=pp1 loading=lazy></div>
-                <div class="pro_ppl_txt link_cur" data-text="Julian Jordan"> Project 91 </div>
-                <div class=pro_ppl_txt_s>30 March 2023</div>
-                <div class=tex-blur></div>
-                <a href="./events#/dj_night" class="pro_ppl_txt_b link_cur" data-text="Get Tickets"> Register </a>
-                <div class=pro_ppl_txt_desc> What Google fonts work with Korean? Google Fonts: Noto Serif Korean. Noto Serif KR is a modulated (“serif”) design for the Korean language using Hangul and the Korean Hanja scripts. It also supports Hiragana, Katakana, Latin, Cyrillic and Greek. <br>
-                  <br> Noto Serif KR is a modulated (“serif”) design for the Korean language using Hangul and the Korean Hanja scripts. It also supports Hiragana, Katakana, Latin, Cyrillic and Greek.
-                </div>
-              </div>
-            </div>
-            <div class=pro_div>
-              <div class="pro_day day_l jos" data-callback=l_in data-once=true> Pro Show | Day 2 </div>
-              <div class="pro_ppl_card card_l">
-                <div class=pro_ppl_img id=pp2 loading=lazy></div>
-                <div class="pro_ppl_txt link_cur" data-text=Skrillex> Dhee </div>
-                <div class=pro_ppl_txt_s>31 March 2023</div>
-                <div class=tex-blur></div>
-                <a href="./events#/musical_night"class="pro_ppl_txt_b link_cur" data-text=:(> Register </a>
-                <div class=pro_ppl_txt_desc> What Google fonts work with Korean? Google Fonts: Noto Serif Korean. Noto Serif KR is a modulated (“serif”) design for the Korean language using Hangul and the Korean Hanja scripts. It also supports Hiragana, Katakana, Latin, Cyrillic and Greek. <br>
-                  <br> Noto Serif KR is a modulated (“serif”) design for the Korean language using Hangul and the Korean Hanja scripts. It also supports Hiragana, Katakana, Latin, Cyrillic and Greek.
-                </div>
-              </div>
-            </div>
-            <div class=pro_div>
-              <div class="pro_day day_l jos" data-callback=l_in data-once=true> Pro Show | Day 3 </div>
-              <div class="pro_ppl_card card_l">
-                <div class=pro_ppl_img id=pp3 loading=lazy></div>
-                <div class="pro_ppl_txt link_cur" data-text="Seth Hills"> Thaikudam Bridge </div>
-                <div class=pro_ppl_txt_s>1 April 2023</div>
-                <div class=tex-blur></div>
-                <a href="./events#/band_night" class="pro_ppl_txt_b link_cur" data-text="Get Tickets"> Register </a>
-                <div class=pro_ppl_txt_desc> What Google fonts work with Korean? Google Fonts: Noto Serif Korean. Noto Serif KR is a modulated (“serif”) design for the Korean language using Hangul and the Korean Hanja scripts. It also supports Hiragana, Katakana, Latin, Cyrillic and Greek. <br>
-                  <br> Noto Serif KR is a modulated (“serif”) design for the Korean language using Hangul and the Korean Hanja scripts. It also supports Hiragana, Katakana, Latin, Cyrillic and Greek.
-                </div>
-              </div>
-            </div>
-            <div class=pro_div>
               <div class="pro_day day_r jos" data-callback=r_in data-once=true> Pro Event | Day 1 </div>
               <div class="pro_ppl_card card_r">
                 <div class=pro_ppl_img id=pp4 loading=lazy></div>
@@ -301,24 +268,65 @@
                 <div class=pro_ppl_txt_s>30 FMarch 2023</div>
                 <div class=tex-blur></div>
                 <a href="./events#/plush" class="pro_ppl_txt_b link_cur" data-text="Get Tickets"> Register </a>
-                <div class=pro_ppl_txt_desc> What Google fonts work with Korean? Google Fonts: Noto Serif Korean. Noto Serif KR is a modulated (“serif”) design for the Korean language using Hangul and the Korean Hanja scripts. It also supports Hiragana, Katakana, Latin, Cyrillic and Greek. <br>
-                  <br> Noto Serif KR is a modulated (“serif”) design for the Korean language using Hangul and the Korean Hanja scripts. It also supports Hiragana, Katakana, Latin, Cyrillic and Greek.
+                <div class=pro_ppl_txt_desc>Pitch your pace as you walk with pride and prowess. Can your charm convoke the critics and collect the cheers? Powerful, pleasant and picturesque, is how it must be. Flaunt your fashion in this fest of elegance and ecstasy!<be>
+                  <br>  
                 </div>
               </div>
             </div>
             <div class=pro_div>
-              <div class="pro_day day_r jos" data-callback=r_in data-once=true> Pro Event | Day 2 </div>
+              <div class="pro_day day_r jos" data-callback=r_in data-once=true> Pro Event | Day 1 </div>
               <div class="pro_ppl_card card_r">
                 <div class=pro_ppl_img id=pp5 loading=lazy></div>
                 <div class="pro_ppl_txt link_cur" data-text="Seth Hills"> Choreo Night </div>
-                <div class=pro_ppl_txt_s>31 March 2023</div>
+                <div class=pro_ppl_txt_s>30 March 2023</div>
                 <div class=tex-blur></div>
                 <a href="./events#/choreo_night" class="pro_ppl_txt_b link_cur" data-text="Get Tickets"> Register </a>
-                <div class=pro_ppl_txt_desc> What Google fonts work with Korean? Google Fonts: Noto Serif Korean. Noto Serif KR is a modulated (“serif”) design for the Korean language using Hangul and the Korean Hanja scripts. It also supports Hiragana, Katakana, Latin, Cyrillic and Greek. <br>
-                  <br> Noto Serif KR is a modulated (“serif”) design for the Korean language using Hangul and the Korean Hanja scripts. It also supports Hiragana, Katakana, Latin, Cyrillic and Greek.
+                <div class=pro_ppl_txt_desc>The stage's heating up, so get your spirits ignited, as it's time for you to put on a costume of confidence and flaunt your moves with your crew. Prepare to leave a mark on the dance floor!<br>
+                  <br>  
                 </div>
               </div>
             </div>
+
+            <div class=pro_div>
+              <div class="pro_day day_l jos" data-callback=l_in data-once=true> Pro Show | Day 2 </div>
+              <div class="pro_ppl_card card_l">
+                <div class=pro_ppl_img id=pp3 loading=lazy></div>
+                <div class="pro_ppl_txt link_cur" data-text="Seth Hills"> Thaikudam Bridge </div>
+                <div class=pro_ppl_txt_s>31 March 2023</div>
+                <div class=tex-blur></div>
+                <a href="./events#/band_night" class="pro_ppl_txt_b link_cur" data-text="Get Tickets"> Register </a>
+                <div class=pro_ppl_txt_desc> Thaikkudam Bridge is coming to town and they are ready to get you grooving to their beats. Hold on tight as this is not just any average concert. This is a high-octane, ear-splitting, heart-pumping extravaganza that leaves you wanting for more. Get ready to rock it out like never before, because this is going to be one unforgettable night of pure musical adrenaline!
+                
+                </div>
+              </div>
+            </div>
+            <div class=pro_div>
+              <div class="pro_day day_l jos" data-callback=l_in data-once=true> Pro Show | Day 3 </div>
+              <div class="pro_ppl_card card_l">
+                <div class=pro_ppl_img id=pp1 loading=lazy></div>
+                <div class="pro_ppl_txt link_cur" data-text="Julian Jordan"> Project 91 </div>
+                <div class=pro_ppl_txt_s>1 April 2023</div>
+                <div class=tex-blur></div>
+                <a href="./events#/dj_night" class="pro_ppl_txt_b link_cur" data-text="Get Tickets"> Register </a>
+                <div class=pro_ppl_txt_desc>Adrenaline rushing, crowd vibing, beams flashing and beats burning. Join the groovy DJ as he plunges you into a night of eternal bliss! The most awaited night where lights go low and spirits get high! Let the ground rumble with sounds that soar to the stars!
+                </div>
+              </div>
+            </div>
+            <div class=pro_div>
+              <div class="pro_day day_l jos" data-callback=l_in data-once=true> Pro Show | Day 3 </div>
+              <div class="pro_ppl_card card_l">
+                <div class=pro_ppl_img id=pp2 loading=lazy></div>
+                <div class="pro_ppl_txt link_cur" data-text=Skrillex> Dhee </div>
+                <div class=pro_ppl_txt_s>1 April 2023</div>
+                <div class=tex-blur></div>
+                <a href="./events#/musical_night"class="pro_ppl_txt_b link_cur" data-text=:(> Register </a>
+                <div class=pro_ppl_txt_desc>Crazy nights make the best memories. Is there anything better than singing along to your favorite song in a crowd with thousands of strangers? Come celebrate with us as we groove to the sounds of Indian Cinema.
+                </div>
+              </div>
+            </div>
+
+
+
             <div class=pro_div id=pro_more>
               <div class="pro_day day_r jos" data-callback=r_in data-once=true></div>
               <div class="pro_ppl_card card_r ppl_more">
@@ -351,7 +359,7 @@
               <img class="simg eve_iim" id=eve_2 src=./photo_2023-02-27_20-31-53.webp loading=lazy>
               <div class=sdetcon>
                 <div class="stit to_title">Technical Events</div>
-                <div class=sdet> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, </div>
+                <div class=sdet>Our college hosts various competitions for students to showcase technical skills. Competitions such as Technical quiz, drone racing, water rocketry etc., cater to different interests and skill levels, offering a chance to network and gain experience for future careers. Competitions award prizes and offer a fun, supportive environment for students from different academic backgrounds.</div>
                 <div class="sbuto link_cur" data-text="View Events">
                   <button class=sbu onclick='location.href="/events"'> View All </button>
                 </div>
@@ -363,7 +371,7 @@
               <img class="simg eve_iim" id=eve_1 style=margin:0 src=./non-tech.webp loading=lazy>
               <div class=sdetcon>
                 <div class="stit to_title">Non-Technical Events</div>
-                <div class=sdet> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, </div>
+                <div class=sdet> Get ready for a fun-filled day with our non-technical events.   Whether it is a thrilling treasure hunt, rap battle, quiz, dance, talent show, costume contest, cooking competition, or outdoor sports, you name it, we've got it. So gather your friends, show off your skills, and compete for prizes and bragging rights as the best team on campus !</div>
                 <div class="sbuto link_cur" data-text="View Events">
                   <button class=sbu onclick='location.href="/events"'> View All </button>
                 </div>
@@ -375,7 +383,7 @@
               <img class="simg eve_iim" id=eve_2 src=./Lumii_20230311_093101724.webp loading=lazy>
               <div class=sdetcon>
                 <div class="stit to_title">Workshop</div>
-                <div class=sdet> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, </div>
+                <div class=sdet> Join us in this interactive workshop and explore the blend of technical and cinematic experiences in one place. From software development to vehicle building. Experience a cinematic safari with a Potpourri of workshops from screenplay to script writing. Get full hands on experience from experts and get insight on the most acclaimed, revered topics ever to exist.</div>
                 <div class="sbuto link_cur" data-text="View Events">
                   <button class=sbu onclick='location.href="/events"'> View All </button>
                 </div>
@@ -426,27 +434,26 @@
               </div>
             </div>
           </div>
-          <div class="locac fade" style=display:none id=contact>
-            <div>
+          <div class="locac fade" style=display:none id=contact>  
               <div class=loca>
                 <div class=locamm>
                   <h3>Phone :</h3>
                   <div class="locmi coon">
                     <ul>
                       <li>
-                        <a class="link_cur loca_a" data-text=Conatct href=tel:+919849770286 target=_blank>Deez (President | +910000000000)</a>
+                        <a class="link_cur loca_a" data-text=Contact href=tel:+919849770286 target=_blank>C. Saran</a>
                       </li>
                       <li>
-                        <a class="link_cur loca_a" data-text=Conatct href=tel:+919150612359 target=_blank>Deez (Vice President | +910000000000)</a>
+                        <a class="link_cur loca_a" data-text=Contact href=tel:+919150612359 target=_blank>M. Gayathrie</a>
                       </li>
                       <li>
-                        <a class="link_cur loca_a" data-text=Conatct href=tel:+919003633318 target=_blank>Deez (Event Co-ordinator | +910000000000)</a>
+                        <a class="link_cur loca_a" data-text=Contact href=tel:+919003633318 target=_blank>G. Vishnu Vardhan</a>
                       </li>
                       <li>
-                        <a class="link_cur loca_a" data-text=Conatct href=tel:+919384485985 target=_blank>Deez (Secretary | +910000000000)</a>
+                        <a class="link_cur loca_a" data-text=Contact href=tel:+919384485985 target=_blank>V. Akshya Preetha</a>
                       </li>
                       <li>
-                        <a class="link_cur loca_a" data-text=Conatct href=https://jesvi.pythonanywhere.com/ target=_blank>Jesvi Jonathan ( <b>Developer 🤖</b>) </a>
+                        <a class="link_cur loca_a" data-text=Contact href=https://jesvi.pythonanywhere.com/ target=_blank style="color: rgba(255, 255, 255, 0.1);">Jesvi Jonathan ( <b>Developer 🤖</b>) </a>
                       </li>
                     </ul>
                   </div>
@@ -463,8 +470,19 @@
                   </div>
                 </div>
               </div>
+              <div class="ppl_contt">         
+
+                <a class="cont_ppl_but" href="tel:8925236404">C. Saran</a>
+                <a class="cont_ppl_but" href="tel:9150472413">M. Gayathrie</a>
+                <a class="cont_ppl_but" href="tel:9344326874">G. Vishnu Vardhan</a>
+                <a class="cont_ppl_but" href="tel:9344326874">V. Akshya Preetha</a>
+                </div>
+                
+                <div>
             </div>
+
           </div>
+ 
           <div class="dotstyle dotstyle-scaleup ddo">
             <ul>
               <li class="dot current">
@@ -480,7 +498,10 @@
         <br>
         <br>
       </section>
-      <section class=last_sec>See you in 16 Days..</section>
+      <section class=last_sec id="coundown">16 Days..</section>
+      <script>
+      var countDownDate=new Date("March 30, 2023 00:00:00").getTime(),x=setInterval(function(){var e=new Date().getTime(),n=countDownDate-e;document.getElementById("coundown").innerHTML="See you in "+Math.floor(n/864e5)+" Days..",n<0&&(clearInterval(x),document.getElementById("coundown").innerHTML="The event was grand !")},1e3);
+        </script>
       <footer>
         <div class=footer id=fff>
           <div class=foot_1>
@@ -582,16 +603,18 @@
     mobile = 1;
   }
   else {
-    var e = document.getElementsByTagName("head")[0],
-      t = document.createElement("script");
-    (t.type = "text/javascript"),
-    screen.width > 500 && (t.src = "./cursor.js"),
-      e.appendChild(t),
-      (document.getElementById("cursor").style.display = "block"),
-      (onload = function() {
-        document.body.style.cursor = "none";
-      });
-  }
+
+document.getElementById("cursor").style.display = "block"
+}
+</script>
+
+<script>
+if (screen && screen.width > 480) {
+  document.write('<script type="text/javascript" src="cursor.js"><\/script>');
+}
+</script>
+<!-- <script src="./cursor" async onload=""> -->
+
 </script>
 <script async>
   function observ() {
@@ -615,11 +638,11 @@
 
 <script>
   function init_not() {
-    notify("Website under construction..", 12000),
+    notify("Website under construction..", 10000),
       setTimeout(function() {
         graphic(1);
         notify("Click on the logo to adjust graphic quality", 5000);
-      }, 7000);
+      }, 6000);
   }
 </script>
 <script></script>

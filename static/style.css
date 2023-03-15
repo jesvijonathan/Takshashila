@@ -8,6 +8,7 @@ html {
 html {
   overflow-x: hidden;
   overflow-x: clip;
+  scroll-behavior: smooth;
 }
 .bg_2,
 .bg_design,
@@ -962,8 +963,8 @@ mark {
   text-align: center;
   transition: 0.2s ease-in;
   top: -27vw;
-  font-size: 0.6vw;
-  margin: 1vw;
+  font-size: 0.7vw;
+  margin: 1vw 1.8vw;
   opacity: 0;
   letter-spacing: 0.1vw;
 }
@@ -1119,6 +1120,9 @@ mark {
 .dotstyle,
 .icon {
   position: absolute;
+}
+.ppl_contt {
+  display: none;
 }
 .icon {
   display: block;
@@ -1637,7 +1641,8 @@ button:hover {
   justify-content: space-between;
   align-content: space-between;
   gap: 3vw;
-  margin: 0 7vw 10vw;
+  margin: 7vw 7vw;
+  /* padding: 3vw 0vw 3vw 0vw; */
   height: 44vw;
   background: #3c3c3c;
   color: #fff;
@@ -1776,6 +1781,25 @@ button:hover {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   width: fit-content;
   font-family: oo;
+  display: flex;
+  gap: 2vw;
+}
+.rule_1 {
+  padding: 0vw 0vw 0.4vw 0vw;
+  border-bottom: 0.2vw solid rgba(255, 255, 255, 0.5);
+}
+.rule_2 {
+  font-size: 0.8vw;
+  color: rgba(255, 255, 255);
+  padding-left: 0.4vw;
+  padding-right: 0.4vw;
+  padding-top: 0.4vw;
+  cursor: pointer;
+}
+.rule_active {
+  font-size: 0.8vw;
+  color: rgba(0, 0, 0, 1) !important;
+  background-color: white !important;
 }
 .eve_detail_2_1_1 {
   font-size: 3vw;
@@ -2046,6 +2070,10 @@ button:hover {
   height: 22vw;
   position: relative;
   filter: grayscale(1);
+  transition: 0.7s ease-in-out;
+}
+.eve_iim:hover {
+  filter: grayscale(0.2);
 }
 #eve_1 {
   transform: rotate(7deg);
@@ -2397,6 +2425,16 @@ select {
 }
 
 @media only screen and (max-width: 600px) {
+  .rule_2 {
+    padding-left: 2.4vw;
+    padding-right: 2.4vw;
+    font-size: 2vw;
+    border-bottom: 0.2vw solid white;
+    background: #ffffff1f;
+  }
+  .eve_detail_2_2_1 {
+    gap: 5vw;
+  }
   .desc,
   .sdet {
     font-weight: 100;
@@ -2487,12 +2525,14 @@ select {
     position: fixed;
     top: 89%;
     width: -webkit-fill-available;
-    gap: 5vw;
+    gap: 5.6vw;
     margin: 1vw 10vw !important;
     border-radius: 7px;
     padding: 5vw;
     background: #00000024;
     transition: 0.2s ease-in-out;
+    backdrop-filter: blur(10px);
+    /* border: 0.2vw solid #5a5a5a33; */
   }
   .block {
     display: none;
@@ -2826,6 +2866,8 @@ select {
     top: -87vw;
     font-size: 2.2vw;
     margin: 4vw;
+    font-size: 2.8vw;
+    margin: 7vw;
   }
   .pro_ppl_card:hover .pro_ppl_txt_b,
   .pro_ppl_txt_b {
@@ -2975,6 +3017,7 @@ select {
     gap: 10vw;
   }
   .eve_detail_2_1_1 {
+    font-size: 8vw;
     font-size: 6vw;
     text-align: center;
   }
@@ -3170,6 +3213,28 @@ select {
     align-content: center;
     align-items: flex-start;
   }
+  .ppl_contt {
+    gap: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw 0vw 3vw;
+  }
+  .socials {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+
+    top: 91%;
+    margin-left: 0%;
+    display: flex;
+    gap: 4.2vw;
+    width: 100%;
+  }
 }
 .ripple {
   height: 0;
@@ -3198,3 +3263,31 @@ select {
 /* .eop_r {
   margin-top: 2vw;
 } */
+
+.contact_ppl {
+  display: flex;
+}
+.cont_ppl_but {
+  background: #ffffff1c;
+  text-align: center;
+  font-family: "oo";
+  color: white;
+  font-size: 3vw;
+  border-radius: 4px;
+  padding: 4vw 0vw;
+  width: 90%;
+  border: 2px solid #ffffff17;
+}
+.cont_ppl_but:hover {
+  color: black;
+  background: white;
+}
+
+.filt_icon_act {
+  padding: 1vw 2vw;
+  border-radius: 4px;
+  background: #ffffff24;
+  color: white;
+  margin: 0;
+  /* border: 1vw solid white;*/
+}

@@ -59,68 +59,74 @@
     </script>
   </head>
   <div class="curtain" id="curtain" style="
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: rgba(16, 16, 16, 0.878);
-  backdrop-filter: blur(10px);
-  z-index: 999;
-  transition: 0.7s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-">
-<svg width="1000" height="1000" id="logo_load" viewBox="0 0 1000 1000" fill="none" style="scale: 0.3; fill: transparent; opacity: 0" class="main_logo_1">
-  <path d="m413.288 213.138 3.801 7.084 52.496 97.577c7.58 12.701 10.576 22.199 16.631 42.061l-8.305 17.978-15.681 34.092c-6.542 11.236-11.031 16.933-19.957 26.564-12.355 14.611-22.325 33.36-21.858 34.534 5.217 13.089 4.793 20.059 0 32.051-40.644-31.623-19.73-81.195-7.603-114.401.199-13.367-4.143-25.815-19.006-51.358-10.382 1.017-15.474-1.769-19.482-15.496-17.899-5.826-28.494-6.192-47.517-6.199 2.05.318 1.87-.228 21.382 9.741 12.758 5.696 28.326 23.002 26.135 50.03-2.605 17.024-23.9 38.506-52.744 52.686 3.711.519 9.978-.443 9.503 1.328-18.177 12.24-30.277 18.077-51.318 28.779-41.34 29.663-50.694 54.161-47.042 98.731 2.56 18.827 7.109 32.657 13.78 45.16 5.702 11.322 14.883 21.853 18.532 36.305.593-12.245 1.375-15.295 3.326-15.939 5.756 22.082 17.897 31.488 47.517 45.603 32.099 16.819 46.66 26.129 66.999 47.373-1.771-10.826-3.194-16.449-7.128-27.45 54.169 69.953 59.871 139.021 7.603 224.028 65.446-52.89 102.711-78.535 162.508-110.686 5.012-5.887 5.033-9.068 1.9-14.61-39.878-29.573-55.61-44.607-77.927-71.725-19.508-29.166-30.618-46.327-48.943-69.953 29.585 8.645 44.796 23.476 70.325 61.541l14.73-9.74c-7.496-14.24-10.855-21.082-14.73-30.376l39.666-9.297c7.814 15.608 11.491 26.245 17.582 46.488 17.058-1.696 24.539-.719 37.063 1.771l-6.88-28.509h16.631c19.255 16.798 31 24.691 53.219 36.747 11.092-25.762 32.787-42.06 64.623-54.014l8.791-5.756c-4.358-1.644-38.152-23.401 8.79-5.756l17.582-18.152c-43.716-30.549-14.255-56.229 11.404-20.366 7.902-18.047 8.701-30.999 5.702-57.557l-3.802-9.74-15.205-42.946-18.056-3.985-8.078-29.221c7.366.097 12.079 3.236 20.907 11.069-18.399-66.855-49.715-79.033-104.062-69.954.272 2.648 1.748 4.208 6.177 7.084 7.444.443 23.854 4.25 29.936 15.939 3.643 6.346 10.359 22.403 8.078 35.862-.95 3.838-3.897 12.308-8.078 15.496-.937-1.932-1.623 20.555-34.212 17.71-32.589-2.845-50.97-52.585-17.581-77.48l4.276-14.611c-1.673-8.681-14.503-50.299-21.858-55.785-2.029-4.568-4.29-7.27 1.178-10.895 6.281 0-54.314-72.193-85.758-107.318-25.849-32.586-17.74-65.821-10.453-78.365 17.866-43.212 55.911-54.31 72.7-54.458-14.065-10.271-34.687-11.068-43.24-10.183-33.072 2.48-59.08 18.153-67.949 25.679-31.551 19.835-51.16 71.725-57.02 95.19Z" stroke="#fff" stroke-linejoin="round" stroke-width="4" />
-</svg>
-<style>
-  @media (max-width: 600px) {
-    #logo_load {
-      scale: 0.8 !important;
-    }
-  }
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background: rgba(16, 16, 16, 0.878);
+      backdrop-filter: blur(10px);
+      z-index: 999;
+      transition: 0.7s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    ">
+    <svg width="1000" height="1000" id="logo_load" viewBox="0 0 1000 1000" fill="none" style="scale: 0.3; fill: transparent; opacity: 0" class="main_logo_1">
+      <path d="m413.288 213.138 3.801 7.084 52.496 97.577c7.58 12.701 10.576 22.199 16.631 42.061l-8.305 17.978-15.681 34.092c-6.542 11.236-11.031 16.933-19.957 26.564-12.355 14.611-22.325 33.36-21.858 34.534 5.217 13.089 4.793 20.059 0 32.051-40.644-31.623-19.73-81.195-7.603-114.401.199-13.367-4.143-25.815-19.006-51.358-10.382 1.017-15.474-1.769-19.482-15.496-17.899-5.826-28.494-6.192-47.517-6.199 2.05.318 1.87-.228 21.382 9.741 12.758 5.696 28.326 23.002 26.135 50.03-2.605 17.024-23.9 38.506-52.744 52.686 3.711.519 9.978-.443 9.503 1.328-18.177 12.24-30.277 18.077-51.318 28.779-41.34 29.663-50.694 54.161-47.042 98.731 2.56 18.827 7.109 32.657 13.78 45.16 5.702 11.322 14.883 21.853 18.532 36.305.593-12.245 1.375-15.295 3.326-15.939 5.756 22.082 17.897 31.488 47.517 45.603 32.099 16.819 46.66 26.129 66.999 47.373-1.771-10.826-3.194-16.449-7.128-27.45 54.169 69.953 59.871 139.021 7.603 224.028 65.446-52.89 102.711-78.535 162.508-110.686 5.012-5.887 5.033-9.068 1.9-14.61-39.878-29.573-55.61-44.607-77.927-71.725-19.508-29.166-30.618-46.327-48.943-69.953 29.585 8.645 44.796 23.476 70.325 61.541l14.73-9.74c-7.496-14.24-10.855-21.082-14.73-30.376l39.666-9.297c7.814 15.608 11.491 26.245 17.582 46.488 17.058-1.696 24.539-.719 37.063 1.771l-6.88-28.509h16.631c19.255 16.798 31 24.691 53.219 36.747 11.092-25.762 32.787-42.06 64.623-54.014l8.791-5.756c-4.358-1.644-38.152-23.401 8.79-5.756l17.582-18.152c-43.716-30.549-14.255-56.229 11.404-20.366 7.902-18.047 8.701-30.999 5.702-57.557l-3.802-9.74-15.205-42.946-18.056-3.985-8.078-29.221c7.366.097 12.079 3.236 20.907 11.069-18.399-66.855-49.715-79.033-104.062-69.954.272 2.648 1.748 4.208 6.177 7.084 7.444.443 23.854 4.25 29.936 15.939 3.643 6.346 10.359 22.403 8.078 35.862-.95 3.838-3.897 12.308-8.078 15.496-.937-1.932-1.623 20.555-34.212 17.71-32.589-2.845-50.97-52.585-17.581-77.48l4.276-14.611c-1.673-8.681-14.503-50.299-21.858-55.785-2.029-4.568-4.29-7.27 1.178-10.895 6.281 0-54.314-72.193-85.758-107.318-25.849-32.586-17.74-65.821-10.453-78.365 17.866-43.212 55.911-54.31 72.7-54.458-14.065-10.271-34.687-11.068-43.24-10.183-33.072 2.48-59.08 18.153-67.949 25.679-31.551 19.835-51.16 71.725-57.02 95.19Z" stroke="#fff" stroke-linejoin="round" stroke-width="4" />
+    </svg>
+    <style>
+      @media (max-width: 600px) {
+        #logo_load {
+          scale: 0.8 !important;
+        }
+      }
 
-  .main_logo_1 {
-    z-index: 1000;
-    height: 41vw !important;
-    width: 32vw !important;
-    animation: 4s forwards svg_design;
-  }
+      .main_logo_1 {
+        z-index: 1000;
+        height: 41vw !important;
+        width: 32vw !important;
+        animation: svg_design 4s infinite;
+      }
 
-  @keyframes svg_design {
-    0% {
-      display: block;
-      stroke-dasharray: 580;
-      opacity: 0;
-      transform: scale(1);
-    }
+      @keyframes svg_design {
+        0% {
+          display: block;
+          stroke-dasharray: 580;
+          opacity: 0;
+          transform: scale(1);
+        }
 
-    20% {
-      opacity: 1;
-      fill: transparent;
-    }
+        20% {
+          opacity: 1;
+          fill: transparent;
+        }
 
-    50% {
-      fill: white;
-      stroke-dasharray: 100;
-      transform: scale(1.1);
-    }
+        50% {
+          fill: white;
+          stroke-dasharray: 100;
+          transform: scale(1.1);
+        }
 
-    90% {
-      stroke-opacity: 0;
-    }
+        85% {
+          stroke-opacity: 0;
+        }
 
-    100% {
-      display: block;
-      fill: rgb(255, 255, 255);
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-</style>
-</div>
+        94% {
+          display: block;
+          fill: rgb(255, 255, 255);
+          opacity: 1;
+          transform: scale(1);
+        }
+        100% {
+          display: block;
+          stroke-dasharray: 580;
+          opacity: 0;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </div>
 
 <div class="open_mob_fil" id="open_mob_fil">
   <div class="eve_options" id="eve_options">
@@ -295,9 +301,9 @@
           <a
             class="eve_detail_1_3_link link_cur"
             data-text="Download Brochure"
-            id="link_con_download"
-            onclick="notify('Brochure not available !')"
-          >
+            id="link_con_download"  
+            onclick="notify('Brochure Unavailable !',5000);onclick='takeshot()'">
+          
             Download
           </a>
         </div>
@@ -374,10 +380,14 @@
             <div class="eve_detail_2_2_1">Description</div>
             <div class="eve_detail_2_2_tag"></div>
           </div>
-          <div class="eve_detail_2_2">
-            <div class="eve_detail_2_2_1">Rules</div>
+          <div class="eve_detail_2_2" id="rullee">
+            <div class="eve_detail_2_2_1" style="text-decoration: none; border: none; margin: none;">
+              <div class="rule_1">Rules</div>
+              <div class="rule_2 rule_active" id="prel"onclick="rule_switch(0);">Prelimes</div>
+              <div class="rule_2" id="fina" onclick="rule_switch(1);">Finals</div></div>
             <div class="eve_detail_2_2_tag" id="eve_detail_rules"></div>
           </div>
+
           <div class="eve_detail_2_3">
             <div class="eve_detail_horiz">
               <div class="eve_sec" id="hori">
@@ -765,6 +775,8 @@
         // window.location.reload();
       });
   });
+var rule_1_text = "-";
+var rule_2_text = "-";
 
   function open_event(e) {
     baclk_w.style.display = "flex";
@@ -809,12 +821,49 @@
     //     '<div class="eve_rules">' + json_data[e].rules[i] + "</div>";
     // }
 
-    json_data[e].rules.forEach((element) => {
+rules_1 = "";
+rules_2 = "";
+
+rullee = document.getElementById("rullee");
+ no_rul = json_data[e].rules.length;
+ switch(no_rul){
+    case 1: {
+
+      json_data[e].rules[0].forEach((element) => {
       // alert(uu.length + " " + i + " " + uu[i]);
-      eve_detail_rules.innerHTML +=
+      rules_1 +=
         '<div class="eve_rules">' + element + "</div>";
     });
+    eve_detail_rules.innerHTML = rules_1;
+    
+    rullee.style.display = "block";
+    document.getElementById("prel").style.display = "none";
+    document.getElementById("fina").style.display = "none";
+    break;
+    }
+    case 2:{
+      json_data[e].rules[0].forEach((element) => {
+      // alert(uu.length + " " + i + " " + uu[i]);
+      rules_1 +=
+        '<div class="eve_rules">' + element + "</div>";
+    });
+    eve_detail_rules.innerHTML = rules_1;
 
+      json_data[e].rules[1].forEach((element) => {
+        // alert(uu.length + " " + i + " " + uu[i]);
+        rules_2 += '<div class="eve_rules">' + element + "</div>";
+      });
+      
+    rullee.style.display = "block";
+    document.getElementById("prel").style.display = "block";
+    document.getElementById("fina").style.display = "block";
+    break;
+    }
+    default:{
+      rullee.style.display = "none";
+    }
+
+  }
     prize.innerHTML =
       '<div class="">First Prize : ' + json_data[e].prize.first + "</div>";
     prize.innerHTML +=
@@ -970,6 +1019,7 @@
     document.getElementById("filt_icon").classList.remove("fa-close");
       document.getElementById("filt_icon").classList.add("fa-navicon");
 
+    
 eve_card = document.querySelectorAll(".eve_card");
 
     for (let i = 0; i < eve_card.length; i++) {
@@ -983,9 +1033,16 @@ eve_card = document.querySelectorAll(".eve_card");
           } else {
             eve_card[i].style.display = "none";
           }
+      }  }
+
+      if(e.dataset.type == "all"){
+      document.getElementById("filt_icon").classList.remove("filt_icon_act")
       }
-  }
-  notify("Filter Applied !", 3e3);
+      else{
+      document.getElementById("filt_icon").classList.add("filt_icon_act")
+      }
+  
+      notify("Filter Applied !", 3e3);
 
 }
 
@@ -1006,3 +1063,33 @@ eve_card = document.querySelectorAll(".eve_card");
   onload=graphic(1)
 </script>
  
+
+<script>
+  function rule_switch(n){
+    if(n == 1){
+      document.getElementById("prel").classList.remove("rule_active");
+      document.getElementById("fina").classList.add("rule_active");
+      document.getElementById("eve_detail_rules").innerHTML = rules_2;
+    }
+    else{
+      document.getElementById("fina").classList.remove("rule_active");
+      document.getElementById("prel").classList.add("rule_active");
+      document.getElementById("eve_detail_rules").innerHTML = rules_1;
+    }
+  }
+</script>
+
+<!-- <script src=
+"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+    </script>
+    <script type="text/javascript">
+
+
+const screenshotTarget = document.body;
+
+html2canvas(screenshotTarget).then((canvas) => {
+    const base64image = canvas.toDataURL("image/png");
+    window.location.href = base64image;
+});
+  </script> -->
+  

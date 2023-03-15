@@ -1,7 +1,7 @@
 {
   "name": "CIT - Takshahila 2023",
   "short_name": "Takshashila 23",
-  "start_url": ".",
+  "start_url": "./home",
   "theme_color": "#282828",
   "background_color": "#282828",
   "display": "standalone",
