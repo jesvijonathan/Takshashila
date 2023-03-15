@@ -556,8 +556,8 @@
     // });
     // document.querySelector("#butter").style.position = "initial";
   } else {
-    var head = document.getElementsByTagName("head")[0];
-    var js = document.createElement("script");
+    let head = document.getElementsByTagName("head")[0];
+    let js = document.createElement("script");
 
     js.type = "text/javascript";
  
@@ -633,13 +633,13 @@
   };
 
   var url_event;
-  var load_done = false;
+  let load_done = false;
 
   if (
     window.location.href.indexOf("events") != -1 ||
     window.location.href.indexOf("events.html") != -1
   ) {
-    var parts = window.location.href.split("/");
+    let parts = window.location.href.split("/");
     url_event = parts[parts.length - 1];
 
     if (url_event.indexOf("events") != -1) {
@@ -652,9 +652,9 @@
   function copyToClipboard() {
     // text = window.location.href;
 
-    var pathArray = window.location.href.split( '/' );
-    var protocol = pathArray[0];
-    var host = pathArray[2];
+    let pathArray = window.location.href.split( '/' );
+    let protocol = pathArray[0];
+    let host = pathArray[2];
     var url = protocol + '//' + host + "/events/"+global_event;
 
     text = url;
@@ -684,7 +684,6 @@
 </script>
 
 <script>
-  var t;
 
   butter.init({
     wrapperId: "butter",
