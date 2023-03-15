@@ -1514,6 +1514,7 @@ button:hover {
   height: 29vw;
   width: 27vw;
   background-color: #373737;
+  background-color: rgba(72, 72, 72, 0.22);
   border-radius: 0.5vw;
   font-family: oo;
   border: 0.11vw solid rgba(120, 120, 120, 0.7);
@@ -1535,6 +1536,7 @@ button:hover {
   filter: contrast(0.85) brightness(0.9) grayscale(0.2) blur(0px);
   height: -webkit-fill-available;
   user-select: none;
+  opacity: 0;
 }
 .eve_title {
   color: #fff;

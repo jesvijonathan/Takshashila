@@ -141,7 +141,7 @@
     value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Workshops | Filter Applied !',5000)" data-type="Workshop">Workshops</div>
     <div class="eop" 
     value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Pro Shows | Filter Applied !',5000);" data-type="Pro Shows">Pro Shows</div>
-    <a class="eop eop_r" href="/home"
+    <a class="eop eop_r" href="/"
     value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Returning to home page !',5000);" data-type="return">Return to Home Page</a>
   </div>
 </div>
@@ -158,21 +158,21 @@
       <a
         class="ev_title title_font link_cur"
         data-text="Return To Main Page"
-        href="/home"
+        href="/"
       >
         Takshashila
     </a>
 
       <div class="mav_bar_cont">
-        <a class="nav_bar_links link_cur"  href="/home#about"data-text="About Us">About</a>
-        <a class="nav_bar_links link_cur" href="/home#events"data-text="Events List">Events</a>
-        <a class="nav_bar_links link_cur"href="/home#pro_sec" data-text="Pro-Shows">
+        <a class="nav_bar_links link_cur"  href="/#about"data-text="About Us">About</a>
+        <a class="nav_bar_links link_cur" href="/#events"data-text="Events List">Events</a>
+        <a class="nav_bar_links link_cur"href="/#pro_sec" data-text="Pro-Shows">
           Pro Shows
         </a>
-        <a class="nav_bar_links link_cur"href="/home#workshop" data-text="Workshops">
+        <a class="nav_bar_links link_cur"href="/#workshop" data-text="Workshops">
           Workshops
         </a>
-        <a class="nav_bar_links link_cur" href="/home#contact"data-text="Contact Us">Contact</a>
+        <a class="nav_bar_links link_cur" href="/#contact"data-text="Contact Us">Contact</a>
       </div>
     </header>
     <div class="eve_func" id="navbar">
@@ -424,7 +424,7 @@
         <div class=footer id=fff>
           <div class=foot_1>
             <div class=foot_1_1>
-              <a class=title_font href="/home" onclick="notify('Returning to home page !',5000);">Takshashila</a>
+              <a class=title_font href="/" onclick="notify('Returning to home page !',5000);">Takshashila</a>
               <div class="line line_2"></div>
               <div class=fot_loc>
                 <a class="foot_desc_title link_cur" data-text="Our Institution" href="https://www.citchennai.edu.in/" target=_blank> Chennai Institute Of Technology </a>
@@ -556,16 +556,16 @@
     // });
     // document.querySelector("#butter").style.position = "initial";
   } else {
-    let head = document.getElementsByTagName("head")[0];
-    let js = document.createElement("script");
+    // let head = document.getElementsByTagName("head")[0];
+    // let js = document.createElement("script");
 
-    js.type = "text/javascript";
+    // js.type = "text/javascript";
  
-      js.src = "./cursor.js"; 
-    head.appendChild(js);
+    //   js.src = "./cursor.js"; 
+    // head.appendChild(js);
 
-    document.body.style.cursor = "none";
-    document.getElementById("cursor").style.display = "block";
+    // document.body.style.cursor = "none";
+    // document.getElementById("cursor").style.display = "block";
 
     // document.body.style.display = "block";
   }

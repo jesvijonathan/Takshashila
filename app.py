@@ -87,6 +87,10 @@ def soon():
 def index():
     return render_template("index.html")
 
+@app.route("/home")
+# @cache.cached(timeout=2)
+def home():
+    return redirect("/")
 
 
 
