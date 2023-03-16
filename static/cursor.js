@@ -1,8 +1,8 @@
-try {
-  document.querySelector("#image1"), document.querySelector("#image2");
-} catch (r) {
-  console.log("Error: " + r);
-}
+// try {
+//   document.querySelector("#image1"), document.querySelector("#image2");
+// } catch (r) {
+//   console.log("Error: " + r);
+// }
 const image1 = document.querySelector("#image1"),
   image2 = document.querySelector("#image2"),
   image5 = document.querySelector("#image5"),
