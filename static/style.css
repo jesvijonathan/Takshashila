@@ -1773,6 +1773,7 @@ button:hover {
   width: 19vw;
   display: flex;
   flex-direction: row;
+  gap: 0.4vw;
   border: 0;
 }
 .eve_detail_reg:hover {
