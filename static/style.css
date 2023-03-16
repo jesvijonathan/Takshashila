@@ -1771,6 +1771,8 @@ button:hover {
   border-radius: 4px;
   padding: 1vw 0vw;
   width: 19vw;
+  display: flex;
+  flex-direction: row;
   border: 0;
 }
 .eve_detail_reg:hover {

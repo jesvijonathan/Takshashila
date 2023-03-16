@@ -949,12 +949,12 @@ var rule_2_text = "-";
     if(mobile){
 
       document.getElementById("eve_reg_link_2").href = json_data[e].register;
-      document.getElementById("price_2").innerHTML = "₹"+json_data[e].fee;
+      document.getElementById("price_2").innerHTML = " | ₹"+json_data[e].fee;
     }
     else{
 
       eve_reg_link.href = json_data[e].register;
-      document.getElementById("price").innerHTML = "₹"+json_data[e].fee;
+      document.getElementById("price").innerHTML = " | ₹"+json_data[e].fee;
     }
 
     eve_title_con.childNodes[1].innerHTML = json_data[e].name;
