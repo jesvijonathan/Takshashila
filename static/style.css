@@ -1458,6 +1458,7 @@ button:hover {
 .eve_func {
   margin: 11vw 5vw 4.2vw 4vw;
   width: -webkit-fill-available;
+  width: -moz-fill-available;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -1535,6 +1536,7 @@ button:hover {
   width: 100%;
   filter: contrast(0.85) brightness(0.9) grayscale(0.2) blur(0px);
   height: -webkit-fill-available;
+  width: -moz-fill-available;
   user-select: none;
   opacity: 0;
 }
@@ -1624,6 +1626,8 @@ button:hover {
 }
 .sticky {
   width: -webkit-fill-available;
+
+  width: -moz-fill-available;
   z-index: 100;
   margin: 0;
   padding: 0 4vw;
@@ -2031,6 +2035,7 @@ button:hover {
   background: #00000000;
   height: fit-content;
   width: -webkit-fill-available;
+  width: -moz-fill-available;
   margin-right: 6vw;
   border-bottom: 0.2vw solid rgba(255, 255, 255, 0.3);
   opacity: 0;
@@ -2541,6 +2546,7 @@ select {
     position: fixed;
     top: 89%;
     width: -webkit-fill-available;
+    width: -moz-fill-available;
     gap: 5.6vw;
     margin: 1vw 10vw !important;
     border-radius: 7px;
@@ -2933,6 +2939,7 @@ select {
     margin: 7vw 5vw 4.2vw 4vw;
     position: fixed;
     width: -webkit-fill-available;
+    width: -moz-fill-available;
   }
   .eve_func .title {
     font-size: 6.8vw;

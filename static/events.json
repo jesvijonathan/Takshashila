@@ -5,232 +5,206 @@
     "tags": ["Sunburn", "Electronic Music"],
     "image": "https://lh3.googleusercontent.com/tNeON4T9GFspibZAnIOLWS7InEtSJTEaaOwf3lx-lW60_7-Sq-SSEs3bfoUILN5pRjcYNasXkfgZPohomUFm3bzfhMNRoXOkR1MPSdmB6DgJSBn1eoyoM_jgxzWQbHCTGy9yHKgyn9QJKXW7WegxV1spKBZFEjWnPK6BdEE_urzlzVnIoNvl3eIiDCU3kLx4zuei0bHXiglLRdwz33yw6_o9Ki6bl8-uDH9whnbceW_J1glQj-29jen1JzVG5WzEIjA3pVbBR9D_GKpkLelSOb9EMi36AOP1M92H2biEAV9_O9cSHQewyty8nI5AF6kwHIDmCGJdR8NzUoyWw5DXyzrQGLIhTCEV1Y6MGmtCLLcTBzEUyFWvEYv0mOgFSYNqdpgSzHjf5-qjShOjEUSe4rYmD_NSRuVsAzwlqBWxDc72E4XP15oRJPczr5r1EqLyVF01x6AKRCsjQaH-NecGbu-Nx1tctCKMr-aiEEJQjdXihS4P61RZWpDUK5ruVfx7j_hvT8wniYjrZ_0osWvF-xwy4odB3YeV9Wb1_wyLIwzoMbtERhEiAaHeNwRGgVEVq8ftxQtUiM8j9g0aYHlIi-pD1-agodlJRYvM2fMptE3XKIohD7Nrw3KTW8S1U9fNR3kWjofv0hs1oNimkojJuQdrCbs-5c5jr52AWmM5oAsq-qLdYvXapSuaypkDnj3Hk5MsP5zvz5wvFX_pmNub3lDRHtKQNnZedAPtw-h1uxnKzFSo8HKx8iVryj5kyOcI5Cq88hdyrlH7YddE1_xY2Sat2EDM3TRY7MHyMAjfYUgzal4juMBL0QWFLn90jXzkab4_wmAa7dvuU7y0BejCsNEiVOHbq_EurfmGfEeEOgEN33y07ffHJxUBO60iknZW0ZiG9KxSuuXMBDg5tbkzQScDWWi4qN0lLg0wmVmRWRhf-0J9QjFSDJ2rb-A-ePsZPS_wNbjNh54ej1izSZI=s972-no?authuser=0",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "-",
     "description": "Adrenaline rushing, crowd vibing, beams flashing and beats burning. Join the groovy DJ as he plunges you into a night of eternal bliss! The most awaited night where lights go low and spirits get high! Let the ground rumble with sounds that soar to the stars!",
-    "tag_line": "Event_Tag_Line",
-    "rules": [],
+    "tag_line": "Let the DJ’s beats ignite your soul",
+    "rules": [
+      [
+        "It is mandatory to have a college ID for participation.",
+        "Registration falls under the general registration category.",
+        "Participants who do not register will not be allowed to participate.",
+        "Vandalism of property must be avoided at all times.",
+        "You are responsible for the safety of your own property.",
+        "Any unlawful acts or habits are strictly prohibited and must be avoided."
+      ]
+    ],
     "prize": {
       "first": "NIL",
       "second": "NIL",
       "third": "NIL"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 PM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
-      }
-    ],
-    "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
-    "youtube": "https://www.youtube.com/@CITTakshashila",
-    "register": "https://www.google.com"
-  },
-
-  {
-    "name": "Band Night",
-    "type": "Pro Shows",
-    "tags": ["Thaaikudam Bridge", "Musical Fest"],
-    "image": "https://lh3.googleusercontent.com/UfsDTwJUe25P2rDNltpQA8IAmPmYpgZAbuHhAd2dXTYMi_rxNb-uRZVswuM0DI2NcyXsk3l5I8fftFNUhvc8NzHje5uEp8BL1GCnrRNBmzt5ss7UUOGPr0c8FmqVAwPnrJFnDp4b7V7QU2QlMqXlzb_-OiukVSuXK9pJkV8iBXNgBnDjNIFZ2yDx9PSZK_w-7vBmI3Wb0xqNf1gNHoBnlz6jwNSDtGrKudfkhMt6hlPwcaCRtMDOcakDtkabwMDJlFxYtARBEmCn1v8SN0XhSs3Lfs7K1oJvl-l71O61GlhnRMlu6KLMtV0HILywCQ9cnl8y3urCRsYGgy3v5y73GnzktSHoJEv-OOyxP5NuVPaB5fAF1e49iuparGfyCsg_Pq0dUJju59yneGzuU7nrGeDxKLgb798iStdlJdpcBE-ZmhO2oqRe6JIEVZHMA7ASC99rG_R-haobmvHrC0Va3X8wqURjQEXGrS16o3mWgW1LGbd9qR8kwINITBy5KxBA7KQ5WDVtcotLs2Y3LysS70pk-S0A9N4hzxS71jYWKnLgvq-aVCnmMuYvlbG9lxS5KkMRvr93IMTKljL2AUam33_a868XD_CsbHihDf6i-jpbS8q0VVi8k0_fgWzS9Z4TRA8waU6xfhJJ4Ogx2951-6xXx9esgbR7SknDKi3m6Vo0iGpJMlufJuGcUvZ6RLz7C7MX4qJYI7FQipgbtce-2RSW9KtqpvHHr2nE38M72OnxX5YjYDrbLQrz2loEdlcwMf4gG4VV1vNUOTE6Qebpdprpg841Q1H9sQIQGzJR-5EiiaYqouZMPlZxx_FR17667AKFaEp25VYwO_DyqyNP-_2iHT-JsjfAWJEuvwr-ZDUx2n0Rk-nSt590AkWf22q-G_icbU9zNQEjNk-ApKLmYgjgw5jDOOVSWZsswCdWq7qEXEGPyMwZjOTRRg1_1vjaaKUhzbcEWws1gfOpuM0=s972-no?authuser=0",
-    "fee": "350",
-    "team_size": "",
-    "description": "Thaikkudam Bridge is coming to town and they are ready to get you grooving to their beats. Hold on tight as this is not just any average concert. This is a high-octane, ear-splitting, heart-pumping extravaganza that leaves you wanting for more. Get ready to rock it out like never before, because this is going to be one unforgettable night of pure musical adrenaline! ",
-    "tag_line": "Event_Tag_Line",
-    "rules": [],
-    "prize": {
-      "first": "NIL",
-      "second": "NIL",
-      "third": "NIL"
-    },
-
-    "date": "31-03-2023",
-    "batch": [
-      {
-        "time": "6:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
-    ],
-    "incharge": [
-      {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Gokul Nath A",
-        "email": "gokulnatha.csbs2020@citchennai.net",
-        "phone": "6369702802"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
     "youtube": "https://www.youtube.com/@CITTakshashila",
     "register": "https://www.google.com/"
   },
-
+  {
+    "name": "Thaikkudam Bridge",
+    "type": "Pro Shows",
+    "tags": ["Thaikkudam Bridge", "Musical Fest"],
+    "image": "https://lh3.googleusercontent.com/UfsDTwJUe25P2rDNltpQA8IAmPmYpgZAbuHhAd2dXTYMi_rxNb-uRZVswuM0DI2NcyXsk3l5I8fftFNUhvc8NzHje5uEp8BL1GCnrRNBmzt5ss7UUOGPr0c8FmqVAwPnrJFnDp4b7V7QU2QlMqXlzb_-OiukVSuXK9pJkV8iBXNgBnDjNIFZ2yDx9PSZK_w-7vBmI3Wb0xqNf1gNHoBnlz6jwNSDtGrKudfkhMt6hlPwcaCRtMDOcakDtkabwMDJlFxYtARBEmCn1v8SN0XhSs3Lfs7K1oJvl-l71O61GlhnRMlu6KLMtV0HILywCQ9cnl8y3urCRsYGgy3v5y73GnzktSHoJEv-OOyxP5NuVPaB5fAF1e49iuparGfyCsg_Pq0dUJju59yneGzuU7nrGeDxKLgb798iStdlJdpcBE-ZmhO2oqRe6JIEVZHMA7ASC99rG_R-haobmvHrC0Va3X8wqURjQEXGrS16o3mWgW1LGbd9qR8kwINITBy5KxBA7KQ5WDVtcotLs2Y3LysS70pk-S0A9N4hzxS71jYWKnLgvq-aVCnmMuYvlbG9lxS5KkMRvr93IMTKljL2AUam33_a868XD_CsbHihDf6i-jpbS8q0VVi8k0_fgWzS9Z4TRA8waU6xfhJJ4Ogx2951-6xXx9esgbR7SknDKi3m6Vo0iGpJMlufJuGcUvZ6RLz7C7MX4qJYI7FQipgbtce-2RSW9KtqpvHHr2nE38M72OnxX5YjYDrbLQrz2loEdlcwMf4gG4VV1vNUOTE6Qebpdprpg841Q1H9sQIQGzJR-5EiiaYqouZMPlZxx_FR17667AKFaEp25VYwO_DyqyNP-_2iHT-JsjfAWJEuvwr-ZDUx2n0Rk-nSt590AkWf22q-G_icbU9zNQEjNk-ApKLmYgjgw5jDOOVSWZsswCdWq7qEXEGPyMwZjOTRRg1_1vjaaKUhzbcEWws1gfOpuM0=s972-no?authuser=0",
+    "fee": "350",
+    "team_size": "-",
+    "description": "Thaikkudam Bridge is coming to town and they are ready to get you grooving to their beats. Hold on tight as this is not just any average concert. This is a high-octane, ear-splitting, heart-pumping extravaganza that leaves you wanting for more. Get ready to rock it out like never before, because this is going to be one unforgettable night of pure musical adrenaline! ",
+    "tag_line": "Join us as we rock the stage with the electrifying beats of Thaikkudam bridge",
+    "rules": [
+      [
+        "It is mandatory to have a college ID for participation.",
+        "Registration falls under the general registration category.",
+        "Participants who do not register will not be allowed to participate.",
+        "Vandalism of property must be avoided at all times.",
+        "You are responsible for the safety of your own property.",
+        "Any unlawful acts or habits are strictly prohibited and must be avoided."
+      ]
+    ],
+    "prize": {
+      "first": "NIL",
+      "second": "NIL",
+      "third": "NIL"
+    },
+    "date": "31 March 2023",
+    "batch": [
+      { "time": "6:00 PM", "venue": "Chennai Institute Of Technology" }
+    ],
+    "incharge": [
+      {
+        "name": "Akshya Preetha V",
+        "email": "akshyapreethaveee2019@citchennai.net",
+        "phone": "9361100381"
+      }
+    ],
+    "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
+    "youtube": "https://www.youtube.com/@CITTakshashila",
+    "register": "https://www.google.com/"
+  },
   {
     "name": "Musical Night",
     "type": "Pro Shows",
     "tags": ["Super Singer", "Mani & Band"],
     "image": "https://lh3.googleusercontent.com/ufBJz1YIQ0cCYjdD2jk3p4W3GgSWcni_I1Xq_Usnfl5gSt764fpcDn_U3Mw-ZD81cc3pt2397UwGk1OoIqSHZPUgWUTalocB3fgHdA0nqoJVE6UtKsiw7PsFbTKRJ8uV-Fm_dW1MCRnw_k0Cp27ztg-46OrK8jPHxbekPnkvbvxXRJoFTLM2n5Ok4Q1W5LUk1bD_SK2RPvXKI7MistobzslaF9HhISZRbLNA7PH8nAimthEGCRSMmcjgaROf-MruAr6OfKYVYAfiDyIQ_Zw9zA-1LuCH1v_TbKA7cfIIwcWN2y9zGiEQwucjyBSgTP3CfPNOvLbk_G6hiTKwFHMtgfYlTUt078i-t7nJvvqwrOc1gEfmpbPU3XrGqbHGdHrSfuAOvZ8qvVLwc-ZF7Er7yZInZrNHZ6kaQVigRmpuHgveMF3uaYlwN5-fJUYUtUBejOsNK0IUzIiM-P6IKFE9U8BhwCPQDRm1DhbqcLc44UdPJNU6NeCZe48LJvlLdMwL8jW72TtDPKfPftg4zt1D2iu1-1T4O_FILe33VUEE2yjk4ronnsLf58juuX3nFroiyBK_HHULlWBpExpJm1_kCnqwtoClVpNEULGEzErcSg_RRjko6xy4yRAM6d7HYs0ojEbmdHwcdF1az5IRNg9qCO2EAmLnFUrcEM0jWWJxugz7E-ouKyv4TEYUa3RFSDzydAhnq8gWIu4c14qmCTchwyUHX7LDd8JlD3yGhclk7obJ3OFPZy4nFdj2dN2ulzdL-ArZHq1LlBe8NlBpXfb3Ama3FkTNIYmhO_dlv8mCaVN0JTjgBTGnEc-ugGUmtkwS-6BTTx1-ounYWFiGCeZqgFbqafAuUe_rvmsh5th3Kse3Gvhve9dfqaiK9Ww9LnaMTrA8Rp_peWNmcpw-i2QmloMWZEZ1rvWI3y4hol9dFyhpKpV2F-Wyz4dcbd8ei06wjMqMxebIOisUg3ptxic=s972-no?authuser=0",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "-",
     "description": "Crazy nights make the best memories.  Is there anything better than singing along to your favorite song in a crowd with thousands of strangers? Come celebrate with us as we groove to the sounds of Indian Cinema.",
-    "tag_line": "Event_Tag_Line",
-    "rules": [],
+    "tag_line": "Let the magic of music help you move through haze of pure delight",
+    "rules": [
+      [
+        "It is mandatory to have a college ID for participation.",
+        "Registration falls under the general registration category.",
+        "Participants who do not register will not be allowed to participate.",
+        "Vandalism of property must be avoided at all times.",
+        "You are responsible for the safety of your own property.",
+        "Any unlawful acts or habits are strictly prohibited and must be avoided."
+      ]
+    ],
     "prize": {
       "first": "NIL",
       "second": "NIL",
       "third": "NIL"
     },
-
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "6:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "6:00 PM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "vishnu Vardhan G",
-        "email": "vishnuvardhang.ece2020@citchennai.net",
-        "phone": "8754644331"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
     "youtube": "https://www.youtube.com/@CITTakshashila",
     "register": "https://www.google.com/"
   },
-
   {
     "name": "Choreo Night",
     "type": "Pro Shows",
     "tags": ["Dance", "United Grooves"],
     "image": "https://lh3.googleusercontent.com/QidUFPqg13xd_J4cMy2AmFKo3IZNdOiH5PRCVZN-VYIZVeA8z3dNFL8u6KpKIwxilaFYnJAyEhJmDwUjz8fLS2HcTeBYzgI0EN3EVbmCUqhOu8aFmOc-tie5skTPTe0ror4CrTMNZLvj5IooU2AsaIxDS4u5P9vYWjYDxK1lgLi1M962trbiZQk2v3MzLWOa7aBcTPDXVXqJIe_9fHei4uFfIPv8gl7P2jMiYFdSCG8tMWVmG4oA2YWFieDefnNkRgoKhe1qlNREhQHXIxNzRaCnXviGiGTQs-JQJjcKA18C5fgC-ge6GW_ayMYtLxBaVbwkSwvA4YL0ZtZS_sPh3HZYxAMRikA_lsPKOJ0k-RNQUm4IJJeQBubsxj4sPcKCYOcwp1IrUvlmsuigi4pU19ePH9G7h4WgGOejVzmDAESmR0VWg0Ylp-4_86AcCrF_RRgcwLAsN0Q0puXPzHyBw6HllLt1ZCbQyhbs4h3XfUaIHUhXBbOkQY6Q7foHTCFFAM-u4YjZ4HnWOT7P0Js6jRTqxg6jJgqUZw0cB4w-vs6aFoyt2GTEFIuBBWhfagVZIuESaZvlLa9Oq_bDid2Fmtu_SX1LN0Oey9Q-97HM9oRWPawhLhwrpHSlXQbYDyjRPZ5Cq_ZKHCIQof35M-lPfKgETMjjdbnRQOVpsKDFnL4nwZgggSS1KcgUG5V0K3cPMUL0BoFGT7O4SyjEnyqnWRP83Bhvd8K7BC_6uvz7ACZI_Za5DdsEOg7N5VKtSN1sptjCRE2_QnDl_kBXXReBmpEpIONoPHFwtUc6sbhHJZ5i5R8Pfl7taoyA-LF2nJflaVJmPunl-MmuwLaxUpS2tpmsqlDD-pqRnqH7NbIWsFsRgZKtM7dl7yvDYmYQQE6VVfV9v8PaNpVqhfHNy-5xa3LvDF5q90hAiEkbry7yXQb8I53BEMlt_mqfHAiyo6BmmsJUpKw-Xe05ECcoUr4=s972-no?authuser=0",
-    "fee": "350",
-    "team_size": "Event_Team_Size",
+    "fee": "150",
+    "team_size": "-",
     "description": "The stage's heating up, so get your spirits ignited, as it's time for you to put on a costume of confidence and flaunt your moves with your crew. Prepare to leave a mark on the dance floor!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Move to the rhythm of music with Choreo Night",
     "rules": [
       [
-        "Entry fee is Rs.250 per head and College ID card is mandatory.",
-        "Participants must be present inside the college premises before 2 pm. All the team members must arrive on time or they may face the consequences.",
-        "All team members' bonafide must be given via Google Forms, and registration must be completed online.",
-        "A prelims video of the team's performance must be uploaded through the Google form and filled out before March 10.",
-        "The submission must consist of a single, unedited video that is at least 5 minutes long.",
-        "Vulgarity and obscenity while performing will not be encouraged and any acts of vandalism to the stage or any other objects or structures will be taken seriously.",
-        "A team can consist of a  minimum of six and a maximum of thirty members, including backstage staff. ",
-        "The performance has an 8-minute time restriction, and cross-over between teams is permitted provided all the teams members should have their respective College ID card.",
-        "Judges' decisions will be final."
+        "It is mandatory to have a college ID for participation.",
+        "Participants who do not register will not be allowed to participate.",
+        "Vandalism of property must be avoided at all times.",
+        "You are responsible for the safety of your own property.",
+        "Any unlawful acts or habits are strictly prohibited and must be avoided.",
+        "This registration is not for participation purpose, it is only for viewing.",
+        "For participation purposes and further queries contact the event co-ordinators."
       ]
     ],
     "prize": {
-      "first": "25,000",
+      "first": "NIL",
       "second": "NIL",
       "third": "NIL"
     },
-    "date": "30-03-2023",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "7:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "7:00 PM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Ganapathi A",
         "email": "ganapathia.cse2020@citchennai.net",
         "phone": "9344267027"
-      },
-      {
-        "name": "Abhirami G S",
-        "email": "gsabhirami.cse2021@citchennai.net",
-        "phone": "7358417463"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
     "youtube": "https://www.youtube.com/@CITTakshashila",
-    "register": "https://www.google.com/"
+    "register": "https://forms.gle/hq8EPizwjPg5z6998"
   },
-
   {
     "name": "Plush",
     "type": "Pro Shows",
     "tags": ["Ramp walk", "Fashion", "Costume"],
     "image": "https://lh3.googleusercontent.com/3DW9z4CeNBiNwRi_q4ciUVSd3FDNHpM8F_DZW2uwPdx34fvOTPJm8SpccN9o3x87alV9kG7C7b55jcUnb8A25jdbKK68VGeBrO1zn7ehEtB0ZdUNkSXze3iuyeSpcjBFxAfFW10X2ztJW9Pxpbwx6t6s8fdvqEq-vlodaOdP26grjsYWfj6lTgwHRa4IXw6li2GlSXmIbs-MqIQdsoGXxnOpDGPgJM7_EQZ625EpIsmWhrVPx7aW_glK1FDtBE_g8sNAK8X0_c8ta1FuVpeA7WEmTXJqINIekeAgv599MlZTRoDaQWq1WJqq0R-lTH0jBVjbKM7seIlouT1QHbUchIBgMaoUlxssZ5GjlAVAm9MyE3XC2QWvfroZA5utXXdgZ9DIQxN9fUbQvZ2PEKkslMfELQqIM0s39QR41l_xcw0SKFbUDRTK7h93pm3EsmsdOoB9tLrcUgIuTC-5cMG9f5NQHsVsEfe6fHmRhXMkW4LkaOVCepgDOcXf_1OII8mrLqVFxsoDArYQ2i7MQeqmxECp5nkH67c3q_WAuEozTTcqYeJkxHNMSnBOSgkSWhmHeBDWOHY1U9LnGCa4zpC927JscMXFd9vddmLlp_f5q_aDnDu6SqrsYNmZq1nmROpd3pyju0NysUUmcUkDIavZiiyRhx-bbm0T6A80Ls2q1T3iQtbACe6O6ewHEucxm3LNuu7y_2rIF0DP8NMcHFRWFZoH1LAGfp2h1dkV3ZQ76KRuKeHLkBWkZbdyjb_89gxEwK-7-SInnhlvFdzCDaZcmNc0xjbHDmvusbU3h2hfEH8HYJ7x39vuGnzq4pw3i1_T1dLQe0mtojASDLORl05bPbUw-pUrit_YoWiN1BjD-rKmwZs0EopNfuER1FgBTThYV1R7OPcmeOkqmSKHI7Ub-Ow1HjIu7GrK5UVkQ7CGT1VgjboSB5IgltNai9FwPIQJterujVx6sxhZcGyD0FA=s972-no?authuser=0",
-    "fee": "350",
-    "team_size": "Event_Team_Size",
+    "fee": "150",
+    "team_size": "-",
     "description": "Pitch your pace as you walk with pride and prowess. Can your charm convoke the critics and collect the cheers? Powerful, pleasant and picturesque, is how it must be. Flaunt your fashion in this fest of elegance and ecstasy!",
+    "tag_line": "Get ready to be wowed as you Step-Out in Style",
     "rules": [
       [
-        "The event will be open theme.",
-        "Entry fee is Rs.300 per head and College ID card is mandatory.",
-        "A prelims video of the team's performance must be uploaded through the Google forms.",
-        "Participants must be present inside the college premises before 2 pm.",
-        "Each team can consist of 8-20 members.",
-        "On-stage time for each team will be 8-12 minutes.",
-        "Costumes must be self-designed and unique. Duplication of others' work is strictly prohibited and will result in immediate disqualification.",
-        "Teams will be given stage time, solely for performance and not for speaking or promotion.",
-        "The required music for your team should be submitted before the event, through Google Forms.",
-        "Marks will be allotted based on Performance, Team coordination, and Costume selection. ",
-        "Judge's decisions will be final."
+        "It is mandatory to have a college ID for participation.",
+        "Participants who do not register will not be allowed to participate.",
+        "Vandalism of property must be avoided at all times.",
+        "You are responsible for the safety of your own property.",
+        "Any unlawful acts or habits are strictly prohibited and must be avoided.",
+        "This registration is not for participation purpose, it is only for viewing.",
+        "For participation purposes and further queries contact the event co-ordinators."
       ]
     ],
     "prize": {
-      "first": "20,000",
+      "first": "NIL",
       "second": "NIL",
       "third": "NIL"
     },
-
-    "date": "30-03-2023",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "6:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "6:00 PM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Bavana A",
         "email": "bavanaa.aids2021@citchennai.net",
         "phone": "7010701974"
-      },
-      {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
     "youtube": "https://www.youtube.com/@CITTakshashila",
     "register": "https://www.google.com/"
   },
-
   {
     "name": "Chordially Yours",
     "type": "Non-Technical",
-    "tags": ["Solo Singing", "Music"],
+    "tags": ["Solo_Singing", "Music"],
     "image": "https://lh3.googleusercontent.com/CPlp7dlejIEhiy_rK2i4lsKCqdtRKxpDEzGOM5Ea50wbzhzdcl17dc1SiWF3PlPAvD5WYxLAk6VCs4cmR8gEWa4AL7i08TszFmTuKTPdf5gqTVo0lYjrnPDIOC5nqdtSwiW3weXBOQd9NF9L_lPNsrWEg_YvIq5D6m2PqBJKBH3GiLaXyge9Zf3Qg3vatUTLptxOsoBGu3u67Fs8QlANS45ULwSb4CefXeHXDf1dzGTIm3XJaXvsQnvZxO8X9-QHZ2ScF5GZdTxPSP6BzJJ1ut0IQqQkepeHkd-0u7--GZIbbOt-9iZsBO9wE_yshB4WqtGAAWO3hZgEqI6qbqrjYpK9B73IaGilCo8umR71TpKsOUO9n92jLSAbVZN13PZvovOYJbU2s1aATIAIZJNJulBmTDKwMjvoz-hoacpohwNoQwBeJTSEhLKeG-Pl60O8dLePflxsF5I6owtcnX1z23bmXT7Bs3DhFrQvLstQDYYplgJLbaWgavekzU5RIjMnQfiJfTBQ16bvB2hZ4_UKj8rNGeLR5sd35Rv4VxcveDR7waThPTXnnAEwmpa8BLbrsyN151pOy3xOpuIBDNzAH1rrZKM8vosQD1IogA8TPwxzyT_3F5Oc9FPueMw7-Wu8ypXBmCHT25KedIdDyexbIoUYloavQC5O5CCAkuo1aV195EXz5wyqQ0VSotpkXu045veHWLy7fdOG0GCuGB-rP1-0MkMpbjSe-36cu67GJ7nrN2Py7ErtoeRBOJf9DNsf15GEoGd_bOYu_Pdd5_WyxPqzQE1lUJaXAPuH_lcYcoHoCBcJKtG0jUFnuMMyjgx_awgP7erQhiEy2NkfYgZqRbHVeKYL6WI_2AUwoSxFSzxtM9Y1lXReOHrvUCA5T76GuZt9Wy2QKZG16MtZj-OP4tN_Zrzv4nQrWKA_dnu6K-cRvF8mvqOtntscAU702E6zoOYjnG8JauB-uf98ILY=s972-no?authuser=0",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "Music is felt rather than heard.\u200b With your beguiling voice, you can touch people's hearts and enlighten their souls. After all, music is much more than just a tune.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Soar with your song and sing your soul",
     "rules": [
       [
         "Usage of metronomes is not permitted.",
@@ -243,36 +217,26 @@
         "Judge's decisions will be final."
       ]
     ],
-
     "prize": {
       "first": "1500",
       "second": "1000",
       "third": "750"
     },
+    "date": "31 March 2023",
     "batch": [
-      {
-        "date": "31-03-2023",
-        "time": "8:00 AM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Sathiya Ramanan V",
-        "email": "sathiyaramananv.mech2019@citchennai.net",
-        "phone": "9500206795"
-      },
-      {
-        "name": "Gayathrie",
-        "email": "gayathriem.aids2021@citchennai.net",
-        "phone": "9150472413"
+        "name": "Sai Naresh S",
+        "email": "sainareshs.ece2020@citchennai.net",
+        "phone": "9176152060"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
     "youtube": "https://www.youtube.com/@CITTakshashila",
     "register": "https://forms.gle/g2WmZdx1rB8GgsAT9"
   },
-
   {
     "name": "Melodic Mavericks",
     "type": "Non-Technical",
@@ -281,7 +245,7 @@
     "fee": "150",
     "team_size": "5",
     "description": "Music is a part of our everyday lives. From the hammering of our hearts to the shrieking of the cars, it\u2019s within us and around us. Amidst the many catastrophic sounds, will your group\u2019s crooning be crowned the best?",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Croone and captivate the crowd",
     "rules": [
       [
         "The time allotted for setup is 2 minutes.",
@@ -297,39 +261,30 @@
       "second": "1500",
       "third": "1000"
     },
+    "date": "31 March 2023",
     "batch": [
-      {
-        "date": "31-03-2023",
-        "time": "8:00 AM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Sathiya Ramanan V",
-        "email": "sathiyaramananv.mech2019@citchennai.net",
-        "phone": "9500206795"
-      },
-      {
-        "name": "Gayathrie",
-        "email": "gayathriem.aids2021@citchennai.net",
-        "phone": "9150472413"
+        "name": "Sai Naresh S",
+        "email": "sainareshs.ece2020@citchennai.net",
+        "phone": "9176152060"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
     "youtube": "https://www.youtube.com/@CITTakshashila",
     "register": "https://forms.gle/hNxwPxFMcx9ikw5g7"
   },
-
   {
     "name": "On Air",
     "type": "Non-Technical",
     "tags": ["Rjhunt", "Microphone"],
     "image": "https://lh3.googleusercontent.com/eTkRb6kHRFeh_mrFFzU3JcrHGZKHxZ4qOZJePAVwb2fmJCadBg-htRDiE_vWTPZvK0JPHJgTH8opPTPwDUORWnTF2SwApY7y6Sd69VrOLPkIe_Em8PdpqJvq8L9PGLW_VDwB1iIgbpIlhdIDc8F-e1QsRyC6m-Wu7Gq4wFUPWfV2_adjJpnlHH-lpv-dY4yp9VlXlEiah9PKcWst8MgtN8DmBrB7RkrcC7k5ZmcU4eyJYKxK5j0uy8s6x-UNh98yHlYkTsn2_mpcHnmj_j3PQNJD22LblXD9zgU4q_xHJNgqG6kf3n8p1rOxwySUQ9b8Vcs17dn4TzGchWfa7LoyH9jsUsRnUSUbpvn7f1uHelha8-lgPLWCw2oNAJBU4E4ks1Rf4fpwgMzO12zlLIFbKU9TFNFNVtwEwFInXpLa3r8WJIUMyWMAFN8h6k82Nr_PaDlvzF45a1iSK62VbFenm1UoKRtQ2PJe9wCX06Hq4ErWJItWDoFsexMQtvJmjc0is3nbzeiJ6MTrq2QR4CeuDquig1Xv1ZSuOrQ-U0ln4O843DPtn6I9skYIdwqtaYJ-8M1c7zuZ6ENnlPffTAccarG4kNcrCrciBuSmkUrHEQ9JLIsJGd6ep8yVKDsdIiqzAuILVv1DtMjF-5XE7D9bTHGlXEaAEzPlaQFVmNOyvgIwffOhkXsZk4JGUyOim3cPkazlnwpDBDpXCkkGc03GURApr-ONtqxIJAAW3JOgQNhpHpkV-HhT5L1vucCIGViQt9C0Q72dt1pV8xgfqYYE4jb29jd4kwBaq1wh7UbFwUeZf_4lFbvCTsLa62t50fjWjRbJruqr9DS-mTHLH2lQexnrYMHa1z7OmplLv_4kFkTNjWDjFCt7iulpHh4MOYoMHAgdxgawTUODKws7SE9wdz9HEARkGygzs5jOQHKgdFQGqbZYdB_ifA1YKslHQOkJEIWmMO8y-aYPZCnyrdY=s972-no?authuser=0",
     "fee": "150",
-    "team_size": "Solo",
+    "team_size": "0",
     "description": "Radio affects most intimately, person to person, offering a world of unspoken communication between the writer- speaker and listener.Step into the spotlight, grab the microphone, take a moment, and be a part of the legacy.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Grab the microphone and talk to the world!",
     "rules": [
       [
         "The time limit of the performance is 2 to 4 minutes.",
@@ -349,24 +304,15 @@
       "second": "750",
       "third": "500"
     },
-
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 AM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Sathiya Ramanan V",
-        "email": "sathiyaramananv.mech2019@citchennai.net",
-        "phone": "9500206795"
-      },
-      {
-        "name": "Gayathrie",
-        "email": "gayathriem.aids2021@citchennai.net",
-        "phone": "9150472413"
+        "name": "Niranjan",
+        "email": "niranjankumarb.cse2020@citchennai.net",
+        "phone": "6369444401"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -379,38 +325,35 @@
     "tags": ["Dance battle", "Dancers"],
     "image": "https://lh3.googleusercontent.com/9OCPc_lLl4zFUemapGP8XajpRqOfW-hlwlDvDQztgZVOfcSx8pJFEDsetmSOaR2sOFxUHB6QSE92FGE59yeQ_BYflUl6q54WbBFloUYCK7jv-RGZHARUzhsY4diEM_u8uvEqPyli_XlKQhQBefa48AqvAZ8IHecVDGudquYcp__ilg8JnobYyaYYq5LHlFxyK0ysq-kbqoo_199oPAvVqtg_0-HKqgJqnJqJuD0utzMaki7qfLWkquoOk3mZy6hGhEE_gsCJ9g3pOdn28UT-xGg55XEahhOSqo2oBEm5TPx0IN6_wW_oFriVmVg_mPFk51mmeX2Hz7cA2uuFl9AxbYXeQRlqLUCVVzJqgXLMn7BBclCsTFx1bTNZOds_WDmVJrbzQZ_OkAp2T8cFnJItB_lZGFTm2giNQQRJALcbdbM1Yx25gYMWosX63rUF8HK71Gw5no7doWlgQSJVPSllBeoSoflTTFylHQiBQdARxQXmBWowf-X7ruuoFUvqGg1pbv-DrYAlS2pmLrTl-Ot50ijSn6iSIR_hMuYaE_LA9RzO84-gfPNSy2rCyh65IBa1rhVUxEQneZrANsEPZH4nwaNxwAlEoBDH5d2C13iVz0Z1XV0wKwYsunMHwu7dz-E7qwtAt4AjD4BIV4lxKjCheyobf6ZJAInqbpb4e_AgazQyhrhgJ7smMyZkXDfkgI_V1NlskaZRyuhnW2c9auBldy97X_TN05J1OE4GapKjkex6WSPyZPXs7Nj5-YtMyP0PdRy7R-869Cp82Qrysv_1J6WaP2v1zQNff7GscE350YiIXKhSeEIuRqQnyunkg_-mPyNVR1QaHaDx-t-A7WZ1B8iGkJM-kgY3-R3JDg5QSuM-LWrPephz74mfr0Y0hmYbJMswa-d04ofpFPJ4Jndex_BbtY95GrMSremTgsoLFKGY2F_XaS2OtNUACYD3WdXOQc76TOlHZoDzRTP8WvE=w974-h972-no?authuser=0&authuser=0",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "Calling out all high-octane hip-hop dancers! Once you step in, there's no going back. Diss your opponent, not with your words but with your dance. Steal the spotlight with your swings and rapsteps.",
+    "tag_line": "The ultimate dance showdown!",
     "rules": [
-      "The event has four consecutive rounds.",
-      "Maximum time limit of 50 seconds will be given for each participant.",
-      "Any form of vulgarity will lead to disqualification.",
-      "The participants will be competing one-on-one.",
-      "The battle will be freestyle and on the spot.",
-      "Practised choreographies are strictly prohibited.",
-      "The finals will be judged based on performance scores from the three previous rounds.",
-      "The Judges decisions will be final."
+      [
+        "The event has four consecutive rounds.",
+        "Maximum time limit of 50 seconds will be given for each participant.",
+        "Any form of vulgarity will lead to disqualification.",
+        "The participants will be competing one-on-one.",
+        "The battle will be freestyle and on the spot.",
+        "Practised choreographies are strictly prohibited.",
+        "The finals will be judged based on performance scores from the three previous rounds.",
+        "The Judges decisions will be final."
+      ]
     ],
     "prize": {
       "first": "1500",
       "second": "750",
       "third": "500"
     },
-    "batch": {
-      "time": "8:00 AM",
-      "venue": "Chennai Institute Of Technology",
-      "date": "30-03-2023"
-    },
+    "date": "30 March 2023",
+    "batch": [
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+    ],
     "incharge": [
       {
-        "name": "Sathiya Ramanan V",
-        "email": "sathiyaramananv.mech2019@citchennai.net",
-        "phone": "9500206795"
-      },
-      {
-        "name": "Gayathrie",
-        "email": "gayathriem.aids2021@citchennai.net",
-        "phone": "9150472413"
+        "name": "Prithvi Sagar",
+        "email": "prithivsagarscse2019@citchennai.net",
+        "phone": "9444243655"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -423,38 +366,34 @@
     "tags": ["rap", "Microphone"],
     "image": "https://lh3.googleusercontent.com/prUEjGSpQuKrbhwhnCfU79ve8Ux6QBfBC8XfzlBGpURk8wYJF8e8535NZrOavJe0kH2Z5b567X3z8LAbF_-P4wn_f2GrwJ7_s8n4aVGsRD_oTmZ_EFf3dRhy6sEksy3V26KAApfeT3YgCnLCmATGrpmpk1wVNumsGoFPAthDFTKMFSZS_leNwntIW6q0c7tb5NiJMi8-WbYLueMZ34TLpQQsrj2ErcQIJuNcUQr9-LnOd1ZlBJaF2jm-qKa5VPRDyAxZ2jKWBgVRVQHTPkuhkLlXi7r_9DnqapCoXQTdY874ogWIUelddEohIuUflKWp90OaYrDqLD0kXqlvCt6tDw6C_YchLpCyIcIQ9__RYTS2CEhp8MJ2_QkUH944t6d0MQ3ZB0rkBIW4OdtrZ7hZ6uLB_aGAxKwu8bolSBvQQ4hlhkxuXPFhc8frKuiDrLOpjTWzbSIEpanIvMpW6GLb4z8NfoCGToJ_pgdIdhSpM_vMSIKKmljJR894i33qYt4pzq8WQ3mJvG0QuGaELqvSNaR46ZFYvOnLKOPMkW9T12aBQBGIa_tAoQbisrqZHhmULF9whaWMHzxcu8Xw5eQooldE37HbyOUntMOFpFRBaHVB-dNhptPKC9SR17H-nzxwRs2e9WBLoMq9N42pKYtIyBGr2tg_9pTezsfewoF6ZiY4M4BS2Qd9hRR-g9umBWAUi0kNh3af5yda7l-qd3bf_NGFJoZCW2D7YuDb9FVK7sqjnlw7vJFlFNVHkE8vUKrSeGh0SuaB5w5zt9ACDIAPsrUpRdqH9UdxyH1zuAimt6lTtgc96d0t_uWtdrqjOqa_LQnTTjyhlQbC05obkiWmJQnqJwmtkL457TZFHjYYEkHUbXFnB5bNYIrjcabR49Txos-bHwNU-l5J8IEmFUzMqzRG0jEDzfQ0T5kSTCATf5NkGlzDmmHqXTOoMv1D4G0pQ0CZOYMDjxn23iomTak=w801-h800-no?authuser=0",
     "fee": "150",
-    "team_size": "Solo",
+    "team_size": "0",
     "description": "Just get on the mic and spit those rhymes and better go capture this moment and hope it don't pass. Lose yourself in the music, the moment, You own it, you better never let it go. You only get one shot, do not miss your chance to blow. Keep spilling these raps long till you collapse. Wake the real slim shady in you.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Mic in your hand, the world in your feet. Join us for a night of lyrical heat.",
     "rules1": [
-      "The event has 2 rounds- prelims and finals.",
-      "Duration for Prelims: A maximum of 1 minute.",
-      "Duration for Finals: A maximum of 5 minutes.",
-      "Individual entries as well as team entries are allowed.",
-      "Participants must have with them the rhythm to which they will be rapping.",
-      "The raps can be multilingual.",
-      "The artist must not include any explicit words in his/her lyrics.",
-      "Usage of offensive language, naming a particular person or a defined group of people (religions, castes etc.), usage of any socially objectionable language is strictly prohibited.",
-      "The Judges\u2019 decisions will be final."
+      [
+        "The event has 2 rounds- prelims and finals.",
+        "Duration for Prelims: A maximum of 1 minute.",
+        "Duration for Finals: A maximum of 5 minutes.",
+        "Individual entries as well as team entries are allowed.",
+        "Participants must have with them the rhythm to which they will be rapping.",
+        "The raps can be multilingual.",
+        "The artist must not include any explicit words in his/her lyrics.",
+        "Usage of offensive language, naming a particular person or a defined group of people (religions, castes etc.), usage of any socially objectionable language is strictly prohibited.",
+        "The Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "batch": {
-      "date": "31-03-2023",
-      "time": "8:00 AM",
-      "venue": "Chennai Institute Of Technology"
-    },
+    "date": "31 March 2023",
+    "batch": [
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+    ],
     "incharge": [
       {
-        "name": "Sathiya Ramanan V",
-        "email": "sathiyaramananv.mech2019@citchennai.net",
-        "phone": "9500206795"
-      },
-      {
-        "name": "Gayathrie",
+        "name": "M Gayathrie",
         "email": "gayathriem.aids2021@citchennai.net",
         "phone": "9150472413"
       }
@@ -469,37 +408,34 @@
     "tags": ["Dance", "Solo"],
     "image": "https://lh3.googleusercontent.com/HdfWva40BqLfHB9FAJg1OtRxO6y2GstduGPI4Nw9kHSdyOehfRgKmkrceSLm1kgKCL2v0FvzxhbJFeuS9dJ2PdhLDxI3f-vP8axQTYxv4DLxKhY61gmKxkjCagiNyQ7-mWD_U9s-WiMM_hADmTnhg-aNVCxoldWhzCrQJ1QKrTLZk8QBra1F6IaKcVhZ4M9ev9nrjHLNGCFUGNtFUg9tVaBspd150M3r9d5AegU-5Kx95hE9e12Y-B8Kdv8u3NHkFdMVxmO9e2D1P6PxtcpDGg35tUsXGXLBtTISwWuSCeeY3IuLoVOdYkNu36iEB6tj0VYi5jN2gEuBYPwDBp4MdodlwtOUrj6j7h5KenIIJnmDxnp4mjlrbRqOsPYv7hGvifN8NxkmyTjKQ9Ke1ODJp0-8HUrWhS_u8yP2emPTZNqokjtOdod8cjMXIvb7W4gUfHwbkpJqbrf3SkdkUkjKG2PYtC2MhUlebk29BIjqI5Hl2QlyXzl3QzsGHU_l7-WE2D1Feuk0Uz9iR3YYp6wr26NAc9JfxR_RPGdlxpRwkqPHCA3LIMa_lET0hkY4MqCpOHYghoUQcJhTElNigVfa5ZdOpwMwJajnm5rKmTzsJrXzqLsF3igiqtLeTad0dUaIWHZ8OevWVuGfobPE2gLmcrm00t2gx_3bstLX22uqxaMIwfQmFFPC2xEpmUanB8h0w3sY1v4xIom_RPPzbxRwneqyGCTJhHQP1XBmxc2schevTvnA29pCfMSTygIZgh1EpYwstxEOVdNACb6ygiS0_O0hDBnzjbT5W7Q0_snAznhEbz-Xmt-cUZ2ci4uxebip32XEDfsoImQT4K-RPe52VBf6MjmqmjTtrrQ4joydldlZPPuSqpGV0hMjyM6pzxanWhiA77fIs8mH3LqJf8wXQ6G6UwdKv3mB9jJKmhZXVMINbOKWBb85fzK0w5G4B4K2I2cAdQQkt0XrePPO8Qw=s972-no?authuser=0",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "Do you have what it takes to put on a one-man show? On the dance floor, you are in control of the rhythm. Set yourself loose and let the music move you. Swing and sway to steal everyone's hearts!",
+    "tag_line": "Make every movement count and dance your soul away",
     "rules": [
-      "Participants can dance to any song of their choice.",
-      "The time limit for the performance is 3 minutes. ",
-      "Music chosen by the teams must be handed over to the event organizers 30 minutes prior to the event.",
-      "Participants should bring their own props. The event coordinator must be notified about all the props used.",
-      "The lighting of matchsticks, candles, cigarettes, or any other derogatory acts are strictly prohibited.",
-      "Any obscene or controversial music will not be permitted.",
-      "The judges' decisions will be final."
+      [
+        "Participants can dance to any song of their choice.",
+        "The time limit for the performance is 3 minutes. ",
+        "Music chosen by the teams must be handed over to the event organizers 30 minutes prior to the event.",
+        "Participants should bring their own props. The event coordinator must be notified about all the props used.",
+        "The lighting of matchsticks, candles, cigarettes, or any other derogatory acts are strictly prohibited.",
+        "Any obscene or controversial music will not be permitted.",
+        "The judges' decisions will be final."
+      ]
     ],
     "prize": {
       "first": "2000",
       "second": "1000",
       "third": "750"
     },
-    "batch": {
-      "time": "8:00 AM",
-      "venue": "Chennai Institute Of Technology",
-      "date": "30-03-2023"
-    },
+    "date": "30 March 2023",
+    "batch": [
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+    ],
     "incharge": [
       {
-        "name": "Sathiya Ramanan V",
-        "email": "sathiyaramananv.mech2019@citchennai.net",
-        "phone": "9500206795"
-      },
-      {
-        "name": "Gayathrie",
-        "email": "gayathriem.aids2021@citchennai.net",
-        "phone": "9150472413"
+        "name": "MB Dharahash",
+        "email": "mamuduribdharahash.ece2020@citchennai.net",
+        "phone": "8148585203"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -512,43 +448,37 @@
     "tags": ["Dual Dance", "Energy"],
     "image": "https://lh3.googleusercontent.com/lAhnZfLteHJnW34Q2dTprPdFPeQgP3jDzr6hwhfnoBrjO6Slo1m-NF3IsWP0tuf4-bYiF2F3nXLnBMMoF5anf_bDXCvq_4sku5OtE8p2JBAQDR3I1r5uv2Ka6u2tg1o_gUY-tW-wbrsGEH9OdsFHdFXCZvneXkjrfz58AlnV61nRzY6sQqYNfjMTY3mp0hNR59e0S5sO_mBHed2r2EUv5TdXGQruvnhqtBQI6wDtEkIcYQl7rASnwmlk7IDedwQZZ907wDK1aElwADJFycCKIUVqKZtPAnteGcm30RRHN4N53hQaPriBD7m4oTw3dOfPgi6BeB0SsCd-vVN7oiQxIJrCFUe4vipBHRngMjOXsnHPxbgBmAsR4U8r3I-0u9oTXv28aZVDuMTW83v5I_Qwf0Z5803_6N_KkTy4v1awCjNWNlSOT7Khtm5iIucwFJNTH_2cL5tH6C8dcxaQrO4mSkrz2mxJngVfrWKY3akedNGCq7j7dyAteRwPTUEusQsu9M8E2osAjg_8eQQ41Vl_qKy5-2K4iU5h1RTyleIg2MGCHfbEO0At03epUaVjAI7smHBbE9oW1fSqjOQkMo87j-9rI60TFMeL3Ovz5TyRG-sXvr1T9gI50qRLznv8hKZqpfdB3ZU_oqNv3XDiIFFZngktJwwtM1Bmo6Sa-ytTE6RRECVNmtBJySHfauDHAsho0X5YuNMZnDfEfbRWAcIf6Wngi-agSoj6zS3ULx8wmUKZwZYzx4sle921BX79apsCLniIfD9iF8XfQxJ0AA_SvV0VX_uD73g3g1THZ6iDcjmyhtZoAcepI66rPpP2ATvF97D8OTqKYdCMOa7SUvyi6IJ-GdfI6-NaEYG1fS5ALj93Xf8j9DdlneVzBlvAm_mtjKdG_sshiqI5dnlhLcBQrnW11P-s03iN_RKTlzv-Sx0iE6OVGTHsEnMOXMtWC2tlf6b2742gQqKxn70eH5c=s972-no?authuser=0",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "2",
     "description": "Step up, show off, and electrify the stage with double the moves, double the grace and double the excitement. ",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Double the dance, double the fun!",
     "rules": [
-      "Participants can dance to any song of their choice.",
-      "The time limit is 3 minutes.",
-      "The team can have only 2 members.",
-      "Music chosen by the teams must be handed over to the event organiser 30 mins prior to the event.",
-      "Participants should bring their own props. The event coordinator must be notified about all the props used.",
-      "The lighting of matchsticks, candles, cigarettes, and other derogatory acts are strictly prohibited. ",
-      "Crossover teams are permitted. ( Participants can be from different colleges)",
-      "Any obscene or controversial music will not be permitted.",
-      "Intimate dance moves must be avoided.",
-      "The judges' decisions will be final."
+      [
+        "Participants can dance to any song of their choice.",
+        "The time limit is 3 minutes.",
+        "The team can have only 2 members.",
+        "Music chosen by the teams must be handed over to the event organiser 30 mins prior to the event.",
+        "Participants should bring their own props. The event coordinator must be notified about all the props used.",
+        "The lighting of matchsticks, candles, cigarettes, and other derogatory acts are strictly prohibited. ",
+        "Crossover teams are permitted. ( Participants can be from different colleges)",
+        "Any obscene or controversial music will not be permitted.",
+        "Intimate dance moves must be avoided.",
+        "The judges' decisions will be final."
+      ]
     ],
     "prize": {
       "first": "2500",
       "second": "2000",
       "third": "1000"
     },
-    "date": "30-03-2023",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 AM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Sathiya Ramanan V",
-        "email": "sathiyaramananv.mech2019@citchennai.net",
-        "phone": "9500206795"
-      },
-      {
-        "name": "Gayathrie",
-        "email": "gayathriem.aids2021@citchennai.net",
-        "phone": "9150472413"
+        "name": "MB Dharahash",
+        "email": "mamuduribdharahash.ece2020@citchennai.net",
+        "phone": "8148585203"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -561,38 +491,32 @@
     "tags": ["Short Films", "Film Making"],
     "image": "https://lh3.googleusercontent.com/uTQGXYXcoPVr1wQM_iT7RPs5Z4NZTqCZmT69aJPUpRh-PjK2n5gMgPdabOY1Woi3dY0A8O3YVNZhrpystF08XFbdABlb2DPWL019u0Fl6WupNGXf8MLt8YiScezx-zjpx520kdTkeHW2iL5pPMfydHZT7lQHAZl6TZTXQgnLXivxH6ACVHCvqVnkXVlymHDfFxbqtAwFMsAYAY7dJQ9HwCG1V6umD3z26UxfLYubCdZEXHbZs4_k_gXl40yWWCD_W9ksPi-VYgAhKjl_65ZUZRzisALf_pYuoQa61KKoZwn3mG0gyIfmp0hrYe153Pu0bwvyNS2pcOsY4Yi6yUrio1yAN5lGFWClhyqvgveB3nmy-DRGYs5a8oyQOc0zxYCjTnYeFEs04qrDC4n2vmcIBMVMNbfdm6qs1x1v8aQQMJZE50hYGe8yx15iOqEI66LBnNdA45azOhsBgLKqBr-5EY0jFjwFw-YkWa-ChPWdqL2O6hGsCw0kXccPYjDIPuui7SUxD7qnMYdXZOGxkH6qRrTguvm2z1dIoGUBEQP8HioWrHMC3nU0Nfw2XdZEBUs1yTJ_JjMuZ3LxkKLZ_9IbiTs8N3cfBpB-yB58R7yv6TU82Pame_XIz8Ih9nO6x9OuDBQ8vYHca0n0jM52P8iTQLnjylHU_bnXaAmbCeyHH8UGVpMY9Sj4QUE4NEBcN8KNBv_9oQ2FhN_helWvclWEQfS2ZUXkkgfuhDR6RqubaOijJ5OI1bwFYQCOBm3YoJCKYzLpz8QRSHC0Sunv47-N5DJ28rT-ExYpXNbxizud6QorG50lJCM_8AjG5x96CdHEt55QEU3YY0KBjxzIlL73gr4DBkGZPGr_RtOUG8ib85K25J4thNKGIcPZ9qJtFV5OAdUm9SMbyk2bWYRxdPmJAmJb9QCbAKalH_z62atIPps8JRc6gFTEG93DF_jH6AxDieKgK4703DcxPwGGLbs=s972-no?authuser=0",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "NIL",
     "description": "Show off your unique ideas and perspectives through the power of movies. Craft a captivating short film that will enthrall the audiences and leave them in awe of your creative artistry.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Experience and explore the art of filmmaking",
     "rules": [
-      "Participants should send their short films for submission on or before March 23rd, 2023.",
-      "Selected short films will be screened on the day of the event.",
-      "The duration of the short films can be at a maximum of 20 minutes.",
-      "Controversial, sensitive and abusive content is not allowed.",
-      "Judges\u2019 decisions will be final."
+      [
+        "Participants should send their short films for submission on or before March 23rd, 2023.",
+        "Selected short films will be screened on the day of the event.",
+        "The duration of the short films can be at a maximum of 20 minutes.",
+        "Controversial, sensitive and abusive content is not allowed.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "3000",
       "second": "2500",
       "third": "2000"
     },
-    "date": "30-03-2023",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 AM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Sathiya Ramanan V",
-        "email": "sathiyaramananv.mech2019@citchennai.net",
-        "phone": "9500206795"
-      },
-      {
-        "name": "Gayathrie",
-        "email": "gayathriem.aids2021@citchennai.net",
-        "phone": "9150472413"
+        "name": "Niranjan",
+        "email": "niranjankumarb.cse2020@citchennai.net",
+        "phone": "6369444401"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -605,40 +529,34 @@
     "tags": ["Mime", "Emotions"],
     "image": "https://lh3.googleusercontent.com/1ZuIYofhJ__Ls2t2wTpMfguMg27AOPw0hFEKS87vV3k0_yvjDGg2UARsDUQKDXgnfYAiUQkdD6q4PXmarJw48edPZ3tRsBIjqYGd0Q9VoTyi-EMDV80otoyH3LUL6gL4a_lBG_Wpoc75iV1g7qODZfDbPejIhXVxSJ8YjMq4cWcQkRhSwggWLMWJ9hxlgdNlCgY-8c6Xvdr4ATbIkNvLkkw3buji44Pkhv67PS1pK9L7fqcPtXZRYgMP5ikqJ0uBsa8W2ckFl9HbSHxy8o85CedupdUVx1kuabvTvrAxRYyKOJ3VsVR2cB92o8dbAYorfym3I54TMRpWp0cUPenJsofvP4EHberDW9QkWe4N1HiaCm53NWjWFs1M4RR4lAHzRW5i7H4y5Imgpuqzf_ysiJM0LuyZf-OtaO0P0D-N4J0nCSMuuY_cFcEmcipJ2nUvhHn5msvyDnhaOAwFISC2p9HKJZ2X1aGTeLbyj8W1s4k8UNggcdZODx-6rtBi_EjLVObcto5iVkCZij35H1Ry7CYoAjE2DYzfNl1rfKKCJ_S2WmOQxFVogmo0rE3AXQqjRB_cV3a0eftPHwSp0bzWMPff0OCjMMT2QhOhYpKbI8nPseeWBRh0oQzCWmYhT-cT6GJM80W6iASI0gc3hXNMB1CWPF8XIKIesjQjsS3sIjRvdhdFDrKgdj-nYo8hqaHrFEs7H29C-bhUGwJ66RjfRHIeoXacrpYTfH0AqxNwpnQLs2Dm1_do_wkP9c5tBGFsUbVXUbGjCSzsH9DPDr1xC6U5oheTKUZ1peQdR4Ou7c3ahY6SydP33YHrPOvyRMJzw9O6R9pA9k8V_xSj2RoEl5w8g2HZ4n8F1teJYN2WAkBImoeU-E8Kh3sVR5OQNIbFntbbwS5vUwT-CXA5sAeLYimHjdmfxGxUpPuTO_igT9ANQYSeOLnscjdz0DdLrXQA5iBF8kF5sR1STlhGpVk=w974-h972-no?authuser=0",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "6-10",
     "description": "Are you a master of muttering tales , with your tongue tied. Can you express your emotions in an extravagant manner, with no words but only nonverbal cues? Then Vaayai Moodi Pesavum provides you with the perfect stage to prove yourselves!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Art of silent expression",
     "rules": [
-      "Duration: 10-15 minutes per team.",
-      "Each team can have 6 to 10 members.",
-      "Additional time will not be provided and the performance should not exceed the time limit.",
-      "Audio must be handed over to the event organizers prior to the event.",
-      "Vulgar acts, if involved will lead to elimination.",
-      "Acts centered on controversial or sensitive issues are prohibited.",
-      "Judges\u2019 decisions will be final."
+      [
+        "Duration: 10-15 minutes per team.",
+        "Each team can have 6 to 10 members.",
+        "Additional time will not be provided and the performance should not exceed the time limit.",
+        "Audio must be handed over to the event organizers prior to the event.",
+        "Vulgar acts, if involved will lead to elimination.",
+        "Acts centered on controversial or sensitive issues are prohibited.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "3000",
       "second": "2500",
       "third": "2000"
     },
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 AM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Sathiya Ramanan V",
-        "email": "sathiyaramananv.mech2019@citchennai.net",
-        "phone": "9500206795"
-      },
-      {
-        "name": "Gayathrie",
-        "email": "gayathriem.aids2021@citchennai.net",
-        "phone": "9150472413"
+        "name": "R Chandru",
+        "email": "chandrur.cse2020@citchennai.net",
+        "phone": "9962737406"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -651,38 +569,32 @@
     "tags": ["Cinema Lover", "Iconic Frames"],
     "image": "https://lh3.googleusercontent.com/pw/AMWts8BtPLbB7MFJuUH-h5soooW16xpvtPC5gLO1YLWdg6xDjtoxl14EZBvA-SP_QSGC6QwB7TXo1wPa6_iZ294ebi8fCwltziBG15-WTC7766vDvoQYQUMDgNW2ROVgtSPIQ8fMpoOk_8muvqaMy8xajIJuS1oC1FuswBHy8uoW5c6A_DeRKeJsTfjVmPa83AIlk0L9EYIWgnZzdUPg1Oh4kt1pPbflcpCSi27TQl0PKb37gNiclRLnR4vVVlkPevam35jkIkhpA2Q_s0kn729I8qJv85kb_ecKdNbN1Seo2LFdWGMowqnM7os--R4aa_5zeB_2fEQT6OCnPktHXFYxFeMKUfoljZy0yV6PF9mFCTKLJ2i4EC7ZS0ICxKPWTxTCvwBlP5mwE8jZb1U2llY8mA7XWxUwDPyqroFYwZ2lAQx90LJY0x40WYyQKTBm_fJBDmpumXpWvAk-CIwAssS9SyCiLsiJ-NfMxr6EYlq_c43h3I7MNoLP4aOywAavKKU8_0V1w_6zdHNVuQuCXDzFetqAqZF5e3uBmnerK_x_prk7vk907d7CTiFS5RmRG27kkjihcbyzqiZG4duolFOnRzQM9Y8AdpAVXDwWfQawl25JKeS3eFfA5k4-fke-80MqzI252iA5H5FF6kwYFULE2XepKmZyDesjSL7GLWPMC86VLySE-NKgoL5FQUgBi7Rn8WMVA_IU68s_B2qheOA5IYlW99Je3bTJuQod6IjpS6KKAoyVpuFRTPUbTJIEM7XMbefPbnIIi32Er6vXuxy2twwKQ6eVotsRnHvYWuSI_PJgGmYqKxV2BvvxJWEcy2bdS68P9NI1KUV0dTlY-fO6IBd2KpzFiVXgEprFmefdn7OzLvKXOlpJ59wrJmSMSX2UkAJW2UgqEfxRNNXtxpQVecf8MGaaUhZqoBRRIzsDIzH6cfgPWE7YFI9xr-EArwyCxbJbJOU=s470-no?authuser=0&authuser=0",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "Show off your unique ideas and perspectives through the power of movies. Craft a captivating short film that will enthrall the audiences and leave them in awe of your creative artistry.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Observe, analyze and conclude",
     "rules": [
-      "The event will have two rounds- Prelims and Finals.",
-      "This is an individual event and team participation is not allowed.",
-      "Participants must answer within the given time frame.",
-      "Questions are exclusively from movies.",
-      "Judges\u2019 decisions will be final."
+      [
+        "The event will have two rounds- Prelims and Finals.",
+        "This is an individual event and team participation is not allowed.",
+        "Participants must answer within the given time frame.",
+        "Questions are exclusively from movies.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "01-04-2023",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 AM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Sathiya Ramanan V",
-        "email": "sathiyaramananv.mech2019@citchennai.net",
-        "phone": "9500206795"
-      },
-      {
-        "name": "Gayathrie",
-        "email": "gayathriem.aids2021@citchennai.net",
-        "phone": "9150472413"
+        "name": "Revathi Reshma",
+        "email": "revathireashma.ece2020@citchennai.net",
+        "phone": "8778318404"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -695,39 +607,33 @@
     "tags": ["Cinema", "Kamal Haasan"],
     "image": "https://lh3.googleusercontent.com/hEy3iJpCe_XVuUjR_NclonDL0uI5aAfGPI5F-4dX2Cda5oY29qP4QlVoj8AYGm-Rs8QBWRM9d5zleVZpye72NTHNnQfbQTD1i2ZCOBfnbpDxHYfzkT9q81LZgfWmE2QqFA7eZadNhQihNnxkjsoAeAPiFRkehRXk6k8p3mi3YE7uZK6Id_VRbIltqm5LuSHEykWxAVV-vqFHULq50bKajXrA8QWrRKGi49iU7ZdGBirKhzoXvOT6Ryz2ztlGWvHG8lXZN_rak6-_63rBY1shAc7sGc0GVnOqhc8ClQfnraXZj4VxXMrPjVmR0tCH6T9Kt8ENGg70GjHI0c9VEEfayhWQzGdtrUkp2sqCitu0jP8LuCYUIx4sK7XOY3I2ip1Sb7_on7SwRQzNIlAv3bvzaUpPzhtUN1oJhpf2hoEUQWxKaJ6GLIWcwW_Qhn7uYyIdCOaRXzGCkWi_WIoaU0Ssz15-WeBIPUnlf1C28-CHFzp7VseeESY8qV1pdr7nNKIzimQKN42jzW-7SBq_CpXSUxoCR_SChTtUfC-XrL_oeMlbeOQNhfHUTiyRMxMCvdX0T2Bzs1a1npyEQdGj4DZ4S2kLiV3ECpY6pwKHGIgc0Q26a91vye0eBq4zeqtfa3cprmNhWp_PPNkQsY_CtZH549_dR7dMF_SN2G4VFxKlx0ovAy0_5wEAKZ7fRcCVBrKTWaOR8cOJju4165HjcgKkrdL4LYlCuMWmduo-HPtutz74tkttQJ4kD1whdewOPXAoQqKNjIBNzAZJaHMNL_r7Oj0HFlHmvep9A1hIyLYwu1yt1a0OygkbaweQOoxgmDY3EX0_uwWkMt9NirkPeF1a7QuZt9SeW8xWtI7P-BQBfGQp4MAaWL6TGFqmNihDTSHby2tBVsZMQnMFGZobZyZ7m90xlPS--L6QPMCK39Lwu6yech4IddCM7vjgjt6A9GQIdAFQU0qfMQepBRWQlSM=s972-no?authuser=0",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "Imagine yourself in the given situation and re-enact the scene with yourself as the character. All eyes are on you, awaken your inner actor and leave the audience awestruck.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Unleash your inner actor!",
     "rules": [
-      "The event consists of two rounds - Prelims and Finals.",
-      "Duration for Prelims - a maximum of 3 minutes.",
-      "Duration for Finals - a maximum of 7 minutes.",
-      "The situation to act on, will be given on the spot.",
-      "Vulgar, offensive and explicit content should be avoided.",
-      "No preparation time will be given."
+      [
+        "The event consists of two rounds - Prelims and Finals.",
+        "Duration for Prelims - a maximum of 3 minutes.",
+        "Duration for Finals - a maximum of 7 minutes.",
+        "The situation to act on, will be given on the spot.",
+        "Vulgar, offensive and explicit content should be avoided.",
+        "No preparation time will be given."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 AM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Sathiya Ramanan V",
-        "email": "sathiyaramananv.mech2019@citchennai.net",
-        "phone": "9500206795"
-      },
-      {
-        "name": "Gayathrie",
-        "email": "gayathriem.aids2021@citchennai.net",
-        "phone": "9150472413"
+        "name": "Bavana A",
+        "email": "bavanaa.aids2021@citchennai.net",
+        "phone": "7010701974"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -737,42 +643,36 @@
   {
     "name": "Active Popcorn",
     "type": "Non-Technical",
-    "tags": [""],
+    "tags": ["JAM"],
     "image": "https://lh3.googleusercontent.com/5qORbjLzxAvV6yrIQSuDXNP69xXgtkLenV6TApE8BED6lAwgkd2j9b0RgKBU_kO7Mb4lw8Ap7g-WBEnBvsN52V6IczG5xTYOPBjHJXEQn0Rmq0lfw0X8s1rlykZt8eJiQvKIArOOtK72YlMRKlG02MkxKFhBOcUnQEAC6q2vcD8ZhVSx2qnU_Eg0vLzphVxiFSVGLPFp7t2DHPCl-usBUGolQZDK8maH15lyN54qyGJHU02mtB3GVPPfpcAbj8eWx4vG6IgUfTxKy2PrruGjl5puQbyaKpd6b1nRr_07wZhQlEMEUOTMFBpkGz8jz8WQRhiaB6Rd4rrrPdvcwoZkabkN8lXXMT_B4KKI4KUXII2sGScJJ9ZcGFLo7ia3yISG_RdenrbQWgCod6-ypDLgrrhc8IxBjpC8GZIAaDVdUHbT4G9uSDOkYN6SqDcm9_EnQCey7scwbMt7EA_NYT6URRcHaUZmN0VeuW8qPnsYKqRlLkBur3SC09c20UqxZJhhOVG07rqqxaf-K0MZxZSE9BleyyVONEaHiaGdlKHZtegFlHqcnQfJyunOd_MQj4fhE0QhX4m-xDro9OMNmtJbeJCuuZFXxKDTyHdgI3hjTyCJYzYl50W0N6bXCRg32cT8wZ9xAF4X4DEfAVRww9qNvNH5nqD49_K_9Y6jpL7EPZHayzsWdGAu_RtCKfwESdfxLgu8tJzxSDPHIJSoRxidLbEzNiiIyrO8vEFoEYHcbyEETZqtHiDwdGWDXdmekCD2sHIIL8hjVvOECkH5OJvu3NTo-yEVDTPDwpAKXdDqj-1-IOSRb1wSdcbg_Qvtv_ma7hd1IAWGTxVdklQ7egxLedWlEbxfxQ-tkwb-LM9qFBufUY0YmVRoqw-1WmxbFHqC3uh3bG5JbDgZ70rSyH7CqUYMgQIGKzSlkbBpH6w3RQ7sSsQ6=s972-no?authuser=0",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "You have one minute to speak your piece, and everything will be determined within seconds. Energize yourselves, speak up without hesitation, and win with your words and tenacity.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "One minute to win it all!",
     "rules": [
-      "Usage of offensive and vulgar words should be avoided.",
-      "Usage of filler words should be avoided.",
-      "The topic will be given on spot.",
-      "Repetitive words or ideas are not encouraged.",
-      "Participants must adhere to the general rules that will be set by the judges.",
-      "Judges\u2019 decisions will be final."
+      [
+        "Usage of offensive and vulgar words should be avoided.",
+        "Usage of filler words should be avoided.",
+        "The topic will be given on spot.",
+        "Repetitive words or ideas are not encouraged.",
+        "Participants must adhere to the general rules that will be set by the judges.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "6:00 PM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "M Gayathrie",
-        "email": "gayathriem.aids2021@citchennai.net",
-        "phone": "9150472413"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "Revathi Reshma",
+        "email": "revathireashma.ece2020@citchennai.net",
+        "phone": "8778318404"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -785,32 +685,45 @@
     "tags": ["Addzap"],
     "image": "https://lh3.googleusercontent.com/lnmYim9HeKY8RdpFmg4432EaYT4BYGS0UXH2Ppce5Qc9R1dG0CisFeVBTHxnNbxh9Dzz7MdASEtfWipOC6TYTHhEWwfece-IDOwxqq68roEnFL8Oea6xANt8F5oUTVaaaC-FR9AAvcrVY7_hbX2q1vtgGskwLWdAwzXMyXOWzGsfJuSi_VE-hRNra2wTH26tDusjZhZPzJwFPgu4BmPWcKTcosCD-_QMoyRuu7QRaADtwBsQ8D5SFVVPYO46HPzAKmkBR_ugVGGX-eMedbPfHdLM1E9ZFWJLVSjodv_1B0ptwD-yF0L2HuCY6owIL9WSDILuq2Ke23eI9PPVNhqcgJtQlbDR-nSR-rOfxndHZCQBzFEEr5AnH7W0mZoHSXJkedcid0t8MEWy5UMsQJ5LCyyLX4MkSCvMF8ingFE1oFxqy7yklpxrJbLdRqZfsEgQfs-iYOhaRb411pd3PTGOs7gmUabgrGEeXfDYP5WcWN89TjHlaSLa2_faa9bKl2FIzglhbjBNk8OZHGJuaxLgUAjM5BF01Tf38dXLm52sXeiT5J34szVMPVUqOiD1YXafBDwmjHT7Qk81GRzogbCzAOuS947Mu3iK2NgFC8zlQlzLlW2mSNBFPeYO16YQv2xB6u3Xo6oXOnADGFntdnFOVmGwpj6hKLUk5Bu5nG8Alf5j4T68eDSDhe9IJroCVZX3Qbt72pJtADuLkH7t0gSNWPGzIJQPQ3Hpw1Wx0gukwGqj8g1jtb_neRCUprPRVBvReso9_Dh-VhauvIPAUdD5MBUzLgZDkxqLQZA0rs1-OjZf_9BGjbczGpZqpHETahRULOPlmnAF0CLwvGKJ9vfdl-drMTM77x-4Q6tTBMV4On0SQpQk9Pj0f6hUyqZ0ESDFL90R6A6yGecnbX0KbtPvuWrbdXw5P-Nqc8guUfaRdkqbQ_H-=s972-no?authuser=0",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "NIL",
     "description": "Do you have a dream of appearing on the TV? Ever wished you could be the star of your own programme? Are both your acting and marketing abilities up to par? You have a platform to fulfill your fantasies and steal the show, thanks to TK TV!",
-    "tag_line": "Event_Tag_Line",
-    "rules": [""],
+    "tag_line": "Steal the spotlight and become a star",
+    "rules": [
+      [
+        "Round 1 - Channel Surfing.",
+        "Usage of mobiles and other electronic gadgets is strictly prohibited.",
+        "Vulgarity in any form will lead to elimination.",
+        "Expressing any sort of opinion on politics, religion and other sensitive topics is not allowed.",
+        "Participants will have to switch channels upon the judges’ command.",
+        "The specific channel to be re-enacted will be mentioned by the judges, on the spot.",
+        "Only Tamil and English-language channels will be a part of this event.",
+        "Judges’ decisions will be final."
+      ],
+      [
+        "Round 2 - Adzap.",
+        "Usage of mobiles and other electronic gadgets is strictly prohibited.",
+        "Vulgarity in any form will lead to elimination.",
+        "Expressing any sort of opinion on politics, religion and other sensitive topics is not allowed.",
+        "The topic will be given on spot.",
+        "Time allotted for preparation is one minute.",
+        "Participants must perform for at least 2 minutes.",
+        "Judges’ decisions will be final."
+      ]
+    ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -823,38 +736,32 @@
     "tags": ["Quiz"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "From classics to the latest, from flops to blockbusters , do you know the ins and outs of cinema? CineMania is calling out for all movie maniacs!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Cinephiles, assemble!",
     "rules": [
-      "Each team can have a maximum of 2 members.",
-      "For buzzers, participants are asked to join in https://buzzin.live/ and the host screen will be projected on the screen.",
-      "Participants should answer the questions within the given time.",
-      "If the first team to hit the buzzer answers wrong, the chance will be given to the successive teams.",
-      "The judges\u2019 decisions will be final."
+      [
+        "Each team can have a maximum of 2 members.",
+        "For buzzers, participants are asked to join in https://buzzin.live/ and the host screen will be projected on the screen.",
+        "Participants should answer the questions within the given time.",
+        "If the first team to hit the buzzer answers wrong, the chance will be given to the successive teams.",
+        "The judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "750",
       "second": "500",
       "third": "300"
     },
-    "date": "30-03-2023",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -867,37 +774,31 @@
     "tags": ["Quiz"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "Prove your anime prowess in this epic anime quiz! From Naruto's hidden jutsus to the heroic quirks of My Hero Academia, cover everything you need to prove yourself as a true anime fan. Gather your nakama, channel your inner anime protagonist, and let's see who will emerge as the victor in the World of Weebs! Dattebayo!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "The ultimate otaku test!",
     "rules": [
-      "Each team can have a maximum of 2 members.",
-      "For buzzers, participants are asked to join in https://buzzin.live/ and the host screen will be projected on the screen.",
-      "By the buzzer, If the first team answers wrong, the chance will be given to thesuccessive teams.",
-      "The judges\u2019 decisions will be final."
+      [
+        "Each team can have a maximum of 2 members.",
+        "For buzzers, participants are asked to join in https://buzzin.live/ and the host screen will be projected on the screen.",
+        "By the buzzer, If the first team answers wrong, the chance will be given to thesuccessive teams.",
+        "The judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "750",
       "second": "500",
       "third": "300"
     },
-    "date": "30-03-2023",
+    "date": "01 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -910,37 +811,31 @@
     "tags": ["Mimicry"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "Actors, Pop stars, Cartoon characters and Cultural icons! Will your voice withstand the venerable and vivacious versatility and be vouched for victory? Bring in your A-game and impress everyone with your ingenious impersonation!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Who will you become today?",
     "rules": [
-      " Each participant will be given 2-3 minutes.",
-      "No vulgar or unparliamentary words will be entertainment.",
-      "Controversial topics are strictly prohibited.",
-      "Judges\u2019 decision will be final."
+      [
+        "Each participant will be given 2-3 minutes.",
+        "No vulgar or unparliamentary words will be entertainment.",
+        "Controversial topics are strictly prohibited.",
+        "Judges\u2019 decision will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "01-04-2023",
+    "date": "01 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -955,37 +850,31 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "It is better to meet danger than to wait for it.He who is on a lee shore and foresees a hurricane, stands out to sea and encounters a storm to avoid a shipwreck.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Survive the shipwreck with your power of persuasion",
     "rules": [
-      "Time limit is 3 minutes per person.",
-      "The event will have two rounds- Prelims and Finals.",
-      "The top 8 members will be qualified for the finals.",
-      "Participants are not allowed to talk about political facts in the event.",
-      "Participants are not allowed to use abusive or offensive language.",
-      "Judges\u2019 decisions will be final."
+      [
+        "Time limit is 3 minutes per person.",
+        "The event will have two rounds- Prelims and Finals.",
+        "The top 8 members will be qualified for the finals.",
+        "Participants are not allowed to talk about political facts in the event.",
+        "Participants are not allowed to use abusive or offensive language.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "750",
       "second": "500",
       "third": "300"
     },
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -998,39 +887,33 @@
     "tags": ["Document"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "Do you like to document day to day activities? Do you think you can handle a massive event like Takshashila and document the happenings of this hustling event?",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Document the hustle and bustle of Takshashila",
     "rules": [
-      "Participants must write their reports only in English.",
-      "Reports must be submitted through google forms.",
-      "Only individual participation is allowed.",
-      "Participants must present the reports in an appropriate format.",
-      "A participant can write reports on any number of events.",
-      "Judges\u2019 decisions will be final."
+      [
+        "Participants must write their reports only in English.",
+        "Reports must be submitted through google forms.",
+        "Only individual participation is allowed.",
+        "Participants must present the reports in an appropriate format.",
+        "A participant can write reports on any number of events.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "30-03-2023, 31-03-2023, 01-04-2023",
+    "date": "30 31 March and 1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1043,41 +926,35 @@
     "tags": ["Debate"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "Raise your voice and defend your stance. Rhetoric at its finest, where words become weapons. Swoop the field and make your voice heard.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Challenge the opposition’s rhetoric to rise above the rest",
     "rules": [
-      "Each team can have a maximum of 3 members.",
-      "English should be the only medium of communication.",
-      "Topics will be provided on the spot.",
-      "Participants will be given 3 minutes to prepare, on the topic specified.",
-      "Usage of abusive words is not permitted.",
-      "Participants are not allowed to cross-talk.",
-      "Offending your opponent personally must be strictly avoided.",
-      "Judges\u2019 decisions will be final."
+      [
+        "Each team can have a maximum of 3 members.",
+        "English should be the only medium of communication.",
+        "Topics will be provided on the spot.",
+        "Participants will be given 3 minutes to prepare, on the topic specified.",
+        "Usage of abusive words is not permitted.",
+        "Participants are not allowed to cross-talk.",
+        "Offending your opponent personally must be strictly avoided.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1090,40 +967,34 @@
     "tags": ["Behind The Yellow Tapes"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "3-4",
     "description": "Do you have what it takes to solve the case and bring justice to the departed? Test your wits to see if your detective skills are as good as Rust Cohle's. Dive into the case files and piece together the clues to uncover the killer. Are you up for the challenge?",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Unravel the scarlet thread of murder running through the colourless skein of life.",
     "rules": [
-      "Time allotted for each team is 10 min.",
-      "Each team must consist of 3 to 4 members.",
-      "Each team will have a time limit of 3 to 4 minutes to inspect the crime scene.",
-      "Suspects\u2019 statements will be played to the teams.",
-      "Team must discuss the case within the specified time.",
-      "Mobile phones and other Gadgets will not be allowed within the premises.",
-      "For each hint asked by the team, accountable points will be deducted as per jury team."
+      [
+        "Time allotted for each team is 10 min.",
+        "Each team must consist of 3 to 4 members.",
+        "Each team will have a time limit of 3 to 4 minutes to inspect the crime scene.",
+        "Suspects\u2019 statements will be played to the teams.",
+        "Team must discuss the case within the specified time.",
+        "Mobile phones and other Gadgets will not be allowed within the premises.",
+        "For each hint asked by the team, accountable points will be deducted as per jury team."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "30-03-2023,31-03-2023,01-04-2023",
+    "date": "30 31 March and 1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1136,38 +1007,32 @@
     "tags": ["Graphite - ty"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "Where every stroke tells a story, unlock the creativity within and unleash your vision. Sketch your way to glory \u2018cause the canvas is calling for a masterpiece.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Blank walls are a shared canvas and we're all artists",
     "rules": [
-      "Duration: 60 minutes.",
-      "Only graphite or charcoal pencils are allowed as drawing mediums.",
-      "Participants should bring their own materials.",
-      "Drawing sheets will be provided by the event organizers.",
-      "Judges\u2019 decisions will be final."
+      [
+        "Duration: 60 minutes.",
+        "Only graphite or charcoal pencils are allowed as drawing mediums.",
+        "Participants should bring their own materials.",
+        "Drawing sheets will be provided by the event organizers.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1182,36 +1047,30 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "From pencils to markers, let colors fly and let your imagination run wild and free. Doodle your way to fame.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Get inspired, pick up a pen and let the doodling begin!",
     "rules": [
-      "Duration: 60 minutes.",
-      "Participants can use colours to make their doodles vibrant.",
-      "Participants should bring their own material.",
-      "A3 drawing sheets will be provided.",
-      "Judges\u2019 decisions will be final."
+      [
+        "Duration: 60 minutes.",
+        "Participants can use colours to make their doodles vibrant.",
+        "Participants should bring their own material.",
+        "A3 drawing sheets will be provided.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1226,7 +1085,7 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Videograph your views on our college and capture clips to project your perspective. Summarize the fervour and magnificence that are rife in our campus!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Make reality beautiful through your videography skills.",
     "rules": [
       "The video should not exceed 60 seconds.",
       "The reel must be an original creation.",
@@ -1243,23 +1102,15 @@
       "second": "500",
       "third": "300"
     },
-    "date": "30-03-2023,31-03-2023,01-04-2023",
+    "date": "30 31 March and 1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1272,37 +1123,31 @@
     "tags": ["Sing Along"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "2",
     "description": "Watch as the lyrics vanish whilst you warble. Fill in the missing tunes and fix the broken beat. Will you be able to load the lyrics and launch it forward? Test how rusty your rhythm is, with Load the Lyrics!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "The lyrics keep fading, but can you keep up?",
     "rules": [
-      "Each team must consist of 2 members.",
-      "A point will be reduced if there is a delay in filling the lyrics.",
-      "Multilingual songs will be played.",
-      "Judges\u2019 decision will be final."
+      [
+        "Each team must consist of 2 members.",
+        "A point will be reduced if there is a delay in filling the lyrics.",
+        "Multilingual songs will be played.",
+        "Judges\u2019 decision will be final."
+      ]
     ],
     "prize": {
       "first": "750",
       "second": "500",
       "third": "300"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1317,36 +1162,30 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Just like mentally strong people, we must able to thrive regardless of any added tension.we had to put our stress in prospective, replace negative thoughts with positive ones and be proud of our achievements.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Feel the pressure of scrutiny!",
     "rules": [
-      "Duration: 3 minutes.",
-      "This is an individual event and team participation is not allowed.",
-      "The game ends when the participant shows any sign of anger and irritation.",
-      "Unparliamentary words should not be used.",
-      "Judges' decision will be final."
+      [
+        "Duration: 3 minutes.",
+        "This is an individual event and team participation is not allowed.",
+        "The game ends when the participant shows any sign of anger and irritation.",
+        "Unparliamentary words should not be used.",
+        "Judges' decision will be final."
+      ]
     ],
     "prize": {
       "first": "750",
       "second": "500",
       "third": "300"
     },
-    "date": "31-03-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1361,39 +1200,33 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Is gaming your domain? Amateur or professional gaming sees no discrimination, only skills, strategy and rules. So gear up for the battle, prepare and clash in the ultimate showdown.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "The ultimate gaming battleground!",
     "rules": [
-      "The game must be played only using a mobile phone.",
-      "Emulators and rooted devices should not be used.",
-      "During an ongoing tournament players are not allowed to change their in-game name.",
-      "Clan tags before in-game names are allowed to be changed.",
-      "Players should have all the maps downloaded prior to the event.",
-      "No refund will be provided if the player is kicked out of the server due to glitches or any other cause.",
-      "Players should not have any obscene or offensive in-game names.",
-      "Matches will be supervised separately to avoid malpractices."
+      [
+        "The game must be played only using a mobile phone.",
+        "Emulators and rooted devices should not be used.",
+        "During an ongoing tournament players are not allowed to change their in-game name.",
+        "Clan tags before in-game names are allowed to be changed.",
+        "Players should have all the maps downloaded prior to the event.",
+        "No refund will be provided if the player is kicked out of the server due to glitches or any other cause.",
+        "Players should not have any obscene or offensive in-game names.",
+        "Matches will be supervised separately to avoid malpractices."
+      ]
     ],
     "prize": {
       "first": "1500",
       "second": "1000",
       "third": "750"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1406,39 +1239,33 @@
     "tags": ["PCgaming"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "5",
     "description": "Enter the virtual arena of Valorant, where the intensity is high and competition is fierce. Every move counts and every shot matters. Join us for the gaming event that will test your skills, challenge your strategy and leave you hungry for more. With the thrill of victory and the agony of defeat, this is Valorant at its best.",
     "tag_line": "Event_Tag_Line",
     "rules": [
-      "Participants must bring their own devices for the gameplay.",
-      "Participants must abide by esports gaming ethics and rules.",
-      "Every Participant must be respectful towards Admins and other Participants. Insults and unfair or disrespectful behavior will not be tolerated.",
-      "Update your riot client and valorant game to the latest version prior to the tournament.",
-      "No refund will be provided if the player is kicked out of the server due to glitches or any other causes.",
-      "Team matchups will be formulated on a knock-out basis."
+      [
+        "Participants must bring their own devices for the gameplay.",
+        "Participants must abide by esports gaming ethics and rules.",
+        "Every Participant must be respectful towards Admins and other Participants. Insults and unfair or disrespectful behavior will not be tolerated.",
+        "Update your riot client and valorant game to the latest version prior to the tournament.",
+        "No refund will be provided if the player is kicked out of the server due to glitches or any other causes.",
+        "Team matchups will be formulated on a knock-out basis."
+      ]
     ],
     "prize": {
       "first": "1500",
       "second": "1000",
       "third": "750"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1453,40 +1280,34 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Nature is an aeolian harp, a musical instrument whose tones are the re-echo of higher strings within us.Tune your instrument and get ready folks keeping alive through tunes for a decade.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Keys clash, music soars!",
     "rules": [
-      "Duration for Prelims: 2 minutes.",
-      "Duration for Finals: 3 minutes.",
-      "Only keyboards are allowed for instrumentation.",
-      "The event consists of two rounds - Prelims and Finals.",
-      "All genres of music are permitted.",
-      "All types of keyboard configurations are allowed.",
-      "Participants should bring necessary Aux cables and other setup requirements for the performance.",
-      "The use of pre-recorded soundtracks is not permitted.",
-      "Judges\u2019 decision will be final."
+      [
+        "Duration for Prelims: 2 minutes.",
+        "Duration for Finals: 3 minutes.",
+        "Only keyboards are allowed for instrumentation.",
+        "The event consists of two rounds - Prelims and Finals.",
+        "All genres of music are permitted.",
+        "All types of keyboard configurations are allowed.",
+        "Participants should bring necessary Aux cables and other setup requirements for the performance.",
+        "The use of pre-recorded soundtracks is not permitted.",
+        "Judges\u2019 decision will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1501,37 +1322,31 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "No thief,however skillful, can rob one of knowledge, and that is why knowledge is the best and safest treasure to acquire.Treasure hunt makes better stories when there's treasure at the end.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Trace the map, to grab the loot!",
     "rules": [
-      "Each team must consist of 2-4 members.",
-      "Participating teams should collect the clues to capture the flag.",
-      "Clues should be collected in the correct number order.",
-      "Clues will be placed only inside the college premises.",
-      "Participants must not damage college property.",
-      "The first team to capture the flag wins."
+      [
+        "Each team must consist of 2-4 members.",
+        "Participating teams should collect the clues to capture the flag.",
+        "Clues should be collected in the correct number order.",
+        "Clues will be placed only inside the college premises.",
+        "Participants must not damage college property.",
+        "The first team to capture the flag wins."
+      ]
     ],
     "prize": {
       "first": "750",
       "second": "500",
       "third": "300"
     },
-    "date": "30-03-2023,31-03-2023,01-04-2023",
+    "date": "30 31 March and 1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1544,40 +1359,34 @@
     "tags": ["ScriptWriting"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "Anything and everything begins with a script. A building ought to crumble without a foundation. Similarly, a story is sure to sink without a script to call its own. Do you have what it takes to showcase your stupendous scriptography skills?",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Write the movie of your dreams!",
     "rules": [
-      "Participants will be assigned a genre and will have to write a script on the spot.",
-      "Participants can write the script in either Tamil or English.",
-      "Each script should be in typed format while presenting to the judge.",
-      "Participants will have a maximum of 1 hour to complete the script.",
-      "30 minutes will be given for creating the script from scratch.",
-      "30 minutes will be given for the narration of the script.",
-      "Judges' decisions will be final."
+      [
+        "Participants will be assigned a genre and will have to write a script on the spot.",
+        "Participants can write the script in either Tamil or English.",
+        "Each script should be in typed format while presenting to the judge.",
+        "Participants will have a maximum of 1 hour to complete the script.",
+        "30 minutes will be given for creating the script from scratch.",
+        "30 minutes will be given for the narration of the script.",
+        "Judges' decisions will be final."
+      ]
     ],
     "prize": {
       "first": "1500",
       "second": "750",
       "third": "500"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1590,36 +1399,30 @@
     "tags": ["Comedy"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "Laughter is the best medicine, they say. Do you agree? We surely do. With that said, we bring to you Takshashila's Hall of Humour, your one stop destination to say good riddance to all your worries.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Tonight’s menu: Comedy and satire!",
     "rules": [
-      "The time limit for the performance is 3-5 minutes.",
-      "Usage of unparliamentary words will lead to immediate disqualification.",
-      "Judges' decision will be final."
+      [
+        "The time limit for the performance is 3-5 minutes.",
+        "Usage of unparliamentary words will lead to immediate disqualification.",
+        "Judges' decision will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "30-03-2023",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1634,7 +1437,7 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Are insta reels and tik tok your ground? Can you animate a silent scenario and add your own special magic to boost the ante? Express yourself fully and without restraint!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Sync, sway, slay",
     "rules": [
       "This is an individual event and team participation is not allowed.",
       "Audio templates will be provided by the organizers.",
@@ -1648,23 +1451,15 @@
       "second": "500",
       "third": "300"
     },
-    "date": "30-03-2023",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1679,37 +1474,31 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "All the world's a stage and all the fields are playgrounds. In this room-sized board, you are the pawn, and we are the players. It's a kill or be killed situation, will you be the last man standing?",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Will you succumb to the snakes or climb to the top.",
     "rules": [
-      "Duration: 30 minutes.",
-      "The game to be played is \u2018Snakes and Ladders\u2019.",
-      "Participants will take turns to roll the dice and move their counter forward the number of spaces shown on the dice.",
-      "If the counter lands at the bottom of a ladder, you can move up to the top of the ladder.",
-      "If the counter lands on the head of a snake, you must slide down to the bottom/tail of the snake.",
-      "The first player to get to the space that says 'Home' is the winner, else the person with the highest score will be declared the winner."
+      [
+        "Duration: 30 minutes.",
+        "The game to be played is \u2018Snakes and Ladders\u2019.",
+        "Participants will take turns to roll the dice and move their counter forward the number of spaces shown on the dice.",
+        "If the counter lands at the bottom of a ladder, you can move up to the top of the ladder.",
+        "If the counter lands on the head of a snake, you must slide down to the bottom/tail of the snake.",
+        "The first player to get to the space that says 'Home' is the winner, else the person with the highest score will be declared the winner."
+      ]
     ],
     "prize": {
       "first": "Vouchers",
       "second": "NIL",
       "third": "NIL"
     },
-    "date": "30-03-2023,31-03-2023,01-04-2023",
+    "date": "30 31 March and 1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1724,30 +1513,38 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "What would you do if we said you could auction your way to assemble your dream team? Craft the most capable cricket team that is a sure sixer squad. Bid, build and dominate the race to boast a bombarding bonanza!",
-    "tag_line": "Event_Tag_Line",
-    "rules": [""],
+    "tag_line": "Players on sale, perform the trade!",
+    "rules": [
+      [
+        "Each team can have 3-6 members.",
+        "The first round is an IPL Quiz, to shortlist the registered participants.",
+        "The quiz will be based on IPL records.",
+        "The top 10 teams will be moving on to the auction round."
+      ],
+      [
+        "The selected 10 teams will be each asked to pick a cricket team from the lot.",
+        "Each team will be given 100 crores [Digital prop currency]",
+        "The value of the retained players of each selected cricket team will be reduced from the given 100 crores.",
+        "Each team should pick 15 - 23 players each.",
+        "Each team should prepare their 11’s at the end of the auction with a maximum of 4 foreign players.",
+        "Winners will be selected based on players current form and record.",
+        "Judges’ and organizers' decisions are final."
+      ]
+    ],
     "prize": {
       "first": "1500",
       "second": "1300",
       "third": "1000"
     },
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1762,37 +1559,31 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "With no flame to fall back on, contestants must bring their A-game and push their culinary limits. From fresh ingredients to favourable flavours, get ready to serve up a storm without even touching the stove! With only culinary skills and creativity to rely on, who will reign supreme in this intense battle of flavours?",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "The fight for culinary fame with no flame.",
     "rules": [
-      "Duration: 30 minutes.",
-      "Each team must consist of a maximum of 2 members.",
-      "Participants must bring their own material.",
-      "Participants should not bring pre-cooked items.",
-      "All participants must leave their working stations clean.",
-      "Judges\u2019 decision will be final."
+      [
+        "Duration: 30 minutes.",
+        "Each team must consist of a maximum of 2 members.",
+        "Participants must bring their own material.",
+        "Participants should not bring pre-cooked items.",
+        "All participants must leave their working stations clean.",
+        "Judges\u2019 decision will be final."
+      ]
     ],
     "prize": {
       "first": "750",
       "second": "500",
       "third": "300"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1807,37 +1598,31 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Takshashila is buzzing with excitement - and you're the one who gets to capture it all! From the grand opening ceremony to the final curtain call, Times of TK is your chance to tell the story of our cultural fest through your own unique lens. So grab your notepad, camera and stylus to prepare a promising front page that will go down in history.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Highlights of tk in one page!",
     "rules": [
-      "Each team must have a maximum of 2 members.",
-      "Any kind of editing platform can be used.",
-      "Content about TK will be provided to the team for designing the Newspaper front page.",
-      "Controversial content should be avoided.",
-      "Standard format of newspapers must be followed while designing.",
-      "Judge\u2019s decision will be final."
+      [
+        "Each team must have a maximum of 2 members.",
+        "Any kind of editing platform can be used.",
+        "Content about TK will be provided to the team for designing the Newspaper front page.",
+        "Controversial content should be avoided.",
+        "Standard format of newspapers must be followed while designing.",
+        "Judge\u2019s decision will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "500"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1852,36 +1637,30 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Where imagination meets improvisation and interpretation! Make the \u201cstreets\u201d your stage and speak stories of love, loss and success. As we celebrate cinema, let us take a trip down the memory lane and catch a glimpse of the art of acting in its purest form!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "The world is your stage!",
     "rules": [
-      "Duration: 10 minutes.",
-      "6-7 members per team are allowed.",
-      "Usage of microphone is prohibited.",
-      "No props will be provided. Teams may use props but need to inform the event coordinator beforehand.",
-      "Judge\u2019s decision will be final."
+      [
+        "Duration: 10 minutes.",
+        "6-7 members per team are allowed.",
+        "Usage of microphone is prohibited.",
+        "No props will be provided. Teams may use props but need to inform the event coordinator beforehand.",
+        "Judge\u2019s decision will be final."
+      ]
     ],
     "prize": {
       "first": "1500",
       "second": "1000",
       "third": "750"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1896,37 +1675,31 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "As each artist weaves their own design, a masterpiece with every stroke, stories of tradition and beauty align in a tapestry of art bespoke. Entwine art and tradition and tell a tale with your intricate designs.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Get henna-fied!",
     "rules": [
-      "Time limit of 60 minutes will be given.",
-      "Mehndi Cone will be provided, no other necessities will be provided.",
-      "Usage of any reference material, phones etc are strictly prohibited and if used the participants will be disqualified.",
-      "Mehndi design should be portrayed on one hand till the elbow and must cover both sides of the palm.",
-      "The artist can portray their designs in their own hand or can have a model, the models must also register for the event.",
-      "The judges\u2019 decision will be final."
+      [
+        "Time limit of 60 minutes will be given.",
+        "Mehndi Cone will be provided, no other necessities will be provided.",
+        "Usage of any reference material, phones etc are strictly prohibited and if used the participants will be disqualified.",
+        "Mehndi design should be portrayed on one hand till the elbow and must cover both sides of the palm.",
+        "The artist can portray their designs in their own hand or can have a model, the models must also register for the event.",
+        "The judges\u2019 decision will be final."
+      ]
     ],
     "prize": {
       "first": "750",
       "second": "500",
       "third": "300"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1939,39 +1712,33 @@
     "tags": ["puzzle"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "0",
     "description": "If you think you\u2019ve seen it all when it comes to puzzles, think again!With cryptic crosswords, brain-bursting sudokus and more, only the most astute and strategic thinkers will prevail. With high stakes, and even higher rewards, it\u2019s time to step up and show the world your puzzle power!",
     "tag_line": "Event_Tag_Line",
     "rules": [
-      "The event consists of 4 sets of puzzles.",
-      "Puzzles: Sudoku, Word grid, Calcudoku, Crossword.",
-      "Each round will abide by its respective rules.",
-      "For buzzers, participants are asked to join in https://buzzin.live/ and the host screen will be projected on the screen.",
-      "Requirements will be provided on spot during the event organizers.",
-      "First to complete all four puzzles will be declared as the winners."
+      [
+        "The event consists of 4 sets of puzzles.",
+        "Puzzles: Sudoku, Word grid, Calcudoku, Crossword.",
+        "Each round will abide by its respective rules.",
+        "For buzzers, participants are asked to join in https://buzzin.live/ and the host screen will be projected on the screen.",
+        "Requirements will be provided on spot during the event organizers.",
+        "First to complete all four puzzles will be declared as the winners."
+      ]
     ],
     "prize": {
       "first": "Vouchers",
       "second": "NIL",
       "third": "NIL"
     },
-    "date": "30-03-2023,31-03-2023,01-04-2023",
+    "date": "30 31 March and 1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1986,30 +1753,22 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Get ready to be transported to a world of wonder and excitement with our Fun Zone event! This event promises to create a one-of-a-kind atmosphere that will leave you feeling energized and entertained. Perfect for all ages, it is the ultimate destination for a day of fun with your friends. So join us and let the good times roll!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Escape reality, embrace fun",
     "rules": [""],
     "prize": {
       "first": "Vouchers",
       "second": "NIL",
       "third": "NIL"
     },
-    "date": "30-03-2023,31-03-2023,01-04-2023",
+    "date": "30 31 March and 1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2022,44 +1781,38 @@
     "tags": ["race"],
     "image": "",
     "fee": "150",
-    "team_size": "Event_Team_Size",
+    "team_size": "4",
     "description": "Competition is what makes us work harder. Crash tests, pit stops and obstacle courses. Race to the finish line while revving your engines. Creativity and strategy packs a punch in this RC race!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Feel the rush, embrace the speed, dance to the adrenaline.",
     "rules": [
-      "A maximum of 4 members per team is allowed.",
-      "Readymade bots will be eliminated.",
-      "The permitted dimensions of the bot is 30cm*30cm*30cm.",
-      "First round will be a tug of war and in the second round the Track including ramps and other obstacles.",
-      "The bot should be operated on a battery source.",
-      "Both wireless and wired configuration is permitted.",
-      "Extra batteries and other accessories will not be provided at the venue.",
-      "Any Physical damage of the bot will lead to disqualification.",
-      "Second round will be  evaluated on a time basis.",
-      "Only 2 members from the team will be allowed to step on the track.",
-      "Judges\u2019 decisions will be final."
+      [
+        "A maximum of 4 members per team is allowed.",
+        "Readymade bots will be eliminated.",
+        "The permitted dimensions of the bot is 30cm*30cm*30cm.",
+        "First round will be a tug of war and in the second round the Track including ramps and other obstacles.",
+        "The bot should be operated on a battery source.",
+        "Both wireless and wired configuration is permitted.",
+        "Extra batteries and other accessories will not be provided at the venue.",
+        "Any Physical damage of the bot will lead to disqualification.",
+        "Second round will be  evaluated on a time basis.",
+        "Only 2 members from the team will be allowed to step on the track.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "2000",
       "second": "1500",
       "third": "NIL"
     },
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "Danny Devito",
+        "email": "dannydevitol.cse2021@citchennai.net",
+        "phone": "9841667119"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2074,40 +1827,34 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Are you looking for an exhilarating challenge? Then come join us and race your drone through an insane first-person course! Compete with other daring pilots and soak in the thrilling atmosphere as you fight for the top spot. Don't miss out, it's an enthralling event that does not come by often.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Dare to defy the grapple of gravity",
     "rules": [
-      "Each team can have a maximum of 5 members.",
-      "Only the Pilot and one accompanying member is allowed inside the fly area.",
-      "Readymade drones are not permitted.",
-      "Maximum frame size of the drone must be 270mm.",
-      "Battery capacity must not exceed 14.8v and 3,500mAh.",
-      "Carbon fiber and metal propellers are prohibited.",
-      "Fail safe switch must be enabled.",
-      "The College will not take responsibility for any damage of the drone.",
-      "Judges\u2019 decisions will be final."
+      [
+        "Each team can have a maximum of 5 members.",
+        "Only the Pilot and one accompanying member is allowed inside the fly area.",
+        "Readymade drones are not permitted.",
+        "Maximum frame size of the drone must be 270mm.",
+        "Battery capacity must not exceed 14.8v and 3,500mAh.",
+        "Carbon fiber and metal propellers are prohibited.",
+        "Fail safe switch must be enabled.",
+        "The College will not take responsibility for any damage of the drone.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "2000",
       "second": "1500",
       "third": "NIL"
     },
-    "date": "30-03-2023",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "Akash.M",
+        "email": "akashm.mct2021@citchennai.net",
+        "phone": "8778746499"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2122,37 +1869,31 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": " It all looked so easy when you did it with paper-where valves never froze, gyros never drifted and rocked motors did not blow up in your face.Build your own rocket and bring it on the floor that blast the sky.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Splash, spray and shoot to the skies",
     "rules": [
-      "The team should consist of only 3 members.",
-      "Bottle for rockets must be brought by the participants.",
-      "All design materials and compressors will be provided by our team.",
-      "Rockets should be made of common water bottles.",
-      "Participants must present their rocket to organizers before their launch.",
-      "Judges\u2019 decisions will be final."
+      [
+        "The team should consist of only 3 members.",
+        "Bottle for rockets must be brought by the participants.",
+        "All design materials and compressors will be provided by our team.",
+        "Rockets should be made of common water bottles.",
+        "Participants must present their rocket to organizers before their launch.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "750",
       "second": "500",
       "third": "NIL"
     },
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "Srivathsan S",
+        "email": "srivathsans.ece2021@citchennai.net",
+        "phone": "9500792304"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2167,35 +1908,29 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Science and Technology revolutionize our lives,but memory, tradition and myth frame our response.It's a perfect combination of smart and fun .You win or you learn- either way it's win-win.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Connect the dots and tickle your brains",
     "rules": [
-      "The team should consist of 2 members only.",
-      "Participants are not allowed to use mobile phones or any other electronic devices.",
-      "The questions will be in the form of multiple choice, true or false, specific answer questions.",
-      "Judges\u2019 decisions will be final."
+      [
+        "The team should consist of 2 members only.",
+        "Participants are not allowed to use mobile phones or any other electronic devices.",
+        "The questions will be in the form of multiple choice, true or false, specific answer questions.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "750",
       "second": "500",
       "third": "NIL"
     },
-    "date": "30-03-2023",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "Diwakar",
+        "email": "diwakarv.cse2021@citchennai.net",
+        "phone": "9566081089"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2210,41 +1945,35 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Where precision meets speed, steer your way to the end-line. Stay on track and you'll stay in the game. Wander off track and you'll have to walk out. Gather your courage and components! Are you up for this rip-roaring race where only the fast and furious finishes first?",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Stay on track and steer to success!",
     "rules": [
-      "A maximum of 4 members per team is allowed.",
-      "Bots if found to be outsourced will be eliminated.",
-      "The permitted dimensions of the bot is 25cm*25cm*30cm.",
-      "Track includes T-joints, dotted lines, acute, obtuse angles and some color changes in the line.",
-      "Bot should be operated on a battery source.",
-      "Duration allotted for each team is 5 minutes.",
-      "In case of any deviation from the path, the team should start from the last checkpoint and a maximum of 2 attempts will be provided for the same within the allotted time.",
-      "The bot should not be immobilized for more than 30 seconds.",
-      "This event is evaluated on a time basis.",
-      "Judges\u2019 decisions will be final."
+      [
+        "A maximum of 4 members per team is allowed.",
+        "Bots if found to be outsourced will be eliminated.",
+        "The permitted dimensions of the bot is 25cm*25cm*30cm.",
+        "Track includes T-joints, dotted lines, acute, obtuse angles and some color changes in the line.",
+        "Bot should be operated on a battery source.",
+        "Duration allotted for each team is 5 minutes.",
+        "In case of any deviation from the path, the team should start from the last checkpoint and a maximum of 2 attempts will be provided for the same within the allotted time.",
+        "The bot should not be immobilized for more than 30 seconds.",
+        "This event is evaluated on a time basis.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "1500",
       "second": "1000",
       "third": "NIL"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "Gokul Kannan",
+        "email": "gokulkannanp.cse2021@citchennai.net",
+        "phone": "9941269128"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2259,37 +1988,31 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Coding duos! Two participants are paired and are given a problem to solve. The duo should take turns to code the solution. But the catch is, they can\u2019t be together at the same time. As one person codes, the other person is isolated. Swaps occur at regular intervals and the first duo to solve the problem wins.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Code your way to victory",
     "rules": [
-      "A maximum of two members are permitted per team.",
-      "Participants are requested to register in advance.",
-      "No mobiles or networks should be used at the time of coding.",
-      "Only one participant per team is allowed to code at the particular time and can be swapped after a given time.",
-      "There is only one round.",
-      "Judges\u2019 decisions will be final."
+      [
+        "A maximum of two members are permitted per team.",
+        "Participants are requested to register in advance.",
+        "No mobiles or networks should be used at the time of coding.",
+        "Only one participant per team is allowed to code at the particular time and can be swapped after a given time.",
+        "There is only one round.",
+        "Judges\u2019 decisions will be final."
+      ]
     ],
     "prize": {
       "first": "1500",
       "second": "1000",
       "third": "NIL"
     },
-    "date": "31-03-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "Balaji S",
+        "email": "balajis.cse2021@citchennai.net",
+        "phone": "7358388433"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2304,35 +2027,29 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": " Pandora’s Box is a team event of two members where the circuit output will be given on spot and the participants are asked to design the circuit using the given chips, circuit boards and present the output of the circuit assembled.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Reviving appliances, restoring functionality, and simplifying your life",
     "rules": [
-      "Maximum of 2 members are allowed in a team.",
-      "Random boxes are to be selected by the team consisting of circuit design and components.",
-      "Participants are asked to build the circuits using the components, provided within the given time.",
-      "Judge’s decision will be final."
+      [
+        "Maximum of 2 members are allowed in a team.",
+        "Random boxes are to be selected by the team consisting of circuit design and components.",
+        "Participants are asked to build the circuits using the components, provided within the given time.",
+        "Judge’s decision will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "NIL"
     },
-    "date": "30-03-2023",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "Karthikeyan",
+        "email": "karthikeyanes.ece2020@citchennai.net",
+        "phone": "9080879578"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2347,36 +2064,30 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "CAD Designing is a team event where students are provided with the model for designing. The participants are asked to design the model within the given time using the software on the participants wish on their own.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Design. Create. Innovate.",
     "rules": [
-      "Only 3 members in a team are allowed.",
-      "Topics will be given on spot.",
-      "Participants are allowed to use any kind of software for designing.",
-      "The participants should complete the design within the given time.",
-      "Judge's decision will be final."
+      [
+        "Only 3 members in a team are allowed.",
+        "Topics will be given on spot.",
+        "Participants are allowed to use any kind of software for designing.",
+        "The participants should complete the design within the given time.",
+        "Judge's decision will be final."
+      ]
     ],
     "prize": {
       "first": "1500",
       "second": "1000",
       "third": "NIL"
     },
-    "date": "30-03-2023",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "Vishnu S",
+        "email": "svishnu.ece2021@citchennai.net",
+        "phone": "6374270216"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2391,39 +2102,33 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Paper presentation is a two-member competition where each team is required to provide a written representation of your idea in English, about a given theme and present it with a presentation (PowerPoint) in front of the judges.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "A well presented paper is worth a thousand words.",
     "rules": [
-      "A maximum of two members are permitted per team.",
-      "Participants are requested to register in advance.",
-      "Abstract should not exceed one page and the presentation should not exceed 20 slides.",
-      "Participants are requested to bring along 2 hard copies of the paper to be submitted, on the day of  the event.",
-      "A team can have students from different colleges.",
-      "The abstract mail should contain the abstract references,  your email id and mobile number.",
-      "Any kind of plagiarism leads to immediate disqualification.",
-      "Judges’ decisions will be final."
+      [
+        "A maximum of two members are permitted per team.",
+        "Participants are requested to register in advance.",
+        "Abstract should not exceed one page and the presentation should not exceed 20 slides.",
+        "Participants are requested to bring along 2 hard copies of the paper to be submitted, on the day of  the event.",
+        "A team can have students from different colleges.",
+        "The abstract mail should contain the abstract references,  your email id and mobile number.",
+        "Any kind of plagiarism leads to immediate disqualification.",
+        "Judges’ decisions will be final."
+      ]
     ],
     "prize": {
       "first": "1000",
       "second": "750",
       "third": "NIL"
     },
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "Srinivasan B",
+        "email": "bsrinivasan.cse2021@citchennai.net",
+        "phone": "9841723638"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2438,35 +2143,29 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "  Lucid Circuits is a team event of two members where the circuit output will be given on spot and the participants are asked to design the circuit on any kind of softwares and present the output of stimulation.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Fixing all the Re-volting Work out there!",
     "rules": [
-      "Maximum of 2 members are allowed in a team.",
-      "Simple Circuits Designs will be given.",
-      "Should try to complete the stimulation for the given circuit within the given time using simulation software.",
-      "Judge’s decision will be final."
+      [
+        "Maximum of 2 members are allowed in a team.",
+        "Simple Circuits Designs will be given.",
+        "Should try to complete the stimulation for the given circuit within the given time using simulation software.",
+        "Judge’s decision will be final."
+      ]
     ],
     "prize": {
       "first": "1500",
       "second": "1000",
       "third": "NIL"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "S.jega veera pandian",
+        "email": "sjagaveerapandian.ece2021@citchennai.net",
+        "phone": "6379969251"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2481,36 +2180,30 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Tech JAM( Technical Just A Minute Event) is an event where participants will be given the topics on the basics of current technology and they are expected to present a speech only in English within a minute.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "60 seconds to inspire and illuminate your passion for technology ",
     "rules": [
-      "It is an individual event and team participation is not allowed.",
-      "Topics will be given on the spot.",
-      "Speech should be given only in English and other languages should not be included in the speech.",
-      "Usage of offensive and vulgar words will lead to immediate disqualification.",
-      "Judges’ decision will be final."
+      [
+        "It is an individual event and team participation is not allowed.",
+        "Topics will be given on the spot.",
+        "Speech should be given only in English and other languages should not be included in the speech.",
+        "Usage of offensive and vulgar words will lead to immediate disqualification.",
+        "Judges’ decision will be final."
+      ]
     ],
     "prize": {
       "first": "750",
       "second": "500",
       "third": "NIL"
     },
-    "date": "01-04-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "Harshavarthan P",
+        "email": "harshavarthanp.cse2021@citchennai.net",
+        "phone": "9791333360"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2525,35 +2218,29 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Business Marketing is a group event with a maximum of 3 members in a team . Topics or Products will be given on the spot  and students should present the business talk on the given topic like providing quotations   and handling the business of the product given topics.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Quantify the quality",
     "rules": [
-      "It is an  event and team participation is not allowed.",
-      "Topics will be given on the spot.",
-      "Participants should make the analysis of the profit and loss of the product and estimate the real prices of the product and perform the marketing.",
-      "Judge’s decision will be final."
+      [
+        "It is an  event and team participation is not allowed.",
+        "Topics will be given on the spot.",
+        "Participants should make the analysis of the profit and loss of the product and estimate the real prices of the product and perform the marketing.",
+        "Judge’s decision will be final."
+      ]
     ],
     "prize": {
       "first": "750",
       "second": "500",
       "third": "NIL"
     },
-    "date": "31-03-2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
         "name": "Akshya Preetha V",
         "email": "akshyapreethaveee2019@citchennai.net",
         "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2568,39 +2255,33 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Are you passionate about photography? Come and join us for an exciting event that celebrates the art of capturing moments through the lens. Whether you're a seasoned photographer or just starting out, you're sure to find inspiration here.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Framing Serene Life Moments ",
     "rules": [
-      "Only one entry per person.",
-      "Photos must be submitted through google forms on or before 28th of March 2023.",
-      "Photos should not contain any watermark.",
-      "DSLR and mobile phones are permitted.",
-      "Photos should not be taken from any online sources or plagiarised.",
-      "Selfies, casual photos and other irrelevant content will not be considered.",
-      "Basic editing including color correction, cropping is acceptable.",
-      "Judges’ decision will be final."
+      [
+        "Only one entry per person.",
+        "Photos must be submitted through google forms on or before 28th of March 2023.",
+        "Photos should not contain any watermark.",
+        "DSLR and mobile phones are permitted.",
+        "Photos should not be taken from any online sources or plagiarised.",
+        "Selfies, casual photos and other irrelevant content will not be considered.",
+        "Basic editing including color correction, cropping is acceptable.",
+        "Judges’ decision will be final."
+      ]
     ],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "31-03-2023",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
-      },
-      {
-        "name": "Pranav Kumar S",
-        "email": "pranavkumars.ece2020@citchennai.net",
-        "phone": "9080968635"
+        "name": "Mukthikha B",
+        "email": "mukthikab.ece2021@citchennai.net",
+        "phone": "9363538626"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2617,32 +2298,31 @@
     "description": "Create a meme that makes people stop scrolling and stop sharing! Make magical memes that make people roll in laughter. Will your meme be the next viral hit?",
     "tag_line": "Let's meme-ify the world!",
     "rules1": [
-      "The memes submitted must be an original work of the individual.",
-      "The first round will be an online evaluation round where the participants will have to upload their memes at the time of registration.",
-      "The memes should be submitted on or before the 28th of March 2023."
-    ],
-    "rules2": [
-      "Final round will be held offline and participants have to create a meme on the spot.",
-      "Themes and templates for the final round will be provided by the organizers.",
-      "Judges’ decision will be final."
+      [
+        "The memes submitted must be an original work of the individual.",
+        "The first round will be an online evaluation round where the participants will have to upload their memes at the time of registration.",
+        "The memes should be submitted on or before the 28th of March 2023."
+      ],
+      [
+        "Final round will be held offline and participants have to create a meme on the spot.",
+        "Themes and templates for the final round will be provided by the organizers.",
+        "Judges’ decision will be final."
+      ]
     ],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "April 01",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Mukthikha B",
+        "email": "mukthikab.ece2021@citchennai.net",
+        "phone": "9363538626"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2659,32 +2339,31 @@
     "description": "With the rapid advancement of technology, digital art has become an important part of the contemporary art world, and this competition provides a platform for artists to showcase their work to a wider audience!",
     "tag_line": "Art comes alive with the power of tech",
     "rules": [
-      "Only one entry per person.",
-      "Photos must be submitted through google forms on or before 28th of March 2023.",
-      "Work should be submitted in an A4 sized canvas.",
-      "Offensive content must be avoided.",
-      "Submissions should not contain any watermarks.",
-      "Overtracing images from google or any other online sources should be avoided.",
-      "Incase of plagiarism, entries will be disqualified.",
-      "Judges’ decision will be final."
+      [
+        "Only one entry per person.",
+        "Photos must be submitted through google forms on or before 28th of March 2023.",
+        "Work should be submitted in an A4 sized canvas.",
+        "Offensive content must be avoided.",
+        "Submissions should not contain any watermarks.",
+        "Overtracing images from google or any other online sources should be avoided.",
+        "Incase of plagiarism, entries will be disqualified.",
+        "Judges’ decision will be final."
+      ]
     ],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "April 01",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Mukthikha B",
+        "email": "mukthikab.ece2021@citchennai.net",
+        "phone": "9363538626"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2701,32 +2380,31 @@
     "description": "Verse on paper, heart's emotion, Rhymes and rhythm, flowing motion, With words and thoughts, a sweet devotion, A poem, a story, pure devotion.",
     "tag_line": "Let the words flow through thee!",
     "rules": [
-      "The poems should consist of a title.",
-      "The poems must not exceed 40 lines in length excluding the title.",
-      "Plagiarism is not allowed.",
-      "Poetry can be written in any poetic style and on any subject.",
-      "A poem in its entirety must be an original work by the person entering the event.",
-      "Any entry containing cliché, overused phrases will not be accepted.",
-      "Poems containing language that is vulgar, offensive, or wholly inappropriate will not be accepted.",
-      "Judges’ decision will be final."
+      [
+        "The poems should consist of a title.",
+        "The poems must not exceed 40 lines in length excluding the title.",
+        "Plagiarism is not allowed.",
+        "Poetry can be written in any poetic style and on any subject.",
+        "A poem in its entirety must be an original work by the person entering the event.",
+        "Any entry containing cliché, overused phrases will not be accepted.",
+        "Poems containing language that is vulgar, offensive, or wholly inappropriate will not be accepted.",
+        "Judges’ decision will be final."
+      ]
     ],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "April 01",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Mukthikha B",
+        "email": "mukthikab.ece2021@citchennai.net",
+        "phone": "9363538626"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2741,25 +2419,22 @@
     "fee": "150",
     "team_size": "NIL",
     "description": "Blockchain technology is used in various industries, from banking to healthcare. This workshop is designed for individuals who want to learn about the various potential applications and the underlying mechanisms of blockchains. Participants will explore various use cases for blockchain technology, including supply chain management, identity verification, and more. Join us for an interactive workshop to learn more about blockchain.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Secure and decentralized record keeping with blockchain",
     "rules": [""],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "March 31",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Harshavardhan R",
+        "email": "harshavardhanr.aids2020@citchennai.net",
+        "phone": "6380529077"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2773,7 +2448,7 @@
     "image": "",
     "fee": "150",
     "team_size": "Event_Team_Size",
-    "description": "Have you ever thought about building and controlling your own miniature aircraft? If so, this drone technology workshop is perfect for you! You'll learn the basic science behind drones and design a fully functional drone that you can fly one day. Drones have a wide range of potential applications, from package delivery to the defense industry. This interactive event allows participants to engage and gain practical knowledge about drone technology.",
+    "description": "  Lucid Circuits is a team event of two members where the circuit output will be given on spot and the participants are asked to design the circuit on any kind of softwares and present the output of stimulation.",
     "tag_line": "Event_Tag_Line",
     "rules": [""],
     "prize": {
@@ -2781,18 +2456,15 @@
       "second": "-",
       "third": "-"
     },
-    "date": "April 01",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Ram Prasath S",
+        "email": "ramprasaths.ece2021@citchennai.net",
+        "phone": "7397704994"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2807,25 +2479,22 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Aeromodelling is an exciting and dynamic field that offers a unique opportunity for students to develop a diverse range of skills across multiple disciplines. Through interactive sessions, this workshop provides a comprehensive understanding of the principles of aerodynamics, electrical engineering, and control systems. Students will learn how to design and build a fully functioning radio-controlled aircraft, gaining valuable experience in problem-solving and critical thinking. It's an exciting and rewarding experience that can inspire the next generation of engineers, designers, and innovators.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Learn, invent and transform the sky!",
     "rules": [""],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "March 30",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Siddhartharaj M",
+        "email": "siddhartharajm.ece2021@citchennai.net",
+        "phone": "8072673704"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2840,25 +2509,22 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "A website and a server designed by a single person, is that even possible? Well, if you know about full-stack development, it is! In this workshop learn how to program a website and also gain knowledge on creating exclusive databases and servers for the website that you designed. The workshop will also focus on best practices for software development, such as version control, testing, and debugging. By the end of the workshop, participants will have a solid understanding of full-stack development and be able to build their own web applications from scratch.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Empower your web development skill!",
     "rules": [""],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "April 01",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Ram Prasath S",
+        "email": "ramprasaths.ece2021@citchennai.net",
+        "phone": "7397704994"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2873,25 +2539,22 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "UI refers to the design of all the interactive elements in a website and UX is the entire interaction with the final product, these two go hand in hand. To build a good website, you need an impressive and easy-to-interact UI and UX. The participants of this workshop engage in hands-on activities such as user research, design sprints, wireframing, and prototyping to gain insights and make design decisions.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Create the ultimate user experience",
     "rules": [""],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "March 30",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Ram Prasath S",
+        "email": "ramprasaths.ece2021@citchennai.net",
+        "phone": "7397704994"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2913,18 +2576,15 @@
       "second": "-",
       "third": "-"
     },
-    "date": "April 01",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Siddhartharaj M",
+        "email": "siddhartharajm.ece2021@citchennai.net",
+        "phone": "8072673704"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2939,25 +2599,22 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "The sound of a vehicle throttling, ready to rip through the roads is beautiful. In this vehicle building workshop learn how to design and assemble the components of a vehicle and also learn about the engineering aspects in a vehicle like tuning the engine and more. Our experienced instructors will guide you through the process, teaching you how to use tools and materials to create a functional and unique vehicle.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Design and construct the ultimate ride",
     "rules": [""],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "March 31",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Siddhartharaj M",
+        "email": "siddhartharajm.ece2021@citchennai.net",
+        "phone": "8072673704"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2972,25 +2629,22 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Are you an aspiring filmmaker looking for the chance to learn from the best? Look no further than our upcoming workshop on screenplay and direction hosted by a renowned filmmaker. This is your chance to learn from the best and gain practical experience in all aspects of filmmaking, including writing a screenplay, directing actors, and post-production. Join  us for this unique chance to learn and grow as a filmmaker.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Transform your vision into cinematic reality",
     "rules": [""],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "March 31",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Harshavardhan R",
+        "email": "harshavardhanr.aids2020@citchennai.net",
+        "phone": "6380529077"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -3005,25 +2659,22 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Whether you are an ardent admirer of PC Sreeram or find yourself in awe of KV Anand's shots, this workshop is tailored to help you hone your abilities and delve deeper into the creative aspects of visual storytelling. Indulge in the art of cinematography and expand your skill set with our hands-on workshop, while working alongside industry professionals and utilizing top-of-the-line equipment. This program caters to both beginners and intermediate-level cinematographers, providing a comprehensive and inspiring experience that will elevate your craft to new heights.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Capture life through lens",
     "rules": [""],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "April 01",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Harshavardhan R",
+        "email": "harshavardhanr.aids2020@citchennai.net",
+        "phone": "6380529077"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -3038,25 +2689,22 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Can a movie truly capture your emotions and move you to tears, sending shivers down your spine, regardless of whether it's Harry Potter or Ponniyan Selvan? Only a well-crafted story can truly captivate an audience and win their hearts. Attend our Script Writing Workshop led by renowned script writers and learn the art of crafting compelling stories for film, television, and other mediums. Join us for a fun and informative workshop that will help you turn your ideas into captivating stories.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Craft unforgettable stories with your screenplay",
     "rules": [""],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "March 30",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Harshavardhan R",
+        "email": "harshavardhanr.aids2020@citchennai.net",
+        "phone": "6380529077"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -3073,35 +2721,34 @@
     "description": "The sun is out and the fans are on.Time to break out a fresh pair of kicks and get ready for your next futsal match! Show some love for your fellow ballers and share a high-five today. Break a leg!",
     "tag_line": "Pride and Passion meets Success.With all your force,hit. Turn your spirit for a better game. Orange heroes on the ground.",
     "rules": [
-      "The Entry fee for this event is ₹500 per team.",
-      "The Prize amount is ₹5000.",
-      "The Runner's place gets ₹3000.",
-      "Entry fee of 500 should be paid beforehand through net banking (on spot payment not allowed).",
-      "Team should report at 8:30a.m or else the team will be eliminated.",
-      "Only College students are permitted.",
-      "College Id card is mandatory for all players.",
-      "Each team must have 5 players and 3 subs.",
-      "Knockout match on March 31.",
-      "Playoffs will be held on April 1.",
-      "Rolling substitution is allowed.",
-      "Timing 8-2-8. (first half 8 minutes - break 2 minutes - second half 8 minutes).",
-      "No accommodation is provided.",
-      "Re-entry is not allowed.",
-      "Entry fee will not be refunded.",
-      "Full kit is compulsory.",
-      "Refree’s and organiser’s decision is final."
+      [
+        "The Entry fee for this event is ₹500 per team.",
+        "The Prize amount is ₹5000.",
+        "The Runner's place gets ₹3000.",
+        "Entry fee of 500 should be paid beforehand through net banking (on spot payment not allowed).",
+        "Team should report at 8:30a.m or else the team will be eliminated.",
+        "Only College students are permitted.",
+        "College Id card is mandatory for all players.",
+        "Each team must have 5 players and 3 subs.",
+        "Knockout match on March 31.",
+        "Playoffs will be held on April 1.",
+        "Rolling substitution is allowed.",
+        "Timing 8-2-8. (first half 8 minutes - break 2 minutes - second half 8 minutes).",
+        "No accommodation is provided.",
+        "Re-entry is not allowed.",
+        "Entry fee will not be refunded.",
+        "Full kit is compulsory.",
+        "Refree’s and organiser’s decision is final."
+      ]
     ],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "31 March 01 April 2023",
+    "date": "31 March and 1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
@@ -3124,33 +2771,32 @@
     "description": "Soar up to the skies, beyond the nets and spike past any obstacles in your way. In this game of 12, can you lead your team to victory and climb your way to the top? You won't know unless you try!",
     "tag_line": "Above the net and beyond the blocks",
     "rules": [
-      "The Entry fee for this event is ₹500 Per team.",
-      "The team-head should register for the event, on behalf of the team.",
-      "Prize amount for the winner is Rs.5000.",
-      "Prize amount for the runner up is Rs.3000.",
-      "The matches will occur in a knockout format.",
-      "Matches will occur on April 1.",
-      "Each team should have 6 players and 3 substitutes.",
-      "Before the start of the match both the captains have to give the name of all the 9 players to the referee.",
-      "The total points in one single set is 30.",
-      "The entire team should enter the campus before reporting time(8.30 AM) or else the team will be eliminated.",
-      "The participants will be permitted to participate only if they have a complete kit inclusive of safety pads.",
-      "All the clubs are allowed, provided that they are college students.",
-      "No accommodation is provided.",
-      "Re-entry is not allowed.",
-      "Refree’s and organiser’s decision is final."
+      [
+        "The Entry fee for this event is ₹500 Per team.",
+        "The team-head should register for the event, on behalf of the team.",
+        "Prize amount for the winner is Rs.5000.",
+        "Prize amount for the runner up is Rs.3000.",
+        "The matches will occur in a knockout format.",
+        "Matches will occur on April 1.",
+        "Each team should have 6 players and 3 substitutes.",
+        "Before the start of the match both the captains have to give the name of all the 9 players to the referee.",
+        "The total points in one single set is 30.",
+        "The entire team should enter the campus before reporting time(8.30 AM) or else the team will be eliminated.",
+        "The participants will be permitted to participate only if they have a complete kit inclusive of safety pads.",
+        "All the clubs are allowed, provided that they are college students.",
+        "No accommodation is provided.",
+        "Re-entry is not allowed.",
+        "Refree’s and organiser’s decision is final."
+      ]
     ],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "01 April 2023",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
@@ -3173,33 +2819,31 @@
     "description": "Only a harsh self-evaluation will enable a player to identify his strengths as well as his weaknesses , turning his game up a notch Participate in this test of wits to discover the limits of your mind.",
     "tag_line": "Sneak in silence and scream with a 'CHECKMATE'",
     "rules": [
-      "No refund if registration fee is paid.",
-      "Latest FIDA rules are followed.",
-      "Discipline must be maintained throughout the event.",
-      "The tournament will be conducted as a knock-out tournament.",
-      "Number of rounds will be decided based on number of participants.",
-      "On the spot is allowed until (9:30AM till first round starts).",
-      "Watches,Mobile Phones and Tablets are not allowed,If found any,The player will be disqualified.",
-      "Chess clock will be provided.",
-      "The duration of the game is 40 minutes.",
-      "It is forbidden to distract or annoy the opponent in any manner.",
-      "Stalement rule-Draw will be agreed by players is followed.",
-      "Touch move law(If a player touches a particular chess piece,then he/she should move that chess piece only) must be strictly followed.",
-      "Participants must bring their College ID Card for proof.",
-      "Illegeal moves are prohibited.",
-      "All participants are requested to come before (8:00AM)"
+      [
+        "This event includes general registration of Rs.150 + Entry fees Rs.50 per head.",
+        "No refund if registration fee is paid.",
+        "Latest FIDA rules are followed.",
+        "Discipline must be maintained throughout the event.",
+        "The tournament will be conducted as a knock-out tournament.",
+        "Number of rounds will be decided based on number of participants.",
+        "On the spot is allowed until (9:30AM till first round starts)",
+        "Clock will be provided.",
+        "The duration of the game is 40 minutes.",
+        "If a player does more than one illegal move then he will be eliminated from the tournament.",
+        "Stalement rule-Draw will be agreed by players is followed.",
+        "Touch move law(If a player touches a particular chess piece,then he/she should move that chess piece only) must be strictly followed.",
+        "Participants must bring their College ID Card for proof.",
+        "All participants are requested to come before (8:00AM)."
+      ]
     ],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "",
+    "date": "31 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
@@ -3222,27 +2866,24 @@
     "description": "The hallmark of a great captain is the ability to win the toss, at the right time.Cricket is the one game that can unify a nation in the depths of despair. Swing to the fences, take the field, rule the streets and be the crown jewel of Street Cricket.",
     "tag_line": "Make your trick- Hat-trick",
     "rules": [
-      "This event comes under general registration of Rs.150/- per head.",
+      "This event includes general registration of Rs.150 + Entry fees Rs.50 per head.",
       "The team-head should register for the event, on behalf of the team.",
-      "Prize amount for the winner is Rs.1000.",
-      "Prize amount for the runner up is Rs.500.",
+      "Prize amount for the winner is Rs.1500.",
+      "Prize amount for the runner up is Rs.1000.",
       "Each squad must have six members.",
       "The entirety of the contest will be six overs.",
       "Hitting six is considered as Out.",
       "There will be no singles, and only fours will be counted.",
-      "Refree’s and organiser’s decision is final."
+      "organiser’s decision is final."
     ],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "March 30",
+    "date": "30 March 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
@@ -3265,31 +2906,30 @@
     "description": "Get ready to strike, flick and pocket your way to victory. A classical game of skill, strategy and precision! It is all about quick reflexes, sharp focus and a steady hand. Whether you're a seasoned pro or a complete amateur, let’s see who’s the coveted Carrom Champion!",
     "tag_line": "Hold, Aim and Shoot, cause we strike to win",
     "rules": [
-      "This event comes under general registration of Rs.50 per head.",
-      "Prize amount for the winner is Rs.500.",
-      "Only college students are permitted.",
-      "Participants should be present at the venue before 10 a.m.",
-      "Prior registration is required, either online or on the spot.",
-      "Only single entries are permitted and the entry fee is non-refundable.",
-      "Matches occur in a 1 vs 1 format.",
-      "Each coin carries one point.",
-      "Red and a follow will result in 3 points.",
-      "Thumbing and Scissoring is allowed.",
-      "The matches occur in a knockout format.",
-      "Participants scoring the maximum point are considered as the winner.",
-      "Refree’s and organiser’s decision is final."
+      [
+        "This event includes general registration of Rs.150 + Entry fees Rs.50 per head.",
+        "Prize amount for the winner is Rs.1000.",
+        "Only college students are permitted.",
+        "Participants should be present at the venue before 10 a.m.",
+        "Prior registration is required, either online or on the spot.",
+        "Only single entries are permitted and the entry fee is non-refundable.",
+        "Matches occur in a 1 vs 1 format.",
+        "Each coin carries one point.",
+        "Red and a follow will result in 3 points.",
+        "Thumbing and Scissoring is allowed.",
+        "The matches occur in a knockout format.",
+        "Participants scoring the maximum point are considered as the winner.",
+        "organiser’s decision is final."
+      ]
     ],
     "prize": {
       "first": "-",
       "second": "-",
       "third": "-"
     },
-    "date": "March 30",
+    "date": "1 April 2023",
     "batch": [
-      {
-        "time": "8:00 PM",
-        "venue": "Chennai Institute Of Technology"
-      }
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {

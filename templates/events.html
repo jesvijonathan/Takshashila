@@ -169,9 +169,16 @@ Last Updated : March 22th 2023
     <div class="eop" 
     value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Non-Technical | Filter Applied !',5000)" data-type="Non-Technical">Non-Technical Events</div>
     <div class="eop" 
-    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Workshops | Filter Applied !',5000)" data-type="Workshop">Workshops</div>
+    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Workshops | Filter Applied !',5000)" data-type="Workshops">Workshops</div>
     <div class="eop" 
     value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Pro Shows | Filter Applied !',5000);" data-type="Pro Shows">Pro Shows</div>
+    <div class="eop" 
+    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Online | Filter Applied !',5000);" data-type="Online">Online</div>
+    <div class="eop" 
+    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Sports | Filter Applied !',5000);" data-type="Sports">Sports</div>
+
+
+
     <a class="eop eop_r" href="/"
     value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Returning to home page !',5000);" data-type="return">Return to Home Page</a>
   </div>
@@ -200,7 +207,7 @@ Last Updated : March 22th 2023
         <a class="nav_bar_links link_cur"href="/#pro_sec" data-text="Pro-Shows">
           Pro Shows
         </a>
-        <a class="nav_bar_links link_cur"href="/#workshop" data-text="Workshops">
+        <a class="nav_bar_links link_cur"href="/#workshops" data-text="Workshops">
           Workshops
         </a>
         <a class="nav_bar_links link_cur" href="/#contact"data-text="Contact Us">Contact</a>
@@ -251,7 +258,7 @@ Last Updated : March 22th 2023
         </button>
         <button
           class="fil_bub link_cur "
-          value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Workshops | Filter Applied !',5000)" data-type="Workshop"
+          value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Workshops | Filter Applied !',5000)" data-type="Workshops"
           data-text="Workshops"
         >
           Workshops
@@ -263,6 +270,22 @@ Last Updated : March 22th 2023
         >
           Pro Shows
         </button>
+
+        <button
+        class="fil_bub link_cur "
+        value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Online | Filter Applied !',5000);"  data-type="Online"
+        data-text="Online"
+      >
+        Online
+      </button>
+
+      <button
+      class="fil_bub link_cur "
+      value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Sports | Filter Applied !',5000);"  data-type="Sports"
+      data-text="Sports"
+    >
+      Pro Shows
+    </button>
       </div>
     </div>
     <div class="main main_eve" id="butter">
@@ -1098,7 +1121,7 @@ rullee = document.getElementById("rullee");
   }
 
   var mob_card = document.getElementById("eve_options");
-  var types = ["Technical", "Non-Technical", "Workshop", "Pro Shows"];
+  var types = ["Technical", "Non-Technical", "Workshops", "Pro Shows", "Online", "Sports"];
 
   function toggle(e, ty, act) {
 
@@ -1191,5 +1214,6 @@ html2canvas(screenshotTarget).then((canvas) => {
 
   <script>
     console.log("Website by Jesvi Jonathan");
-  console.log("╭∩╮（︶︿︶）╭∩╮\n& I would like you to fuck off from developer tools rn ");
-  </script>
+  console.log("\nWebsite uses In-House JOS-V0.3 library for animation \nalong with experimental In-House J-SPA (single page) framework/library..,\nAll hardcoded by me and only me.\n");
+console.log("\n╭∩╮（︶︿︶）╭∩╮\nNow, I would like you to fuck off from developer tools rn ")
+</script>
