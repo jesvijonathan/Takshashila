@@ -421,7 +421,7 @@ Last Updated : March 22th 2023
                 target="_blank"
                 href=""
               >
-                Register<div id="price"></div>
+                Register <div id="price"></div>
               </a>
             </div>
           </div>
@@ -948,12 +948,12 @@ var rule_2_text = "-";
     link_con_download.href = "";
     if(mobile){
 
-      document.getElementById("eve_reg_link_2").href = json_data[e].register + " ";
+      document.getElementById("eve_reg_link_2").href = json_data[e].register;
       document.getElementById("price_2").innerHTML = "| ₹"+json_data[e].fee;
     }
     else{
 
-      eve_reg_link.href = json_data[e].register + " ";
+      eve_reg_link.href = json_data[e].register ;
       document.getElementById("price").innerHTML = "| ₹"+json_data[e].fee;
     }
 
