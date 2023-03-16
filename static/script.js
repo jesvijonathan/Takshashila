@@ -209,17 +209,17 @@ function graphic() {
   1 == graphic_high
     ? ((graphic_high = 0),
       (myvid.style.display = "none"),
-      (image4.style.display = "block"),
-      (image3.style.display = "block"),
-      (image9.style.display = "block"),
+      // (image4.style.display = "block"),
+      // (image3.style.display = "block"),
+      // (image9.style.display = "block"),
       (pro_sec.style.background = "#131313"),
       ripple.classList.remove("rypol"),
       notify("Acrylic Theme Deactivated !", 3e3))
     : ((graphic_high = 1),
       (myvid.style.display = "block"),
-      (image4.style.display = "none"),
-      (image3.style.display = "none"),
-      (image9.style.display = "none"),
+      // (image4.style.display = "none"),
+      // (image3.style.display = "none"),
+      // (image9.style.display = "none"),
       (pro_sec.style.background = "transparent"),
       ripple.classList.add("rypol"),
       notify("Acrylic Theme Activated !", 3e3));

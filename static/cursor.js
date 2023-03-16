@@ -1,87 +1,75 @@
-document.body.style.cursor = "none";
-let e = !1;
 try {
-  let t = document.querySelector("#image1"),
-    s = document.querySelector("#image2"),
-    r = document.querySelector("#image0_4_41"),
-    n = document.querySelector("#image4"),
-    a = document.querySelector("#image5");
-  t && s && r && n && a && (e = !0);
-} catch (l) {
-  e = !1;
+  document.querySelector("#image1"), document.querySelector("#image2");
+} catch (r) {
+  console.log("Error: " + r);
 }
-let i = document.querySelector("#cursor"),
-  c = document.querySelector("#cursor_border"),
-  o = document.querySelector("#cursor_circle");
-e
-  ? document.addEventListener("mousemove", (e) => {
-      let t = e.clientX,
-        s = e.clientY;
-      (i.style.transform = `translate3d(${t - 20}px, ${s - 20}px, 0)`),
-        (i.style.transform = `translate3d(${t - 20}px, ${s - 20}px, 0)`);
-      let r = t / window.innerWidth,
-        n = s / window.innerHeight;
-      (image1.style.transform = `scale(1) translate(${-80 * r}px, ${
-        20 * n
-      }px)`),
-        (image2.style.transform = `scale(1.5) rotate(${-14 * r}deg) translate(${
-          70 * r
-        }px, ${180 * n}px)`),
-        (image3.style.y = `${20 * n}`),
-        (image4.style.y = `${-50 * r}`),
-        (image5.style.transform = `translate(${-7 * r}px, ${-7 * n}px)`),
-        $(".link_cur").hover(
-          function () {
-            n <= 0.5
-              ? (o.style.transform = "scale(7) translate(0.6vw, 0.6vw)")
-              : (o.style.transform = "scale(7) translate(0.6vw, -0.6vw)"),
-              (o.innerHTML = $(this).data("text"));
-          },
-          function () {
-            (o.style.transform = "scale(1)"), (o.innerHTML = "");
-          }
-        ),
-        document.addEventListener("mousedown", function () {
-          o.classList.add("cursor_circle_click"),
-            (c.style.background = "white");
-        }),
-        document.addEventListener("mouseup", function () {
-          o.classList.remove("cursor_circle_click"),
-            (c.style.background = "transparent");
-        });
-    })
-  : document.addEventListener("mousemove", (e) => {
-      let t = e.clientX,
-        s = e.clientY;
-      (i.style.transform = `translate3d(${t - 20}px, ${s - 20}px, 0)`),
-        (i.style.transform = `translate3d(${t - 20}px, ${s - 20}px, 0)`);
-      let r = s / window.innerHeight;
-      $(".link_cur").hover(
-        function () {
-          r <= 0.5
-            ? (o.style.transform = "scale(7) translate(0.6vw, 0.6vw)")
-            : (o.style.transform = "scale(7) translate(0.6vw, -0.6vw)"),
-            (o.innerHTML = $(this).data("text"));
-        },
-        function () {
-          (o.style.transform = "scale(1)"), (o.innerHTML = "");
-        }
-      ),
-        document.addEventListener("mousedown", { passive: !0 }, function () {
-          o.classList.add("cursor_circle_click"),
-            (c.style.background = "white");
-        }),
-        document.addEventListener("mouseup", { passive: !0 }, function () {
-          o.classList.remove("cursor_circle_click"),
-            (c.style.background = "transparent");
-        });
-    }),
-  document.addEventListener("mouseout", (e) => {
-    let t = e.clientX,
-      s = e.clientY;
-    (s <= 0 || t <= 0 || t >= window.innerWidth || s >= window.innerHeight) &&
-      (i.style.display = "none");
-  }),
+const image1 = document.querySelector("#image1"),
+  image2 = document.querySelector("#image2"),
+  image5 = document.querySelector("#image5");
+
+const cursor = document.querySelector("#cursor"),
+  cursor_border = document.querySelector("#cursor_border"),
+  cursor_circle = document.querySelector("#cursor_circle");
+
+document.addEventListener("mousemove", (event) => {
+  const mouseX = event.clientX,
+    mouseY = event.clientY;
+  (cursor.style.transform = `translate3d(${mouseX - 20}px, ${
+    mouseY - 20
+  }px, 0)`),
+    (cursor.style.transform = `translate3d(${mouseX - 20}px, ${
+      mouseY - 20
+    }px, 0)`);
+  let y = mouseY / window.innerHeight,
+    x = mouseX / window.innerHeight;
+
+  (image1.style.transform = `translate(${-2 * x}vw, ${1 * y}vw)`),
+    (image1.style.transform = `scale(1) translate(${-80 * x}px, ${20 * y}px)`),
+    (image2.style.transform = `scale(1.5) rotate(${-14 * x}deg) translate(${
+      70 * x
+    }px, ${180 * y}px)`),
+    (image5.style.transform = `translate(${-7 * x}px, ${-7 * y}px)`);
+
+  $(".link_cur").hover(
+    function () {
+      y <= 0.5
+        ? (cursor_circle.style.transform = "scale(7) translate(10px, 10px)")
+        : (cursor_circle.style.transform = "scale(7) translate(10px, -10px)"),
+        (cursor_circle.innerHTML = $(this).data("text"));
+    },
+    function () {
+      (cursor_circle.style.transform = "scale(1)"),
+        (cursor_circle.innerHTML = "");
+    }
+  );
+
+  document.addEventListener("mousedown", function () {
+    cursor_circle.classList.add("cursor_circle_click");
+    cursor_border.style.background = "white";
+    // document.body.style.background = "white";
+
+    // document.body.style.mixBlendMode = " difference";
+
+    // setTimeout(function () {
+    //   cursor_circle.style.transform = `scale(1)`;
+    // }, 100);
+  });
+
+  document.addEventListener("mouseup", function () {
+    cursor_circle.classList.remove("cursor_circle_click");
+    cursor_border.style.background = "transparent";
+
+    // document.body.style.mixBlendMode = " unset";
+    // document.body.style.background = "#282828 ";
+  });
+});
+
+document.addEventListener("mouseout", () => {
+  let e = event.clientX,
+    n = event.clientY;
+  (n <= 0 || e <= 0 || e >= window.innerWidth || n >= window.innerHeight) &&
+    (cursor.style.display = "none");
+}),
   document.addEventListener("mouseenter", () => {
-    i.style.display = "block";
+    cursor.style.display = "block";
   });

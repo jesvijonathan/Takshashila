@@ -209,5 +209,5 @@ api.register_blueprint(loginBlp)
 api.register_blueprint(feedBackBlp)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True, threaded=False)
+    app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)
 

@@ -383,8 +383,8 @@
           <div class="eve_detail_2_2" id="rullee">
             <div class="eve_detail_2_2_1" style="text-decoration: none; border: none; margin: none;">
               <div class="rule_1">Rules</div>
-              <div class="rule_2 rule_active" id="prel"onclick="rule_switch(0);">Prelimes</div>
-              <div class="rule_2" id="fina" onclick="rule_switch(1);">Finals</div></div>
+              <div class="rule_2 rule_active link_cur" data-text="Preliminary Rules" id="prel"onclick="rule_switch(0);">Prelimes</div>
+              <div class="rule_2  link_cur" data-text="Finals Rules" id="fina" onclick="rule_switch(1);">Finals</div></div>
             <div class="eve_detail_2_2_tag" id="eve_detail_rules"></div>
           </div>
 
@@ -409,9 +409,9 @@
               <div class="eve_sec">
                 <div class="eve_detail_2_2_1">Contact</div>
                 <div class="eve_sec_con" id="eve_contact">
-                  <div class=""></div>
-                  <div class=""></div>
-                  <div class=""></div>
+                  <div class="link_cur" data-text="Contact"></div>
+                  <div class="link_cur" data-text="Contact Email"></div>
+                  <div class="link_cur" data-text="Contact Phone"></div>
                 </div>
               </div>
             </div>
@@ -490,7 +490,7 @@
               <div class="foot_2_1_1 link_cur" data-text="View Terms & Policy" href="/cookie_policy.md">Copyright ©2023</div>
               <div class=line_4 id=line_4 style=display:none></div>
             </div>
-            <a href=https://jesvi.pythonanywhere.com target=_blank id=easter onmouseenter='document.getElementById("htmll").style.mixBlendMode="difference"' onmouseleave='document.getElementById("htmll").style.mixBlendMode="unset"' data-text="( ͡⚆ ͜ʖ ͡⚆)╭∩╮" class="foot_2_2 link_cur">Made With 💙 By Jesvi Jonathan</a>
+            <a href=https://jesvi.pythonanywhere.com target=_blank id=easter onmouseenter='document.getElementById("htmll").style.mixBlendMode="difference"' onmouseleave='document.getElementById("htmll").style.mixBlendMode="unset"' data-text="( ͡⚆ ͜ʖ ͡⚆)╭∩╮" class="foot_2_2 link_cur">Website By Jesvi Jonathan 🤖</a>
           </div>
         </div>
       </footer>
@@ -555,19 +555,73 @@
     //   cancelOnTouch: true,
     // });
     // document.querySelector("#butter").style.position = "initial";
-  } else {
-    // let head = document.getElementsByTagName("head")[0];
-    // let js = document.createElement("script");
+  } else { 
 
-    // js.type = "text/javascript";
- 
-    //   js.src = "./cursor.js"; 
-    // head.appendChild(js);
+const cursor = document.querySelector("#cursor"),
+  cursor_border = document.querySelector("#cursor_border"),
+  cursor_circle = document.querySelector("#cursor_circle");
 
-    // document.body.style.cursor = "none";
-    // document.getElementById("cursor").style.display = "block";
+document.addEventListener("mousemove", (event) => {
+  const mouseX = event.clientX,
+    mouseY = event.clientY;
+  (cursor.style.transform = `translate3d(${mouseX - 20}px, ${
+    mouseY - 20
+  }px, 0)`),
+    (cursor.style.transform = `translate3d(${mouseX - 20}px, ${
+      mouseY - 20
+    }px, 0)`);
+  let y = mouseY / window.innerHeight,
+    x = mouseX / window.innerHeight; 
 
-    // document.body.style.display = "block";
+  $(".link_cur").hover(
+    function () {
+      y <= 0.5
+        ? (cursor_circle.style.transform = "scale(7) translate(10px, 10px)")
+        : (cursor_circle.style.transform = "scale(7) translate(10px, -10px)"),
+        (cursor_circle.innerHTML = $(this).data("text"));
+    },
+    function () {
+      (cursor_circle.style.transform = "scale(1)"),
+        (cursor_circle.innerHTML = "");
+    }
+  );
+
+  document.addEventListener("mousedown", function () {
+    cursor_circle.classList.add("cursor_circle_click");
+    cursor_border.style.background = "white";
+    // document.body.style.background = "white";
+
+    // document.body.style.mixBlendMode = " difference";
+
+    // setTimeout(function () {
+    //   cursor_circle.style.transform = `scale(1)`;
+    // }, 100);
+  });
+
+  document.addEventListener("mouseup", function () {
+    cursor_circle.classList.remove("cursor_circle_click");
+    cursor_border.style.background = "transparent";
+
+    // document.body.style.mixBlendMode = " unset";
+    // document.body.style.background = "#282828 ";
+  });
+});
+
+document.addEventListener("mouseout", () => {
+  let e = event.clientX,
+    n = event.clientY;
+  (n <= 0 || e <= 0 || e >= window.innerWidth || n >= window.innerHeight) &&
+    (cursor.style.display = "none");
+}),
+  document.addEventListener("mouseenter", () => {
+    cursor.style.display = "block";
+  });
+
+
+    document.body.style.cursor = "none";
+    document.getElementById("cursor").style.display = "block";
+
+    document.body.style.display = "block";
   }
 </script>
 
