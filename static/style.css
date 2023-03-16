@@ -1768,8 +1768,9 @@ button:hover {
   font-size: 1.2vw;
   font-family: jura;
   color: #000;
-  padding: 1vw 7vw;
   border-radius: 4px;
+  padding: 1vw 0vw;
+  width: 19vw;
   border: 0;
 }
 .eve_detail_reg:hover {
