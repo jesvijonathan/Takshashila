@@ -183,8 +183,8 @@ def google_():
 # @cache.cached(timeout=2)
 def page_not_found(e):
     # return jsonify(error=str(e)), 404
-    return render_template('404.html', error=e, console_print=e), 404
-
+    # return render_template('404.html', error=e, console_print=e), 404
+    return redirect("/")
 
 @app.route('/edit_events')
 #/home/takshashila/Takshashila-2023-Backend
