@@ -1555,6 +1555,10 @@ button:hover {
   border-top: 1px solid #fff;
   width: 10vw;
   text-align: center;
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden !important;
 }
 .eve_bar,
 .eve_button {
@@ -2977,7 +2981,6 @@ select {
   }
   .eve_tag {
     padding: 1.6vw;
-    width: fit-content;
   }
   .eve_ma {
     top: -58vw;
