@@ -1,4 +1,36 @@
 <!DOCTYPE html>
+<!-- 
+
+############################################################
+Developed by Jesvi Jonathan 
+############################################################
+This is in regards to Takshashila cultural event & as a project to my portfolio..
+############################################################
+
+Yes, Everything you see is fully hardcoded manually & all elements used are designed from scratch. I would like to flex on the fact that..
+
+I have built 2 separate libraries for this project, 
+One for the animations (JOS.js | v0.3) & another one 
+For single page application (J-SPA | v0.1)..
+
+The animation library is ready for production but the SPA is still in development & needs work for before publication.. be sure to check it out when it's ready..
+
+Hope you like my work, contact me for anything :) 
+
+I'm The Best !
+
+############################################################
+DO NOT KANG/STEAL OR MODIFY THE CODE WITHOUT MY PERMISSION !
+############################################################
+
+Takshashila Website : http://cittakshashila.in/
+Hosted On : http://cittakshashila.in/  &  http://github/je.. fukck off i'm not giving you the link .com
+About Jesvi Jonathan: https://jesvi.pythonanywhere.com
+
+############################################################
+Last Updated : March 22th 2023
+
+-->
 <html id="htmll">
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -276,7 +308,8 @@
       </div>
 
       <div class="eve_detail_cont" id="eve_detail_cont">
-        <div class="eve_mobile_reg mob">Register</div>
+        <a class="eve_mobile_reg mob" href="" target="_blank" 
+        id="eve_reg_link_2">Register</a>
 
         <div class="eve_detail_1_3_cont mob">
           <a
@@ -364,6 +397,7 @@
                 data-text="Register Now"
                 id="eve_reg_link"
                 target="_blank"
+                href=""
               >
                 Register
               </a>
@@ -855,7 +889,14 @@ var rule_2_text = "-";
     // document.getElementById("link_con_share").href = "";
 
     link_con_download.href = "";
-    eve_reg_link.href = json_data[e].register;
+    if(mobile){
+
+      document.getElementById("eve_reg_link_2").href = json_data[e].register;
+    }
+    else{
+
+      eve_reg_link.href = json_data[e].register;
+    }
 
     eve_title_con.childNodes[1].innerHTML = json_data[e].name;
    
