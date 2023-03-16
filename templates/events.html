@@ -741,13 +741,39 @@ document.addEventListener("mouseout", () => {
   var back_conter = 0;
 
   window.onpopstate = function (event) {
-    close_event();
-    if(back_conter >=1){
-    notify("Press back one more time to return")  
+    url_event = null;
+      close_event();
+
+      if (
+    window.location.href.indexOf("events") != -1 ||
+    window.location.href.indexOf("events.html") != -1
+  ) {
+    let parts = window.location.href.split("/");
+    url_event = parts[parts.length - 1];
+
+    if (url_event.indexOf("events") != -1) {
+      if(back_conter>1){
+
+
+        notify("Loading Home Page..");
+        history.pushState(null, null, "/");
+        window.location.reload();
+      }
+      else if(back_conter==1){
+      notify("Press back one more time to go to home page..",5000);
+      back_conter++;
+    }
+      else{ 
+      back_conter++;
+      }
+    }
+  
+  
   } else {
-    history.pushState(null, null, window.location.pathname);
+    back_conter = 0;
+
 }
-back_conter++;
+
 
   };
 
@@ -896,7 +922,7 @@ back_conter++;
 var rule_1_text = "-";
 var rule_2_text = "-";
 
-  function open_event(e) {
+  function open_event(e) {back_conter = 0;
     baclk_w.style.display = "flex";
     eve_list_cont.style.display = "none";
     eve_detail_cont.style.display = "flex";
