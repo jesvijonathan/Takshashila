@@ -1686,7 +1686,7 @@ button:hover {
   width: 78%;
   font-size: 1.1vw;
   margin-bottom: 0vw;
-  margin-top: 2vw;
+  margin-top: 3vw;
   display: flex;
   margin-bottom: 0vw;
   flex-direction: row;
@@ -1710,6 +1710,7 @@ button:hover {
   align-items: center;
   position: relative;
   overflow: auto;
+  opacity: 0;
 }
 .eve_detail_1_3,
 .eve_detail_reg {
@@ -1764,7 +1765,7 @@ button:hover {
 }
 .eve_detail_1_4 {
   display: flex;
-  margin-top: 3vw;
+  margin-top: 2vw;
 }
 .eve_detail_reg {
   justify-content: center;
