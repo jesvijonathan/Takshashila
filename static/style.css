@@ -1670,8 +1670,6 @@ button:hover {
 .eve_detail_1_1,
 .eve_detail_1_2 {
   height: fit-content;
-  display: flex;
-  opacity: 0;
 }
 .eve_detail_1_1 {
   width: 20vw;
@@ -1682,9 +1680,14 @@ button:hover {
 }
 .eve_detail_1_2 {
   width: 78%;
-  font-size: 1vw;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
+  font-size: 1.1vw;
+  margin-bottom: 0vw;
+  margin-top: 2vw;
+  display: flex;
+  margin-bottom: 0vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .eve_detai_1_2_title {
   width: 3.3vw;
@@ -1696,7 +1699,6 @@ button:hover {
   flex-wrap: nowrap;
 }
 .eve_detai_1_2_tag_cont {
-  width: 80%;
   display: flex;
   gap: 1vw;
   flex-direction: row;
@@ -3119,6 +3121,7 @@ select {
   }
   .eve_detail_1_2 {
     gap: 2vw;
+    display: flex;
   }
   .eve_detail_1_3_link {
     padding: 1.5vw 3vw;
@@ -3171,7 +3174,12 @@ select {
     padding: 3vw 0;
     border-radius: 4px;
     font-weight: 600;
-    display: block !important;
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
   .eve_mobile_reg:hover {
     background: #000;

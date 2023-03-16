@@ -330,8 +330,7 @@ Last Updated : March 22th 2023
       </div>
 
       <div class="eve_detail_cont" id="eve_detail_cont">
-        <a class="eve_mobile_reg mob" href="" target="_blank" 
-        id="eve_reg_link_2">Register <div class="price_2"></div></a>
+        <a class="eve_mobile_reg mob" href="" target="_blank" id="eve_reg_link_2">Register &nbsp;| &nbsp; <div id="price_2"> </div></a>
 
         <div class="eve_detail_1_3_cont mob">
           <a
@@ -370,17 +369,6 @@ Last Updated : March 22th 2023
               src="./Group 304.png"
               id="eve_img"
             />
-
-            <div class="eve_detail_1_2">
-              <div class="eve_detai_1_2_title">Tags :</div>
-              <div class="eve_detai_1_2_tag_cont" id="tag_con">
-                <div class="eve_detai_1_2_tag">photo</div>
-                <div class="eve_detai_1_2_tag">tech</div>
-                <div class="eve_detai_1_2_tag">edit</div>
-                <div class="eve_detai_1_2_tag">creative</div>
-                <div class="eve_detai_1_2_tag">art</div>
-              </div>
-            </div>
             <div class="eve_detail_1_3">
               <div class="eve_detail_1_3_cont">
                 <a
@@ -413,6 +401,14 @@ Last Updated : March 22th 2023
                 </a>
               </div>
             </div>
+            <div class="eve_detail_1_2"> 
+              <div class="eve_detai_1_2_tag_cont  "> 
+                <div class="eve_detai_1_2_tag_cont" id="tag_con_2"> 
+                </div>
+              </div>
+            </div>
+
+
             <div class="eve_detail_1_4">
               <a
                 class="eve_detail_reg link_cur"
@@ -421,7 +417,7 @@ Last Updated : March 22th 2023
                 target="_blank"
                 href=""
               >
-                Register <div id="price"></div>
+                Register 
               </a>
             </div>
           </div>
@@ -693,6 +689,8 @@ document.addEventListener("mouseout", () => {
   let eve_img = document.getElementById("eve_img");
 
   let tag_con = document.getElementById("tag_con");
+  
+  let tag_con_2 = document.getElementById("tag_con_2");
 
   let link_con_insta = document.getElementById("link_con_insta");
   let link_con_download = document.getElementById("link_con_download");
@@ -935,27 +933,38 @@ var rule_2_text = "-";
     // eve_img.src = "" + json_data[e].image;
 
     //inner div for tag_con from json_data[e].tags
-    tag_con.innerHTML = "";
-    for (i = 0; i < json_data[e].tags.length; i++) {
-      tag_con.innerHTML +=
-        '<div class="eve_detai_1_2_tag">' + json_data[0].tags[i] + "</div>";
-    }
+ 
+
+ 
+        document.getElementById("eve_reg_link_2").href = json_data[e].register + " ";
+        document.getElementById("price_2").innerHTML = "₹"+json_data[e].fee;
+ 
+         tag_con_2.innerHTML = "Entry Fee : ₹"+json_data[e].fee;
+// eve_reg_link.href = json_data[e].register + " ";
+ 
+
+
+
+    // for (i = 0; i < json_data[e].tags.length; i++) {
+    //   tag_con.innerHTML +=
+    //     '<div class="eve_detai_1_2_tag">' + json_data[0].tags[i] + "</div>";
+    // }
 
     link_con_insta.href = json_data[e].instagram;
     // document.getElementById("link_con_youtube").href = json_data[e].youtube;
     // document.getElementById("link_con_share").href = "";
 
     link_con_download.href = "";
-    if(mobile){
+    // if(mobile){
 
-      document.getElementById("eve_reg_link_2").href = json_data[e].register;
-      document.getElementById("price_2").innerHTML = "| ₹"+json_data[e].fee;
-    }
-    else{
+    //   document.getElementById("eve_reg_link_2").href = json_data[e].register;
+    //   document.getElementById("price_2").innerHTML = "| ₹"+json_data[e].fee;
+    // }
+    // else{
 
-      eve_reg_link.href = json_data[e].register ;
-      document.getElementById("price").innerHTML = "| ₹"+json_data[e].fee;
-    }
+    //   eve_reg_link.href = json_data[e].register ;
+    //   document.getElementById("price").innerHTML = "| ₹"+json_data[e].fee;
+    // }
 
     eve_title_con.childNodes[1].innerHTML = json_data[e].name;
    
