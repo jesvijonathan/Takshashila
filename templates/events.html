@@ -284,7 +284,7 @@ Last Updated : March 22th 2023
       value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Sports | Filter Applied !',5000);"  data-type="Sports"
       data-text="Sports"
     >
-      Pro Shows
+      Sports
     </button>
       </div>
     </div>
@@ -738,8 +738,16 @@ document.addEventListener("mouseout", () => {
 
   // notify("Loading...");
 
+  var back_conter = 0;
+
   window.onpopstate = function (event) {
     close_event();
+    if(back_conter >=1){
+    notify("Press back one more time to return")  
+  } else {
+    history.pushState(null, null, window.location.pathname);
+}
+
   };
 
   var url_event;
