@@ -70,6 +70,10 @@ raw_data = Users.findExistingUserByHash(hash=hash)
 
     return jsonify(data)
 """
+# @staticBlp.route("/login")
+# class authlogin(MethodView):
+#     def get(self):
+#         return redirect("/")
 
 @staticBlp.route("/login")
 class authlogin(MethodView):

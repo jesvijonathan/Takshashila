@@ -418,8 +418,7 @@ Last Updated : March 22th 2023
                 id="eve_reg_link"
                 target="_blank"
                 href=""
-              >
-                Register 
+              >Register &nbsp;| &nbsp; <div id="price"> </div>
               </a>
             </div>
           </div>
@@ -934,16 +933,16 @@ var rule_2_text = "-";
     eve_img.src = "./Group 304.png";
     // eve_img.src = "" + json_data[e].image;
 
-    //inner div for tag_con from json_data[e].tags
- 
+    //inner div for tag_con from json_data[e].tags 
 
  
- 
-        eve_reg_link.href = json_data[e].register + " ";
         document.getElementById("eve_reg_link_2").href = json_data[e].register + " ";
         document.getElementById("price_2").innerHTML = "₹"+json_data[e].fee;
- 
+
+        eve_reg_link.href = json_data[e].register + " ";
+        document.getElementById("price").innerHTML = "₹"+json_data[e].fee;
          tag_con_2.innerHTML = "Entry Fee : ₹"+json_data[e].fee;
+ 
 // eve_reg_link.href = json_data[e].register + " ";
  
 

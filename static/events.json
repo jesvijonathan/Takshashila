@@ -2804,7 +2804,7 @@
     "team_size": "Event_Team_Size",
     "description": "The sound of a vehicle throttling, ready to rip through the roads is beautiful. In this vehicle building workshop learn how to design and assemble the components of a vehicle and also learn about the engineering aspects in a vehicle like tuning the engine and more. Our experienced instructors will guide you through the process, teaching you how to use tools and materials to create a functional and unique vehicle.",
     "tag_line": "Design and construct the ultimate ride",
-    "rules": [""],
+    "rules": [],
     "prize": {
       "first": "-",
       "second": "-",
