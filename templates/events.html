@@ -939,7 +939,7 @@ var rule_2_text = "-";
 
  
  
-    eve_reg_link.href = json_data[e].register + " ";
+        eve_reg_link.href = json_data[e].register + " ";
         document.getElementById("eve_reg_link_2").href = json_data[e].register + " ";
         document.getElementById("price_2").innerHTML = "₹"+json_data[e].fee;
  
@@ -1031,11 +1031,11 @@ rullee = document.getElementById("rullee");
 
   }
     prize.innerHTML =
-      '<div class="">First Prize : ' + json_data[e].prize.first + "</div>";
-    prize.innerHTML +=
-      '<div class="">Second Prize : ' + json_data[e].prize.second + "</div>";
-    prize.innerHTML +=
-      '<div class="">Third Prize : ' + json_data[e].prize.third + "</div>";
+      '<div class="">Participate and win exciting prizes !</div><div class="">&nbsp;</div><div class="">&nbsp;</div>';
+    // prize.innerHTML +=
+    //   '<div class="">Second Prize : ' + json_data[e].prize.second + "</div>";
+    // prize.innerHTML +=
+    //   '<div class="">Third Prize : ' + json_data[e].prize.third + "</div>";
 
     eve_details.childNodes[1].innerHTML = "Type : " + json_data[e].type;
     eve_details.childNodes[3].innerHTML = "Date : " + json_data[e].date;
@@ -1079,8 +1079,10 @@ rullee = document.getElementById("rullee");
 
     if (mobile) {
       eve_path.style.display = "none";
-      filt_icon.style.display = "none";
+      filt_icon.style.display = "none";  
+      hori.style.display = "none";
     } else {
+
       eve_path.childNodes[1].innerHTML =
         "/ <a class='nigus' href='./events#/" +
         json_data[e].type +
@@ -1093,6 +1095,8 @@ rullee = document.getElementById("rullee");
         "'>" +
         json_data[e].name +
         "</a>";
+        
+      hori.style.display = "flex";
     }
 
     // notify("Something Went Wrong :(", 5000);
