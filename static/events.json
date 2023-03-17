@@ -10,7 +10,6 @@
     "tag_line": "Let the DJ\u2019s beats ignite your soul",
     "rules": [
       [
-        "The registration fee for participants is <b>INR 150 per day</b> along with the proof of payment i.e, <b>screenshot</b>, granting them access to participate in an <b>unlimited</b> number of events\u00a0on\u00a0that\u00a0day",
         "It is mandatory to have a college ID for participation.",
         "Registration falls under the general registration category.",
         "Participants who do not register will not be allowed to participate.",
@@ -267,6 +266,7 @@
     "tag_line": "Croone and captivate the crowd",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "The time allotted for setup is 2 minutes.",
         "The performance should not exceed 3 minutes.",
         "A maximum of 5 participants are allowed per team.",
@@ -487,6 +487,7 @@
     "tag_line": "Double the dance, double the fun!",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Participants can dance to any song of their choice.",
         "The time limit is 3 minutes.",
         "The team can have only 2 members.",
@@ -574,6 +575,7 @@
     "tag_line": "",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Duration: 10-15 minutes per team.",
         "Each team can have 6 to 10 members.",
         "Additional time will not be provided and the performance should not exceed the time limit.",
@@ -743,6 +745,7 @@
     "rules": [
       [
         "Round 1 - Channel Surfing.",
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Usage of mobiles and other electronic gadgets is strictly prohibited.",
         "Vulgarity in any form will lead to elimination.",
         "Expressing any sort of opinion on politics, religion and other sensitive topics is not allowed.",
@@ -796,6 +799,7 @@
     "tag_line": "Cinephiles, assemble!",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Each team can have a maximum of 2 members.",
         "For buzzers, participants are asked to join in https://buzzin.live/ and the host screen will be projected on the screen.",
         "Participants should answer the questions within the given time.",
@@ -837,6 +841,7 @@
     "tag_line": "The ultimate otaku test!",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Each team can have a maximum of 2 members.",
         "For buzzers, participants are asked to join in https://buzzin.live/ and the host screen will be projected on the screen.",
         "By the buzzer, If the first team answers wrong, the chance will be given to thesuccessive teams.",
@@ -1001,6 +1006,7 @@
     "tag_line": "Challenge the opposition\u2019s rhetoric to rise above the rest",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Each team can have a maximum of 3 members.",
         "English should be the only medium of communication.",
         "Topics will be provided on the spot.",
@@ -1045,6 +1051,7 @@
     "tag_line": "Unravel the scarlet thread of murder running through the colourless skein of life.",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Time allotted for each team is 10 min.",
         "Each team must consist of 3 to 4 members.",
         "Each team will have a time limit of 3 to 4 minutes to inspect the crime scene.",
@@ -1215,6 +1222,7 @@
     "tag_line": "The lyrics keep fading, but can you keep up?",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Each team must consist of 2 members.",
         "A point will be reduced if there is a delay in filling the lyrics.",
         "Multilingual songs will be played.",
@@ -1296,6 +1304,7 @@
     "tag_line": "The ultimate gaming battleground!",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "The game must be played only using a mobile phone.",
         "Emulators and rooted devices should not be used.",
         "During an ongoing tournament players are not allowed to change their in-game name.",
@@ -1340,6 +1349,7 @@
     "tag_line": "Choose your agent, steady your aim, shoot the heads and grab the fame!",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Participants must bring their own devices for the gameplay.",
         "Participants must abide by esports gaming ethics and rules.",
         "Every Participant must be respectful towards Admins and other Participants. Insults and unfair or disrespectful behavior will not be tolerated.",
@@ -1427,6 +1437,7 @@
     "tag_line": "Trace the map, to grab the loot!",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Each team must consist of 2-4 members.",
         "Participating teams should collect the clues to capture the flag.",
         "Clues should be collected in the correct number order.",
@@ -1550,12 +1561,14 @@
     "description": "Are insta reels and tik tok your ground? Can you animate a silent scenario and add your own special magic to boost the ante? Express yourself fully and without restraint!",
     "tag_line": "Sync, sway, slay",
     "rules": [
-      "This is an individual event and team participation is not allowed.",
-      "Audio templates will be provided by the organizers.",
-      "Multilingual templates will be played for the participants.",
-      "Participants will have to lip-sync to the visuals played on stage.",
-      "No preparation time will be given.",
-      "Judges\u2019 decision will be final."
+      [
+        "This is an individual event and team participation is not allowed.",
+        "Audio templates will be provided by the organizers.",
+        "Multilingual templates will be played for the participants.",
+        "Participants will have to lip-sync to the visuals played on stage.",
+        "No preparation time will be given.",
+        "Judges\u2019 decision will be final."
+      ]
     ],
     "prize": {
       "first": "750",
@@ -1633,6 +1646,7 @@
     "tag_line": "Players on sale, perform the trade!",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Each team can have 3-6 members.",
         "The first round is an IPL Quiz, to shortlist the registered participants.",
         "The quiz will be based on IPL records.",
@@ -1682,6 +1696,7 @@
     "tag_line": "The fight for culinary fame with no flame.",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Duration: 30 minutes.",
         "Each team must consist of a maximum of 2 members.",
         "Participants must bring their own material.",
@@ -1724,6 +1739,7 @@
     "tag_line": "Highlights of tk in one page!",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Each team must have a maximum of 2 members.",
         "Any kind of editing platform can be used.",
         "Content about TK will be provided to the team for designing the Newspaper front page.",
@@ -1766,6 +1782,7 @@
     "tag_line": "The world is your stage!",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Duration: 10 minutes.",
         "6-7 members per team are allowed.",
         "Usage of microphone is prohibited.",
@@ -1807,6 +1824,7 @@
     "tag_line": "Get henna-fied!",
     "rules": [
       [
+        "This event comes under gendral registration i.e, Rs.\u00a0150\u00a0per\u00a0head.",
         "Time limit of 60 minutes will be given.",
         "Mehndi Cone will be provided, no other necessities will be provided.",
         "Usage of any reference material, phones etc are strictly prohibited and if used the participants will be disqualified.",
@@ -1889,7 +1907,7 @@
     "team_size": "Event_Team_Size",
     "description": "Get ready to be transported to a world of wonder and excitement with our Fun Zone event! This event promises to create a one-of-a-kind atmosphere that will leave you feeling energized and entertained. Perfect for all ages, it is the ultimate destination for a day of fun with your friends. So join us and let the good times roll!",
     "tag_line": "Escape reality, embrace fun",
-    "rules": [""],
+    "rules": [],
     "prize": {
       "first": "Vouchers",
       "second": "NIL",
@@ -2606,7 +2624,7 @@
     "team_size": "NIL",
     "description": "Blockchain technology is used in various industries, from banking to healthcare. This workshop is designed for individuals who want to learn about the various potential applications and the underlying mechanisms of blockchains. Participants will explore various use cases for blockchain technology, including supply chain management, identity verification, and more. Join us for an interactive workshop to learn more about blockchain.",
     "tag_line": "Secure and decentralized record keeping with blockchain",
-    "rules": [""],
+    "rules": [],
     "prize": {
       "first": "-",
       "second": "-",
@@ -2639,7 +2657,7 @@
     "team_size": "Event_Team_Size",
     "description": "Have you ever thought about building and controlling your own miniature aircraft? If so, this drone technology workshop is perfect for you! You'll learn the basic science behind drones and design a fully functional drone that you can fly one day. Drones have a wide range of potential applications, from package delivery to the defense industry. This interactive event allows participants to engage and gain practical knowledge about drone technology.",
     "tag_line": "Be the part of the aerial revolution",
-    "rules": [""],
+    "rules": [],
     "prize": {
       "first": "-",
       "second": "-",
@@ -2672,7 +2690,7 @@
     "team_size": "Event_Team_Size",
     "description": "Aeromodelling is an exciting and dynamic field that offers a unique opportunity for students to develop a diverse range of skills across multiple disciplines. Through interactive sessions, this workshop provides a comprehensive understanding of the principles of aerodynamics, electrical engineering, and control systems. Students will learn how to design and build a fully functioning radio-controlled aircraft, gaining valuable experience in problem-solving and critical thinking. It's an exciting and rewarding experience that can inspire the next generation of engineers, designers, and innovators.",
     "tag_line": "Learn, invent and transform the sky!",
-    "rules": [""],
+    "rules": [],
     "prize": {
       "first": "-",
       "second": "-",
@@ -2705,7 +2723,7 @@
     "team_size": "Event_Team_Size",
     "description": "A website and a server designed by a single person, is that even possible? Well, if you know about full-stack development, it is! In this workshop learn how to program a website and also gain knowledge on creating exclusive databases and servers for the website that you designed. The workshop will also focus on best practices for software development, such as version control, testing, and debugging. By the end of the workshop, participants will have a solid understanding of full-stack development and be able to build their own web applications from scratch.",
     "tag_line": "",
-    "rules": [""],
+    "rules": [],
     "prize": {
       "first": "-",
       "second": "-",
@@ -2738,7 +2756,7 @@
     "team_size": "Event_Team_Size",
     "description": "UI refers to the design of all the interactive elements in a website and UX is the entire interaction with the final product, these two go hand in hand. To build a good website, you need an impressive and easy-to-interact UI and UX. The participants of this workshop engage in hands-on activities such as user research, design sprints, wireframing, and prototyping to gain insights and make design decisions.",
     "tag_line": "Create the ultimate user experience",
-    "rules": [""],
+    "rules": [],
     "prize": {
       "first": "-",
       "second": "-",
@@ -2771,7 +2789,7 @@
     "team_size": "Event_Team_Size",
     "description": "In this workshop, you will learn about designing and applying IoT systems. You will work on real-world projects and gain hands-on experience in industries like healthcare, agriculture, and transportation. By the end of the workshop, you will have gained valuable knowledge and skills that can be applied to your own projects and career development. Join us to explore the world of IoT and its endless possibilities!",
     "tag_line": "",
-    "rules": [""],
+    "rules": [],
     "prize": {
       "first": "-",
       "second": "-",
@@ -2837,7 +2855,7 @@
     "team_size": "Event_Team_Size",
     "description": "Are you an aspiring filmmaker looking for the chance to learn from the best? Look no further than our upcoming workshop on screenplay and direction hosted by a renowned filmmaker. This is your chance to learn from the best and gain practical experience in all aspects of filmmaking, including writing a screenplay, directing actors, and post-production. Join  us for this unique chance to learn and grow as a filmmaker.",
     "tag_line": "",
-    "rules": [""],
+    "rules": [],
     "prize": {
       "first": "-",
       "second": "-",
@@ -2870,7 +2888,7 @@
     "team_size": "Event_Team_Size",
     "description": "Whether you are an ardent admirer of PC Sreeram or find yourself in awe of KV Anand's shots, this workshop is tailored to help you hone your abilities and delve deeper into the creative aspects of visual storytelling. Indulge in the art of cinematography and expand your skill set with our hands-on workshop, while working alongside industry professionals and utilizing top-of-the-line equipment. This program caters to both beginners and intermediate-level cinematographers, providing a comprehensive and inspiring experience that will elevate your craft to new heights.",
     "tag_line": "Capture life through lens",
-    "rules": [""],
+    "rules": [],
     "prize": {
       "first": "-",
       "second": "-",
@@ -2903,7 +2921,7 @@
     "team_size": "Event_Team_Size",
     "description": "Can a movie truly capture your emotions and move you to tears, sending shivers down your spine, regardless of whether it's Harry Potter or Ponniyan Selvan? Only a well-crafted story can truly captivate an audience and win their hearts. Attend our Script Writing Workshop led by renowned script writers and learn the art of crafting compelling stories for film, television, and other mediums. Join us for a fun and informative workshop that will help you turn your ideas into captivating stories.",
     "tag_line": "Craft unforgettable stories with your screenplay",
-    "rules": [""],
+    "rules": [],
     "prize": {
       "first": "-",
       "second": "-",
