@@ -7,9 +7,10 @@
     "fee": "150",
     "team_size": "-",
     "description": "Adrenaline rushing, crowd vibing, beams flashing and beats burning. Join the groovy DJ as he plunges you into a night of eternal bliss! The most awaited night where lights go low and spirits get high! Let the ground rumble with sounds that soar to the stars!",
-    "tag_line": "Let the DJ’s beats ignite your soul",
+    "tag_line": "Let the DJ\u2019s beats ignite your soul",
     "rules": [
       [
+        "The registration fee for participants is <b>INR 150 per day</b> along with the proof of payment i.e, <b>screenshot</b>, granting them access to participate in an <b>unlimited</b> number of events\u00a0on\u00a0that\u00a0day",
         "It is mandatory to have a college ID for participation.",
         "Registration falls under the general registration category.",
         "Participants who do not register will not be allowed to participate.",
@@ -25,7 +26,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 PM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 PM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -36,7 +40,7 @@
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
     "youtube": "https://www.youtube.com/@CITTakshashila",
-    "register": "https://www.google.com/"
+    "register": "https://forms.gle/f5WS3yRBdsWh5hsQA"
   },
   {
     "name": "Thaikkudam Bridge",
@@ -50,7 +54,7 @@
     "rules": [
       [
         "It is mandatory to have a college ID for participation.",
-        "Registration falls under the general registration category.",
+        "Registration falls under the premium registration category.",
         "Participants who do not register will not be allowed to participate.",
         "Vandalism of property must be avoided at all times.",
         "You are responsible for the safety of your own property.",
@@ -64,7 +68,10 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "6:00 PM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "6:00 PM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -75,7 +82,7 @@
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
     "youtube": "https://www.youtube.com/@CITTakshashila",
-    "register": "https://www.google.com/"
+    "register": "https://forms.gle/WWtG4rUNmKrUyHzZA"
   },
   {
     "name": "Musical Night",
@@ -103,7 +110,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "6:00 PM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "6:00 PM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -114,7 +124,7 @@
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
     "youtube": "https://www.youtube.com/@CITTakshashila",
-    "register": "https://www.google.com/"
+    "register": "https://forms.gle/L2UzMB2PssVsC37SA"
   },
   {
     "name": "Choreo Night",
@@ -143,7 +153,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "7:00 PM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "7:00 PM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -183,7 +196,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "6:00 PM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "6:00 PM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -194,7 +210,7 @@
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
     "youtube": "https://www.youtube.com/@CITTakshashila",
-    "register": "https://www.google.com/"
+    "register": "https://forms.gle/7AF6TfKGnv6FDSN16"
   },
   {
     "name": "Chordially Yours",
@@ -224,13 +240,16 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Sai Naresh S",
-        "email": "sainareshs.ece2020@citchennai.net",
-        "phone": "9176152060"
+        "name": "Bavana A",
+        "email": "bavanaa.aids2021@citchennai.net",
+        "phone": "7010701974"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -263,13 +282,16 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Sai Naresh S",
-        "email": "sainareshs.ece2020@citchennai.net",
-        "phone": "9176152060"
+        "name": "Bavana A",
+        "email": "bavanaa.aids2021@citchennai.net",
+        "phone": "7010701974"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -306,7 +328,10 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -347,7 +372,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -369,7 +397,7 @@
     "team_size": "0",
     "description": "Just get on the mic and spit those rhymes and better go capture this moment and hope it don't pass. Lose yourself in the music, the moment, You own it, you better never let it go. You only get one shot, do not miss your chance to blow. Keep spilling these raps long till you collapse. Wake the real slim shady in you.",
     "tag_line": "Mic in your hand, the world in your feet. Join us for a night of lyrical heat.",
-    "rules1": [
+    "rules": [
       [
         "The event has 2 rounds- prelims and finals.",
         "Duration for Prelims: A maximum of 1 minute.",
@@ -389,7 +417,10 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -429,7 +460,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -472,7 +506,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -493,7 +530,7 @@
     "fee": "150",
     "team_size": "NIL",
     "description": "Show off your unique ideas and perspectives through the power of movies. Craft a captivating short film that will enthrall the audiences and leave them in awe of your creative artistry.",
-    "tag_line": "Experience and explore the art of filmmaking",
+    "tag_line": "",
     "rules": [
       [
         "Participants should send their short films for submission on or before March 23rd, 2023.",
@@ -510,7 +547,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -531,7 +571,7 @@
     "fee": "150",
     "team_size": "6-10",
     "description": "Are you a master of muttering tales , with your tongue tied. Can you express your emotions in an extravagant manner, with no words but only nonverbal cues? Then Vaayai Moodi Pesavum provides you with the perfect stage to prove yourselves!",
-    "tag_line": "Art of silent expression",
+    "tag_line": "",
     "rules": [
       [
         "Duration: 10-15 minutes per team.",
@@ -550,13 +590,16 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "R Chandru",
-        "email": "chandrur.cse2020@citchennai.net",
-        "phone": "9962737406"
+        "name": "Hariharan R",
+        "email": "hariharanr.ece2021@citchennai.net",
+        "phone": "7395985798"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -588,7 +631,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -627,13 +673,16 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Bavana A",
-        "email": "bavanaa.aids2021@citchennai.net",
-        "phone": "7010701974"
+        "name": "Priyanka.H",
+        "email": "priyankah.cse2021@citchennai.net",
+        "phone": "7904886281"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -666,7 +715,10 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "6:00 PM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "6:00 PM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -694,10 +746,10 @@
         "Usage of mobiles and other electronic gadgets is strictly prohibited.",
         "Vulgarity in any form will lead to elimination.",
         "Expressing any sort of opinion on politics, religion and other sensitive topics is not allowed.",
-        "Participants will have to switch channels upon the judges’ command.",
+        "Participants will have to switch channels upon the judges\u2019 command.",
         "The specific channel to be re-enacted will be mentioned by the judges, on the spot.",
         "Only Tamil and English-language channels will be a part of this event.",
-        "Judges’ decisions will be final."
+        "Judges\u2019 decisions will be final."
       ],
       [
         "Round 2 - Adzap.",
@@ -707,7 +759,7 @@
         "The topic will be given on spot.",
         "Time allotted for preparation is one minute.",
         "Participants must perform for at least 2 minutes.",
-        "Judges’ decisions will be final."
+        "Judges\u2019 decisions will be final."
       ]
     ],
     "prize": {
@@ -717,13 +769,16 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Bavana A",
+        "email": "bavanaa.aids2021@citchennai.net",
+        "phone": "7010701974"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -755,13 +810,16 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Poorvaja V",
+        "email": "poorvajav.mech2020@citchennai.net",
+        "phone": "9789934951"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -792,13 +850,16 @@
     },
     "date": "01 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Priyanka.H",
+        "email": "priyankah.cse2021@citchennai.net",
+        "phone": "7904886281"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -829,13 +890,16 @@
     },
     "date": "01 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "R Chandru",
+        "email": "chandrur.cse2020@citchennai.net",
+        "phone": "9962737406"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -868,13 +932,16 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Poorvaja V",
+        "email": "poorvajav.mech2020@citchennai.net",
+        "phone": "9789934951"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -907,13 +974,16 @@
     },
     "date": "30 31 March and 1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Aatharsh B",
+        "email": "aatharshb.aids2020@citchennai.net",
+        "phone": "6380663369"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -928,7 +998,7 @@
     "fee": "150",
     "team_size": "0",
     "description": "Raise your voice and defend your stance. Rhetoric at its finest, where words become weapons. Swoop the field and make your voice heard.",
-    "tag_line": "Challenge the opposition’s rhetoric to rise above the rest",
+    "tag_line": "Challenge the opposition\u2019s rhetoric to rise above the rest",
     "rules": [
       [
         "Each team can have a maximum of 3 members.",
@@ -948,13 +1018,16 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Mohamed Mujakithi",
+        "email": "mohamedmujakithib.mct2020@citchennai.net",
+        "phone": "9843497100"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -988,13 +1061,16 @@
     },
     "date": "30 31 March and 1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "M B Dharahash",
+        "email": "mamuduribdharahash.ece2021@citchennai.net",
+        "phone": "8148585203"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1026,13 +1102,16 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Poorvaja V",
+        "email": "poorvajav.mech2020@citchennai.net",
+        "phone": "9789934951"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1064,13 +1143,16 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "R Chandru",
+        "email": "chandrur.cse2020@citchennai.net",
+        "phone": "9962737406"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1087,15 +1169,17 @@
     "description": "Videograph your views on our college and capture clips to project your perspective. Summarize the fervour and magnificence that are rife in our campus!",
     "tag_line": "Make reality beautiful through your videography skills.",
     "rules": [
-      "The video should not exceed 60 seconds.",
-      "The reel must be an original creation.",
-      "Footage that was shot outside the college campus is not permitted.",
-      "Only mobile phones can be used for shooting.",
-      "Voiceover is not allowed, only background music and songs are allowed.",
-      "Submission should be done before the deadline.",
-      "The reels must be recorded in the aspect ratio of 9:16.",
-      "Only one submission per participant is allowed.",
-      "Judges\u2019 decision will be final."
+      [
+        "The video should not exceed 60 seconds.",
+        "The reel must be an original creation.",
+        "Footage that was shot outside the college campus is not permitted.",
+        "Only mobile phones can be used for shooting.",
+        "Voiceover is not allowed, only background music and songs are allowed.",
+        "Submission should be done before the deadline.",
+        "The reels must be recorded in the aspect ratio of 9:16.",
+        "Only one submission per participant is allowed.",
+        "Judges\u2019 decision will be final."
+      ]
     ],
     "prize": {
       "first": "750",
@@ -1104,13 +1188,16 @@
     },
     "date": "30 31 March and 1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "MB Dharahash",
+        "email": "mamuduribdharahash.ece2020@citchennai.net",
+        "phone": "8148585203"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1141,13 +1228,16 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Gokulnath A",
+        "email": "gokulnatha.csbs2020@citchennai.net",
+        "phone": "6369702802"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1179,13 +1269,16 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Fowsul Hasan K K",
+        "email": "fowsalhasankk.csbs2020@citchennai.net",
+        "phone": "9080454516"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1220,13 +1313,16 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Sai Naresh S",
+        "email": "sainareshs.ece2020@citchennai.net",
+        "phone": "9176152060"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1241,7 +1337,7 @@
     "fee": "150",
     "team_size": "5",
     "description": "Enter the virtual arena of Valorant, where the intensity is high and competition is fierce. Every move counts and every shot matters. Join us for the gaming event that will test your skills, challenge your strategy and leave you hungry for more. With the thrill of victory and the agony of defeat, this is Valorant at its best.",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Choose your agent, steady your aim, shoot the heads and grab the fame!",
     "rules": [
       [
         "Participants must bring their own devices for the gameplay.",
@@ -1259,13 +1355,16 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Sai Naresh S",
+        "email": "sainareshs.ece2020@citchennai.net",
+        "phone": "9176152060"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1301,13 +1400,16 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Revathi Reshma",
+        "email": "revathireashma.ece2020@citchennai.net",
+        "phone": "8778318404"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1340,13 +1442,16 @@
     },
     "date": "30 31 March and 1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Nitheesh M",
+        "email": "nitheeshm.mct@citchennai.net",
+        "phone": "8667085588"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1380,13 +1485,16 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Niranjan",
+        "email": "niranjankumarb.cse2020@citchennai.net",
+        "phone": "6369444401"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1401,7 +1509,7 @@
     "fee": "150",
     "team_size": "0",
     "description": "Laughter is the best medicine, they say. Do you agree? We surely do. With that said, we bring to you Takshashila's Hall of Humour, your one stop destination to say good riddance to all your worries.",
-    "tag_line": "Tonight’s menu: Comedy and satire!",
+    "tag_line": "Tonight\u2019s menu: Comedy and satire!",
     "rules": [
       [
         "The time limit for the performance is 3-5 minutes.",
@@ -1416,13 +1524,16 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "M Gayathrie",
+        "email": "gayathriem.aids2021@citchennai.net",
+        "phone": "9150472413"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1453,13 +1564,16 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "S Barath",
+        "email": "sbarath.aids2021@citchennai.net",
+        "phone": "6381358785"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1492,13 +1606,16 @@
     },
     "date": "30 31 March and 1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Mohamed Mujakithi",
+        "email": "mohamedmujakithib.mct2020@citchennai.net",
+        "phone": "9843497100"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1526,9 +1643,9 @@
         "Each team will be given 100 crores [Digital prop currency]",
         "The value of the retained players of each selected cricket team will be reduced from the given 100 crores.",
         "Each team should pick 15 - 23 players each.",
-        "Each team should prepare their 11’s at the end of the auction with a maximum of 4 foreign players.",
+        "Each team should prepare their 11\u2019s at the end of the auction with a maximum of 4 foreign players.",
         "Winners will be selected based on players current form and record.",
-        "Judges’ and organizers' decisions are final."
+        "Judges\u2019 and organizers' decisions are final."
       ]
     ],
     "prize": {
@@ -1538,13 +1655,16 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Veda V",
+        "email": "vedanarayananv.csbs2020@citchennai.net",
+        "phone": "6382657969"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1577,13 +1697,16 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "S Barath",
+        "email": "sbarath.aids2021@citchennai.net",
+        "phone": "6381358785"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1616,13 +1739,16 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Mohamed Mujakithi",
+        "email": "mohamedmujakithib.mct2020@citchennai.net",
+        "phone": "9843497100"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1654,13 +1780,16 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Hariharan R",
+        "email": "hariharanr.ece2021@citchennai.net",
+        "phone": "7395985798"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1693,13 +1822,16 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Anusha S",
+        "email": "anushas.bme2020@citchennai.net",
+        "phone": "9384691662"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1714,7 +1846,7 @@
     "fee": "150",
     "team_size": "0",
     "description": "If you think you\u2019ve seen it all when it comes to puzzles, think again!With cryptic crosswords, brain-bursting sudokus and more, only the most astute and strategic thinkers will prevail. With high stakes, and even higher rewards, it\u2019s time to step up and show the world your puzzle power!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "Decipher, Decrypt, derive the solution in a bit.",
     "rules": [
       [
         "The event consists of 4 sets of puzzles.",
@@ -1732,13 +1864,16 @@
     },
     "date": "30 31 March and 1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Aatharsh B",
+        "email": "aatharshb.aids2020@citchennai.net",
+        "phone": "6380663369"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -1762,7 +1897,10 @@
     },
     "date": "30 31 March and 1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -1806,7 +1944,10 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -1848,7 +1989,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -1887,7 +2031,10 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -1924,7 +2071,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -1967,7 +2117,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2006,7 +2159,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2026,14 +2182,14 @@
     "image": "",
     "fee": "150",
     "team_size": "Event_Team_Size",
-    "description": " Pandora’s Box is a team event of two members where the circuit output will be given on spot and the participants are asked to design the circuit using the given chips, circuit boards and present the output of the circuit assembled.",
+    "description": " Pandora\u2019s Box is a team event of two members where the circuit output will be given on spot and the participants are asked to design the circuit using the given chips, circuit boards and present the output of the circuit assembled.",
     "tag_line": "Reviving appliances, restoring functionality, and simplifying your life",
     "rules": [
       [
         "Maximum of 2 members are allowed in a team.",
         "Random boxes are to be selected by the team consisting of circuit design and components.",
         "Participants are asked to build the circuits using the components, provided within the given time.",
-        "Judge’s decision will be final."
+        "Judge\u2019s decision will be final."
       ]
     ],
     "prize": {
@@ -2043,7 +2199,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2081,7 +2240,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2112,7 +2274,7 @@
         "A team can have students from different colleges.",
         "The abstract mail should contain the abstract references,  your email id and mobile number.",
         "Any kind of plagiarism leads to immediate disqualification.",
-        "Judges’ decisions will be final."
+        "Judges\u2019 decisions will be final."
       ]
     ],
     "prize": {
@@ -2122,7 +2284,10 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2149,7 +2314,7 @@
         "Maximum of 2 members are allowed in a team.",
         "Simple Circuits Designs will be given.",
         "Should try to complete the stimulation for the given circuit within the given time using simulation software.",
-        "Judge’s decision will be final."
+        "Judge\u2019s decision will be final."
       ]
     ],
     "prize": {
@@ -2159,7 +2324,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2187,7 +2355,7 @@
         "Topics will be given on the spot.",
         "Speech should be given only in English and other languages should not be included in the speech.",
         "Usage of offensive and vulgar words will lead to immediate disqualification.",
-        "Judges’ decision will be final."
+        "Judges\u2019 decision will be final."
       ]
     ],
     "prize": {
@@ -2197,7 +2365,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2224,7 +2395,7 @@
         "It is an  event and team participation is not allowed.",
         "Topics will be given on the spot.",
         "Participants should make the analysis of the profit and loss of the product and estimate the real prices of the product and perform the marketing.",
-        "Judge’s decision will be final."
+        "Judge\u2019s decision will be final."
       ]
     ],
     "prize": {
@@ -2234,13 +2405,16 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Gokul Kannan",
+        "email": "gokulkannanp.cse2021@citchennai.net",
+        "phone": "9941269128"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2265,7 +2439,7 @@
         "Photos should not be taken from any online sources or plagiarised.",
         "Selfies, casual photos and other irrelevant content will not be considered.",
         "Basic editing including color correction, cropping is acceptable.",
-        "Judges’ decision will be final."
+        "Judges\u2019 decision will be final."
       ]
     ],
     "prize": {
@@ -2275,7 +2449,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2297,7 +2474,7 @@
     "team_size": "Event_Team_Size",
     "description": "Create a meme that makes people stop scrolling and stop sharing! Make magical memes that make people roll in laughter. Will your meme be the next viral hit?",
     "tag_line": "Let's meme-ify the world!",
-    "rules1": [
+    "rules": [
       [
         "The memes submitted must be an original work of the individual.",
         "The first round will be an online evaluation round where the participants will have to upload their memes at the time of registration.",
@@ -2306,7 +2483,7 @@
       [
         "Final round will be held offline and participants have to create a meme on the spot.",
         "Themes and templates for the final round will be provided by the organizers.",
-        "Judges’ decision will be final."
+        "Judges\u2019 decision will be final."
       ]
     ],
     "prize": {
@@ -2316,7 +2493,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2347,7 +2527,7 @@
         "Submissions should not contain any watermarks.",
         "Overtracing images from google or any other online sources should be avoided.",
         "Incase of plagiarism, entries will be disqualified.",
-        "Judges’ decision will be final."
+        "Judges\u2019 decision will be final."
       ]
     ],
     "prize": {
@@ -2357,7 +2537,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2386,9 +2569,9 @@
         "Plagiarism is not allowed.",
         "Poetry can be written in any poetic style and on any subject.",
         "A poem in its entirety must be an original work by the person entering the event.",
-        "Any entry containing cliché, overused phrases will not be accepted.",
+        "Any entry containing clich\u00e9, overused phrases will not be accepted.",
         "Poems containing language that is vulgar, offensive, or wholly inappropriate will not be accepted.",
-        "Judges’ decision will be final."
+        "Judges\u2019 decision will be final."
       ]
     ],
     "prize": {
@@ -2398,7 +2581,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2428,7 +2614,10 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2448,8 +2637,8 @@
     "image": "",
     "fee": "150",
     "team_size": "Event_Team_Size",
-    "description": "  Lucid Circuits is a team event of two members where the circuit output will be given on spot and the participants are asked to design the circuit on any kind of softwares and present the output of stimulation.",
-    "tag_line": "Event_Tag_Line",
+    "description": "Have you ever thought about building and controlling your own miniature aircraft? If so, this drone technology workshop is perfect for you! You'll learn the basic science behind drones and design a fully functional drone that you can fly one day. Drones have a wide range of potential applications, from package delivery to the defense industry. This interactive event allows participants to engage and gain practical knowledge about drone technology.",
+    "tag_line": "Be the part of the aerial revolution",
     "rules": [""],
     "prize": {
       "first": "-",
@@ -2458,7 +2647,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2488,7 +2680,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2509,7 +2704,7 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "A website and a server designed by a single person, is that even possible? Well, if you know about full-stack development, it is! In this workshop learn how to program a website and also gain knowledge on creating exclusive databases and servers for the website that you designed. The workshop will also focus on best practices for software development, such as version control, testing, and debugging. By the end of the workshop, participants will have a solid understanding of full-stack development and be able to build their own web applications from scratch.",
-    "tag_line": "Empower your web development skill!",
+    "tag_line": "",
     "rules": [""],
     "prize": {
       "first": "-",
@@ -2518,7 +2713,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2548,7 +2746,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2569,7 +2770,7 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "In this workshop, you will learn about designing and applying IoT systems. You will work on real-world projects and gain hands-on experience in industries like healthcare, agriculture, and transportation. By the end of the workshop, you will have gained valuable knowledge and skills that can be applied to your own projects and career development. Join us to explore the world of IoT and its endless possibilities!",
-    "tag_line": "Event_Tag_Line",
+    "tag_line": "",
     "rules": [""],
     "prize": {
       "first": "-",
@@ -2578,7 +2779,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2608,7 +2812,10 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2629,7 +2836,7 @@
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Are you an aspiring filmmaker looking for the chance to learn from the best? Look no further than our upcoming workshop on screenplay and direction hosted by a renowned filmmaker. This is your chance to learn from the best and gain practical experience in all aspects of filmmaking, including writing a screenplay, directing actors, and post-production. Join  us for this unique chance to learn and grow as a filmmaker.",
-    "tag_line": "Transform your vision into cinematic reality",
+    "tag_line": "",
     "rules": [""],
     "prize": {
       "first": "-",
@@ -2638,7 +2845,10 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2668,7 +2878,10 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2698,7 +2911,10 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
@@ -2722,9 +2938,9 @@
     "tag_line": "Pride and Passion meets Success.With all your force,hit. Turn your spirit for a better game. Orange heroes on the ground.",
     "rules": [
       [
-        "The Entry fee for this event is ₹500 per team.",
-        "The Prize amount is ₹5000.",
-        "The Runner's place gets ₹3000.",
+        "The Entry fee for this event is \u20b9500 per team.",
+        "The Prize amount is \u20b95000.",
+        "The Runner's place gets \u20b93000.",
         "Entry fee of 500 should be paid beforehand through net banking (on spot payment not allowed).",
         "Team should report at 8:30a.m or else the team will be eliminated.",
         "Only College students are permitted.",
@@ -2738,7 +2954,7 @@
         "Re-entry is not allowed.",
         "Entry fee will not be refunded.",
         "Full kit is compulsory.",
-        "Refree’s and organiser’s decision is final."
+        "Refree\u2019s and organiser\u2019s decision is final."
       ]
     ],
     "prize": {
@@ -2748,13 +2964,16 @@
     },
     "date": "31 March and 1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Subiah Tarun",
+        "email": "subiahtarunt.mct@citchennai.net",
+        "phone": "6374311373"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2772,7 +2991,7 @@
     "tag_line": "Above the net and beyond the blocks",
     "rules": [
       [
-        "The Entry fee for this event is ₹500 Per team.",
+        "The Entry fee for this event is \u20b9500 Per team.",
         "The team-head should register for the event, on behalf of the team.",
         "Prize amount for the winner is Rs.5000.",
         "Prize amount for the runner up is Rs.3000.",
@@ -2786,7 +3005,7 @@
         "All the clubs are allowed, provided that they are college students.",
         "No accommodation is provided.",
         "Re-entry is not allowed.",
-        "Refree’s and organiser’s decision is final."
+        "Refree\u2019s and organiser\u2019s decision is final."
       ]
     ],
     "prize": {
@@ -2796,13 +3015,16 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Gokul",
+        "email": "gokulgobika14@gmail.com",
+        "phone": "8946099573"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2820,7 +3042,7 @@
     "tag_line": "Sneak in silence and scream with a 'CHECKMATE'",
     "rules": [
       [
-        "This event includes general registration of Rs.150 + Entry fees Rs.50 per head.",
+        "This event includes general registration of Rs.150 per head.",
         "No refund if registration fee is paid.",
         "Latest FIDA rules are followed.",
         "Discipline must be maintained throughout the event.",
@@ -2833,7 +3055,7 @@
         "Stalement rule-Draw will be agreed by players is followed.",
         "Touch move law(If a player touches a particular chess piece,then he/she should move that chess piece only) must be strictly followed.",
         "Participants must bring their College ID Card for proof.",
-        "All participants are requested to come before (8:00AM)."
+        "All participants are requested to come\u00a0before\u00a0(8:00AM)."
       ]
     ],
     "prize": {
@@ -2843,13 +3065,16 @@
     },
     "date": "31 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Nitheesh M",
+        "email": "nitheeshm.mct@citchennai.net",
+        "phone": "8667085588"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2866,15 +3091,17 @@
     "description": "The hallmark of a great captain is the ability to win the toss, at the right time.Cricket is the one game that can unify a nation in the depths of despair. Swing to the fences, take the field, rule the streets and be the crown jewel of Street Cricket.",
     "tag_line": "Make your trick- Hat-trick",
     "rules": [
-      "This event includes general registration of Rs.150 + Entry fees Rs.50 per head.",
-      "The team-head should register for the event, on behalf of the team.",
-      "Prize amount for the winner is Rs.1500.",
-      "Prize amount for the runner up is Rs.1000.",
-      "Each squad must have six members.",
-      "The entirety of the contest will be six overs.",
-      "Hitting six is considered as Out.",
-      "There will be no singles, and only fours will be counted.",
-      "organiser’s decision is final."
+      [
+        "The Entry fee for this event is \u20b9300 Per team.",
+        "The team-head should register for the event, on behalf of the team.",
+        "Prize amount for the winner is Rs.1500.",
+        "Prize amount for the runner up is Rs.1000.",
+        "Each squad must have six members.",
+        "The entirety of the contest will be six overs.",
+        "Hitting six is considered as Out.",
+        "There will be no singles, and only fours will be counted.",
+        "organiser\u2019s decision is final."
+      ]
     ],
     "prize": {
       "first": "-",
@@ -2883,13 +3110,16 @@
     },
     "date": "30 March 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Aswin Kanna",
+        "email": "aswinkanna18@gmail.com",
+        "phone": "8270011279"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
@@ -2903,11 +3133,11 @@
     "image": "",
     "fee": "150",
     "team_size": "NIL",
-    "description": "Get ready to strike, flick and pocket your way to victory. A classical game of skill, strategy and precision! It is all about quick reflexes, sharp focus and a steady hand. Whether you're a seasoned pro or a complete amateur, let’s see who’s the coveted Carrom Champion!",
+    "description": "Get ready to strike, flick and pocket your way to victory. A classical game of skill, strategy and precision! It is all about quick reflexes, sharp focus and a steady hand. Whether you're a seasoned pro or a complete amateur, let\u2019s see who\u2019s the coveted Carrom Champion!",
     "tag_line": "Hold, Aim and Shoot, cause we strike to win",
     "rules": [
       [
-        "This event includes general registration of Rs.150 + Entry fees Rs.50 per head.",
+        "This event includes general registration of Rs.150 per head.",
         "Prize amount for the winner is Rs.1000.",
         "Only college students are permitted.",
         "Participants should be present at the venue before 10 a.m.",
@@ -2919,7 +3149,7 @@
         "Thumbing and Scissoring is allowed.",
         "The matches occur in a knockout format.",
         "Participants scoring the maximum point are considered as the winner.",
-        "organiser’s decision is final."
+        "organiser\u2019s decision is final."
       ]
     ],
     "prize": {
@@ -2929,13 +3159,16 @@
     },
     "date": "1 April 2023",
     "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+      {
+        "time": "8:00 AM",
+        "venue": "Chennai Institute Of Technology"
+      }
     ],
     "incharge": [
       {
-        "name": "Akshya Preetha V",
-        "email": "akshyapreethaveee2019@citchennai.net",
-        "phone": "9361100381"
+        "name": "Aswin Kanna",
+        "email": "aswinkanna18@gmail.com",
+        "phone": "8270011279"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",

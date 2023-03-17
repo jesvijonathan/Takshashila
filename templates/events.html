@@ -203,14 +203,14 @@ Last Updated : March 22th 2023
 
       <div class="mav_bar_cont">
         <a class="nav_bar_links link_cur"  href="/#about"data-text="About Us">About</a>
-        <a class="nav_bar_links link_cur" href="/#events"data-text="Events List">Events</a>
-        <a class="nav_bar_links link_cur"href="/#pro_sec" data-text="Pro-Shows">
+        <a class="nav_bar_links link_cur" href="/events"data-text="Events List">Events</a>
+        <a class="nav_bar_links link_cur"href="/events" data-text="Pro-Shows">
           Pro Shows
         </a>
-        <a class="nav_bar_links link_cur"href="/#workshops" data-text="Workshops">
+        <a class="nav_bar_links link_cur"href="/events" data-text="Workshops">
           Workshops
         </a>
-        <a class="nav_bar_links link_cur" href="/#contact"data-text="Contact Us">Contact</a>
+        <a class="nav_bar_links link_cur" href="/"data-text="Contact Us">Contact</a>
       </div>
     </header>
     <div class="eve_func" id="navbar">
@@ -938,6 +938,8 @@ var rule_2_text = "-";
  
 
  
+ 
+    eve_reg_link.href = json_data[e].register + " ";
         document.getElementById("eve_reg_link_2").href = json_data[e].register + " ";
         document.getElementById("price_2").innerHTML = "₹"+json_data[e].fee;
  
