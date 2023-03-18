@@ -64,6 +64,32 @@ with open('/home/takshashila/Takshashila-2023-Backend/static/events.json') as js
 # cache = Cache(config={'CACHE_TYPE': 'simple'})
 # cache = Cache(app)
 
+def sort_json():
+    temp =[]
+    for i in eve_data:
+        temp.append(i['name'])
+    
+    temp.sort()  
+    
+    count=0
+    lists = []
+    
+    f = open("sorted_json.json", "a")
+    f.write("[ \n")
+    for i in temp:
+        count=0
+        for j in eve_data:
+            if j['name'] == i:
+                f.write(json.dumps(j)+",\n")
+                lists.append(j)
+            else:
+                count +=1
+    
+    f.write("\n]")
+    
+    f.close()
+    print("\n\n\n",lists)
+
 api = Api(app)
 Database(app)
 JWT(app)
