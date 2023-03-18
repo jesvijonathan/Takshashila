@@ -217,8 +217,8 @@ Last Updated : March 22th 2023
       <div class="eve_path_con_par">
         <div class="title link_cur" data-text="Change Graphics" onclick=graphic()>Events</div>
         <div class="eve_path_con" id="eve_path">
-          <a class="link_cur" data-text="Event Type">/ Technical</a>
-          <a class="link_cur" data-text="Event Name">/ Plush</a>
+          <a class="link_cur" data-text="Event Type" href="/events">/ Error</a>
+          <a class="link_cur" data-text="Event Name" href="/events">/ Loading</a>
         </div>
       </div>
       <div class="search"></div>
@@ -904,8 +904,12 @@ document.addEventListener("mouseout", () => {
             i +
             ');">' +
             inner_details +
-            "</div>\n";
-          if (data[i].name.replace(" ", "_").toLowerCase() == url_event) {
+            "</div>\n"; 
+ 
+            console.log(data[i].name.replace(/\s/g, '_').toLowerCase() + "  |   " + url_event)
+
+          if (data[i].name.replace(/\s/g, '_').toLowerCase() == url_event) {
+           
             open_event(i);
           }
         }
@@ -916,6 +920,7 @@ document.addEventListener("mouseout", () => {
         // alert("Something went wrong :(\nProceed to reload website...\n\n" + e);
         // window.location.pathname = "/events";
         // window.location.reload();
+        console.log(e)
       });
   });
 var rule_1_text = "-";
