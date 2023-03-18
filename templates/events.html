@@ -185,7 +185,7 @@ Last Updated : March 22th 2023
 </div>
   <body class="eve_body" id="bodyy">
         <!-- <video autoplay muted loop id="myVideo"><source src="./pexels-tima-miroshnichenko-7985887.mp4" type="video/mp4" /></video> -->
-    <img id="myVideo" src="./pexels-tima-miroshnichenko-7985887.webp" type="image/webp" />
+    <img id="myVideo" src="./pexels-tima-miroshnichenko-7985887.webp"  oncontextmenu="return false;" type="image/webp" />
     <div class="cursor" id="cursor">
       <div class="cursor_border" id="cursor_border">
         <div class="cursor_circle" id="cursor_circle"></div>
@@ -899,7 +899,7 @@ document.addEventListener("mouseout", () => {
           inner_details += '<div class="eve_button">View</div></div>';
 
           html_list.innerHTML +=
-            '<div class="eve_card" data-type="' + 
+            '<div class="eve_card" oncontextmenu="copyToClipboard();notify("Event Link Copied To Clipboard !",5000);return false;" data-type="' + 
             jata.type + '"  onclick="open_event(' +
             i +
             ');">' +
