@@ -1,40 +1,5 @@
 [
   {
-    "name": "A Pirate's Dilemma",
-    "type": "Non-Technical",
-    "tags": ["Shipwreck"],
-    "image": "",
-    "fee": "150",
-    "team_size": "Event_Team_Size",
-    "description": "It is better to meet danger than to wait for it.He who is on a lee shore and foresees a hurricane, stands out to sea and encounters a storm to avoid a shipwreck.",
-    "tag_line": "Survive the shipwreck with your power of persuasion",
-    "rules": [
-      [
-        "Time limit is 3 minutes per person.",
-        "The event will have two rounds- Prelims and Finals.",
-        "The top 8 members will be qualified for the finals.",
-        "Participants are not allowed to talk about political facts in the event.",
-        "Participants are not allowed to use abusive or offensive language.",
-        "Judges\u2019 decisions will be final."
-      ]
-    ],
-    "prize": { "first": "750", "second": "500", "third": "300" },
-    "date": "31 March 2023",
-    "batch": [
-      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
-    ],
-    "incharge": [
-      {
-        "name": "Poorvaja V",
-        "email": "poorvajav.mech2020@citchennai.net",
-        "phone": "9789934951"
-      }
-    ],
-    "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
-    "youtube": "https://www.youtube.com/@CITTakshashila",
-    "register": "https://forms.gle/6mApN73dhJgCwuR38"
-  },
-  {
     "name": "Active Popcorn",
     "type": "Non-Technical",
     "tags": ["JAM"],
@@ -1816,6 +1781,41 @@
     "register": "https://forms.gle/xyfnpe4KuzyuSnWG7"
   },
   {
+    "name": "Pirate Dilemma",
+    "type": "Non-Technical",
+    "tags": ["Shipwreck"],
+    "image": "",
+    "fee": "150",
+    "team_size": "Event_Team_Size",
+    "description": "It is better to meet danger than to wait for it.He who is on a lee shore and foresees a hurricane, stands out to sea and encounters a storm to avoid a shipwreck.",
+    "tag_line": "Survive the shipwreck with your power of persuasion",
+    "rules": [
+      [
+        "Time limit is 3 minutes per person.",
+        "The event will have two rounds- Prelims and Finals.",
+        "The top 8 members will be qualified for the finals.",
+        "Participants are not allowed to talk about political facts in the event.",
+        "Participants are not allowed to use abusive or offensive language.",
+        "Judges\u2019 decisions will be final."
+      ]
+    ],
+    "prize": { "first": "750", "second": "500", "third": "300" },
+    "date": "31 March 2023",
+    "batch": [
+      { "time": "8:00 AM", "venue": "Chennai Institute Of Technology" }
+    ],
+    "incharge": [
+      {
+        "name": "Poorvaja V",
+        "email": "poorvajav.mech2020@citchennai.net",
+        "phone": "9789934951"
+      }
+    ],
+    "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
+    "youtube": "https://www.youtube.com/@CITTakshashila",
+    "register": "https://forms.gle/6mApN73dhJgCwuR38"
+  },
+  {
     "name": "Plush",
     "type": "Pro Shows",
     "tags": ["Ramp walk", "Fashion", "Costume"],
@@ -2386,7 +2386,7 @@
     "register": "https://forms.gle/yn1gd3wb3J1R3sit9"
   },
   {
-    "name": "UI/UX Designing",
+    "name": "UI & UX Designing",
     "type": "Workshops",
     "tags": [""],
     "image": "",
