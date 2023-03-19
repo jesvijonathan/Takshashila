@@ -1660,16 +1660,21 @@ button:hover {
   color: #fff;
   font-family: jura;
   align-items: center;
+  height: fit-content;
 }
 .eve_detail_1 {
   width: 26vw;
   height: 100%;
   background: #0000003a;
+  background: #00000066;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
   flex-wrap: nowrap;
+  /* margin: 1vw 0vw 1vw 0vw; */
+  padding: 2vw 0vw 2vw 0vw;
+  margin: 0vw;
 }
 .eve_detail_1_1,
 .eve_detail_1_2 {
