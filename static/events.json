@@ -21,7 +21,7 @@
     "prize": { "first": "1000", "second": "750", "third": "500" },
     "date": "31 March 2023",
     "batch": [
-      { "time": "6:00 PM", "venue": "Chennai Institute Of Technology" }
+      { "time": ":8.00 AM", "venue": "Chennai Institute Of Technology" }
     ],
     "incharge": [
       {
@@ -270,7 +270,7 @@
     "name": "Chess",
     "type": "Sports",
     "tags": [""],
-    "image": "",
+    "image": "./CHESS.webp",
     "fee": "150",
     "team_size": "Event_Team_Size",
     "description": "Only a harsh self-evaluation will enable a player to identify his strengths as well as his weaknesses , turning his game up a notch Participate in this test of wits to discover the limits of your mind.",
@@ -761,7 +761,7 @@
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
     "youtube": "https://www.youtube.com/@CITTakshashila",
-    "register": "https://forms.gle/mHwNCShwEEYeh8Du8"
+    "register": "https://forms.gle/pMZ81FeoJpZxjqsB8"
   },
   {
     "name": "Frame-Spot",
@@ -1699,7 +1699,7 @@
       {
         "name": "Karthikeyan",
         "email": "karthikeyanes.ece2020@citchennai.net",
-        "phone": "9080879578"
+        "phone": "9080879579"
       }
     ],
     "instagram": "https://instagram.com/cittakshashila?igshid=YmMyMTA2M2Y=",
