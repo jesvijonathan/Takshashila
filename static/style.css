@@ -5,6 +5,11 @@ html {
   left: 0;
   margin: 0;
 }
+* {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+  color-scheme: exact !important;
+}
 html {
   overflow-x: hidden;
   overflow-x: clip;
