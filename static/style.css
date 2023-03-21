@@ -1543,7 +1543,7 @@ button:hover {
   height: -webkit-fill-available;
   width: -moz-fill-available;
   user-select: none;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .eve_title {
   color: #fff;
