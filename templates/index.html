@@ -178,8 +178,8 @@ Last Updated : March 22th 2023
     <div class=main_navigation id=navbar>
       <a href=#about data-text="About Us" class="navigation_links link_cur" style=animation-delay:4.5s>About</a>
       <a href='/events' data-text="Events List" class="navigation_links link_cur" style=animation-delay:4.7s>Events</a>
-      <a href='/events' data-text=Pro-Shows class="navigation_links link_cur" style=animation-delay:4.9s>Pro Shows</a>
-      <a href='/events' data-text=Workshops class="navigation_links link_cur" style=animation-delay:5.1s>Workshops</a>
+      <a href='/events#/proshows' data-text=Pro-Shows class="navigation_links link_cur" style=animation-delay:4.9s>Pro Shows</a>
+      <a href='/events#/workshops' data-text=Workshops class="navigation_links link_cur" style=animation-delay:5.1s>Workshops</a>
       <a href=#contact data-text="Contact Us" class="navigation_links link_cur" id=media_no style=animation-delay:5.3s onclick=plusSlides(1)>Contact</a>
     </div>
     <a href=#contact id=top_link class="main_signin link_cur op_reveal" data-text="More" onclick=plusSlides(1)>More</a>
@@ -356,7 +356,7 @@ Last Updated : March 22th 2023
             <div class=pro_div id=pro_more>
               <div class="pro_day day_r jos" data-callback=r_in data-once=true></div>
               <div class="pro_ppl_card card_r ppl_more">
-                <a href="./events" class=link>
+                <a href="./events#/proshows" class=link>
                   <span class=mask>
                     <div class=link-container>
                       <span class="link-title1 title">More Details</span>
@@ -411,7 +411,7 @@ Last Updated : March 22th 2023
                 <div class="stit to_title">Workshop</div>
                 <div class=sdet> Join us in this interactive workshop and explore the blend of technical and cinematic experiences in one place. From software development to vehicle building. Experience a cinematic safari with a Potpourri of workshops from screenplay to script writing. Get full hands on experience from experts and get insight on the most acclaimed, revered topics ever to exist.</div>
                 <div class="sbuto link_cur" data-text="View Events">
-                  <button class=sbu onclick='location.href="/events"'> View All </button>
+                  <button class=sbu onclick='location.href="/events#/workshops"'> View All </button>
                 </div>
               </div>
             </div>
@@ -500,7 +500,7 @@ Last Updated : March 22th 2023
                     <a class="link_cur loca_a" data-text="useful link" href="/credits">Credits</a> 
                     <a class="link_cur loca_a" data-text="useful link" 
                     href="https://www.instagram.com/p/CpkXbwKrbqE/" target="_blank">Main Poster</a>
-                    <a class="link_cur loca_a" data-text="useful link" href="/profile" target="_blank">Link QR</a>
+                    <a class="link_cur loca_a" data-text="useful link" href="/profile" target="_blank">Refresh Page</a>
                   </div>
                 </div>
               </div>
@@ -557,17 +557,17 @@ Last Updated : March 22th 2023
                   <a class="foot_1_2_1_list_item link_cur" data-text=Facebook href="https://www.facebook.com/people/CIT-Takshashila/100064056814271/" target=_blank> Facebook </a>
                   <a class="foot_1_2_1_list_item link_cur" data-text="Linked In" href="https://www.linkedin.com/in/cittakshashila" target=_blank> Linked In </a>
                   <a class="foot_1_2_1_list_item link_cur" data-text=Email href="mailto:takshashila@citchennai.net" target=_blank> Email </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text=Phone href="tel:" target=_blank> Phone </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Phone href="tel:+919344326874" target=_blank> Phone </a>
                 </div>
               </div>
               <div class=line_3></div>
               <div class=foot_1_2_1>
                 <div class=foot_1_2_1_title>Events</div>
                 <div class=foot_1_2_1_list>
-                  <a class="foot_1_2_1_list_item link_cur" data-text="Technical Events" href="/events" target=_blank> Technical </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text="Non-Technical Events" href="/events" target=_blank> Non Technical </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text=Workshops href="/events" target=_blank> Workshops </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text=Pro-shows href="/events" target=_blank> Pro-Shows </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text="Technical Events" href="/events#/technical" target=_blank> Technical </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text="Non-Technical Events" href="/events#/nontechnical" target=_blank> Non Technical </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Workshops href="/events#/workshops" target=_blank> Workshops </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Pro-shows href="/events#/proshows" target=_blank> Pro-Shows </a>
                   <a class="foot_1_2_1_list_item link_cur" data-text="Other Events" href="/events" target=_blank> Others </a>
                 </div>
               </div>
@@ -577,9 +577,9 @@ Last Updated : March 22th 2023
                 <div class=foot_1_2_1_list>
                   <a class="foot_1_2_1_list_item link_cur" data-text="Terms & Conditions" href="./cookie_policy.md" target=_blank> Terms & Policy </a>
                   <a class="foot_1_2_1_list_item link_cur" data-text="Our Services" href="/events" target=_blank> Service </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text="Your Account" href="/profile" target=_blank> Account </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text="Your Account" onclick="notify('Not available !',5000)" target=_blank> Account </a>
                   <a class="foot_1_2_1_list_item link_cur" data-text="Official Website" href="https://www.citchennai.edu.in/" target=_blank> College Site </a>
-                  <a class="foot_1_2_1_list_item link_cur" data-text=Developer href="www.instagram/_jesvi_" target=_blank> Developer </a>
+                  <a class="foot_1_2_1_list_item link_cur" data-text=Developer href="https://www.instagram.com/_jesvi_" target=_blank> Developer </a>
                 </div>
               </div>
               <div class=line_3></div>
@@ -607,7 +607,7 @@ Last Updated : March 22th 2023
               <div class="foot_2_1_1 link_cur" data-text="View Terms & Policy" href="/cookie_policy.md">Copyright ©2023</div>
               <div class=line_4 id=line_4 style=display:none></div>
             </div>
-            <a href=https://jesvi.pythonanywhere.com target=_blank id=easter onmouseenter='document.getElementById("htmll").style.mixBlendMode="difference"' onmouseleave='document.getElementById("htmll").style.mixBlendMode="unset"' data-text="( ͡⚆ ͜ʖ ͡⚆)╭∩╮" class="foot_2_2 link_cur">Website By Jesvi Jonathan 🤖</a>
+            <a href=https://jesvi.pythonanywhere.com target=_blank id=easter onmouseenter='document.getElementById("htmll").style.mixBlendMode="difference"' onmouseleave='document.getElementById("htmll").style.mixBlendMode="unset"' data-text="( ͡⚆ ͜ʖ ͡⚆)" class="foot_2_2 link_cur">Website By Jesvi Jonathan 🤖</a>
           </div>
         </div>
       </footer>
@@ -708,5 +708,5 @@ if (screen && screen.width > 480) {
 <script>
   console.log("Website by Jesvi Jonathan");
 console.log("\nWebsite uses In-House JOS-V0.3 library for animation \nalong with experimental In-House J-SPA (single page) framework/library..,\nAll hardcoded by me and only me.\n");
-console.log("\n╭∩╮（︶︿︶）╭∩╮\nNow, I would like you to fuck off from developer tools rn ")
+console.log("\n╭∩╮（︶︿︶）╭∩╮\nNow, I would like you to fuck off from developer panel rn ")
 </script>

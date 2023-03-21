@@ -165,13 +165,13 @@ Last Updated : March 22th 2023
     value="true" onclick="toggle(this, '.eop', 'eop_active');notify('Displaying all events !', 5000);" 
     data-type="all">All Events</div>
     <div class="eop " 
-    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Technical | Filter Applied !',5000)" data-type="Technical">Technical Events</div>
+    value="false" id="technicalmob" onclick="toggle(this, '.eop', 'eop_active');notify('Technical | Filter Applied !',5000)" data-type="Technical">Technical Events</div>
     <div class="eop" 
-    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Non-Technical | Filter Applied !',5000)" data-type="Non-Technical">Non-Technical Events</div>
+    value="false" id="nontechnicalmob" onclick="toggle(this, '.eop', 'eop_active');notify('Non-Technical | Filter Applied !',5000)" data-type="Non-Technical">Non-Technical Events</div>
     <div class="eop" 
-    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Workshops | Filter Applied !',5000)" data-type="Workshops">Workshops</div>
+    value="false" id="workshopsmob" onclick="toggle(this, '.eop', 'eop_active');notify('Workshops | Filter Applied !',5000)" data-type="Workshops">Workshops</div>
     <div class="eop" 
-    value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Pro Shows | Filter Applied !',5000);" data-type="Pro Shows">Pro Shows</div>
+    value="false" id="proshowsmob" onclick="toggle(this, '.eop', 'eop_active');notify('Pro Shows | Filter Applied !',5000);" data-type="Pro Shows">Pro Shows</div>
     <div class="eop" 
     value="false" onclick="toggle(this, '.eop', 'eop_active');notify('Online | Filter Applied !',5000);" data-type="Online">Online</div>
     <div class="eop" 
@@ -204,10 +204,10 @@ Last Updated : March 22th 2023
       <div class="mav_bar_cont">
         <a class="nav_bar_links link_cur"  href="/#about"data-text="About Us">About</a>
         <a class="nav_bar_links link_cur" href="/events"data-text="Events List">Events</a>
-        <a class="nav_bar_links link_cur"href="/events" data-text="Pro-Shows">
+        <a class="nav_bar_links link_cur"href="/events#/proshows" data-text="Pro-Shows">
           Pro Shows
         </a>
-        <a class="nav_bar_links link_cur"href="/events" data-text="Workshops">
+        <a class="nav_bar_links link_cur"href="/events#/workshops" data-text="Workshops">
           Workshops
         </a>
         <a class="nav_bar_links link_cur" href="/"data-text="Contact Us">Contact</a>
@@ -243,7 +243,7 @@ Last Updated : March 22th 2023
         </button>
         <button
           class="fil_bub link_cur "
-          value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Technical | Filter Applied !',5000)" data-type="Technical"
+          value="false" id="technical" onclick="toggle(this, '.fil_bub','eve_active');notify('Technical | Filter Applied !',5000)" data-type="Technical"
           data-text="Technical Events"
         >
           Technical
@@ -251,21 +251,21 @@ Last Updated : March 22th 2023
 
         <button
           class="fil_bub link_cur "
-          value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Non-Technical | Filter Applied !',5000)" data-type="Non-Technical"
+          value="false" id="nontechnical" onclick="toggle(this, '.fil_bub','eve_active');notify('Non-Technical | Filter Applied !',5000)" data-type="Non-Technical"
           data-text="Non-Technical Events"
         >
           Non-Technical
         </button>
         <button
           class="fil_bub link_cur "
-          value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Workshops | Filter Applied !',5000)" data-type="Workshops"
+          value="false" id="workshops" onclick="toggle(this, '.fil_bub','eve_active');notify('Workshops | Filter Applied !',5000)" data-type="Workshops"
           data-text="Workshops"
         >
           Workshops
         </button>
         <button
           class="fil_bub link_cur "
-          value="false" onclick="toggle(this, '.fil_bub','eve_active');notify('Pro Shows | Filter Applied !',5000);"  data-type="Pro Shows"
+          value="false" id="proshows" onclick="toggle(this, '.fil_bub','eve_active');notify('Pro Shows | Filter Applied !',5000);"  data-type="Pro Shows"
           data-text="Pro Shows"
         >
           Pro Shows
@@ -338,7 +338,7 @@ Last Updated : March 22th 2023
             data-text="Latest Posts"
             id="link_con_insta"
             target="_blank"
-            href="instagram.com/_jesvi_"
+            href="https://www.instagram.com/cittakshashila/"
           >
             Instagram Post
           </a>
@@ -383,7 +383,7 @@ Last Updated : March 22th 2023
                   data-text="Latest Posts"
                   id="link_con_insta"
                   target="_blank"
-                  href="instagram.com/_jesvi_"
+                  href="https://www.instagram.com/cittakshashila/"
                 >
                   Instagram Post
                 </a>
@@ -778,6 +778,7 @@ document.addEventListener("mouseout", () => {
 
   var url_event;
   let load_done = false;
+var red_filt = 0;
 
   if (
     window.location.href.indexOf("events") != -1 ||
@@ -789,6 +790,8 @@ document.addEventListener("mouseout", () => {
     if (url_event.indexOf("events") != -1) {
       url_event = null;
       close_event();
+    }else{
+red_filt = 1;
     }
   }
 
@@ -877,11 +880,15 @@ document.addEventListener("mouseout", () => {
           inner_details = "";
 
           jata = data[i];
-          eve_img.src = "./Group 304.png";
           
-          inner_details += '<img class="eve_img" src="./Group 304.png"/>';
+          eve_img.src = "./Group 304.png";
+          inner_details += '<img class="eve_img" loading="lazy" src="./Group 304.png"/>';
 
-          // inner_details += '<img class="eve_img" src="' + jata.image + '"/>';
+
+
+          // inner_details += '<img class="eve_img" loading="lazy" src="' + jata.image + '"/>';
+
+
           inner_details +=
             ' <div class="eve_ma"><div class="eve_title">' +
             jata.name +
@@ -912,7 +919,22 @@ document.addEventListener("mouseout", () => {
           }
         }
         load_done = true;
-      })
+      }).then(function (res) {
+        if(red_filt == 1) {
+          if (url_event == "workshops" || url_event == "technical" || url_event == "nontechnical" || url_event == "proshows") {
+
+  close_event();
+if(mobile){
+  toggle(document.getElementById(url_event + "mob"), '.fil_bub','eop_active');
+}
+else{
+  toggle(document.getElementById(url_event), '.fil_bub','eve_active');
+}
+}
+        }
+        
+      
+  })
       .catch(function (e) {
         // notify("Something Went Wrong :(", 5000);
         // alert("Something went wrong :(\nProceed to reload website...\n\n" + e);
@@ -933,8 +955,8 @@ var rule_2_text = "-";
     filter.style.display = "none";
 
     
-    eve_img.src = "./Group 304.png";
-    // eve_img.src = "" + json_data[e].image;
+    // eve_img.src = "./Group 304.png";
+    eve_img.src = "" + json_data[e].image;
 
     //inner div for tag_con from json_data[e].tags 
 
