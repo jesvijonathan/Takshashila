@@ -117,8 +117,9 @@ def index():
 # @cache.cached(timeout=2)
 def home():
     return redirect("/")
+ 
 
-
+ #####add workshop. tech. non, proshows of prop code later
 
 @app.route('/events/<event>')
 def A(event=None):
