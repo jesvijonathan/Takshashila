@@ -1160,6 +1160,7 @@ rullee = document.getElementById("rullee");
     function graphic() {
   1 == graphic_high
     ? ((graphic_high = 0),
+    eve_img.style.opacity = "1",
       document.getElementById("eve_detail_cont").style.background = "#3c3c3c",
       (myvid.style.display = "none"),
       document.getElementById("navbar").style.background = "transparent !important",
@@ -1168,6 +1169,7 @@ rullee = document.getElementById("rullee");
   
   notify("Acrylic Theme Deactivated !", 3e3))
     : ((graphic_high = 1),
+    eve_img.style.opacity = "0",
       document.getElementById("eve_detail_cont").style.background = "#48484838",
       myvid.classList.add("blur"),
       navbar.classList.add("sticky_blur"),
