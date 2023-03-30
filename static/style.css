@@ -2018,7 +2018,7 @@ button:hover {
   }
 }
 .spn_min {
-  animation: 10s linear infinite scroller;
+  animation: 17s linear infinite scroller;
 }
 .spon_clip:hover .spn_min {
   animation-play-state: paused;

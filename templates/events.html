@@ -436,7 +436,7 @@ Last Updated : March 22th 2023
           <div class="eve_detail_2_2" id="rullee">
             <div class="eve_detail_2_2_1" style="text-decoration: none; border: none; margin: none;">
               <div class="rule_1">Rules</div>
-              <div class="rule_2 rule_active link_cur" data-text="Preliminary Rules" id="prel"onclick="rule_switch(0);">Prelimes</div>
+              <div class="rule_2 rule_active link_cur" data-text="Preliminary Rules" id="prel"onclick="rule_switch(0);">Prelims</div>
               <div class="rule_2  link_cur" data-text="Finals Rules" id="fina" onclick="rule_switch(1);">Finals</div></div>
             <div class="eve_detail_2_2_tag" id="eve_detail_rules"></div>
           </div>
@@ -924,6 +924,13 @@ red_filt = 1;
           if (url_event == "workshops" || url_event == "technical" || url_event == "nontechnical" || url_event == "proshows") {
 
   close_event();
+  window.history.pushState(
+      "",
+      "",
+      "/events/"+url_event
+    );
+    document.title = url_event +  " | Takshashila 2023";
+
 if(mobile){
   toggle(document.getElementById(url_event + "mob"), '.fil_bub','eop_active');
 }
@@ -1160,7 +1167,7 @@ rullee = document.getElementById("rullee");
     function graphic() {
   1 == graphic_high
     ? ((graphic_high = 0),
-    eve_img.style.opacity = "1",
+    eve_img.style.opacity = "0",
       document.getElementById("eve_detail_cont").style.background = "#3c3c3c",
       (myvid.style.display = "none"),
       document.getElementById("navbar").style.background = "transparent !important",
@@ -1169,7 +1176,7 @@ rullee = document.getElementById("rullee");
   
   notify("Acrylic Theme Deactivated !", 3e3))
     : ((graphic_high = 1),
-    eve_img.style.opacity = "0",
+    eve_img.style.opacity = "1",
       document.getElementById("eve_detail_cont").style.background = "#48484838",
       myvid.classList.add("blur"),
       navbar.classList.add("sticky_blur"),
