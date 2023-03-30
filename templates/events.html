@@ -886,7 +886,7 @@ red_filt = 1;
 
 
 
-          inner_details += '<img class="eve_img" oncontextmenu=\'return false;\' loading="lazy" src="' + jata.image + '"/>';
+          inner_details += '<img class="eve_img eve_img_cardd" oncontextmenu=\'return false;\' loading="lazy" src="' + jata.image + '"/>';
 
 
           inner_details +=
@@ -1167,14 +1167,18 @@ rullee = document.getElementById("rullee");
     function graphic() {
   1 == graphic_high
     ? ((graphic_high = 0),
-    eve_img.style.opacity = "0",
       document.getElementById("eve_detail_cont").style.background = "#3c3c3c",
       (myvid.style.display = "none"),
       document.getElementById("navbar").style.background = "transparent !important",
       
       myvid.classList.remove("blur"), 
+      
   
-  notify("Acrylic Theme Deactivated !", 3e3))
+  notify("Acrylic Theme Deactivated !", 3e3),
+  document.querySelectorAll(".eve_img_cardd").forEach((e) => {
+        e.style.opacity = "0";
+        
+      }))
     : ((graphic_high = 1),
     eve_img.style.opacity = "1",
       document.getElementById("eve_detail_cont").style.background = "#48484838",
@@ -1183,7 +1187,10 @@ rullee = document.getElementById("rullee");
       (myvid.style.display = "block"),
       document.getElementById("navbar").classList.add("sticky_blur"),
       
-      notify("Acrylic Theme Activated !", 3e3));
+      notify("Acrylic Theme Activated !", 3e3),
+      document.querySelectorAll(".eve_img_cardd").forEach((e) => {
+        e.style.opacity = "1";
+      }));
 }
 </script>
 

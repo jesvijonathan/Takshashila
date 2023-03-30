@@ -2009,6 +2009,9 @@ button:hover {
   overflow: clip;
   width: 72%;
 }
+.eve_img_carddP {
+  transition: 0.3s ease-in-out;
+}
 @keyframes scroller {
   0% {
     transform: translateX(0);
