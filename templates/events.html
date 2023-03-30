@@ -923,16 +923,11 @@ red_filt = 1;
         if(red_filt == 1) {
           if (url_event == "workshops" || url_event == "technical" || url_event == "nontechnical" || url_event == "proshows") {
 
-  close_event();
-  window.history.pushState(
-      "",
-      "",
-      "/events/"+url_event
-    );
-    document.title = url_event +  " | Takshashila 2023";
+close_event();
 
 if(mobile){
-  toggle(document.getElementById(url_event + "mob"), '.fil_bub','eop_active');
+  
+toggle(document.getElementById(url_event + "mob"), '.fil_bub','eop_active');
 }
 else{
   toggle(document.getElementById(url_event), '.fil_bub','eve_active');
@@ -1246,11 +1241,16 @@ eve_card = document.querySelectorAll(".eve_card");
       }  }
 
       if(e.dataset.type == "all"){
+        
+document.title =  "Events | Takshashila 2023";
       document.getElementById("filt_icon").classList.remove("filt_icon_act")
       }
       else{
+document.title =  e.dataset.type + " | Takshashila 2023";
       document.getElementById("filt_icon").classList.add("filt_icon_act")
       }
+
+      
   
       notify("Filter Applied !", 3e3);
 
