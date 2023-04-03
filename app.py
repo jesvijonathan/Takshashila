@@ -207,7 +207,7 @@ def google_():
 
 @app.route('/jesvi')
 #/home/takshashila/Takshashila-2023-Backend
-def edit():
+def Jesvi():
      return "Yeah.. I built the thing."
 
 @app.errorhandler(404)
