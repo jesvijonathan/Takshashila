@@ -330,7 +330,7 @@ Last Updated : March 22th 2023
       </div>
 
       <div class="eve_detail_cont" id="eve_detail_cont">
-        <a class="eve_mobile_reg mob" href="" target="_blank" id="eve_reg_link_2">Register &nbsp;| &nbsp; <div id="price_2"> </div></a>
+        <a class="eve_mobile_reg mob" href="" target="_blank" id="eve_reg_link_2" onclick="alert('Registrations are closed !')">Register &nbsp;| &nbsp; <div id="price_2"> </div></a>
 
         <div class="eve_detail_1_3_cont mob">
           <a
@@ -418,6 +418,7 @@ Last Updated : March 22th 2023
                 id="eve_reg_link"
                 target="_blank"
                 href=""
+                onclick="alert('Registrations are closed !')"
               >Register &nbsp;| &nbsp; <div id="price"> </div>
               </a>
             </div>
@@ -962,11 +963,14 @@ var rule_2_text = "-";
 
     //inner div for tag_con from json_data[e].tags 
 
+    // document.getElementById("eve_reg_link_2").href = json_data[e].register + " ";
  
-        document.getElementById("eve_reg_link_2").href = json_data[e].register + " ";
+        document.getElementById("eve_reg_link_2").href = "";
         document.getElementById("price_2").innerHTML = "₹"+json_data[e].fee;
 
-        eve_reg_link.href = json_data[e].register + " ";
+        
+        // eve_reg_link.href = json_data[e].register + " ";
+        eve_reg_link.href =  "";
         document.getElementById("price").innerHTML = "₹"+json_data[e].fee;
          tag_con_2.innerHTML = "Entry Fee : ₹"+json_data[e].fee;
  
