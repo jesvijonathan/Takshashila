@@ -19,14 +19,19 @@
     <link rel="stylesheet" href="./style.css" />
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDPMEBQGBQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RDPMEBQGBQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-RDPMEBQGBQ');
-</script>
+      gtag("config", "G-RDPMEBQGBQ");
+    </script>
   </head>
   <body style="cursor: unset !important">
     <div class="json_view_cont">
@@ -115,25 +120,26 @@
     </script>
     <script>
       function saveData() {
-        var newData = JSON.parse(document.getElementById("json_view").value);
-        fetch("/update", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(newData),
-        })
-          .then((response) => {
-            if (response.ok) {
-              alert("Data saved successfully !");
-              window.location.reload();
-            } else {
-              alert("Error saving data.");
-            }
-          })
-          .catch((error) => {
-            alert("Error saving data: " + error);
-          });
+        // var newData = JSON.parse(document.getElementById("json_view").value);
+        // fetch("/update", {
+        //   method: "POST",
+        //   headers: {
+        //     "Content-Type": "application/json",
+        //   },
+        //   body: JSON.stringify(newData),
+        // })
+        //   .then((response) => {
+        //     if (response.ok) {
+        //       alert("Data saved successfully !");
+        //       window.location.reload();
+        //     } else {
+        //       alert("Error saving data.");
+        //     }
+        //   })
+        //   .catch((error) => {
+        //     alert("Error saving data: " + error);
+        //   });
+        alert("Nope, not gonna happen :P");
       }
     </script>
   </body>

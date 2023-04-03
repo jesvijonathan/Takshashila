@@ -220,18 +220,19 @@ def page_not_found(e):
 @app.route('/edit_events')
 #/home/takshashila/Takshashila-2023-Backend
 def edit():
-    # with open('/home/takshashila/Takshashila-2023-Backend/static/events.json', 'r') as f:
-    #     data = json.load(f)
-    # return render_template('edit.html', data=json.dumps(data, indent=4, ))
+    with open('/home/takshashila/Takshashila-2023-Backend/static/events.json', 'r') as f:
+        data = json.load(f)
+    return render_template('edit.html', data=json.dumps(data, indent=4, ))
     redirect("https://www.youtube.com/watch?v=a0a_WbPbo3U")
 
 
-# @app.route('/update', methods=['POST'])
-# def update():
-#     new_data = request.json
-#     with open('/home/takshashila/Takshashila-2023-Backend/static/events.json', 'w') as f:
-#         json.dump(new_data, f)
-#     return jsonify(success=True)
+@app.route('/update', methods=['POST'])
+def update():
+    return jsonify(success=False)
+    # new_data = request.json
+    # with open('/home/takshashila/Takshashila-2023-Backend/static/events.json', 'w') as f:
+    #     json.dump(new_data, f)
+    # return jsonify(success=True)
 
 
 api.register_blueprint(staticBlp)
