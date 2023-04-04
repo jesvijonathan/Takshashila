@@ -53,13 +53,13 @@ def session_clear(exception=None):
     
 
 try:
-    os.mkdir("/home/takshashila/Takshashila-2023-Backend/static/users")
+    os.mkdir("./static/users")
 except:
     print("user qr already exists")
 
 
 
-with open('/home/takshashila/Takshashila-2023-Backend/static/events.json') as json_file:
+with open('./static/events.json') as json_file:
     eve_data = json.load(json_file) 
 # cache = Cache(config={'CACHE_TYPE': 'simple'})
 # cache = Cache(app)
@@ -159,50 +159,50 @@ domain = "https://www.cittakshashila.in/"
 # server_url =os.getenv('SERVER_URL')
 server_url = "https://www.cittakshashila.in/"
 
-@app.route("/google_login")
-def google_():
-    if not google.authorized:
-        return redirect(url_for("google.login"))
-    resp = google.get("/oauth2/v2/userinfo")
-    assert resp.ok, resp.text
-    email = resp.json()["email"]
+# @app.route("/google_login")
+# def google_():
+#     if not google.authorized:
+#         return redirect(url_for("google.login"))
+#     resp = google.get("/oauth2/v2/userinfo")
+#     assert resp.ok, resp.text
+#     email = resp.json()["email"]
 
-    res_data= resp.json()
+#     res_data= resp.json()
 
-    data = {
-        'email':res_data.get('email', None),
-        'first_name':res_data.get('given_name', None),
-        'last_name': res_data.get('family_name', None),
-        'google_id':res_data.get('id', None)
-    }
+#     data = {
+#         'email':res_data.get('email', None),
+#         'first_name':res_data.get('given_name', None),
+#         'last_name': res_data.get('family_name', None),
+#         'google_id':res_data.get('id', None)
+#     }
 
-    user_db_data = createUser_oauth(data)
+#     user_db_data = createUser_oauth(data)
 
-    resp = None
-    redirect_url=domain
-    f =0
-    if not user_db_data.stage_two:
-        redirect_url=domain+"user_details"
-        f =1
+#     resp = None
+#     redirect_url=domain
+#     f =0
+#     if not user_db_data.stage_two:
+#         redirect_url=domain+"user_details"
+#         f =1
 
-    if auth_pop == 1:
-        resp = make_response(render_template("oauth_redirect_home.html", redirect=redirect_url, mini=auth_pop))
+#     if auth_pop == 1:
+#         resp = make_response(render_template("oauth_redirect_home.html", redirect=redirect_url, mini=auth_pop))
 
-    else:
-        resp = make_response(redirect(redirect_url))
-        #resp = make_response(render_template("oauth_redirect_home.html", redirect=redirect_url))
+#     else:
+#         resp = make_response(redirect(redirect_url))
+#         #resp = make_response(render_template("oauth_redirect_home.html", redirect=redirect_url))
 
-    resp.set_cookie('oauth_redirect', redirect_url, secure=True, samesite='Lax')
-    resp.set_cookie('logged_In', "true", secure=True, samesite='Lax')
-    if f ==1:resp.set_cookie('user_details', '', secure=True, samesite='Lax')
-    resp.set_cookie('first_name', res_data.get('given_name'), secure=True, samesite='Lax')
-    resp.set_cookie('last_name', res_data.get('family_name', ""), secure=True, samesite='Lax')
-    resp.set_cookie('email', res_data.get('email', ""), secure=True, samesite='Lax')
-    resp.set_cookie('hash', user_db_data.hash, secure=True, samesite='Lax')
+#     resp.set_cookie('oauth_redirect', redirect_url, secure=True, samesite='Lax')
+#     resp.set_cookie('logged_In', "true", secure=True, samesite='Lax')
+#     if f ==1:resp.set_cookie('user_details', '', secure=True, samesite='Lax')
+#     resp.set_cookie('first_name', res_data.get('given_name'), secure=True, samesite='Lax')
+#     resp.set_cookie('last_name', res_data.get('family_name', ""), secure=True, samesite='Lax')
+#     resp.set_cookie('email', res_data.get('email', ""), secure=True, samesite='Lax')
+#     resp.set_cookie('hash', user_db_data.hash, secure=True, samesite='Lax')
 
-    return resp
+#     return resp
 
-    return f"Logged in as {email}"
+#     return f"Logged in as {email}"
 
 
 @app.route('/jesvi')
@@ -214,21 +214,21 @@ def Jesvi():
 # @cache.cached(timeout=2)
 def page_not_found(e):
     # return jsonify(error=str(e)), 404
-    # return render_template('404.html', error=e, console_print=e), 404
-    return redirect("/")
+    return render_template('404.html', error=e, console_print=e), 404
+    # return redirect("/")
 
 @app.route('/edit_events')
 #/home/takshashila/Takshashila-2023-Backend
 def edit():
-    with open('/home/takshashila/Takshashila-2023-Backend/static/events.json', 'r') as f:
+    with open('./static/events.json', 'r') as f:
         data = json.load(f)
     return render_template('edit.html', data=json.dumps(data, indent=4, ))
     redirect("https://www.youtube.com/watch?v=a0a_WbPbo3U")
 
 
-@app.route('/update', methods=['POST'])
-def update():
-    return jsonify(success=False)
+# @app.route('/update', methods=['POST'])
+# def update():
+#     return jsonify(success=False)
     # new_data = request.json
     # with open('/home/takshashila/Takshashila-2023-Backend/static/events.json', 'w') as f:
     #     json.dump(new_data, f)
