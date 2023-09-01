@@ -1,5 +1,5 @@
 # [Takshashila](https://github.com/jesvijonathan/Takshashila)
-CIT's [best web-designer](https://jesvi.pythonanywhere.com) builds the most elegant [webpage](https://jesvijonathan.github.io/Takshashila-Website) designed for an institution in regards to 'Takshashila' event
+CIT's [best developer](https://jesvi.pythonanywhere.com) builds the most elegant [webpage](https://jesvijonathan.github.io/Takshashila-Website) designed for an institution in regards to 'Takshashila' event
 
 
 ## [Note] for Kangers
