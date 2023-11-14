@@ -45,4 +45,4 @@ urllib3==1.26.14
 webargs==8.2.0
 qrcode
 flask-caching
-Werkzeug==2.2.3
+Werkzeug==2.3.8
