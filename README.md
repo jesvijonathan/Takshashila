@@ -34,7 +34,7 @@ This entire project runs **without any modern frontend framework** — just my o
 **Don’t change the design** — it’s already *perfecto* (0_-) 
 If it were me, I’d enhance the project like this:
 
-- Build a **dashboard** for [editing events]([https://www.cittakshashila.in/edit.html](https://jesvijonathan.github.io/Takshashila-Website)) via the [event.json file](https://github.com/jesvijonathan/Takshashila-Website/blob/master/events.json).  
+- Build a **dashboard** for [editing events](https://jesvijonathan.github.io/Takshashila-Website) via the [event.json file](https://github.com/jesvijonathan/Takshashila-Website/blob/master/events.json).  
   This saves a ton of time and helps volunteers manage the event smoothly.
 
 ---
